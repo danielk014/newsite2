@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import { SocialProofSection } from "@/components/sections/social-proof"
 import { TestimonialStrip } from "@/components/ui/testimonial-strip"
-import { motion } from "framer-motion"
 
 export const metadata: Metadata = {
   title: "Testimonials",

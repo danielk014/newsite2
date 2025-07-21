@@ -26,7 +26,7 @@ export default function Home() {
               Everything You Need to <span className="text-primary">Succeed</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Get access to the complete system that's helped thousands go viral
+              Get access to the complete system that&apos;s helped thousands go viral
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -73,7 +73,7 @@ export default function Home() {
             Your Journey to <span className="text-primary">Viral Success</span> Starts Here
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Don't let another day pass wondering "what if". Join thousands who took action and changed their lives.
+            Don&apos;t let another day pass wondering &quot;what if&quot;. Join thousands who took action and changed their lives.
           </p>
           <a
             href="/pricing"
