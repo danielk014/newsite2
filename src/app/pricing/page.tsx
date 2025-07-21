@@ -1,0 +1,56 @@
+import { Metadata } from "next"
+import { PricingSection } from "@/components/sections/pricing"
+import { FAQSection } from "@/components/sections/faq"
+import { TestimonialStrip } from "@/components/ui/testimonial-strip"
+
+export const metadata: Metadata = {
+  title: "Pricing",
+  description: "Choose the perfect plan to start your content creation journey",
+}
+
+export default function PricingPage() {
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Investment That <span className="text-primary">Pays For Itself</span>
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Join over 10,000 creators who are building profitable personal brands
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonial Strip */}
+      <TestimonialStrip startIndex={0} title="ROI in Days, Not Years" />
+
+      {/* Main Pricing Section */}
+      <PricingSection />
+
+      {/* FAQ Section */}
+      <FAQSection />
+
+      {/* Final CTA */}
+      <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Limited Time Offer
+          </h2>
+          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Prices increase every 100 students. Lock in your rate today!
+          </p>
+          <a
+            href="#pricing"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8"
+          >
+            Secure Your Spot Now
+          </a>
+        </div>
+      </section>
+    </div>
+  )
+}
