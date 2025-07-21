@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle2, Zap, Brain, Rocket, Target, Trophy, ArrowRight, Clock, TrendingUp, DollarSign, Users, BarChart3, Sparkles, XCircle, Video, Scissors, Bot, BadgeCheck } from "lucide-react"
+import { CheckCircle2, ArrowRight, Scissors, Bot, BadgeCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
 

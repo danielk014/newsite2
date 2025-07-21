@@ -1,9 +1,8 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { XCircle, TrendingDown, Clock, AlertTriangle, DollarSign, BarChart3, Target, Shield, Zap, Eye, Users, Brain, Flame } from "lucide-react"
+import { XCircle, TrendingDown, DollarSign, Zap, Eye, Brain, Flame } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { AnimatedCounter } from "@/components/ui/animated-counter"
 import { MiniTestimonials } from "@/components/ui/testimonial-card"
 
 const painPoints = [
@@ -50,13 +49,13 @@ export function ProblemSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Let's Be Honest...
+              Let&apos;s Be Honest...
               <br />
-              <span className="text-destructive">Your Content Strategy Isn't Working</span>
+              <span className="text-destructive">Your Content Strategy Isn&apos;t Working</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              While you're stuck at 200 views, we're generating millions. 
-              The difference? We know the game. You're still learning the rules.
+              While you&apos;re stuck at 200 views, we&apos;re generating millions. 
+              The difference? We know the game. You&apos;re still learning the rules.
             </p>
           </motion.div>
 
@@ -124,13 +123,13 @@ export function ProblemSection() {
               
               <div className="space-y-4 max-w-3xl mx-auto">
                 <p className="text-lg">
-                  <span className="font-semibold text-destructive">You're not failing because you lack talent.</span>
+                  <span className="font-semibold text-destructive">You&apos;re not failing because you lack talent.</span>
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  You're failing because you're using strategies from 2019 in 2024.
+                  You&apos;re failing because you&apos;re using strategies from 2019 in 2024.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  While you're following outdated YouTube tutorials, successful creators are using 
+                  While you&apos;re following outdated YouTube tutorials, successful creators are using 
                   <span className="font-semibold text-foreground"> proven systems</span> that generate 
                   <span className="font-semibold text-foreground"> millions of views</span> and 
                   <span className="font-semibold text-foreground"> real revenue</span>.
@@ -139,7 +138,7 @@ export function ProblemSection() {
 
               <div className="pt-6">
                 <p className="text-xl font-semibold text-primary">
-                  The creators making $10K+/month? They're not smarter than you.
+                  The creators making $10K+/month? They&apos;re not smarter than you.
                 </p>
                 <p className="text-lg text-muted-foreground mt-2">
                   They just have access to the right playbook.
@@ -162,7 +161,7 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-destructive/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <XCircle className="w-8 h-8 text-destructive" />
-                  <h4 className="font-bold text-lg">What You're Doing Now</h4>
+                  <h4 className="font-bold text-lg">What You&apos;re Doing Now</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
@@ -171,7 +170,7 @@ export function ProblemSection() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive mt-1">→</span>
-                    <span className="text-sm">Following generic "post 3x daily" advice</span>
+                    <span className="text-sm">Following generic &quot;post 3x daily&quot; advice</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive mt-1">→</span>

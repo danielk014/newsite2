@@ -27,7 +27,7 @@ export function TestimonialCard({ quote, author, result, className = "", delay =
             <Star key={i} className="w-4 h-4 fill-primary text-primary" />
           ))}
         </div>
-        <p className="text-sm italic text-muted-foreground">"{quote}"</p>
+        <p className="text-sm italic text-muted-foreground">&quot;{quote}&quot;</p>
         <div className="pt-2 border-t border-border">
           <p className="font-semibold text-sm">{author}</p>
           <p className="text-xs text-accent">{result}</p>

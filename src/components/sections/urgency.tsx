@@ -129,7 +129,7 @@ export function UrgencySection() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-destructive mt-1">•</span>
-                <span>Price increases to $997/month after this timer (that's $872 MORE per month)</span>
+                <span>Price increases to $997/month after this timer (that&apos;s $872 MORE per month)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-destructive mt-1">•</span>
@@ -137,7 +137,7 @@ export function UrgencySection() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-destructive mt-1">•</span>
-                <span>Next cohort won't start for another 30 days</span>
+                <span>Next cohort won&apos;t start for another 30 days</span>
               </li>
             </ul>
           </motion.div>
@@ -178,7 +178,7 @@ export function UrgencySection() {
             className="text-center"
           >
             <p className="text-lg font-semibold mb-6">
-              Don't let another opportunity pass you by. Your competition is signing up right now.
+              Don&apos;t let another opportunity pass you by. Your competition is signing up right now.
             </p>
             <Button 
               variant="cta" 
@@ -186,7 +186,7 @@ export function UrgencySection() {
               className="animate-pulse"
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Claim Your Spot Before It's Gone
+              Claim Your Spot Before It&apos;s Gone
             </Button>
             <p className="text-sm text-muted-foreground mt-4">
               🔒 Secure checkout • 30-day guarantee • Instant access

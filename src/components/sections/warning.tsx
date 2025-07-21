@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { AlertTriangle, TrendingDown, Ban, XCircle, Zap, ArrowDown, BarChart3, Users } from "lucide-react"
+import { AlertTriangle, TrendingDown, Ban, XCircle, ArrowDown, BarChart3, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const warnings = [
@@ -52,12 +52,12 @@ export function WarningSection() {
             </div>
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              WARNING: These "Strategies" Are Now <span className="text-destructive">Killing Careers</span>
+              WARNING: These &quot;Strategies&quot; Are Now <span className="text-destructive">Killing Careers</span>
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              The "expert" advice you're following? It's based on strategies that stopped 
-              working years ago. Here's what's actually hurting your growth:
+              The &quot;expert&quot; advice you&apos;re following? It&apos;s based on strategies that stopped 
+              working years ago. Here&apos;s what&apos;s actually hurting your growth:
             </p>
           </motion.div>
 
@@ -107,12 +107,12 @@ export function WarningSection() {
             className="bg-card border border-border rounded-2xl p-8 md:p-12 text-center"
           >
             <h3 className="text-2xl font-bold mb-4">
-              The Good News? There's a Better Way
+              The Good News? There&apos;s a Better Way
             </h3>
             
             <div className="space-y-4 max-w-3xl mx-auto">
               <p className="text-muted-foreground">
-                While most creators waste months on strategies that don't work, our students are 
+                While most creators waste months on strategies that don&apos;t work, our students are 
                 going viral within 30 days using a completely different approach.
               </p>
               
@@ -161,7 +161,7 @@ export function WarningSection() {
                   </div>
                 </div>
                 <p className="text-sm font-medium relative z-10">
-                  "94% of Creator Camp students see their first viral video within 30 days"
+                  &quot;94% of Creator Camp students see their first viral video within 30 days&quot;
                 </p>
                 <div className="flex items-center gap-2 mt-2 relative z-10">
                   <Users className="w-4 h-4 text-muted-foreground" />
@@ -182,7 +182,7 @@ export function WarningSection() {
             className="mt-12 text-center"
           >
             <p className="text-lg text-muted-foreground">
-              Ready to stop wasting time on strategies that don't work?
+              Ready to stop wasting time on strategies that don&apos;t work?
             </p>
             <p className="text-xl font-semibold text-primary mt-2 mb-8">
               Discover the system that actually creates viral content →

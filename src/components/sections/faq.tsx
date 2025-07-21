@@ -33,7 +33,7 @@ export function FAQSection() {
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
               <HelpCircle className="w-4 h-4" />
-              <span>Got Questions? We've Got Answers</span>
+              <span>Got Questions? We&apos;ve Got Answers</span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               FAQ
@@ -92,11 +92,11 @@ export function FAQSection() {
           >
             <ShieldCheck className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-4">
-              Our 'Go Viral Or It's Free' Guarantee
+              Our &apos;Go Viral Or It&apos;s Free&apos; Guarantee
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              Use our AI tools and faceless system for 30 days. If you don't see explosive growth,
-              get 100% of your money back. We've created 500+ millionaires. You're next.
+              Use our AI tools and faceless system for 30 days. If you don&apos;t see explosive growth,
+              get 100% of your money back. We&apos;ve created 500+ millionaires. You&apos;re next.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -122,7 +122,7 @@ export function FAQSection() {
               <a href="mailto:support@creatorcamp.academy" className="text-primary hover:underline">
                 support@creatorcamp.academy
               </a>
-              {' '}and we'll respond within 24 hours.
+              {' '}and we&apos;ll respond within 24 hours.
             </p>
             <Button 
               variant="cta" 

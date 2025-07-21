@@ -1,6 +1,6 @@
 "use client"
 
-import { motion, useInView } from "framer-motion"
+import { useInView } from "framer-motion"
 import { useRef, useEffect, useState } from "react"
 
 interface AnimatedCounterProps {
@@ -27,7 +27,6 @@ export function AnimatedCounter({
   useEffect(() => {
     if (isInView) {
       const startTime = Date.now()
-      const endTime = startTime + duration * 1000
 
       const updateValue = () => {
         const now = Date.now()

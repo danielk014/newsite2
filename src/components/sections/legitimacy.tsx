@@ -37,10 +37,10 @@ export function LegitimacySection() {
             className="text-center space-y-4 mb-12"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Why We Know What Others Don't
+              Why We Know What Others Don&apos;t
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              This isn't another "guru course." We have insider access that 99.9% of educators don't.
+              This isn&apos;t another &quot;guru course.&quot; We have insider access that 99.9% of educators don&apos;t.
             </p>
           </motion.div>
 
@@ -75,9 +75,9 @@ export function LegitimacySection() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Private Platform Briefing - June 2024</h3>
                 <p className="text-muted-foreground italic">
-                  "Major algorithm shift coming Q3. Creators using [REDACTED] methods will see 
-                  90% reach reduction. New 'quality signals' favor psychological engagement over 
-                  traditional metrics."
+                  &quot;Major algorithm shift coming Q3. Creators using [REDACTED] methods will see 
+                  90% reach reduction. New &apos;quality signals&apos; favor psychological engagement over 
+                  traditional metrics.&quot;
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
                   - Senior Algorithm Engineer, [Platform Name Under NDA]
@@ -97,7 +97,7 @@ export function LegitimacySection() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                   <span className="text-sm">
-                    You'll know what's "compliant" while others get penalized for outdated tactics
+                    You&apos;ll know what&apos;s &quot;compliant&quot; while others get penalized for outdated tactics
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -122,7 +122,7 @@ export function LegitimacySection() {
               This level of insider knowledge is why we limit enrollment.
             </p>
             <p className="text-xl font-semibold mt-2">
-              We can't risk this information becoming "public domain."
+              We can&apos;t risk this information becoming &quot;public domain.&quot;
             </p>
           </motion.div>
         </div>

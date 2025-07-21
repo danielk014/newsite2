@@ -33,13 +33,13 @@ export function CredibilitySection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              We Don't Just Teach Viral Content...
+              We Don&apos;t Just Teach Viral Content...
               <br />
               <span className="text-primary">We Create It</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our team has generated over 2 billion views and engineered some of the internet's 
-              biggest viral phenomena. Here's proof we know what works.
+              Our team has generated over 2 billion views and engineered some of the internet&apos;s 
+              biggest viral phenomena. Here&apos;s proof we know what works.
             </p>
           </motion.div>
 
@@ -96,7 +96,7 @@ export function CredibilitySection() {
                   <h4 className="text-lg font-semibold mb-4 text-primary">The Challenge:</h4>
                   <p className="text-muted-foreground mb-6">
                     In 2021, Andrew Tate was virtually unknown online. He had great content 
-                    but no viral strategy. That's when our team stepped in with our proven 
+                    but no viral strategy. That&apos;s when our team stepped in with our proven 
                     clipping and distribution system.
                   </p>
                   
@@ -158,8 +158,8 @@ export function CredibilitySection() {
                   <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
                     <BarChart3 className="w-8 h-8 text-accent mb-3" />
                     <p className="text-sm font-medium">
-                      "The same viral systems we used to generate billions of views are now 
-                      available to you. This isn't theory - it's proven strategy."
+                      &quot;The same viral systems we used to generate billions of views are now 
+                      available to you. This isn&apos;t theory - it&apos;s proven strategy.&quot;
                     </p>
                   </div>
                 </div>

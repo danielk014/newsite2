@@ -77,7 +77,7 @@ export function CurriculumSection() {
                 {expandedModule === module.id && (
                   <div className="px-6 pb-6">
                     <div className="border-t border-border pt-4">
-                      <p className="text-sm font-medium mb-3">What you'll learn:</p>
+                      <p className="text-sm font-medium mb-3">What you&apos;ll learn:</p>
                       <ul className="space-y-2">
                         {module.lessons.map((lesson, lessonIndex) => (
                           <li key={lessonIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -138,8 +138,8 @@ export function CurriculumSection() {
               Plus Advanced Mastermind Content
             </h3>
             <p className="text-muted-foreground mb-6">
-              Get access to our weekly live calls where we break down what's working RIGHT NOW. 
-              See real campaigns, real numbers, and strategies you won't find anywhere else.
+              Get access to our weekly live calls where we break down what&apos;s working RIGHT NOW. 
+              See real campaigns, real numbers, and strategies you won&apos;t find anywhere else.
             </p>
             <Button 
               variant="cta" 

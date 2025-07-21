@@ -1,15 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Star, PlayCircle, TrendingUp } from "lucide-react"
-import { testimonials } from "@/data/testimonials"
+import { } from "lucide-react"
 import { useState } from "react"
-import { Button } from "@/components/ui/button"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
 
 export function SocialProofSection() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null)
-  const featuredTestimonials = testimonials.filter(t => t.featured)
 
   return (
     <section className="py-20 md:py-32 bg-background relative overflow-hidden">
@@ -103,7 +100,7 @@ export function SocialProofSection() {
             className="mt-16"
           >
             <h3 className="text-2xl font-bold text-center mb-8">
-              And here's what our students are saying...
+              And here&apos;s what our students are saying...
             </h3>
             <TestimonialImages count={6} columns={3} startIndex={0} />
           </motion.div>

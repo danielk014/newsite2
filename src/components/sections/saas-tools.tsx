@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Sparkles, Brain, Zap, Lock, Mic, Video, Eye, TrendingUp } from "lucide-react"
+import { Sparkles, Brain, Zap, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const tools = [
@@ -33,28 +33,7 @@ const tools = [
   }
 ]
 
-const facelessBenefits = [
-  {
-    icon: Mic,
-    title: "Voice-Only Content",
-    description: "Master storytelling and narration techniques that captivate without showing your face"
-  },
-  {
-    icon: Video,
-    title: "Screen Recording Mastery",
-    description: "Create engaging tutorials, reactions, and commentary videos anonymously"
-  },
-  {
-    icon: Eye,
-    title: "Visual Storytelling",
-    description: "Use stock footage, animations, and graphics to tell compelling stories"
-  },
-  {
-    icon: Lock,
-    title: "Privacy Protected",
-    description: "Build a million-dollar brand while maintaining complete anonymity"
-  }
-]
+// Removed unused facelessBenefits constant
 
 export function SaasToolsSection() {
   return (
@@ -81,7 +60,7 @@ export function SaasToolsSection() {
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              While others manually guess what content to create, you'll have AI tools that guarantee 
+              While others manually guess what content to create, you&apos;ll have AI tools that guarantee 
               viral success—exclusively for Creator Camp students
             </p>
           </motion.div>

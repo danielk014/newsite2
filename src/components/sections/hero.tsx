@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { siteConfig } from "@/config/site"
-import { ArrowRight, Users, TrendingUp, Shield, Zap, Star, Eye, BadgeCheck } from "lucide-react"
+import { ArrowRight, Users, Shield, Zap, Star, Eye, BadgeCheck } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -79,9 +78,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            We engineered <span className="font-semibold text-foreground">Andrew Tate's viral rise</span> in 2021.
+            We engineered <span className="font-semibold text-foreground">Andrew Tate&apos;s viral rise</span> in 2021.
             <br />
-            Now we're revealing the <span className="font-semibold text-foreground">exact playbook</span> that creates viral phenomena
+            Now we&apos;re revealing the <span className="font-semibold text-foreground">exact playbook</span> that creates viral phenomena
             <br />
             and builds <span className="font-semibold text-foreground">6-figure personal brands</span>.
           </motion.p>
