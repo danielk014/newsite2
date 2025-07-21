@@ -132,43 +132,6 @@ export function SaasToolsSection() {
             ))}
           </div>
 
-          {/* Faceless Content Focus */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="bg-secondary/10 rounded-2xl p-8 md:p-12 mb-16"
-          >
-            <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                80% Focused on <span className="text-primary">Faceless Content Creation</span>
-              </h3>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Perfect for introverts, privacy-conscious creators, or anyone who wants to build a 
-                massive following without being on camera
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {facelessBenefits.map((benefit, index) => (
-                <motion.div
-                  key={benefit.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <benefit.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <h4 className="font-semibold mb-2">{benefit.title}</h4>
-                  <p className="text-sm text-muted-foreground">{benefit.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
 
           {/* Value Proposition */}
           <motion.div

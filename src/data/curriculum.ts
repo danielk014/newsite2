@@ -3,119 +3,119 @@ import { CourseModule } from "@/types"
 export const courseModules: CourseModule[] = [
   {
     id: "1",
-    title: "Module 1: Complete Clipper Course",
-    description: "Discover viral moments instantly, edit in seconds, and launch polished clips everywhere",
+    title: "Module 1: Personal Brand Lab",
+    description: "Build a personal brand that converts followers into customers - the same strategy our students use to hit $10K+/month",
     lessons: [
-      "Finding Viral Moments in Any Content",
-      "Quick Editing Techniques for Maximum Impact",
-      "Multi-Platform Optimization Strategies",
-      "Clip Selection Psychology",
-      "Building a Viral Clip Library"
-    ],
-    duration: "3 hours",
-    value: 497
-  },
-  {
-    id: "2",
-    title: "Module 2: Personal Brand Mastery",
-    description: "Learn pro-level video creation, grow a standout personal brand, and monetize your content",
-    lessons: [
-      "Building Your Unique Creator Identity",
-      "Professional Video Creation Techniques",
-      "Growing Your Brand Across Platforms",
-      "Monetization Strategies That Work",
-      "Building Long-Term Audience Loyalty"
-    ],
-    duration: "4 hours",
-    value: 697
-  },
-  {
-    id: "3",
-    title: "Module 3: Editing Like a Pro",
-    description: "Master Premiere Pro, CapCut, and After Effects with our comprehensive tutorials",
-    lessons: [
-      "Premiere Pro Advanced Techniques",
-      "CapCut Speed Editing Mastery",
-      "After Effects Motion Graphics",
-      "Color Grading for Maximum Impact",
-      "Audio Enhancement Secrets"
-    ],
-    duration: "5 hours",
-    value: 897
-  },
-  {
-    id: "4",
-    title: "Module 4: Algorithm & Analytics Mastery",
-    description: "Apply data-backed tweaks to your videos and learn how to read analytics like a pro",
-    lessons: [
-      "Understanding Platform Algorithms",
-      "Reading Analytics for Growth",
-      "A/B Testing Your Content",
-      "Optimizing for Maximum Reach",
-      "Trend Prediction Techniques"
-    ],
-    duration: "3 hours",
-    value: 797
-  },
-  {
-    id: "5",
-    title: "Module 5: Monetization Accelerator",
-    description: "75% of members start earning within 60 days using our monetization strategy",
-    lessons: [
-      "YouTube AdSense Fast-Track",
-      "Landing Your First Brand Deal",
-      "Creating Digital Products",
-      "Building Multiple Revenue Streams",
-      "Scaling to $10K+ Months"
+      "Finding Your Unique Creator Identity & Positioning",
+      "Building Authority in Any Niche (Even Saturated Ones)",
+      "The 'Expert Positioning' Framework That Commands Premium Prices",
+      "Converting Followers to Customers with Strategic Content",
+      "Personal Brand Monetization Blueprint"
     ],
     duration: "4 hours",
     value: 997
   },
   {
-    id: "6",
-    title: "Module 6: The Infinite Content System",
-    description: "Get a 30-day, niche-specific posting calendar so you always know exactly what to post",
+    id: "2",
+    title: "Module 2: Viral Clip Mastery",
+    description: "The exact clipping system that generated 2+ billion views and made Andrew Tate a household name",
     lessons: [
-      "Content Calendar Creation",
-      "Niche-Specific Content Ideas",
-      "Batch Creation Strategies",
-      "Repurposing Content Across Platforms",
-      "Never Run Out of Ideas Again"
+      "The 'Viral Moment Spotter' - Find Gold in Any Content",
+      "Hook Psychology: Why Some Clips Get 10M+ Views",
+      "The 60-Second Edit Method for Maximum Impact",
+      "Multi-Platform Distribution Strategy",
+      "Building Your Viral Clip Library for Passive Income"
+    ],
+    duration: "5 hours",
+    value: 1497
+  },
+  {
+    id: "3",
+    title: "Module 3: Monetization System",
+    description: "Turn views into revenue from day one - 87% of our students make their first $1,000 within 30 days",
+    lessons: [
+      "The 5 Revenue Streams Every Creator Needs",
+      "Landing $5K+ Brand Deals (With Email Templates)",
+      "Creating Digital Products That Sell Themselves",
+      "Building Recurring Revenue with Membership Sites",
+      "Scaling from $1K to $10K+ Months"
+    ],
+    duration: "4 hours",
+    value: 1297
+  },
+  {
+    id: "4",
+    title: "Module 4: Editing Tutorials",
+    description: "Professional editing techniques that hook viewers and keep them watching - no expensive software required",
+    lessons: [
+      "The 'Retention Edit' Formula Used by Top Creators",
+      "Speed Editing in CapCut Like a Pro",
+      "Advanced Premiere Pro Techniques",
+      "Mobile Editing Mastery for Content on the Go",
+      "Color Grading & Audio Secrets of Viral Videos"
+    ],
+    duration: "6 hours",
+    value: 897
+  },
+  {
+    id: "5",
+    title: "Module 5: Creator Revenue System",
+    description: "Build multiple income streams and never rely on platform monetization alone",
+    lessons: [
+      "The Creator Business Model Canvas",
+      "Affiliate Marketing That Actually Converts",
+      "Course Creation & Info Product Mastery",
+      "Building Your First $100K Funnel",
+      "Automated Systems for Passive Income"
+    ],
+    duration: "5 hours",
+    value: 1997
+  },
+  {
+    id: "6",
+    title: "BONUS: AI Automation Suite",
+    description: "10x your content output without burnout using cutting-edge AI tools",
+    lessons: [
+      "AI Script Generation That Sounds Human",
+      "Automated Video Editing with AI",
+      "Content Idea Generation on Autopilot",
+      "AI Thumbnail Creation for Higher CTR",
+      "Building Your AI-Powered Content Machine"
     ],
     duration: "3 hours",
-    value: 697
+    value: 797
   }
 ]
 
 export const bonuses = [
   {
-    title: "BONUS #1: Niche Profit Tool + TrendBot",
-    description: "Skip low-profit niches and hit topics with real money potential",
-    value: "$197"
-  },
-  {
-    title: "BONUS #2: Professional Editing Toolkit",
-    description: "Presets, SFX, stock clips, and templates for pro-level content",
-    value: "$297"
-  },
-  {
-    title: "BONUS #3: 'Fix My Channel' Audit",
-    description: "Personalized review with actionable steps to grow your channel",
+    title: "🛠️ Creator Toolkit",
+    description: "Done-for-you templates, scripts, hooks, and viral formulas that work",
     value: "$497"
   },
   {
-    title: "BONUS #4: Real-Time Trend Alerts",
-    description: "Get notified of viral trends before they peak",
-    value: "$97/month"
+    title: "🤖 AI Tools Directory",
+    description: "Curated list of 50+ AI tools to automate your content creation",
+    value: "$297"
   },
   {
-    title: "BONUS #5: AI Tools Suite",
-    description: "Complete collection of AI tools for content creation",
-    value: "$197/month"
+    title: "💬 Private Community Access",
+    description: "Network with 500+ successful creators in our exclusive Discord",
+    value: "$997/year"
   },
   {
-    title: "BONUS #6: 30-Day Content Calendar",
-    description: "Never run out of content ideas with our proven calendar",
+    title: "📊 Profile Reviews",
+    description: "Get personalized feedback on your content from our expert team",
+    value: "$497"
+  },
+  {
+    title: "🏆 Elite Chat Access",
+    description: "Direct access to top performers making $50K+/month",
+    value: "$1,997"
+  },
+  {
+    title: "🪙 Creator Camp Coins",
+    description: "1,000 coins to spend in our Tool Shop for exclusive resources",
     value: "$197"
   }
 ]

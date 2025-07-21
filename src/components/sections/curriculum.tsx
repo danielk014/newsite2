@@ -5,6 +5,7 @@ import { CheckCircle, Clock, DollarSign, Gift, Lock } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import { TestimonialImages } from "@/components/ui/testimonial-images"
 
 export function CurriculumSection() {
   const [expandedModule, setExpandedModule] = useState<string | null>("1")
@@ -25,10 +26,10 @@ export function CurriculumSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              What's Inside <span className="text-primary">The Program</span>
+              The Complete <span className="text-primary">Creator Success System</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A proven system that helps creators win. Everything you need to succeed.
+              5 core modules + AI automation suite. The exact system that generated 2+ billion views.
             </p>
             <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <DollarSign className="w-4 h-4" />
@@ -134,11 +135,11 @@ export function CurriculumSection() {
           >
             <Lock className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-xl font-semibold mb-2">
-              Plus Secret Advanced Modules
+              Plus Advanced Mastermind Content
             </h3>
             <p className="text-muted-foreground mb-6">
-              Unlock our proprietary "Faceless Millionaire Blueprint" that's created 23 anonymous 
-              millionaires in the last 12 months (names hidden for privacy, bank accounts aren't)
+              Get access to our weekly live calls where we break down what's working RIGHT NOW. 
+              See real campaigns, real numbers, and strategies you won't find anywhere else.
             </p>
             <Button 
               variant="cta" 
@@ -170,6 +171,20 @@ export function CurriculumSection() {
             >
               Join Now!
             </Button>
+          </motion.div>
+
+          {/* Mini Testimonials */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+            viewport={{ once: true }}
+            className="mt-20"
+          >
+            <h3 className="text-xl font-bold text-center mb-8">
+              Students Love Our Step-by-Step System
+            </h3>
+            <TestimonialImages count={6} columns={6} startIndex={24} />
           </motion.div>
         </div>
       </div>

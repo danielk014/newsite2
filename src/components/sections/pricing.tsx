@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { pricingTiers, comparisonFeatures } from "@/data/pricing-tiers"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
+import { TestimonialImages } from "@/components/ui/testimonial-images"
 
 export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
@@ -16,6 +17,20 @@ export function PricingSection() {
       
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="max-w-7xl mx-auto">
+          {/* Image Testimonials Before Pricing */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
+              <span className="text-primary">Life-Changing</span> Results Every Single Day
+            </h3>
+            <TestimonialImages count={6} columns={6} startIndex={10} />
+          </motion.div>
+
           {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -45,11 +60,12 @@ export function PricingSection() {
             </span>
             <button
               onClick={() => setBillingCycle(billingCycle === "monthly" ? "yearly" : "monthly")}
-              className="relative inline-flex h-6 w-11 items-center rounded-full bg-muted"
+              className="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200"
+              style={{ backgroundColor: billingCycle === "yearly" ? "#16C79A" : "hsl(var(--muted))" }}
             >
               <span
                 className={cn(
-                  "inline-block h-4 w-4 transform rounded-full bg-primary transition",
+                  "inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200",
                   billingCycle === "yearly" ? "translate-x-6" : "translate-x-1"
                 )}
               />
@@ -62,8 +78,9 @@ export function PricingSection() {
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {pricingTiers.map((tier, index) => {
-              const price = billingCycle === "yearly" ? Math.floor(tier.price * 0.65) : tier.price
-              const originalPrice = billingCycle === "yearly" ? Math.floor(tier.originalPrice * 0.65) : tier.originalPrice
+              const monthlyPrice = tier.price
+              const yearlyPrice = tier.price * 12 * 0.65 // 35% discount
+              const displayPrice = billingCycle === "yearly" ? yearlyPrice / 12 : monthlyPrice
               
               return (
                 <motion.div
@@ -90,13 +107,34 @@ export function PricingSection() {
                   </div>
 
                   <div className="text-center mb-8">
-                    <div className="flex items-baseline justify-center gap-2 mb-2">
-                      <span className="text-4xl font-bold">${billingCycle === "yearly" ? (price / 12).toFixed(2) : price.toFixed(2)}</span>
-                      <span className="text-muted-foreground">/m</span>
-                    </div>
-                    <p className="text-sm text-muted-foreground">
-                      Price breakdown here
-                    </p>
+                    {tier.price > 0 ? (
+                      <>
+                        <div className="flex items-baseline justify-center gap-2 mb-2">
+                          <span className="text-4xl font-bold">${Math.round(displayPrice)}</span>
+                          <span className="text-muted-foreground">/month</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          {billingCycle === "yearly" ? (
+                            <>
+                              <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
+                              {" "}
+                              <span className="text-accent font-semibold">Billed annually</span>
+                            </>
+                          ) : (
+                            "Billed monthly"
+                          )}
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <div className="mb-2">
+                          <span className="text-2xl font-bold">Custom Pricing</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Contact us for enterprise pricing
+                        </p>
+                      </>
+                    )}
                   </div>
 
                   <div className="space-y-4 mb-8">
@@ -148,7 +186,7 @@ export function PricingSection() {
                     <th className="text-left p-4">Feature</th>
                     <th className="text-center p-4">Starter</th>
                     <th className="text-center p-4 bg-primary/5">Pro</th>
-                    <th className="text-center p-4">Empire</th>
+                    <th className="text-center p-4">Elite Coaching</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -157,7 +195,7 @@ export function PricingSection() {
                       <td className="p-4 font-medium">{row.feature}</td>
                       <td className="text-center p-4">{row.starter}</td>
                       <td className="text-center p-4 bg-primary/5">{row.pro}</td>
-                      <td className="text-center p-4">{row.empire}</td>
+                      <td className="text-center p-4">{row.elite}</td>
                     </tr>
                   ))}
                 </tbody>
