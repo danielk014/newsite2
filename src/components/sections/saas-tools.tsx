@@ -6,30 +6,34 @@ import { Button } from "@/components/ui/button"
 
 const tools = [
   {
-    name: "Script Psych Architect",
-    url: "https://script-psych-architect.lovable.app/",
-    icon: Brain,
-    description: "AI-powered script generator that creates viral hooks using proven psychological triggers",
-    features: [
-      "Generate unlimited viral scripts in seconds",
-      "Built-in psychological trigger analysis",
-      "Niche-specific content templates",
-      "Hook effectiveness predictor"
-    ],
-    value: "$497/month value"
-  },
-  {
-    name: "Insight Sync",
+    name: "InsightSync - AI Revenue Analytics",
     url: "https://insight-sync.onrender.com/",
     icon: TrendingUp,
-    description: "Real-time analytics dashboard that reveals exactly what content will go viral next",
+    description: "The only analytics platform that shows you exactly how much money your YouTube channel should be making, with AI-powered insights to maximize your content performance and revenue.",
     features: [
-      "Trend prediction algorithm",
-      "Competitor content analysis",
-      "Optimal posting time calculator",
-      "Viral potential scoring system"
+      "Real-time revenue potential calculator",
+      "AI-powered content optimization suggestions",
+      "Competitor revenue analysis & benchmarking",
+      "Predictive analytics for future earnings",
+      "Performance gap identification",
+      "Content monetization strategies"
     ],
-    value: "$297/month value"
+    value: "$997 value"
+  },
+  {
+    name: "Advanced AI Script Writer & Analyzer",
+    url: "#",
+    icon: Brain,
+    description: "Revolutionary AI tool that both writes viral scripts AND analyzes them for maximum impact. Generate perfect content every time with our dual-powered system.",
+    features: [
+      "Generate viral scripts in seconds",
+      "Deep script analysis with improvement suggestions",
+      "Psychological trigger identification & optimization",
+      "Viral potential scoring before you record",
+      "Multi-platform optimization (YouTube, TikTok, Instagram)",
+      "Auto-adapts to your unique voice and style"
+    ],
+    value: "$697 value"
   }
 ]
 
@@ -37,7 +41,7 @@ const tools = [
 
 export function SaasToolsSection() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
+    <section className="pt-10 md:pt-16 pb-20 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative overflow-hidden">
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
       
       <div className="container mx-auto px-4 md:px-6 relative">
@@ -46,22 +50,23 @@ export function SaasToolsSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-center space-y-4 mb-16"
           >
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
               <Sparkles className="w-4 h-4" />
-              <span>Exclusive Technology • Not Available Anywhere Else</span>
+              <span>PRO TIER EXCLUSIVE • Not Available Anywhere Else</span>
             </div>
             
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Your Unfair Advantage: <span className="text-primary">AI-Powered SaaS Tools</span>
+              Your Unfair Advantage: <span className="text-primary">AI-Powered Creator Tools</span>
+              <span className="block text-lg md:text-xl text-muted-foreground mt-2">(Pro Tier Exclusive)</span>
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              While others manually guess what content to create, you&apos;ll have AI tools that guarantee 
-              viral success—exclusively for Creator Camp students
+              Stop guessing what content will work. Our exclusive AI suite analyzes millions of data points 
+              to tell you exactly what to create, when to post, and how much money you should be making
             </p>
           </motion.div>
 
@@ -72,8 +77,8 @@ export function SaasToolsSection() {
                 key={tool.name}
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.2, delay: 0.1 * index }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="bg-card border-2 border-primary/20 rounded-2xl p-8 relative overflow-hidden"
               >
                 <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
@@ -99,13 +104,8 @@ export function SaasToolsSection() {
                   ))}
                 </ul>
 
-                <div className="flex items-center justify-between">
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={tool.url} target="_blank" rel="noopener noreferrer">
-                      Preview Demo
-                    </a>
-                  </Button>
-                  <p className="text-xs text-muted-foreground">Students Only Access</p>
+                <div className="flex items-center justify-end">
+                  <p className="text-xs text-muted-foreground">Pro Tier Only</p>
                 </div>
               </motion.div>
             ))}
@@ -116,15 +116,15 @@ export function SaasToolsSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="bg-gradient-to-r from-primary/20 to-accent/20 rounded-2xl p-8 text-center"
           >
             <h3 className="text-xl font-bold mb-2">
-              Combined SaaS Value: $794/month
+              Combined SaaS Value: $1,694
             </h3>
             <p className="text-lg text-muted-foreground mb-4">
-              Included FREE with your Creator Camp enrollment (lifetime access)
+              Included FREE with Creator Camp PRO tier
             </p>
             <p className="text-sm font-medium mb-8">
               These tools alone pay for the entire course in your first month
@@ -134,7 +134,7 @@ export function SaasToolsSection() {
               size="xl"
               onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Join Now!
+              Get Pro Access Now!
             </Button>
           </motion.div>
         </div>

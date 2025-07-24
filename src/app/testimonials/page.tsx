@@ -30,9 +30,6 @@ export default function TestimonialsPage() {
       {/* Additional Testimonial Strips */}
       <TestimonialStrip startIndex={0} title="From Zero to Hero" />
       <TestimonialStrip startIndex={4} title="Life-Changing Results" />
-      <TestimonialStrip startIndex={8} title="Financial Freedom Achieved" />
-      <TestimonialStrip startIndex={12} title="Building Empires" />
-      <TestimonialStrip startIndex={16} title="More Success Stories" />
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">

@@ -1,9 +1,8 @@
 "use client"
-
-import { motion } from "framer-motion"
-import { Check, Star, Shield, Zap } from "lucide-react"
+import { Check, Star, Shield, Zap, Gift } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { pricingTiers, comparisonFeatures } from "@/data/pricing-tiers"
+import { bonuses } from "@/data/curriculum"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
@@ -12,32 +11,15 @@ export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
 
   return (
-    <section id="pricing" className="py-20 md:py-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
+    <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
       
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="max-w-7xl mx-auto">
-          {/* Image Testimonials Before Pricing */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="mb-20"
-          >
-            <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              <span className="text-primary">Life-Changing</span> Results Every Single Day
-            </h3>
-            <TestimonialImages count={6} columns={6} startIndex={10} />
-          </motion.div>
 
           {/* Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center space-y-4 mb-16"
+          <div
+            className="text-center space-y-4 mb-8"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               Pricing
@@ -45,15 +27,10 @@ export function PricingSection() {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Our pricing plans
             </p>
-          </motion.div>
+          </div>
 
           {/* Billing Toggle */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
-            className="flex items-center justify-center gap-4 mb-12"
+          <div className="flex items-center justify-center gap-4 mb-12"
           >
             <span className={cn("text-sm", billingCycle === "monthly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
               Monthly
@@ -73,7 +50,7 @@ export function PricingSection() {
             <span className={cn("text-sm", billingCycle === "yearly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
               Yearly <span className="text-accent">Save 35%</span>
             </span>
-          </motion.div>
+          </div>
 
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
@@ -83,12 +60,8 @@ export function PricingSection() {
               const displayPrice = billingCycle === "yearly" ? yearlyPrice / 12 : monthlyPrice
               
               return (
-                <motion.div
+                <div
                   key={tier.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 * index }}
-                  viewport={{ once: true }}
                   className={cn(
                     "relative bg-card border rounded-2xl p-8",
                     tier.popular ? "border-primary shadow-2xl shadow-primary/20" : "border-border"
@@ -163,17 +136,14 @@ export function PricingSection() {
                   <p className="text-xs text-center text-muted-foreground mt-4">
                     {tier.guarantee}
                   </p>
-                </motion.div>
+                </div>
               )
             })}
           </div>
 
+
           {/* Comparison Table */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+          <div
             className="mb-16"
           >
             <h3 className="text-2xl font-bold text-center mb-8">
@@ -201,14 +171,10 @@ export function PricingSection() {
                 </tbody>
               </table>
             </div>
-          </motion.div>
+          </div>
 
           {/* Trust Elements */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
+          <div
             className="grid md:grid-cols-3 gap-8 mb-16"
           >
             <div className="text-center">
@@ -224,9 +190,9 @@ export function PricingSection() {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">10,847+ Success Stories</h4>
+              <h4 className="font-semibold mb-2">500+ Students</h4>
               <p className="text-sm text-muted-foreground">
-                Join thousands of creators earning $10K-$200K/month.
+                Join hundreds of creators earning $10K-$200K/month.
               </p>
             </div>
             <div className="text-center">
@@ -238,14 +204,10 @@ export function PricingSection() {
                 Start learning immediately. AI tools activated in seconds.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* FAQ CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
+          <div
             className="text-center"
           >
             <p className="text-muted-foreground mb-4">
@@ -261,7 +223,7 @@ export function PricingSection() {
             <p className="text-sm text-muted-foreground">
               🔒 Secure checkout powered by Stripe. All major cards accepted.
             </p>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

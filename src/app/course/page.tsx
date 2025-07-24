@@ -28,8 +28,6 @@ export default function CoursePage() {
       {/* Course Curriculum */}
       <CurriculumSection />
 
-      {/* Testimonial Strip */}
-      <TestimonialStrip startIndex={8} title="Learning That Actually Works" />
 
       {/* SaaS Tools Section */}
       <SaasToolsSection />
@@ -39,24 +37,24 @@ export default function CoursePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              By The End of This Course, You&apos;ll Be Able To:
+              From Zero Views to <span className="text-primary">Life-Changing Results</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Create Viral Content Consistently</h3>
-                <p className="text-muted-foreground">Master the psychology and tactics behind content that gets millions of views</p>
+                <h3 className="font-semibold text-primary mb-2">Go From 47 Views to Millions</h3>
+                <p className="text-muted-foreground">Stop creating content that gets ignored - master the psychology that makes videos go viral</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Build a Personal Brand</h3>
-                <p className="text-muted-foreground">Develop a unique voice and style that attracts your ideal audience</p>
+                <h3 className="font-semibold text-primary mb-2">Turn Views Into $10K+ Months</h3>
+                <p className="text-muted-foreground">Stop working for free - learn the exact monetization systems our students use to hit 6-figures</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Monetize Your Following</h3>
-                <p className="text-muted-foreground">Turn views into revenue with multiple income streams</p>
+                <h3 className="font-semibold text-primary mb-2">Build a Personal Brand That Pays</h3>
+                <p className="text-muted-foreground">Stop being just another creator - become the go-to authority that brands pay premium rates</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Scale to 6-7 Figures</h3>
-                <p className="text-muted-foreground">Build systems and teams to grow beyond what you thought possible</p>
+                <h3 className="font-semibold text-primary mb-2">Create a Sustainable Business</h3>
+                <p className="text-muted-foreground">Stop the feast-or-famine cycle - build systems that generate consistent revenue</p>
               </div>
             </div>
           </div>

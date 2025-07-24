@@ -6,6 +6,7 @@ import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
+import Link from "next/link"
 
 export function CurriculumSection() {
   const [expandedModule, setExpandedModule] = useState<string | null>("1")
@@ -18,13 +19,7 @@ export function CurriculumSection() {
       <div className="container mx-auto px-4 md:px-6 relative">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center space-y-4 mb-16"
-          >
+          <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
               The Complete <span className="text-primary">Creator Success System</span>
             </h2>
@@ -35,17 +30,13 @@ export function CurriculumSection() {
               <DollarSign className="w-4 h-4" />
               <span>Total Value: ${totalValue.toLocaleString()}</span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Course Modules */}
           <div className="space-y-4 mb-16">
             {courseModules.map((module, index) => (
-              <motion.div
+              <div
                 key={module.id}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                viewport={{ once: true }}
                 className="bg-card border border-border rounded-xl overflow-hidden"
               >
                 <button
@@ -89,16 +80,15 @@ export function CurriculumSection() {
                     </div>
                   </div>
                 )}
-              </motion.div>
+              </div>
             ))}
           </div>
 
           {/* Bonuses Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+          <div
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 md:p-12 mb-16"
           >
             <div className="text-center mb-8">
@@ -123,14 +113,13 @@ export function CurriculumSection() {
                 </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Locked Content Teaser */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
+          <div
+            initial={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0 }}
             className="bg-card border border-primary/20 rounded-xl p-8 text-center mb-12"
           >
             <Lock className="w-12 h-12 text-primary mx-auto mb-4" />
@@ -141,51 +130,17 @@ export function CurriculumSection() {
               Get access to our weekly live calls where we break down what&apos;s working RIGHT NOW. 
               See real campaigns, real numbers, and strategies you won&apos;t find anywhere else.
             </p>
-            <Button 
-              variant="cta" 
-              size="lg"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Unlock Everything Now
-            </Button>
-          </motion.div>
+            <Link href="/pricing">
+              <Button 
+                variant="cta" 
+                size="lg"
+              >
+                Unlock Everything Now
+              </Button>
+            </Link>
+          </div>
 
-          {/* Total Value Summary */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <p className="text-2xl font-bold mb-2">
-              Total Value: <span className="text-primary">${(totalValue + 9528).toLocaleString()}</span>
-            </p>
-            <p className="text-muted-foreground mb-8">
-              Get everything today for a fraction of the price
-            </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Join Now!
-            </Button>
-          </motion.div>
 
-          {/* Mini Testimonials */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.9 }}
-            viewport={{ once: true }}
-            className="mt-20"
-          >
-            <h3 className="text-xl font-bold text-center mb-8">
-              Students Love Our Step-by-Step System
-            </h3>
-            <TestimonialImages count={6} columns={6} startIndex={24} />
-          </motion.div>
         </div>
       </div>
     </section>

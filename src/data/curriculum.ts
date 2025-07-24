@@ -17,7 +17,21 @@ export const courseModules: CourseModule[] = [
   },
   {
     id: "2",
-    title: "Module 2: Viral Clip Mastery",
+    title: "Module 2: Editing Tutorials",
+    description: "Professional editing techniques that hook viewers and keep them watching - no expensive software required",
+    lessons: [
+      "The 'Retention Edit' Formula Used by Top Creators",
+      "Speed Editing in CapCut Like a Pro",
+      "Advanced Premiere Pro Techniques",
+      "Mobile Editing Mastery for Content on the Go",
+      "Color Grading & Audio Secrets of Viral Videos"
+    ],
+    duration: "6 hours",
+    value: 897
+  },
+  {
+    id: "4",
+    title: "Module 4: Viral Clip Mastery",
     description: "The exact clipping system that generated 2+ billion views and made Andrew Tate a household name",
     lessons: [
       "The 'Viral Moment Spotter' - Find Gold in Any Content",
@@ -31,48 +45,25 @@ export const courseModules: CourseModule[] = [
   },
   {
     id: "3",
-    title: "Module 3: Monetization System",
-    description: "Turn views into revenue from day one - 87% of our students make their first $1,000 within 30 days",
+    title: "Module 3: Creator Revenue System",
+    description: "Turn views into revenue from day one - 87% of our students make their first $1,000 within 30 days. Build multiple income streams and never rely on platform monetization alone",
     lessons: [
       "The 5 Revenue Streams Every Creator Needs",
       "Landing $5K+ Brand Deals (With Email Templates)",
       "Creating Digital Products That Sell Themselves",
       "Building Recurring Revenue with Membership Sites",
-      "Scaling from $1K to $10K+ Months"
-    ],
-    duration: "4 hours",
-    value: 1297
-  },
-  {
-    id: "4",
-    title: "Module 4: Editing Tutorials",
-    description: "Professional editing techniques that hook viewers and keep them watching - no expensive software required",
-    lessons: [
-      "The 'Retention Edit' Formula Used by Top Creators",
-      "Speed Editing in CapCut Like a Pro",
-      "Advanced Premiere Pro Techniques",
-      "Mobile Editing Mastery for Content on the Go",
-      "Color Grading & Audio Secrets of Viral Videos"
-    ],
-    duration: "6 hours",
-    value: 897
-  },
-  {
-    id: "5",
-    title: "Module 5: Creator Revenue System",
-    description: "Build multiple income streams and never rely on platform monetization alone",
-    lessons: [
       "The Creator Business Model Canvas",
       "Affiliate Marketing That Actually Converts",
       "Course Creation & Info Product Mastery",
       "Building Your First $100K Funnel",
-      "Automated Systems for Passive Income"
+      "Automated Systems for Passive Income",
+      "Scaling from $1K to $10K+ Months"
     ],
-    duration: "5 hours",
-    value: 1997
+    duration: "9 hours",
+    value: 3294
   },
   {
-    id: "6",
+    id: "5",
     title: "BONUS: AI Automation Suite",
     description: "10x your content output without burnout using cutting-edge AI tools",
     lessons: [
@@ -83,7 +74,7 @@ export const courseModules: CourseModule[] = [
       "Building Your AI-Powered Content Machine"
     ],
     duration: "3 hours",
-    value: 797
+    value: 1694
   }
 ]
 
@@ -94,9 +85,9 @@ export const bonuses = [
     value: "$497"
   },
   {
-    title: "🤖 AI Tools Directory",
-    description: "Curated list of 50+ AI tools to automate your content creation",
-    value: "$297"
+    title: "🤖 AI Automation Suite",
+    description: "Complete AI toolkit including InsightSync Analytics & Advanced Script Writer/Analyzer",
+    value: "$1,694"
   },
   {
     title: "💬 Private Community Access",
@@ -110,7 +101,7 @@ export const bonuses = [
   },
   {
     title: "🏆 Elite Chat Access",
-    description: "Direct access to top performers making $50K+/month",
+    description: "Earned access to our exclusive chat for proven success members only",
     value: "$1,997"
   },
   {

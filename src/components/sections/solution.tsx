@@ -4,8 +4,19 @@ import { motion } from "framer-motion"
 import { CheckCircle2, ArrowRight, Scissors, Bot, BadgeCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
+import Link from "next/link"
 
 const systemPillars = [
+  {
+    icon: BadgeCheck,
+    title: "Personal Brand Blueprint",
+    description: "Build a personal brand that converts viewers into customers. Stop chasing vanity metrics.",
+    features: [
+      "Position yourself as the authority",
+      "Create content people actually want",
+      "Become a viral entertainer & educator"
+    ]
+  },
   {
     icon: Scissors,
     title: "Viral Clipping Mastery",
@@ -17,23 +28,13 @@ const systemPillars = [
     ]
   },
   {
-    icon: BadgeCheck,
-    title: "Personal Brand Blueprint",
-    description: "Build a personal brand that converts viewers into customers. Stop chasing vanity metrics.",
-    features: [
-      "Position yourself as the authority",
-      "Create content people actually want",
-      "Convert followers into paying clients"
-    ]
-  },
-  {
     icon: Bot,
-    title: "AI Automation Suite",
-    description: "10x your output without burnout. Let AI handle the heavy lifting while you focus on strategy.",
+    title: "AI-Powered Creator Tools",
+    description: "Exclusive access to our AI suite that analyzes millions of data points to maximize your revenue and content performance.",
     features: [
-      "Generate scripts in minutes",
-      "Auto-edit with one click",
-      "Never run out of content ideas"
+      "InsightSync: See exactly how much money you should be making",
+      "Advanced AI Script Writer & Analyzer: Generate AND analyze scripts",
+      "Predict viral potential before wasting time recording"
     ]
   },
 ]
@@ -41,19 +42,19 @@ const systemPillars = [
 
 export function SolutionSection() {
   return (
-    <section className="py-20 md:py-32 bg-background">
+    <section className="pt-20 md:pt-32 pb-10 md:pb-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Introducing: The <span className="text-primary">2B+ View System</span>
+              Introducing: The <span className="text-primary">1B Views/Month System</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               The exact blueprint we used to generate billions of views and build multiple 
@@ -66,8 +67,8 @@ export function SolutionSection() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="space-y-8 mb-16"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
@@ -79,8 +80,8 @@ export function SolutionSection() {
                 key={pillar.title}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.2, delay: 0.1 * index }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="grid md:grid-cols-2 gap-8 items-center"
               >
                 <div className={`${index % 2 === 1 ? 'md:order-2' : ''}`}>
@@ -112,14 +113,14 @@ export function SolutionSection() {
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''} text-center`}>
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
-                      {index === 0 && "2B+"}
+                      {index === 0 && "1B+"}
                       {index === 1 && "$10M+"}
                       {index === 2 && "500+"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "Views Generated"}
+                      {index === 0 && "Views/Month"}
                       {index === 1 && "Student Revenue"}
-                      {index === 2 && "Success Stories"}
+                      {index === 2 && "Students"}
                     </p>
                   </div>
                 </div>
@@ -132,8 +133,8 @@ export function SolutionSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.6 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="bg-accent/10 border border-accent/20 rounded-2xl p-8 md:p-12 mb-16"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
@@ -142,73 +143,66 @@ export function SolutionSection() {
             
             <div className="space-y-8">
               {/* Core Training */}
-              <div>
-                <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <div className="text-center">
+                <h4 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
                   <span className="text-2xl">🎬</span> CORE TRAINING
                 </h4>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-start gap-3">
+                <div className="max-w-2xl mx-auto space-y-4">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Personal Brand Lab</p>
                       <p className="text-sm text-muted-foreground">Build your authority and convert followers to customers</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Viral Clip Mastery</p>
                       <p className="text-sm text-muted-foreground">The exact system that generated 2B+ views</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Monetization System</p>
                       <p className="text-sm text-muted-foreground">Turn views into revenue from day one</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Editing Tutorials</p>
                       <p className="text-sm text-muted-foreground">Pro-level editing techniques that hook viewers</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold">Creator Revenue System</p>
-                      <p className="text-sm text-muted-foreground">Multiple income streams for sustainable growth</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 
               {/* Community */}
-              <div>
-                <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <div className="text-center">
+                <h4 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
                   <span className="text-2xl">💬</span> COMMUNITY ACCESS
                 </h4>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-start gap-3">
+                <div className="max-w-2xl mx-auto space-y-4">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">General Chat & Wins Feed</p>
                       <p className="text-sm text-muted-foreground">Connect with 500+ successful creators</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Profile Reviews</p>
+                      <p className="font-semibold">Profile Reviews <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
                       <p className="text-sm text-muted-foreground">Get expert feedback on your content</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Elite Chat Access</p>
+                      <p className="font-semibold">Elite Chat Access <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
                       <p className="text-sm text-muted-foreground">Network with top performers</p>
                     </div>
                   </div>
@@ -216,26 +210,26 @@ export function SolutionSection() {
               </div>
 
               {/* Resources */}
-              <div>
-                <h4 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <div className="text-center">
+                <h4 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
                   <span className="text-2xl">🛠️</span> RESOURCES & TOOLS
                 </h4>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-start gap-3">
+                <div className="max-w-2xl mx-auto space-y-4">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Creator Toolkit</p>
+                      <p className="font-semibold">Creator Toolkit <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
                       <p className="text-sm text-muted-foreground">Done-for-you templates and scripts</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">AI Tools Suite</p>
-                      <p className="text-sm text-muted-foreground">Automate content creation without burnout</p>
+                      <p className="font-semibold">AI Tools Suite <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Automate content creation without burnout ($1,694/mo value)</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Tool Shop</p>
@@ -251,8 +245,8 @@ export function SolutionSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.7 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-center space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
@@ -263,21 +257,23 @@ export function SolutionSection() {
               viral content and builds profitable personal brands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="cta" 
-                size="xl"
-                onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get Instant Access
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="xl"
-                onClick={() => document.getElementById('curriculum')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                See Full Curriculum
-              </Button>
+              <Link href="/pricing">
+                <Button 
+                  variant="cta" 
+                  size="xl"
+                >
+                  Get Instant Access
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link href="/course">
+                <Button 
+                  variant="outline" 
+                  size="xl"
+                >
+                  See Course Content
+                </Button>
+              </Link>
             </div>
           </motion.div>
 
@@ -285,8 +281,8 @@ export function SolutionSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.8 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="mt-20"
           >
             <h4 className="text-xl font-bold text-center mb-8">

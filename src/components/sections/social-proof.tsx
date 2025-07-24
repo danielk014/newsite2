@@ -36,7 +36,7 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-primary mb-2">$31K Made In 28 Days</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">$10M+ In Revenue For Students</h3>
               <p className="text-muted-foreground">Built using our exact blueprint.</p>
             </motion.div>
             <motion.div
@@ -46,7 +46,7 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-accent mb-2">$331K+ in Revenue</h3>
+              <h3 className="text-2xl font-bold text-accent mb-2">$31K Made In 28 Days</h3>
               <p className="text-muted-foreground">Built using our exact blueprint</p>
             </motion.div>
             <motion.div
@@ -66,7 +66,7 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-accent mb-2">From 0 to 100K Subs 2x</h3>
+              <h3 className="text-2xl font-bold text-accent mb-2">From 0 to 100K Multiple Times</h3>
               <p className="text-muted-foreground">Built using our exact blueprint</p>
             </motion.div>
             <motion.div
@@ -91,19 +91,6 @@ export function SocialProofSection() {
             </motion.div>
           </div>
 
-          {/* Image Testimonials */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
-            viewport={{ once: true }}
-            className="mt-16"
-          >
-            <h3 className="text-2xl font-bold text-center mb-8">
-              And here&apos;s what our students are saying...
-            </h3>
-            <TestimonialImages count={6} columns={3} startIndex={0} />
-          </motion.div>
         </div>
       </div>
 

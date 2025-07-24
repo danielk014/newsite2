@@ -80,9 +80,9 @@ export function HeroSection() {
           >
             We engineered <span className="font-semibold text-foreground">Andrew Tate&apos;s viral rise</span> in 2021.
             <br />
-            Now we&apos;re revealing the <span className="font-semibold text-foreground">exact playbook</span> that creates viral phenomena
+            Now we&apos;re revealing the <span className="font-semibold text-foreground">exact AI-powered system</span> that creates viral phenomena
             <br />
-            and builds <span className="font-semibold text-foreground">6-figure personal brands</span>.
+            and builds <span className="font-semibold text-foreground">6-figure personal brands</span> on autopilot.
           </motion.p>
 
           {/* Stats Row */}
@@ -102,7 +102,7 @@ export function HeroSection() {
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Success Stories</div>
+              <div className="text-sm text-muted-foreground">Students</div>
             </div>
           </motion.div>
 
@@ -117,7 +117,7 @@ export function HeroSection() {
               variant="cta" 
               size="xl" 
               className="w-full sm:w-auto group"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.href = '/pricing'}
             >
               Get Instant Access
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -150,10 +150,10 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <Zap className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-xs font-medium">INSTANT ACCESS</span>
+              <span className="text-xs font-medium">PRO: AI TOOLS INCLUDED</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">LIMITED SPOTS</span>
+              <span className="text-xs font-medium">$1,694/mo VALUE</span>
             </motion.div>
           </motion.div>
 

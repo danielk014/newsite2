@@ -1,14 +1,23 @@
-import { Metadata } from "next"
+"use client"
+
+import React from "react"
 import { PricingSection } from "@/components/sections/pricing"
 import { FAQSection } from "@/components/sections/faq"
 import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
-export const metadata: Metadata = {
-  title: "Pricing",
-  description: "Choose the perfect plan to start your content creation journey",
-}
-
 export default function PricingPage() {
+  // Auto-scroll to pricing section when page loads
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      const pricingSection = document.getElementById('pricing');
+      if (pricingSection) {
+        pricingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -25,8 +34,6 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Testimonial Strip */}
-      <TestimonialStrip startIndex={0} title="ROI in Days, Not Years" />
 
       {/* Main Pricing Section */}
       <PricingSection />

@@ -124,13 +124,6 @@ export function FAQSection() {
               </a>
               {' '}and we&apos;ll respond within 24 hours.
             </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Join Now!
-            </Button>
           </motion.div>
         </div>
       </div>

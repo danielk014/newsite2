@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { XCircle, TrendingDown, DollarSign, Zap, Eye, Brain, Flame } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { MiniTestimonials } from "@/components/ui/testimonial-card"
+import Link from "next/link"
 
 const painPoints = [
   {
@@ -24,14 +25,14 @@ const painPoints = [
   {
     icon: TrendingDown,
     title: "Lost in outdated strategies that don't work",
-    description: "Following guru advice from 2019 that's completely irrelevant. The game has changed but nobody told you.",
+    description: "Following outdated guru advice that's completely irrelevant. The game has changed but nobody told you.",
   },
 ]
 
 const struggles = [
-  { stat: "87%", description: "of creators quit within 6 months" },
-  { stat: "93%", description: "never make their first $100" },
-  { stat: "99%", description: "stay under 1,000 followers forever" },
+  { stat: "92%", description: "of our students see growth in 30 days" },
+  { stat: "78%", description: "reach their first $1K within 90 days" },
+  { stat: "65%", description: "hit 10K+ followers in 6 months" },
 ]
 
 export function ProblemSection() {
@@ -44,18 +45,18 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Let&apos;s Be Honest...
+              Ready for Real Results?
               <br />
-              <span className="text-destructive">Your Content Strategy Isn&apos;t Working</span>
+              <span className="text-primary">Your Success Story Starts Here</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              While you&apos;re stuck at 200 views, we&apos;re generating millions. 
-              The difference? We know the game. You&apos;re still learning the rules.
+              Join thousands who transformed their content game from struggling to thriving. 
+              The difference? They found the right system. Now it&apos;s your turn.
             </p>
           </motion.div>
 
@@ -63,8 +64,8 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.1 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="grid grid-cols-3 gap-4 md:gap-8 mb-16"
           >
             {struggles.map((struggle, index) => (
@@ -73,10 +74,10 @@ export function ProblemSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-destructive mb-2">{struggle.stat}</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">{struggle.stat}</div>
                 <p className="text-sm md:text-base text-muted-foreground">{struggle.description}</p>
               </motion.div>
             ))}
@@ -86,8 +87,8 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="grid md:grid-cols-2 gap-6 mb-16"
           >
             {painPoints.map((point, index) => (
@@ -95,8 +96,8 @@ export function ProblemSection() {
                 key={point.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 * index }}
-                viewport={{ once: true }}
+                transition={{ duration: 0.2, delay: 0.1 * index }}
+                viewport={{ once: true, amount: 0.5 }}
                 className="bg-card border border-destructive/20 rounded-lg p-6 relative overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-destructive/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -113,8 +114,8 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.4 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="bg-gradient-to-r from-destructive/10 via-destructive/5 to-destructive/10 border border-destructive/20 rounded-2xl p-8 md:p-12 mb-16"
           >
             <div className="text-center space-y-6">
@@ -126,7 +127,7 @@ export function ProblemSection() {
                   <span className="font-semibold text-destructive">You&apos;re not failing because you lack talent.</span>
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  You&apos;re failing because you&apos;re using strategies from 2019 in 2024.
+                  You&apos;re failing because you&apos;re using outdated strategies that no longer work.
                 </p>
                 <p className="text-lg text-muted-foreground">
                   While you&apos;re following outdated YouTube tutorials, successful creators are using 
@@ -151,8 +152,8 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="grid md:grid-cols-2 gap-8 mb-16"
           >
             {/* What You're Doing */}
@@ -165,24 +166,20 @@ export function ProblemSection() {
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">→</span>
+                    <span className="text-destructive flex-shrink-0">→</span>
                     <span className="text-sm">Random posting hoping something sticks</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">→</span>
+                    <span className="text-destructive flex-shrink-0">→</span>
                     <span className="text-sm">Following generic &quot;post 3x daily&quot; advice</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">→</span>
+                    <span className="text-destructive flex-shrink-0">→</span>
                     <span className="text-sm">Creating content nobody asked for</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">→</span>
+                    <span className="text-destructive flex-shrink-0">→</span>
                     <span className="text-sm">Zero monetization strategy</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-destructive mt-1">→</span>
-                    <span className="text-sm">Burning out for 47 views</span>
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
@@ -201,23 +198,23 @@ export function ProblemSection() {
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     <span className="text-sm">Use viral clipping strategies that work</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     <span className="text-sm">Build personal brands that convert</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     <span className="text-sm">Leverage AI to 10x output without burnout</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     <span className="text-sm">Create content people actually want</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-accent mt-1">✓</span>
+                    <span className="text-accent flex-shrink-0">✓</span>
                     <span className="text-sm">Monetize from day one</span>
                   </li>
                 </ul>
@@ -232,55 +229,28 @@ export function ProblemSection() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.2, delay: 0.6 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="text-center space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
               Stop Struggling. Start Winning.
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Get the exact blueprint that generated 2+ billion views and built 
               multiple 6-figure creator businesses.
             </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-              className="mx-auto"
-            >
-              Yes, I Want The Blueprint →
-            </Button>
+            <Link href="/pricing">
+              <Button 
+                variant="cta" 
+                size="xl"
+                className="mx-auto"
+              >
+                Yes, I Want The Blueprint →
+              </Button>
+            </Link>
           </motion.div>
 
-          {/* Mini Testimonials */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            viewport={{ once: true }}
-            className="mt-20"
-          >
-            <MiniTestimonials
-              testimonials={[
-                {
-                  quote: "I went from 500 views to 2.5M in 30 days using the clipping strategy",
-                  author: "Sarah M.",
-                  result: "Now making $15K/month"
-                },
-                {
-                  quote: "The AI tools alone saved me 40 hours per week. Game changer!",
-                  author: "Mike T.",
-                  result: "Scaled to 500K subs in 3 months"
-                },
-                {
-                  quote: "Finally quit my 9-5 after hitting $10K/month consistently",
-                  author: "Jessica R.",
-                  result: "Full-time creator in 90 days"
-                }
-              ]}
-            />
-          </motion.div>
         </div>
       </div>
     </section>
