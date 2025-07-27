@@ -97,7 +97,7 @@ export function HeroSection() {
               <div className="text-sm text-muted-foreground">Views Generated</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">2M+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">6M+</div>
               <div className="text-sm text-muted-foreground">Total Subscribers</div>
             </div>
             <div className="text-center">

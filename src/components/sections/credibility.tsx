@@ -7,7 +7,7 @@ import Link from "next/link"
 
 const stats = [
   { value: "1B+", label: "Total Views", icon: Eye },
-  { value: "2M+", label: "Subscribers", icon: Users },
+  { value: "6M+", label: "Subscribers", icon: Users },
   { value: "500+", label: "Students", icon: Award },
   { value: "$10M+", label: "Student Revenue", icon: TrendingUp },
 ]
