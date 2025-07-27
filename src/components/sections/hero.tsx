@@ -113,15 +113,20 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <Button 
-              variant="cta" 
-              size="xl" 
-              className="w-full sm:w-auto group"
-              onClick={() => window.location.href = '/pricing'}
+            <a 
+              href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Get Instant Access
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
+              <Button 
+                variant="cta" 
+                size="xl" 
+                className="w-full sm:w-auto group"
+              >
+                Get Instant Access
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </a>
           </motion.div>
 
           {/* Trust Indicators */}

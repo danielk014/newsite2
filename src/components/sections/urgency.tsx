@@ -180,14 +180,19 @@ export function UrgencySection() {
             <p className="text-lg font-semibold mb-6">
               Don&apos;t let another opportunity pass you by. Your competition is signing up right now.
             </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              className="animate-pulse"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            <a 
+              href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Claim Your Spot Before It&apos;s Gone
-            </Button>
+              <Button 
+                variant="cta" 
+                size="xl"
+                className="animate-pulse"
+              >
+                Claim Your Spot Before It&apos;s Gone
+              </Button>
+            </a>
             <p className="text-sm text-muted-foreground mt-4">
               🔒 Secure checkout • 30-day guarantee • Instant access
             </p>

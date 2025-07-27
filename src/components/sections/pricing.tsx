@@ -123,13 +123,29 @@ export function PricingSection() {
                     ))}
                   </div>
 
-                  <Button
-                    variant={tier.popular ? "cta" : "outline"}
-                    size="lg"
-                    className="w-full"
-                  >
-                    {tier.cta}
-                  </Button>
+                  {tier.id === "pro" ? (
+                    <a 
+                      href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant={tier.popular ? "cta" : "outline"}
+                        size="lg"
+                        className="w-full"
+                      >
+                        {tier.cta}
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button
+                      variant={tier.popular ? "cta" : "outline"}
+                      size="lg"
+                      className="w-full"
+                    >
+                      {tier.cta}
+                    </Button>
+                  )}
 
                   <p className="text-xs text-center text-muted-foreground mt-4">
                     {tier.guarantee}

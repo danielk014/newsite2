@@ -129,13 +129,18 @@ export function SaasToolsSection() {
             <p className="text-sm font-medium mb-8">
               These tools alone pay for the entire course in your first month
             </p>
-            <Button 
-              variant="cta" 
-              size="xl"
-              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            <a 
+              href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01" 
+              target="_blank" 
+              rel="noopener noreferrer"
             >
-              Get Pro Access Now!
-            </Button>
+              <Button 
+                variant="cta" 
+                size="xl"
+              >
+                Get Pro Access Now!
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>

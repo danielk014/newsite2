@@ -50,7 +50,9 @@ export default function PricingPage() {
             Prices increase every 100 students. Lock in your rate today!
           </p>
           <a
-            href="#pricing"
+            href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8"
           >
             Secure Your Spot Now
