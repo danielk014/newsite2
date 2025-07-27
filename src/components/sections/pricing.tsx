@@ -137,6 +137,20 @@ export function PricingSection() {
                         {tier.cta}
                       </Button>
                     </a>
+                  ) : tier.id === "starter" ? (
+                    <a 
+                      href="https://buy.stripe.com/7sYcN6dub6TEdnG2exfjG00" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <Button
+                        variant={tier.popular ? "cta" : "outline"}
+                        size="lg"
+                        className="w-full"
+                      >
+                        {tier.cta}
+                      </Button>
+                    </a>
                   ) : (
                     <Button
                       variant={tier.popular ? "cta" : "outline"}
