@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { XCircle, TrendingDown, DollarSign, Zap, Eye, Brain, Flame } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { MiniTestimonials } from "@/components/ui/testimonial-card"
 import Link from "next/link"
 
 const painPoints = [

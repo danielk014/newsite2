@@ -3,7 +3,6 @@
 import { motion } from "framer-motion"
 import { } from "lucide-react"
 import { useState } from "react"
-import { TestimonialImages } from "@/components/ui/testimonial-images"
 
 export function SocialProofSection() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null)

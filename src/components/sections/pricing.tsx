@@ -1,11 +1,9 @@
 "use client"
-import { Check, Star, Shield, Zap, Gift } from "lucide-react"
+import { Check, Star, Shield, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { pricingTiers, comparisonFeatures } from "@/data/pricing-tiers"
-import { bonuses } from "@/data/curriculum"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
-import { TestimonialImages } from "@/components/ui/testimonial-images"
 
 export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
@@ -54,7 +52,7 @@ export function PricingSection() {
 
           {/* Pricing Cards */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {pricingTiers.map((tier, index) => {
+            {pricingTiers.map((tier) => {
               const monthlyPrice = tier.price
               const yearlyPrice = tier.price * 12 * 0.65 // 35% discount
               const displayPrice = billingCycle === "yearly" ? yearlyPrice / 12 : monthlyPrice

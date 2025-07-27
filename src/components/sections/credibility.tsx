@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const stats = [
-  { value: "2B+", label: "Total Views", icon: Eye },
+  { value: "1B+", label: "Total Views", icon: Eye },
   { value: "2M+", label: "Subscribers", icon: Users },
   { value: "500+", label: "Students", icon: Award },
   { value: "$10M+", label: "Student Revenue", icon: TrendingUp },

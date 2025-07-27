@@ -1,7 +1,6 @@
 import { Metadata } from "next"
 import { CurriculumSection } from "@/components/sections/curriculum"
 import { SaasToolsSection } from "@/components/sections/saas-tools"
-import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
 export const metadata: Metadata = {
   title: "Course Content",

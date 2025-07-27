@@ -5,7 +5,6 @@ import { CheckCircle, Clock, DollarSign, Gift, Lock } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { TestimonialImages } from "@/components/ui/testimonial-images"
 import Link from "next/link"
 
 export function CurriculumSection() {
@@ -34,7 +33,7 @@ export function CurriculumSection() {
 
           {/* Course Modules */}
           <div className="space-y-4 mb-16">
-            {courseModules.map((module, index) => (
+            {courseModules.map((module) => (
               <div
                 key={module.id}
                 className="bg-card border border-border rounded-xl overflow-hidden"
@@ -85,7 +84,7 @@ export function CurriculumSection() {
           </div>
 
           {/* Bonuses Section */}
-          <div
+          <motion.div
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0 }}
@@ -113,10 +112,10 @@ export function CurriculumSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Locked Content Teaser */}
-          <div
+          <motion.div
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0 }}
@@ -138,7 +137,7 @@ export function CurriculumSection() {
                 Unlock Everything Now
               </Button>
             </Link>
-          </div>
+          </motion.div>
 
 
         </div>

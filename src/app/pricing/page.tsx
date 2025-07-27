@@ -3,7 +3,6 @@
 import React from "react"
 import { PricingSection } from "@/components/sections/pricing"
 import { FAQSection } from "@/components/sections/faq"
-import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
 export default function PricingPage() {
   // Auto-scroll to pricing section when page loads

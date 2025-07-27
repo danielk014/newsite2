@@ -97,8 +97,8 @@ export function ImageTestimonialsSection() {
                       src={testimonial.src}
                       alt={testimonial.alt}
                       width={400}
-                      height={600}
-                      className="w-full h-auto"
+                      height={400}
+                      className="w-full h-auto object-cover aspect-square"
                       loading="lazy"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement

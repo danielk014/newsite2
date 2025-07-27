@@ -46,7 +46,7 @@ export function HeroSection() {
               className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
             />
             <Eye className="w-4 h-4 relative z-10" />
-            <span className="relative z-10 font-bold">2+ BILLION VIEWS GENERATED</span>
+            <span className="relative z-10 font-bold">1+ BILLION VIEWS GENERATED</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -64,7 +64,7 @@ export function HeroSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
             The Team Behind{" "}
-            <span className="text-primary">2+ Billion Views</span>
+            <span className="text-primary">1+ Billion Views</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
               Shows You How to Go Viral & Build a Profitable Personal Brand
@@ -93,7 +93,7 @@ export function HeroSection() {
             className="grid grid-cols-3 gap-8 max-w-2xl w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">2B+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">1B+</div>
               <div className="text-sm text-muted-foreground">Views Generated</div>
             </div>
             <div className="text-center">
