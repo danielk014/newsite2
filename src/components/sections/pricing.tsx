@@ -141,7 +141,7 @@ export function PricingSection() {
                     </a>
                   ) : tier.id === "starter" ? (
                     <a 
-                      href="https://buy.stripe.com/7sYcN6dub6TEdnG2exfjG00" 
+                      href={billingCycle === "yearly" ? "https://buy.stripe.com/3cIaEYeyfa5QcjC2exfjG03" : "https://buy.stripe.com/7sYcN6dub6TEdnG2exfjG00"} 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
@@ -155,7 +155,7 @@ export function PricingSection() {
                     </a>
                   ) : tier.id === "elite" ? (
                     <a 
-                      href="https://buy.stripe.com/7sY7sMgGnem6bfy4mFfjG02" 
+                      href="https://buy.stripe.com/dRmdRa3TB6TEabuf1jfjG04" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
