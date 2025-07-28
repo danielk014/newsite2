@@ -58,7 +58,7 @@ export const pricingTiers: PricingTier[] = [
     tagline: "Complete creator transformation",
     price: 1994,
     originalPrice: 1994,
-    billingPeriod: "month",
+    billingPeriod: "year",
     features: [
       "Step-by-step blueprint to $30K+/mo With Content Creation",
       "30-day viral content calendar (Know When and What To Post)",

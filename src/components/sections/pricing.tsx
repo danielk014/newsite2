@@ -81,11 +81,13 @@ export function PricingSection() {
                     {tier.price > 0 ? (
                       <>
                         <div className="flex items-baseline justify-center gap-2 mb-2">
-                          <span className="text-4xl font-bold">${Math.round(displayPrice)}</span>
-                          <span className="text-muted-foreground">/month</span>
+                          <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
+                          <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          {billingCycle === "yearly" ? (
+                          {tier.billingPeriod === "year" ? (
+                            "Billed annually"
+                          ) : billingCycle === "yearly" ? (
                             <>
                               <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
                               {" "}
