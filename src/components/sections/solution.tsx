@@ -114,7 +114,7 @@ export function SolutionSection() {
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
                       {index === 0 && "1B+"}
-                      {index === 1 && "$10M+"}
+                      {index === 1 && "$6M+"}
                       {index === 2 && "500+"}
                     </div>
                     <p className="text-muted-foreground">

@@ -9,7 +9,7 @@ const stats = [
   { value: "1B+", label: "Total Views", icon: Eye },
   { value: "6M+", label: "Subscribers", icon: Users },
   { value: "500+", label: "Students", icon: Award },
-  { value: "$10M+", label: "Student Revenue", icon: TrendingUp },
+  { value: "$6M+", label: "Student Revenue", icon: TrendingUp },
 ]
 
 const caseStudyPoints = [

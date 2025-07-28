@@ -35,7 +35,7 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-primary mb-2">$10M+ In Revenue For Students</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">$6M+ In Revenue For Students</h3>
               <p className="text-muted-foreground">Built using our exact blueprint.</p>
             </motion.div>
             <motion.div
