@@ -90,7 +90,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="grid grid-cols-3 gap-8 max-w-2xl w-full"
+            className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">1B+</div>
@@ -99,10 +99,6 @@ export function HeroSection() {
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">6M+</div>
               <div className="text-sm text-muted-foreground">Total Subscribers</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Students</div>
             </div>
           </motion.div>
 
