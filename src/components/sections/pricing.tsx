@@ -234,7 +234,7 @@ export function PricingSection() {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">500+ Students</h4>
+              <h4 className="font-semibold mb-2">Proven Results</h4>
               <p className="text-sm text-muted-foreground">
                 Join hundreds of creators earning $10K-$200K/month.
               </p>

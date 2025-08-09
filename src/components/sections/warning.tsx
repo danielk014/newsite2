@@ -166,7 +166,7 @@ export function WarningSection() {
                 <div className="flex items-center gap-2 mt-2 relative z-10">
                   <Users className="w-4 h-4 text-muted-foreground" />
                   <p className="text-xs text-muted-foreground">
-                    Based on analysis of 500+ student results
+                    Based on comprehensive student analysis
                   </p>
                 </div>
               </motion.div>
