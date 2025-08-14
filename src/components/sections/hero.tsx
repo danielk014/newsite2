@@ -64,7 +64,7 @@ export function HeroSection() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
             The Team Behind{" "}
-            <span className="text-primary">1+ Billion Views</span>
+            <span className="text-primary">1 Billion Views a Month</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
               Shows You How to Go Viral & Build a Profitable Personal Brand
