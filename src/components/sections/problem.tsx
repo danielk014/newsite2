@@ -76,8 +76,8 @@ export function ProblemSection() {
                 viewport={{ once: true, amount: 0.5 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-bold text-accent mb-2">{struggle.stat}</div>
-                <p className="text-sm md:text-base text-muted-foreground">{struggle.description}</p>
+                <div className="text-lg md:text-xl font-medium text-muted-foreground mb-2">{struggle.stat}</div>
+                <p className="text-2xl md:text-3xl font-bold text-accent">{struggle.description}</p>
               </motion.div>
             ))}
           </motion.div>
