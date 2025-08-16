@@ -128,7 +128,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-accent mb-2">General Chat & Wins Feed</h4>
-                    <p className="text-muted-foreground text-sm">Connect with 500+ successful creators</p>
+                    <p className="text-muted-foreground text-sm">Connect with 100+ successful creators</p>
                   </div>
                 </div>
               </div>

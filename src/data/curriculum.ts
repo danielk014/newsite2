@@ -91,7 +91,7 @@ export const bonuses = [
   },
   {
     title: "💬 Private Community Access",
-    description: "Network with 500+ successful creators in our exclusive Discord",
+    description: "Network with 100+ successful creators in our exclusive Discord",
     value: "$997/year"
   },
   {

@@ -115,7 +115,7 @@ export function SolutionSection() {
                     <div className="text-6xl font-bold text-primary mb-2">
                       {index === 0 && "1B+"}
                       {index === 1 && "$6M+"}
-                      {index === 2 && "500+"}
+                      {index === 2 && "100+"}
                     </div>
                     <p className="text-muted-foreground">
                       {index === 0 && "Views/Month"}
@@ -189,7 +189,7 @@ export function SolutionSection() {
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">General Chat & Wins Feed</p>
-                      <p className="text-sm text-muted-foreground">Connect with 500+ successful creators</p>
+                      <p className="text-sm text-muted-foreground">Connect with 100+ successful creators</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">

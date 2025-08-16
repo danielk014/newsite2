@@ -17,6 +17,6 @@ export const siteConfig = {
     },
   },
   guaranteeDays: 30,
-  studentCount: "500+",
+  studentCount: "100+",
   averageEarnings: "$10K+/month",
 }
