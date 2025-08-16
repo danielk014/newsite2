@@ -141,7 +141,17 @@ export function ProblemSection() {
                   High-earning creators? They&apos;re not smarter than you.
                 </p>
                 <p className="text-lg text-muted-foreground mt-2">
-                  They just have access to the right playbook.
+                  They just have access to the right playbook and AI tools.
+                </p>
+              </div>
+              
+              {/* AI Solution Teaser */}
+              <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
+                <p className="text-center text-lg font-semibold mb-2">
+                  🤖 What if AI could do the heavy lifting for you?
+                </p>
+                <p className="text-center text-muted-foreground">
+                  Our AI suite eliminates guesswork by analyzing what works, writing viral scripts, and predicting success before you even hit record.
                 </p>
               </div>
             </div>

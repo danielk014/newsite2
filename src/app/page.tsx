@@ -15,9 +15,11 @@ export default function Home() {
       <TestimonialStrip startIndex={0} title="Our Students Are Crushing It!" />
       
       <ProblemSection />
-      <SolutionSection />
       
+      {/* Move AI Tools higher for better visibility */}
       <SaasToolsSection />
+      
+      <SolutionSection />
       
       {/* Complete Success System Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">

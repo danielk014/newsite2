@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Shield, Zap, Star, Eye, BadgeCheck } from "lucide-react"
+import { ArrowRight, Users, Shield, Zap, Star, Eye, BadgeCheck, Sparkles, Check } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -84,6 +84,40 @@ export function HeroSection() {
             <br />
             and builds <span className="font-semibold text-foreground">6-figure personal brands</span>.
           </motion.p>
+
+          {/* AI Tools Highlight */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-6 max-w-2xl w-full backdrop-blur"
+          >
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <Sparkles className="w-6 h-6 text-primary animate-pulse" />
+              <h3 className="text-xl font-bold text-primary">AI-Powered Creator Suite Included</h3>
+              <Sparkles className="w-6 h-6 text-primary animate-pulse" />
+            </div>
+            <p className="text-center text-muted-foreground mb-3">
+              Stop guessing what content works. Our AI tools analyze millions of data points to predict viral potential
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm">
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-accent" />
+                <span>AI Script Writer</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-accent" />
+                <span>Revenue Analytics</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-accent" />
+                <span>Viral Prediction</span>
+              </div>
+            </div>
+            <p className="text-center text-xs text-muted-foreground mt-3">
+              Worth $1,694/mo - FREE with Pro Tier
+            </p>
+          </motion.div>
 
           {/* Stats Row */}
           <motion.div
