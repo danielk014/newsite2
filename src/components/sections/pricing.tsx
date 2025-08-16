@@ -227,7 +227,7 @@ export function PricingSection() {
               </div>
               <h4 className="font-semibold mb-2">Money-Back Guarantee</h4>
               <p className="text-sm text-muted-foreground">
-                30-day money-back guarantee if you complete the first module and don't see value.
+                30-day money-back guarantee if you complete the first module and don&apos;t see value.
               </p>
             </div>
             <div className="text-center">
