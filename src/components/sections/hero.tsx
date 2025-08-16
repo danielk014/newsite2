@@ -63,11 +63,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            The Team Behind{" "}
-            <span className="text-primary">1 Billion Views a Month</span>
+            The <span className="text-primary">AI-Powered Content Growth Strategy</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              Shows You How to Go Viral & Build a Profitable Personal Brand
+              That Generated 1 Billion Views a Month
             </span>
           </motion.h1>
 
