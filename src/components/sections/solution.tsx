@@ -166,7 +166,7 @@ export function SolutionSection() {
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Monetization System</p>
-                      <p className="text-sm text-muted-foreground">Turn views into revenue from day one</p>
+                      <p className="text-sm text-muted-foreground">Learn to monetize your content effectively</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">

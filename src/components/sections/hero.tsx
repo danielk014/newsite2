@@ -78,11 +78,11 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            We engineered <span className="font-semibold text-foreground">Andrew Tate&apos;s viral rise</span> in 2021.
+            We&apos;ve helped creators achieve <span className="font-semibold text-foreground">massive viral growth</span>, reaching millions worldwide.
             <br />
             Now we&apos;re revealing the <span className="font-semibold text-foreground">exact AI-powered system</span> that creates viral phenomena
             <br />
-            and builds <span className="font-semibold text-foreground">6-figure personal brands</span> on autopilot.
+            and builds <span className="font-semibold text-foreground">6-figure personal brands</span>.
           </motion.p>
 
           {/* Stats Row */}
@@ -137,7 +137,7 @@ export function HeroSection() {
               <span className="text-xs font-medium">PROVEN SYSTEM</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Shield className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">100% REFUND GUARANTEE</span>
+              <span className="text-xs font-medium">30-DAY MONEY-BACK GUARANTEE</span>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0, x: 20 }}

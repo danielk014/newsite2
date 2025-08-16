@@ -29,9 +29,9 @@ const painPoints = [
 ]
 
 const struggles = [
-  { stat: "92%", description: "of our students see growth in 30 days" },
-  { stat: "78%", description: "reach their first $1K within 90 days" },
-  { stat: "65%", description: "hit 10K+ followers in 6 months" },
+  { stat: "Many", description: "students see growth within 30 days" },
+  { stat: "Students often", description: "reach their first $1K within months" },
+  { stat: "Some", description: "hit 10K+ followers in 6 months" },
 ]
 
 export function ProblemSection() {
@@ -119,7 +119,7 @@ export function ProblemSection() {
           >
             <div className="text-center space-y-6">
               <Flame className="w-16 h-16 text-destructive mx-auto" />
-              <h3 className="text-2xl md:text-3xl font-bold">The Brutal Truth Nobody Will Tell You</h3>
+              <h3 className="text-2xl md:text-3xl font-bold">The Brutal Truth That May Surprise You</h3>
               
               <div className="space-y-4 max-w-3xl mx-auto">
                 <p className="text-lg">
@@ -138,7 +138,7 @@ export function ProblemSection() {
 
               <div className="pt-6">
                 <p className="text-xl font-semibold text-primary">
-                  The creators making $10K+/month? They&apos;re not smarter than you.
+                  High-earning creators? They&apos;re not smarter than you.
                 </p>
                 <p className="text-lg text-muted-foreground mt-2">
                   They just have access to the right playbook.
@@ -218,7 +218,7 @@ export function ProblemSection() {
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-accent">Result: $10K+/month within 6 months</p>
+                  <p className="text-sm font-medium text-accent">Result: Many students reach $10K+/month</p>
                 </div>
               </div>
             </div>

@@ -87,7 +87,7 @@ export function CredibilitySection() {
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold">The Andrew Tate Case Study</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold">High-Profile Creator Case Study</h3>
                   <p className="text-muted-foreground">How we engineered a viral phenomenon</p>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export function CredibilitySection() {
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-primary">The Challenge:</h4>
                   <p className="text-muted-foreground mb-6">
-                    In 2021, Andrew Tate was virtually unknown online. He had great content 
+                    In 2021, one of our clients was virtually unknown online. They had great content 
                     but no viral strategy. That&apos;s when our team stepped in with our proven 
                     clipping and distribution system.
                   </p>
@@ -160,7 +160,7 @@ export function CredibilitySection() {
                     <BarChart3 className="w-8 h-8 text-accent mb-3" />
                     <p className="text-sm font-medium">
                       &quot;The same viral systems we used to generate billions of views are now 
-                      available to you. This isn&apos;t theory - it&apos;s proven strategy.&quot;
+                      available to you. Our strategies are built on real-world case studies.&quot;
                     </p>
                   </div>
                 </div>

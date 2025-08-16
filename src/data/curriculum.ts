@@ -32,7 +32,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "4",
     title: "Module 4: Viral Clip Mastery",
-    description: "The exact clipping system that generated 2+ billion views and made Andrew Tate a household name",
+    description: "The exact clipping system that generated 2+ billion views for high-profile creators",
     lessons: [
       "The 'Viral Moment Spotter' - Find Gold in Any Content",
       "Hook Psychology: Why Some Clips Get 10M+ Views",
@@ -46,7 +46,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "3",
     title: "Module 3: Creator Revenue System",
-    description: "Turn views into revenue from day one - 87% of our students make their first $1,000 within 30 days. Build multiple income streams and never rely on platform monetization alone",
+    description: "Learn to monetize your content effectively. Build multiple income streams and never rely on platform monetization alone",
     lessons: [
       "The 5 Revenue Streams Every Creator Needs",
       "Landing $5K+ Brand Deals (With Email Templates)",
@@ -69,7 +69,7 @@ export const courseModules: CourseModule[] = [
     lessons: [
       "AI Script Generation That Sounds Human",
       "Automated Video Editing with AI",
-      "Content Idea Generation on Autopilot",
+      "Content Idea Generation System",
       "AI Thumbnail Creation for Higher CTR",
       "Building Your AI-Powered Content Machine"
     ],

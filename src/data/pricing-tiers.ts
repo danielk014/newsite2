@@ -60,7 +60,7 @@ export const pricingTiers: PricingTier[] = [
     originalPrice: 1994,
     billingPeriod: "year",
     features: [
-      "Step-by-step blueprint to $30K+/mo With Content Creation",
+      "Step-by-step blueprint for scaling your content business",
       "30-day viral content calendar (Know When and What To Post)",
       "1-on-1 Coaching Calls",
       "Founder-Led Marketing & Personal Brand Strategy",

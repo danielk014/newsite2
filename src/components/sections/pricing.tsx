@@ -227,7 +227,7 @@ export function PricingSection() {
               </div>
               <h4 className="font-semibold mb-2">Money-Back Guarantee</h4>
               <p className="text-sm text-muted-foreground">
-                30-90 day guarantee depending on your plan. No questions asked.
+                30-day money-back guarantee if you complete the first module and don't see value.
               </p>
             </div>
             <div className="text-center">
@@ -266,6 +266,9 @@ export function PricingSection() {
             </p>
             <p className="text-sm text-muted-foreground">
               🔒 Secure checkout powered by Stripe. All major cards accepted.
+            </p>
+            <p className="text-xs text-muted-foreground mt-2">
+              *Guarantee requires completion of Module 1 within 30 days. Full terms at checkout.
             </p>
           </div>
         </div>

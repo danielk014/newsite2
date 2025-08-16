@@ -99,11 +99,11 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-accent mb-2">Monetization System</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Turn views into revenue from day one</p>
+                    <p className="text-muted-foreground text-sm mb-3">Learn to monetize your content effectively</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• The 5 Revenue Streams Every Creator Needs</li>
                       <li>• Landing $5K+ Brand Deals (With Email Templates)</li>
-                      <li>• Scaling from $1K to $10K+ Months</li>
+                      <li>• Scaling your creator business sustainably</li>
                     </ul>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function Home() {
                       <li className="flex items-start gap-2">
                         <span className="text-primary font-bold">•</span>
                         <div>
-                          <strong className="text-foreground">InsightSync Analytics:</strong> Shows exactly how much money your channel should be making
+                          <strong className="text-foreground">InsightSync Analytics:</strong> Shows approximately how much money your channel could be making
                         </div>
                       </li>
                       <li className="flex items-start gap-2">
@@ -210,7 +210,7 @@ export default function Home() {
                       <li className="flex items-start gap-2">
                         <span className="text-primary font-bold">•</span>
                         <div>
-                          <strong className="text-foreground">Viral Prediction:</strong> Know if content will go viral before you record
+                          <strong className="text-foreground">Viral Prediction:</strong> Analyze viral potential before you record
                         </div>
                       </li>
                     </ul>

@@ -9,7 +9,7 @@ const tools = [
     name: "InsightSync - AI Revenue Analytics",
     url: "https://insight-sync.onrender.com/",
     icon: TrendingUp,
-    description: "The only analytics platform that shows you exactly how much money your YouTube channel should be making, with AI-powered insights to maximize your content performance and revenue.",
+    description: "The only analytics platform that shows you approximately how much money your YouTube channel could be making, with AI-powered insights to help optimize your content performance and revenue.",
     features: [
       "Real-time revenue potential calculator",
       "AI-powered content optimization suggestions",
@@ -29,7 +29,7 @@ const tools = [
       "Generate viral scripts in seconds",
       "Deep script analysis with improvement suggestions",
       "Psychological trigger identification & optimization",
-      "Viral potential scoring before you record",
+      "Viral potential analysis before you record",
       "Multi-platform optimization (YouTube, TikTok, Instagram)",
       "Auto-adapts to your unique voice and style"
     ],
@@ -65,8 +65,8 @@ export function SaasToolsSection() {
             </h2>
             
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Stop guessing what content will work. Our exclusive AI suite analyzes millions of data points 
-              to tell you exactly what to create, when to post, and how much money you should be making
+              Stop guessing what content may work. Our exclusive AI suite analyzes millions of data points 
+              to help you understand what to create, when to post, and how much money you could be making
             </p>
           </motion.div>
 

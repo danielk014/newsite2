@@ -92,11 +92,11 @@ export function FAQSection() {
           >
             <ShieldCheck className="w-12 h-12 text-primary mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-4">
-              Our &apos;Go Viral Or It&apos;s Free&apos; Guarantee
+              Our 30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              Use our AI tools and faceless system for 30 days. If you don&apos;t see explosive growth,
-              get 100% of your money back. We&apos;ve created 500+ millionaires. You&apos;re next.
+              Try our AI tools and faceless system for 30 days. If you complete Module 1 and don&apos;t see value,
+              get 100% of your money back. We&apos;ve helped countless creators build successful businesses.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -122,7 +122,7 @@ export function FAQSection() {
               <a href="mailto:support@creatorcamp.academy" className="text-primary hover:underline">
                 support@creatorcamp.academy
               </a>
-              {' '}and we&apos;ll respond within 24 hours.
+              {' '}and we typically respond within 24 hours.
             </p>
           </motion.div>
         </div>

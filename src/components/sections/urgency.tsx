@@ -194,7 +194,7 @@ export function UrgencySection() {
               </Button>
             </a>
             <p className="text-sm text-muted-foreground mt-4">
-              🔒 Secure checkout • 30-day guarantee • Instant access
+              🔒 Secure checkout • 30-day money-back guarantee • Instant access
             </p>
           </motion.div>
         </div>

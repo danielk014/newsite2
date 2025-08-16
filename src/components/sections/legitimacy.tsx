@@ -75,8 +75,8 @@ export function LegitimacySection() {
               <div>
                 <h3 className="text-xl font-bold mb-2">Private Platform Briefing - June 2024</h3>
                 <p className="text-muted-foreground italic">
-                  &quot;Major algorithm shift coming Q3. Creators using [REDACTED] methods will see 
-                  90% reach reduction. New &apos;quality signals&apos; favor psychological engagement over 
+                  &quot;Major algorithm shift coming Q3. Creators using [REDACTED] methods may see 
+                  significant reach reduction. New &apos;quality signals&apos; often favor psychological engagement over 
                   traditional metrics.&quot;
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
@@ -97,7 +97,7 @@ export function LegitimacySection() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                   <span className="text-sm">
-                    You&apos;ll know what&apos;s &quot;compliant&quot; while others get penalized for outdated tactics
+                    You&apos;ll understand what&apos;s typically &quot;compliant&quot; while others may face challenges with outdated tactics
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
