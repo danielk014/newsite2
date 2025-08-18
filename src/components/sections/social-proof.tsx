@@ -45,8 +45,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-accent mb-2">$31K Made In 28 Days</h3>
-              <p className="text-muted-foreground">Built using our exact blueprint</p>
+              <h3 className="text-2xl font-bold text-accent mb-2">Viral Success Stories</h3>
+              <p className="text-muted-foreground">Students achieving massive reach</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,8 +55,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-primary mb-2">284K+ Subs in 28 Days</h3>
-              <p className="text-muted-foreground">Built using our exact blueprint</p>
+              <h3 className="text-2xl font-bold text-primary mb-2">284K+ Subscribers</h3>
+              <p className="text-muted-foreground">Growing engaged communities</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -65,8 +65,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-accent mb-2">From 0 to 100K Multiple Times</h3>
-              <p className="text-muted-foreground">Built using our exact blueprint</p>
+              <h3 className="text-2xl font-bold text-accent mb-2">Proven Growth System</h3>
+              <p className="text-muted-foreground">Repeatable success framework</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

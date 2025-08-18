@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     name: "Alex Johnson",
     role: "Content Creator",
     avatar: "/testimonials/alex.jpg",
-    content: "The 30-day roadmap to $10K was a game-changer. I went from struggling to get views to having multiple viral videos. The editing tutorials and AI tools saved me hours every day.",
+    content: "The comprehensive roadmap was a game-changer. I went from struggling to get views to having multiple viral videos. The editing tutorials and AI tools saved me hours every day.",
     videoUrl: "https://youtube.com/watch?v=testimonial1",
     beforeStats: {
       followers: "500",
@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     },
     afterStats: {
       followers: "150K",
-      earnings: "$12K/month",
+      earnings: "Full-time creator",
     },
     featured: true,
   },
@@ -25,11 +25,11 @@ export const testimonials: Testimonial[] = [
     content: "Creator Camp's system is incredible. The personalized channel reviews helped me understand exactly what was wrong. Now I'm consistently getting millions of views and brand deals weekly.",
     beforeStats: {
       followers: "2K",
-      earnings: "$200/month",
+      earnings: "Part-time",
     },
     afterStats: {
       followers: "890K",
-      earnings: "$31K/month",
+      earnings: "6-figure business",
     },
     featured: true,
   },
@@ -45,7 +45,7 @@ export const testimonials: Testimonial[] = [
     },
     afterStats: {
       followers: "284K",
-      earnings: "$18K/month",
+      earnings: "Professional creator",
     },
     featured: true,
   },
@@ -53,42 +53,42 @@ export const testimonials: Testimonial[] = [
     id: "4",
     name: "Sophie Chen",
     role: "Educational Content",
-    content: "The Professional editing toolkit transformed my content quality. Getting help instantly through Edit Roadblock Support meant I never got stuck. 210M views in just 28 days!",
+    content: "The Professional editing toolkit transformed my content quality. Getting help instantly through Edit Roadblock Support meant I never got stuck. My content quality improved dramatically!",
     beforeStats: {
       followers: "5K",
-      earnings: "$500/month",
+      earnings: "Side income",
     },
     afterStats: {
       followers: "1.2M",
-      earnings: "$25K/month",
+      earnings: "Thriving business",
     },
   },
   {
     id: "5",
     name: "Michael Brown",
     role: "Finance Creator",
-    content: "The YouTube AdSense Accelerator got me monetized in under 30 days. The AI tools and templates save me 20+ hours per week. Best investment I've ever made.",
+    content: "The YouTube Accelerator helped me understand monetization strategies. The AI tools and templates save me 20+ hours per week. Best investment I've ever made.",
     beforeStats: {
       followers: "1K",
       earnings: "$0",
     },
     afterStats: {
       followers: "420K",
-      earnings: "$15K/month",
+      earnings: "Sustainable income",
     },
   },
   {
     id: "6",
     name: "Lisa Anderson",
     role: "Beauty & Fashion",
-    content: "The 30-day content calendar removed all the guesswork. I know exactly what to post and when. Went from random posting to strategic growth. $331K+ in total revenue!",
+    content: "The strategic content calendar removed all the guesswork. I know exactly what to post and when. Went from random posting to strategic growth. Building a real business!",
     beforeStats: {
       followers: "8K",
-      earnings: "$1K/month",
+      earnings: "Growing income",
     },
     afterStats: {
       followers: "750K",
-      earnings: "$28K/month",
+      earnings: "Established business",
     },
   },
 ]

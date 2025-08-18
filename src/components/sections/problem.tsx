@@ -29,9 +29,9 @@ const painPoints = [
 ]
 
 const struggles = [
-  { stat: "Many", description: "students see growth within 30 days" },
-  { stat: "Students often", description: "reach their first $1K within months" },
-  { stat: "Some", description: "hit 10K+ followers in 6 months" },
+  { stat: "Many", description: "students see rapid growth" },
+  { stat: "Students build", description: "sustainable content businesses" },
+  { stat: "Most achieve", description: "their creative goals" },
 ]
 
 export function ProblemSection() {
@@ -228,7 +228,7 @@ export function ProblemSection() {
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-accent">Result: Many students reach $10K+/month</p>
+                  <p className="text-sm font-medium text-accent">Result: Building thriving creator businesses</p>
                 </div>
               </div>
             </div>

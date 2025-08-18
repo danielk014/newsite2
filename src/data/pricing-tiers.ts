@@ -61,7 +61,7 @@ export const pricingTiers: PricingTier[] = [
     billingPeriod: "year",
     features: [
       "Step-by-step blueprint for scaling your content business",
-      "30-day viral content calendar (Know When and What To Post)",
+      "Strategic content calendar (Know When and What To Post)",
       "1-on-1 Coaching Calls",
       "Founder-Led Marketing & Personal Brand Strategy",
       "After Effects masterclass (motion design & animations)",
