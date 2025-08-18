@@ -77,38 +77,40 @@ export function PricingSection() {
                     <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   </div>
 
-                  <div className="text-center mb-8">
-                    {tier.price > 0 ? (
-                      <>
-                        <div className="flex items-baseline justify-center gap-2 mb-2">
-                          <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
-                          <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          {tier.billingPeriod === "year" ? (
-                            "Billed annually"
-                          ) : billingCycle === "yearly" ? (
-                            <>
-                              <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
-                              {" "}
-                              <span className="text-accent font-semibold">Billed annually</span>
-                            </>
-                          ) : (
-                            "Billed monthly"
-                          )}
-                        </p>
-                      </>
-                    ) : (
-                      <>
-                        <div className="mb-2">
-                          <span className="text-2xl font-bold">Custom Pricing</span>
-                        </div>
-                        <p className="text-sm text-muted-foreground">
-                          Contact us for enterprise pricing
-                        </p>
-                      </>
-                    )}
-                  </div>
+                  {tier.id !== 'elite' && (
+                    <div className="text-center mb-8">
+                      {tier.price > 0 ? (
+                        <>
+                          <div className="flex items-baseline justify-center gap-2 mb-2">
+                            <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
+                            <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            {tier.billingPeriod === "year" ? (
+                              "Billed annually"
+                            ) : billingCycle === "yearly" ? (
+                              <>
+                                <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
+                                {" "}
+                                <span className="text-accent font-semibold">Billed annually</span>
+                              </>
+                            ) : (
+                              "Billed monthly"
+                            )}
+                          </p>
+                        </>
+                      ) : (
+                        <>
+                          <div className="mb-2">
+                            <span className="text-2xl font-bold">Custom Pricing</span>
+                          </div>
+                          <p className="text-sm text-muted-foreground">
+                            Contact us for enterprise pricing
+                          </p>
+                        </>
+                      )}
+                    </div>
+                  )}
 
                   <div className="space-y-4 mb-8">
                     {tier.features.map((feature, featureIndex) => (
@@ -155,7 +157,7 @@ export function PricingSection() {
                     </a>
                   ) : tier.id === "elite" ? (
                     <a 
-                      href="https://buy.stripe.com/dRmdRa3TB6TEabuf1jfjG04" 
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfFkcp39tEpbznI66J6_GFGc1nhj_oAL8lF0U3KVY1v8m1CDw/viewform?usp=sharing&ouid=101707652396552481061" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
