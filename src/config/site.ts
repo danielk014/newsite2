@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Creator Camp Academy",
-  description: "The Underground System That's Created 500+ Six-Figure Creators",
+  description: "Professional Content Creation Training and AI-Powered Tools",
   url: "https://www.creatorcamp.academy/",
   ogImage: "/og-image.jpg",
   links: {
@@ -18,5 +18,5 @@ export const siteConfig = {
   },
   guaranteeDays: 30,
   studentCount: "100+",
-  averageEarnings: "$10K+/month",
+  averageResult: "Professional Content Creator",
 }

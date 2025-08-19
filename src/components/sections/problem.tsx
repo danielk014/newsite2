@@ -246,8 +246,8 @@ export function ProblemSection() {
               Stop Struggling. Start Winning.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Get the exact blueprint that generated 2+ billion views and built 
-              multiple 6-figure creator businesses.
+              Get the proven framework and strategies used by 
+              successful content creators worldwide.
             </p>
             <Link href="/pricing">
               <Button 

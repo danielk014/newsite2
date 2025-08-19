@@ -54,11 +54,11 @@ export function SolutionSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Introducing: The <span className="text-primary">1B Views/Month System</span>
+              Introducing: The <span className="text-primary">Complete Creator System</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              The exact blueprint we used to generate billions of views and build multiple 
-              6-figure creator businesses. Now available to you.
+              A comprehensive framework for building engaging content and growing 
+              your online presence sustainably. Learn from proven strategies.
             </p>
           </motion.div>
 
@@ -113,14 +113,14 @@ export function SolutionSection() {
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''} text-center`}>
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
-                      {index === 0 && "1B+"}
-                      {index === 1 && "$6M+"}
-                      {index === 2 && "100+"}
+                      {index === 0 && "50+"}
+                      {index === 1 && "100+"}
+                      {index === 2 && "4.8"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "Views/Month"}
-                      {index === 1 && "Student Revenue"}
-                      {index === 2 && "Students"}
+                      {index === 0 && "Course Modules"}
+                      {index === 1 && "Active Students"}
+                      {index === 2 && "Average Rating"}
                     </p>
                   </div>
                 </div>

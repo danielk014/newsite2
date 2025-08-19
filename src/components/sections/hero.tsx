@@ -46,7 +46,7 @@ export function HeroSection() {
               className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
             />
             <Eye className="w-4 h-4 relative z-10" />
-            <span className="relative z-10 font-bold">1+ BILLION VIEWS GENERATED</span>
+            <span className="relative z-10 font-bold">PROVEN CONTENT STRATEGIES</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -63,10 +63,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            The <span className="text-primary">AI-Powered Content Growth Strategy</span>
+            Learn <span className="text-primary">Professional Content Creation</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              That Generated 1 Billion Views a Month
+              With AI-Powered Tools and Expert Guidance
             </span>
           </motion.h1>
 
@@ -77,11 +77,11 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            We&apos;ve helped creators achieve <span className="font-semibold text-foreground">massive viral growth</span>, reaching millions worldwide.
+            Master the skills and strategies used by <span className="font-semibold text-foreground">successful content creators</span>.
             <br />
-            Now we&apos;re revealing the <span className="font-semibold text-foreground">exact AI-powered system</span> that creates viral phenomena
+            Get access to <span className="font-semibold text-foreground">AI-powered tools and frameworks</span> that help you create
             <br />
-            and builds <span className="font-semibold text-foreground">6-figure personal brands</span>.
+            engaging content and build <span className="font-semibold text-foreground">sustainable online presence</span>.
           </motion.p>
 
           {/* AI Tools Highlight */}
@@ -126,12 +126,12 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">1B+</div>
-              <div className="text-sm text-muted-foreground">Views Generated</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
+              <div className="text-sm text-muted-foreground">Active Students</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">6M+</div>
-              <div className="text-sm text-muted-foreground">Total Subscribers</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">50+</div>
+              <div className="text-sm text-muted-foreground">Hours of Content</div>
             </div>
           </motion.div>
 
@@ -182,7 +182,7 @@ export function HeroSection() {
               <span className="text-xs font-medium">PRO: AI TOOLS INCLUDED</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">$1,694/mo VALUE</span>
+              <span className="text-xs font-medium">PREMIUM TOOLS</span>
             </motion.div>
           </motion.div>
 

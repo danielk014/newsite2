@@ -6,18 +6,18 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const stats = [
-  { value: "1B+", label: "Total Views", icon: Eye },
-  { value: "6M+", label: "Subscribers", icon: Users },
-  { value: "100+", label: "Successful Students", icon: Award },
-  { value: "$6M+", label: "Student Revenue", icon: TrendingUp },
+  { value: "50+", label: "Course Modules", icon: Eye },
+  { value: "100+", label: "Active Students", icon: Users },
+  { value: "4.8/5", label: "Student Rating", icon: Award },
+  { value: "24/7", label: "Support Access", icon: TrendingUp },
 ]
 
 const caseStudyPoints = [
-  "Started with ZERO online presence in 2021",
-  "Applied our viral clipping strategy to podcast content",
-  "Scaled to 100M+ views in first 6 months",
-  "Built a multi-million dollar personal brand empire",
-  "Became the most searched person on Google",
+  "Started with minimal online presence",
+  "Applied our content strategy framework",
+  "Consistently improved content quality",
+  "Built an engaged community",
+  "Achieved sustainable growth",
 ]
 
 export function CredibilitySection() {
@@ -39,8 +39,8 @@ export function CredibilitySection() {
               <span className="text-primary">We Create It</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our team has generated over 2 billion views and engineered some of the internet&apos;s 
-              biggest viral phenomena. Here&apos;s proof we know what works.
+              Our team has years of experience in content creation and digital marketing. 
+              We share proven strategies that help creators build sustainable audiences.
             </p>
           </motion.div>
 
@@ -87,8 +87,8 @@ export function CredibilitySection() {
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold">High-Profile Creator Case Study</h3>
-                  <p className="text-muted-foreground">How we engineered a viral phenomenon</p>
+                  <h3 className="text-2xl md:text-3xl font-bold">Creator Success Story</h3>
+                  <p className="text-muted-foreground">How our framework drives real results</p>
                 </div>
               </div>
 
@@ -96,9 +96,9 @@ export function CredibilitySection() {
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-primary">The Challenge:</h4>
                   <p className="text-muted-foreground mb-6">
-                    In 2021, one of our clients was virtually unknown online. They had great content 
-                    but no viral strategy. That&apos;s when our team stepped in with our proven 
-                    clipping and distribution system.
+                    One of our students came to us with great ideas but struggled to reach their audience. 
+                    Using our content framework and strategic approach, they transformed their 
+                    online presence through consistent, quality content.
                   </p>
                   
                   <h4 className="text-lg font-semibold mb-4 text-primary">Our Strategy:</h4>
@@ -125,8 +125,8 @@ export function CredibilitySection() {
                     <div className="space-y-4">
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">1B+</span>
-                          <span className="text-sm text-muted-foreground">views/month</span>
+                          <span className="text-3xl font-bold text-primary">10x</span>
+                          <span className="text-sm text-muted-foreground">audience growth</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
@@ -140,8 +140,8 @@ export function CredibilitySection() {
                       </div>
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">#1</span>
-                          <span className="text-sm text-muted-foreground">most Googled person</span>
+                          <span className="text-3xl font-bold text-primary">Top 1%</span>
+                          <span className="text-sm text-muted-foreground">in their niche</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
@@ -159,8 +159,8 @@ export function CredibilitySection() {
                   <div className="bg-accent/10 border border-accent/20 rounded-lg p-6">
                     <BarChart3 className="w-8 h-8 text-accent mb-3" />
                     <p className="text-sm font-medium">
-                      &quot;The same viral systems we used to generate billions of views are now 
-                      available to you. Our strategies are built on real-world case studies.&quot;
+                      &quot;The same strategic frameworks our successful students use are now 
+                      available to you. Learn from real-world experience and proven methods.&quot;
                     </p>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ export function CredibilitySection() {
 
               <div className="mt-8 pt-8 border-t border-border">
                 <p className="text-center text-lg font-medium mb-6">
-                  Ready to build your own viral personal brand?
+                  Ready to transform your content creation journey?
                 </p>
                 <Link href="/pricing">
                   <Button 

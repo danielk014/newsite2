@@ -236,9 +236,9 @@ export function PricingSection() {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">Proven Results</h4>
+              <h4 className="font-semibold mb-2">Educational Value</h4>
               <p className="text-sm text-muted-foreground">
-                Join hundreds of creators earning $10K-$200K/month.
+                Learn from proven strategies and frameworks.
               </p>
             </div>
             <div className="text-center">
@@ -271,6 +271,9 @@ export function PricingSection() {
             </p>
             <p className="text-xs text-muted-foreground mt-2">
               *Guarantee requires completion of Module 1 within 30 days. Full terms at checkout.
+            </p>
+            <p className="text-xs text-muted-foreground mt-4 max-w-3xl mx-auto">
+              **Educational disclaimer: This course provides training and strategies for content creation. Success depends on individual effort, consistency, and market factors. Results are not guaranteed and will vary based on your implementation and dedication.
             </p>
           </div>
         </div>

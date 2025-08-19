@@ -35,8 +35,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-primary mb-2">$6M+ In Revenue For Students</h3>
-              <p className="text-muted-foreground">Built using our exact blueprint.</p>
+              <h3 className="text-2xl font-bold text-primary mb-2">Proven Success Stories</h3>
+              <p className="text-muted-foreground">Students achieving their goals</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -45,8 +45,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-accent mb-2">Viral Success Stories</h3>
-              <p className="text-muted-foreground">Students achieving massive reach</p>
+              <h3 className="text-2xl font-bold text-accent mb-2">Growing Communities</h3>
+              <p className="text-muted-foreground">Building engaged audiences</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,8 +55,8 @@ export function SocialProofSection() {
               viewport={{ once: true }}
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
-              <h3 className="text-2xl font-bold text-primary mb-2">284K+ Subscribers</h3>
-              <p className="text-muted-foreground">Growing engaged communities</p>
+              <h3 className="text-2xl font-bold text-primary mb-2">Active Community</h3>
+              <p className="text-muted-foreground">Supportive creator network</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
