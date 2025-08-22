@@ -4,7 +4,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "1",
     title: "Module 1: Personal Brand Lab",
-    description: "Build a personal brand that converts followers into customers - the same strategy our students use to hit $10K+/month",
+    description: "Build a personal brand that connects with your audience - learn the strategic framework successful creators use to build sustainable businesses",
     lessons: [
       "Finding Your Unique Creator Identity & Positioning",
       "Building Authority in Any Niche (Even Saturated Ones)",
@@ -32,13 +32,13 @@ export const courseModules: CourseModule[] = [
   {
     id: "4",
     title: "Module 4: Viral Clip Mastery",
-    description: "The exact clipping system that generated 2+ billion views for high-profile creators",
+    description: "Professional clipping techniques used by successful content creators",
     lessons: [
       "The 'Viral Moment Spotter' - Find Gold in Any Content",
-      "Hook Psychology: Why Some Clips Get 10M+ Views",
+      "Hook Psychology: Creating Engaging Content",
       "The 60-Second Edit Method for Maximum Impact",
       "Multi-Platform Distribution Strategy",
-      "Building Your Viral Clip Library for Passive Income"
+      "Building Your Content Library for Growth"
     ],
     duration: "5 hours",
     value: 1497
@@ -49,15 +49,15 @@ export const courseModules: CourseModule[] = [
     description: "Learn to monetize your content effectively. Build multiple income streams and never rely on platform monetization alone",
     lessons: [
       "The 5 Revenue Streams Every Creator Needs",
-      "Landing $5K+ Brand Deals (With Email Templates)",
+      "Approaching Brand Partnerships (With Email Templates)",
       "Creating Digital Products That Sell Themselves",
       "Building Recurring Revenue with Membership Sites",
       "The Creator Business Model Canvas",
       "Affiliate Marketing That Actually Converts",
       "Course Creation & Info Product Mastery",
-      "Building Your First $100K Funnel",
+      "Creating Effective Sales Funnels",
       "Automated Systems for Passive Income",
-      "Scaling from $1K to $10K+ Months"
+      "Scaling Your Creator Business"
     ],
     duration: "9 hours",
     value: 3294
@@ -81,7 +81,7 @@ export const courseModules: CourseModule[] = [
 export const bonuses = [
   {
     title: "🛠️ Creator Toolkit",
-    description: "Done-for-you templates, scripts, hooks, and viral formulas that work",
+    description: "Professional templates, scripts, and content frameworks",
     value: "$497"
   },
   {
@@ -91,7 +91,7 @@ export const bonuses = [
   },
   {
     title: "💬 Private Community Access",
-    description: "Network with 100+ successful creators in our exclusive Discord",
+    description: "Connect with fellow creators in our supportive Discord community",
     value: "$997/year"
   },
   {

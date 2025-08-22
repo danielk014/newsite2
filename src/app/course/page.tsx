@@ -15,10 +15,10 @@ export default function CoursePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Everything You Need to <span className="text-primary">Go Viral</span>
+              Everything You Need to <span className="text-primary">Create Great Content</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              A complete system for building a profitable personal brand from scratch
+              A comprehensive course for building your content creation skills
             </p>
           </div>
         </div>
@@ -36,24 +36,24 @@ export default function CoursePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              From Zero Views to <span className="text-primary">Life-Changing Results</span>
+              From Beginner to <span className="text-primary">Skilled Creator</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Go From 47 Views to Millions</h3>
-                <p className="text-muted-foreground">Stop creating content that gets ignored - master the psychology that makes videos go viral</p>
+                <h3 className="font-semibold text-primary mb-2">Improve Your Content Quality</h3>
+                <p className="text-muted-foreground">Learn the fundamentals that make content engaging and well-crafted</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Turn Views Into $10K+ Months</h3>
-                <p className="text-muted-foreground">Stop working for free - learn the exact monetization systems our students use to hit 6-figures</p>
+                <h3 className="font-semibold text-primary mb-2">Learn Monetization Strategies</h3>
+                <p className="text-muted-foreground">Understand different ways creators can monetize their content sustainably</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Build a Personal Brand That Pays</h3>
-                <p className="text-muted-foreground">Stop being just another creator - become the go-to authority that brands pay premium rates</p>
+                <h3 className="font-semibold text-primary mb-2">Build Your Personal Brand</h3>
+                <p className="text-muted-foreground">Learn to establish yourself as a trusted voice in your niche</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Create a Sustainable Business</h3>
-                <p className="text-muted-foreground">Stop the feast-or-famine cycle - build systems that generate consistent revenue</p>
+                <h3 className="font-semibold text-primary mb-2">Create Sustainable Systems</h3>
+                <p className="text-muted-foreground">Build consistent workflows and processes for long-term success</p>
               </div>
             </div>
           </div>
