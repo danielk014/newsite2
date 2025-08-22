@@ -129,7 +129,7 @@ export function PricingSection() {
 
                   {tier.id === "pro" ? (
                     <a 
-                      href={billingCycle === "yearly" ? "https://buy.stripe.com/dRmdRa3TB6TEabuf1jfjG04" : "https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01"} 
+                      href={billingCycle === "yearly" ? "https://buy.stripe.com/fZu7sN2qS08s4db4F08ww04" : "https://buy.stripe.com/aFaeVfe9Af3meRP9Zk8ww02"} 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
