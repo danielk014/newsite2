@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle, Clock, DollarSign, Gift, Lock } from "lucide-react"
+import { CheckCircle, Clock, DollarSign, Gift, Lock, User, EyeOff } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -9,7 +9,25 @@ import Link from "next/link"
 
 export function CurriculumSection() {
   const [expandedModule, setExpandedModule] = useState<string | null>("1")
+  const [selectedPath, setSelectedPath] = useState<"personal" | "faceless" | null>(null)
   const totalValue = courseModules.reduce((sum, module) => sum + module.value, 0)
+
+  // Separate modules by path
+  const personalBrandModules = courseModules.filter(module => 
+    ["1", "2", "3"].includes(module.id)
+  )
+  const facelessModules = courseModules.filter(module => 
+    ["4", "5"].includes(module.id)
+  )
+  const sharedModules = courseModules.filter(module => 
+    ["6", "7"].includes(module.id)
+  )
+
+  const displayModules = selectedPath === "personal" 
+    ? [...personalBrandModules, ...sharedModules]
+    : selectedPath === "faceless" 
+    ? [...facelessModules, ...sharedModules]
+    : courseModules
 
   return (
     <section id="curriculum" className="py-20 md:py-32 bg-muted/10 relative">
@@ -20,10 +38,10 @@ export function CurriculumSection() {
           {/* Section Header */}
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              The Complete <span className="text-primary">Creator Success System</span>
+              Choose Your <span className="text-primary">Learning Path</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              5 core modules + AI automation suite. The exact system that generated 1 billion views/month.
+              Two complete paths to content creation success. Pick the one that fits your goals.
             </p>
             <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <DollarSign className="w-4 h-4" />
@@ -31,11 +49,78 @@ export function CurriculumSection() {
             </div>
           </div>
 
+          {/* Path Selection */}
+          <div className="grid md:grid-cols-2 gap-6 mb-12">
+            <motion.button
+              onClick={() => setSelectedPath(selectedPath === "personal" ? null : "personal")}
+              className={`p-6 rounded-xl border-2 transition-all ${
+                selectedPath === "personal" 
+                  ? "border-primary bg-primary/10" 
+                  : "border-border hover:border-primary/50 bg-card"
+              }`}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <User className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Personal Brand Path</h3>
+              <p className="text-muted-foreground mb-4">
+                Build your personal brand and connect with your audience face-to-face
+              </p>
+              <div className="space-y-2 text-left">
+                <p className="text-sm font-medium">Includes:</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Personal Brand Lab</li>
+                  <li>• Personal Brand Long Form</li>
+                  <li>• Personal Brand Short Form</li>
+                  <li>• Monetization Course</li>
+                  <li>• AI Tools (Bonus)</li>
+                </ul>
+              </div>
+            </motion.button>
+
+            <motion.button
+              onClick={() => setSelectedPath(selectedPath === "faceless" ? null : "faceless")}
+              className={`p-6 rounded-xl border-2 transition-all ${
+                selectedPath === "faceless" 
+                  ? "border-primary bg-primary/10" 
+                  : "border-border hover:border-primary/50 bg-card"
+              }`}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <EyeOff className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Faceless Content Path</h3>
+              <p className="text-muted-foreground mb-4">
+                Create content without showing your face - perfect for privacy-conscious creators
+              </p>
+              <div className="space-y-2 text-left">
+                <p className="text-sm font-medium">Includes:</p>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>• Faceless AI Short Form</li>
+                  <li>• Faceless Clipping Course</li>
+                  <li>• Monetization Course</li>
+                  <li>• AI Tools (Bonus)</li>
+                </ul>
+              </div>
+            </motion.button>
+          </div>
+
+          {/* Path Explainer */}
+          <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 mb-12 text-center">
+            <p className="text-sm md:text-base">
+              <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
+              then transition to personal branding once they're comfortable. You get access to BOTH paths with your enrollment!
+            </p>
+          </div>
+
           {/* Course Modules */}
           <div className="space-y-4 mb-16">
-            {courseModules.map((module) => (
-              <div
+            {displayModules.map((module, index) => (
+              <motion.div
                 key={module.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="bg-card border border-border rounded-xl overflow-hidden"
               >
                 <button
@@ -79,7 +164,7 @@ export function CurriculumSection() {
                     </div>
                   </div>
                 )}
-              </div>
+              </motion.div>
             ))}
           </div>
 
