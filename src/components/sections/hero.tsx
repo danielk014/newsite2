@@ -93,7 +93,7 @@ export function HeroSection() {
           >
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">AI-Powered Creator Suite Included</h3>
+              <h3 className="text-xl font-bold text-primary">AI Tools Included</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
             <p className="text-center text-muted-foreground mb-3">
