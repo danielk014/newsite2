@@ -15,10 +15,10 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Success Stories From Our <span className="text-primary">Students</span>
+              Student <span className="text-primary">Testimonials</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Real results from real creators who took action and transformed their lives
+              Hear from our students about their learning experience and growth
             </p>
           </div>
         </div>
@@ -28,17 +28,17 @@ export default function TestimonialsPage() {
       <SocialProofSection />
 
       {/* Additional Testimonial Strips */}
-      <TestimonialStrip startIndex={0} title="From Zero to Hero" />
-      <TestimonialStrip startIndex={4} title="Life-Changing Results" />
+      <TestimonialStrip startIndex={0} title="Student Success Stories" />
+      <TestimonialStrip startIndex={4} title="Creator Transformations" />
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Write Your Own Success Story?
+            Ready to Start Your Creator Journey?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of creators who have transformed their passion into profit
+            Join our community of creators and learn the skills you need to succeed
           </p>
           <a
             href="/pricing"
