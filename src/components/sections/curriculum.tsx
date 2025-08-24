@@ -109,7 +109,7 @@ export function CurriculumSection() {
           <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 mb-12 text-center">
             <p className="text-sm md:text-base">
               <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
-              then transition to personal branding once they're comfortable. You get access to BOTH paths with your enrollment!
+              then transition to personal branding once they&apos;re comfortable. You get access to BOTH paths with your enrollment!
             </p>
           </div>
 
