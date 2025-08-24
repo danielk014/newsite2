@@ -28,11 +28,7 @@ const painPoints = [
   },
 ]
 
-const struggles = [
-  { stat: "Many", description: "students see rapid growth" },
-  { stat: "Students build", description: "sustainable content businesses" },
-  { stat: "Most achieve", description: "their creative goals" },
-]
+// Removed stats section to maintain focus on problem identification
 
 export function ProblemSection() {
   return (
@@ -59,28 +55,7 @@ export function ProblemSection() {
             </p>
           </motion.div>
 
-          {/* Stats Bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.1 }}
-            viewport={{ once: true, amount: 0.5 }}
-            className="grid grid-cols-3 gap-4 md:gap-8 mb-16"
-          >
-            {struggles.map((struggle, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
-                viewport={{ once: true, amount: 0.5 }}
-                className="text-center"
-              >
-                <div className="text-lg md:text-xl font-medium text-muted-foreground mb-2">{struggle.stat}</div>
-                <p className="text-2xl md:text-3xl font-bold text-accent">{struggle.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
+          {/* Stats section removed for cleaner focus */}
 
           {/* Pain Points Grid */}
           <motion.div
