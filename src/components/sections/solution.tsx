@@ -113,12 +113,12 @@ export function SolutionSection() {
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''} text-center`}>
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
-                      {index === 0 && "50+"}
+                      {index === 0 && "Quick"}
                       {index === 1 && "100+"}
                       {index === 2 && "4.8"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "Course Modules"}
+                      {index === 0 && "To Start"}
                       {index === 1 && "Active Students"}
                       {index === 2 && "Average Rating"}
                     </p>
