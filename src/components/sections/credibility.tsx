@@ -13,11 +13,11 @@ const stats = [
 ]
 
 const caseStudyPoints = [
-  "Started with minimal online presence",
-  "Applied our content strategy framework",
-  "Consistently improved content quality",
-  "Built an engaged community",
-  "Achieved sustainable growth",
+  "Analytics Review & Performance Analysis - Identify what works in your niche",
+  "Data-Driven Content Decisions - Use metrics to guide your strategy",
+  "Audience Research & Behavior Analysis - Understand your viewers deeply",
+  "Content Optimization Based on Engagement Patterns",
+  "Strategic Posting & Distribution for Maximum Reach",
 ]
 
 export function CredibilitySection() {
@@ -95,13 +95,14 @@ export function CredibilitySection() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-primary">The Challenge:</h4>
-                  <p className="text-muted-foreground mb-6">
-                    One of our students came to us with great ideas but struggled to reach their audience. 
-                    Using our content framework and strategic approach, they transformed their 
-                    online presence through consistent, quality content.
-                  </p>
+                  <div className="text-muted-foreground mb-6 space-y-3">
+                    <p><strong>Stuck at 200 views while others hit millions:</strong><br/>You post consistently but your content barely gets seen. Meanwhile, creators who started after you are going viral daily.</p>
+                    <p><strong>Zero revenue despite months of effort:</strong><br/>You're creating content for free while others monetize from day one. The algorithm works for them, not you.</p>
+                    <p><strong>Burning out from creating content nobody watches:</strong><br/>Hours spent filming, editing, posting... for what? 50 views? You're exhausted and ready to quit.</p>
+                    <p><strong>Lost in outdated strategies that don't work:</strong><br/>Following outdated guru advice that's completely irrelevant. The game has changed but nobody told you.</p>
+                  </div>
                   
-                  <h4 className="text-lg font-semibold mb-4 text-primary">Our Strategy:</h4>
+                  <h4 className="text-lg font-semibold mb-4 text-primary">Our Content Strategy:</h4>
                   <div className="space-y-3">
                     {caseStudyPoints.map((point, index) => (
                       <motion.div
