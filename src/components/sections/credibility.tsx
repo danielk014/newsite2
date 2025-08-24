@@ -97,9 +97,9 @@ export function CredibilitySection() {
                   <h4 className="text-lg font-semibold mb-4 text-primary">The Challenge:</h4>
                   <div className="text-muted-foreground mb-6 space-y-3">
                     <p><strong>Stuck at 200 views while others hit millions:</strong><br/>You post consistently but your content barely gets seen. Meanwhile, creators who started after you are going viral daily.</p>
-                    <p><strong>Zero revenue despite months of effort:</strong><br/>You're creating content for free while others monetize from day one. The algorithm works for them, not you.</p>
-                    <p><strong>Burning out from creating content nobody watches:</strong><br/>Hours spent filming, editing, posting... for what? 50 views? You're exhausted and ready to quit.</p>
-                    <p><strong>Lost in outdated strategies that don't work:</strong><br/>Following outdated guru advice that's completely irrelevant. The game has changed but nobody told you.</p>
+                    <p><strong>Zero revenue despite months of effort:</strong><br/>You&apos;re creating content for free while others monetize from day one. The algorithm works for them, not you.</p>
+                    <p><strong>Burning out from creating content nobody watches:</strong><br/>Hours spent filming, editing, posting... for what? 50 views? You&apos;re exhausted and ready to quit.</p>
+                    <p><strong>Lost in outdated strategies that don&apos;t work:</strong><br/>Following outdated guru advice that&apos;s completely irrelevant. The game has changed but nobody told you.</p>
                   </div>
                   
                   <h4 className="text-lg font-semibold mb-4 text-primary">Our Content Strategy:</h4>
