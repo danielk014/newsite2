@@ -127,8 +127,8 @@ export const bonuses = [
     value: "$497"
   },
   {
-    title: "🏆 Elite Chat Access",
-    description: "Earned access to our exclusive chat for proven success members only",
+    title: "📚 Case Studies",
+    description: "In-depth analysis of successful content creators and their strategies",
     value: "$1,997"
   },
   {
