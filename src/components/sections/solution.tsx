@@ -219,7 +219,7 @@ export function SolutionSection() {
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
                       <p className="font-semibold">Creator Toolkit <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Done-for-you templates and scripts</p>
+                      <p className="text-sm text-muted-foreground">Done-for-you templates and editing plugins</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
