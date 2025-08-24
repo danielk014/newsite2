@@ -124,8 +124,8 @@ export function CredibilitySection() {
                     <div className="space-y-4">
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">Optimized</span>
-                          <span className="text-sm text-muted-foreground">growth</span>
+                          <span className="text-3xl font-bold text-primary">Growth</span>
+                          <span className="text-sm text-muted-foreground">optimized audience</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
