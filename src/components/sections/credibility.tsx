@@ -16,6 +16,8 @@ const caseStudyPoints = [
   "Analytics Review & Performance Analysis - Identify what works in your niche",
   "Data-Driven Content Decisions - Use metrics to guide your strategy",
   "Audience Research & Behavior Analysis - Understand your viewers deeply",
+  "Content Optimization Based on Engagement Patterns",
+  "Strategic Posting & Distribution for Maximum Reach",
 ]
 
 export function CredibilitySection() {
