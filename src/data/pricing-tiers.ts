@@ -71,7 +71,7 @@ export const pricingTiers: PricingTier[] = [
       "🎁 BONUS: VIP Elite Community Access",
       "🎁 BONUS: Priority Support & Reviews",
     ],
-    cta: "Enroll now",
+    cta: "Apply now",
     guarantee: "30-Day Money-Back Guarantee",
   },
 ]

@@ -164,7 +164,7 @@ export function PricingSection() {
                     </a>
                   ) : tier.id === "elite" ? (
                     <a 
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfFkcp39tEpbznI66J6_GFGc1nhj_oAL8lF0U3KVY1v8m1CDw/viewform?usp=sharing&ouid=101707652396552481061" 
+                      href="https://forms.gle/GdQpiHqi28FH1CeY7" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
