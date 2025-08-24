@@ -20,7 +20,7 @@ const systemPillars = [
   {
     icon: Scissors,
     title: "Viral Clipping Mastery",
-    description: "Turn any long-form content into viral gold. Our proven clipping strategy generated billions of views.",
+    description: "Turn any long-form content into viral gold. Our proven clipping strategy generated 1 billion views/month.",
     features: [
       "Identify viral moments in seconds",
       "Edit like a pro with our templates",
