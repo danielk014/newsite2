@@ -10,60 +10,91 @@ export const courseModules: CourseModule[] = [
       "Building Authority in Any Niche (Even Saturated Ones)",
       "The 'Expert Positioning' Framework That Commands Premium Prices",
       "Converting Followers to Customers with Strategic Content",
-      "Personal Brand Monetization Blueprint"
+      "Personal Brand Monetization Blueprint",
+      "Dedicated Editing Tutorials for Personal Branding"
     ],
     duration: "4 hours",
     value: 997
   },
   {
     id: "2",
-    title: "Module 2: Editing Tutorials",
-    description: "Professional editing techniques that hook viewers and keep them watching - no expensive software required",
+    title: "Module 2: Personal Brand Long Form",
+    description: "Master long-form content creation to establish authority and deep connections with your audience",
     lessons: [
-      "The 'Retention Edit' Formula Used by Top Creators",
-      "Speed Editing in CapCut Like a Pro",
-      "Advanced Premiere Pro Techniques",
-      "Mobile Editing Mastery for Content on the Go",
-      "Color Grading & Audio Secrets of Viral Videos"
+      "Long-Form Content Strategy & Planning",
+      "Storytelling Techniques for Extended Content",
+      "Keeping Viewers Engaged for 10+ Minutes",
+      "YouTube Algorithm Optimization for Long Content",
+      "Podcast & Interview Format Mastery",
+      "Dedicated Editing Tutorials for Long-Form Content"
     ],
-    duration: "6 hours",
-    value: 897
+    duration: "5 hours",
+    value: 1297
+  },
+  {
+    id: "3",
+    title: "Module 3: Personal Brand Short Form",
+    description: "Create viral short-form content that builds your personal brand across all platforms",
+    lessons: [
+      "Short-Form Content Psychology",
+      "Hook Creation for Maximum Retention",
+      "Platform-Specific Strategies (TikTok, Shorts, Reels)",
+      "Rapid Content Production Systems",
+      "Trending Audio & Effect Implementation",
+      "Dedicated Editing Tutorials for Short-Form Content"
+    ],
+    duration: "4 hours",
+    value: 1197
   },
   {
     id: "4",
-    title: "Module 4: Viral Clip Mastery",
-    description: "Professional clipping techniques used by successful content creators",
+    title: "Module 4: Faceless AI Short Form Content",
+    description: "Create engaging content without showing your face using AI and automation tools",
     lessons: [
-      "The 'Viral Moment Spotter' - Find Gold in Any Content",
-      "Hook Psychology: Creating Engaging Content",
-      "The 60-Second Edit Method for Maximum Impact",
-      "Multi-Platform Distribution Strategy",
-      "Building Your Content Library for Growth"
+      "Faceless Content Strategy & Niche Selection",
+      "AI Voice Generation & Script Writing",
+      "Visual Storytelling Without Personal Appearance",
+      "Automation Workflows for Faceless Channels",
+      "Scaling Multiple Faceless Channels",
+      "Dedicated Editing Tutorials for Faceless Content"
     ],
     duration: "5 hours",
     value: 1497
   },
   {
-    id: "3",
-    title: "Module 3: Creator Revenue System",
+    id: "5",
+    title: "Module 5: Faceless Clipping Course",
+    description: "Master the art of creating viral clips from existing content without showing your face",
+    lessons: [
+      "Content Curation & Fair Use Guidelines",
+      "Finding Viral Moments in Any Content",
+      "Advanced Clipping Techniques & Transitions",
+      "Multi-Platform Distribution for Clips",
+      "Building a Profitable Clipping Business",
+      "Dedicated Editing Tutorials for Clipping"
+    ],
+    duration: "4 hours",
+    value: 1397
+  },
+  {
+    id: "6",
+    title: "Module 6: Monetization Course",
     description: "Learn to monetize your content effectively. Build multiple income streams and never rely on platform monetization alone",
     lessons: [
       "The 5 Revenue Streams Every Creator Needs",
       "Approaching Brand Partnerships (With Email Templates)",
-      "Creating Digital Products That Sell Themselves",
-      "Building Recurring Revenue with Membership Sites",
-      "The Creator Business Model Canvas",
-      "Affiliate Marketing That Actually Converts",
+      "Creating Digital Products That Sell",
+      "Building Recurring Revenue with Memberships",
+      "Affiliate Marketing That Converts",
       "Course Creation & Info Product Mastery",
       "Creating Effective Sales Funnels",
-      "Automated Systems for Passive Income",
       "Scaling Your Creator Business"
     ],
-    duration: "9 hours",
-    value: 3294
+    duration: "6 hours",
+    value: 2497
   },
   {
-    id: "5",
+    id: "7",
     title: "BONUS: AI Automation Suite",
     description: "10x your content output without burnout using cutting-edge AI tools",
     lessons: [
