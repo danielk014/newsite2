@@ -77,40 +77,47 @@ export function PricingSection() {
                     <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   </div>
 
-                  {tier.id !== 'elite' && (
-                    <div className="text-center mb-8">
-                      {tier.price > 0 ? (
-                        <>
-                          <div className="flex items-baseline justify-center gap-2 mb-2">
-                            <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
-                            <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            {tier.billingPeriod === "year" ? (
-                              "Billed annually"
-                            ) : billingCycle === "yearly" ? (
-                              <>
-                                <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
-                                {" "}
-                                <span className="text-accent font-semibold">Billed annually</span>
-                              </>
-                            ) : (
-                              "Billed monthly"
-                            )}
-                          </p>
-                        </>
-                      ) : (
-                        <>
-                          <div className="mb-2">
-                            <span className="text-2xl font-bold">Custom Pricing</span>
-                          </div>
-                          <p className="text-sm text-muted-foreground">
-                            Contact us for enterprise pricing
-                          </p>
-                        </>
-                      )}
-                    </div>
-                  )}
+                  <div className="text-center mb-8">
+                    {tier.id === 'elite' ? (
+                      <>
+                        <div className="mb-2">
+                          <span className="text-2xl font-bold text-primary">Application Only</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Premium 1-on-1 coaching program
+                        </p>
+                      </>
+                    ) : tier.price > 0 ? (
+                      <>
+                        <div className="flex items-baseline justify-center gap-2 mb-2">
+                          <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
+                          <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          {tier.billingPeriod === "year" ? (
+                            "Billed annually"
+                          ) : billingCycle === "yearly" ? (
+                            <>
+                              <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
+                              {" "}
+                              <span className="text-accent font-semibold">Billed annually</span>
+                            </>
+                          ) : (
+                            "Billed monthly"
+                          )}
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <div className="mb-2">
+                          <span className="text-2xl font-bold">Custom Pricing</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">
+                          Contact us for enterprise pricing
+                        </p>
+                      </>
+                    )}
+                  </div>
 
                   <div className="space-y-4 mb-8">
                     {tier.features.map((feature, featureIndex) => (
