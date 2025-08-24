@@ -130,8 +130,8 @@ export function HeroSection() {
               <div className="text-sm text-muted-foreground">Active Students</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">50+</div>
-              <div className="text-sm text-muted-foreground">Hours of Content</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">Easy</div>
+              <div className="text-sm text-muted-foreground">To Follow System</div>
             </div>
           </motion.div>
 
