@@ -124,8 +124,8 @@ export function CredibilitySection() {
                     <div className="space-y-4">
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">10x</span>
-                          <span className="text-sm text-muted-foreground">audience growth</span>
+                          <span className="text-3xl font-bold text-primary">Growth</span>
+                          <span className="text-sm text-muted-foreground">optimized audience</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
@@ -139,8 +139,8 @@ export function CredibilitySection() {
                       </div>
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">Top 1%</span>
-                          <span className="text-sm text-muted-foreground">in their niche</span>
+                          <span className="text-3xl font-bold text-primary">Quality</span>
+                          <span className="text-sm text-muted-foreground">content creation</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
