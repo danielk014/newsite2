@@ -10,8 +10,7 @@ export const courseModules: CourseModule[] = [
       "Building Authority in Any Niche (Even Saturated Ones)",
       "The 'Expert Positioning' Framework That Commands Premium Prices",
       "Converting Followers to Customers with Strategic Content",
-      "Personal Brand Monetization Blueprint",
-      "Dedicated Editing Tutorials for Personal Branding"
+      "Personal Brand Monetization Blueprint"
     ],
     duration: "4 hours",
     value: 997
@@ -23,7 +22,6 @@ export const courseModules: CourseModule[] = [
     lessons: [
       "Long-Form Content Strategy & Planning",
       "Storytelling Techniques for Extended Content",
-      "Keeping Viewers Engaged for 10+ Minutes",
       "YouTube Algorithm Optimization for Long Content",
       "Podcast & Interview Format Mastery",
       "Dedicated Editing Tutorials for Long-Form Content"
@@ -54,8 +52,6 @@ export const courseModules: CourseModule[] = [
       "Faceless Content Strategy & Niche Selection",
       "AI Voice Generation & Script Writing",
       "Visual Storytelling Without Personal Appearance",
-      "Automation Workflows for Faceless Channels",
-      "Scaling Multiple Faceless Channels",
       "Dedicated Editing Tutorials for Faceless Content"
     ],
     duration: "5 hours",
