@@ -45,13 +45,13 @@ export function ProblemSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Ready for Real Results?
+              You're Losing <span className="text-destructive">$50K+</span> Every Year
               <br />
-              <span className="text-primary">Your Success Story Starts Here</span>
+              <span className="text-primary">With Ineffective Content Strategy</span>
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Join thousands who transformed their content game from struggling to thriving. 
-              The difference? They found the right system. Now it&apos;s your turn.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Every day you delay is another day of lost revenue. Our students went from $0 to $5K-$25K/month. 
+              <span className="font-semibold text-foreground">Stop leaving money on the table.</span>
             </p>
           </motion.div>
 
@@ -76,7 +76,14 @@ export function ProblemSection() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-destructive/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 <div className="relative z-10">
-                  <point.icon className="w-10 h-10 text-destructive mb-4" />
+                  <div className="flex items-start justify-between mb-4">
+                    <point.icon className="w-10 h-10 text-destructive" />
+                    {point.lostRevenue && (
+                      <div className="bg-destructive/10 text-destructive px-3 py-1 rounded-full text-sm font-semibold">
+                        -{point.lostRevenue}
+                      </div>
+                    )}
+                  </div>
                   <h3 className="text-xl font-semibold mb-2">{point.title}</h3>
                   <p className="text-muted-foreground">{point.description}</p>
                 </div>

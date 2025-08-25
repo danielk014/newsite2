@@ -57,11 +57,11 @@ export function SolutionSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Introducing: The <span className="text-primary">Complete Creator System</span>
+              The System That Generated <span className="text-primary">$500K+ Revenue</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              A comprehensive framework for building engaging content and growing 
-              your online presence sustainably. Learn from proven strategies.
+              Our 3-pillar system helped students go from $0 to $25K/month in 90 days. 
+              Stop guessing what works. Start using <span className="font-semibold text-foreground">data-proven strategies</span>.
             </p>
           </motion.div>
 
@@ -75,7 +75,7 @@ export function SolutionSection() {
             className="space-y-8 mb-16"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
-              The 3-Pillar Creator System
+              3 Pillars = <span className="text-primary">Predictable $5K-$25K Monthly Income</span>
             </h3>
             
             {systemPillars.map((pillar, index) => (
@@ -116,14 +116,14 @@ export function SolutionSection() {
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''} text-center`}>
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
-                      {index === 0 && "Quick"}
-                      {index === 1 && "100+"}
-                      {index === 2 && "4.8"}
+                      {index === 0 && "$25K"}
+                      {index === 1 && "2B+"}
+                      {index === 2 && "90"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "To Start"}
-                      {index === 1 && "Active Students"}
-                      {index === 2 && "Average Rating"}
+                      {index === 0 && "Monthly Revenue Potential"}
+                      {index === 1 && "Views Generated"}
+                      {index === 2 && "Days to Profit"}
                     </p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export function SolutionSection() {
             className="bg-accent/10 border border-accent/20 rounded-2xl p-8 md:p-12 mb-16"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Everything You Need to Succeed
+              Everything You Need to Hit <span className="text-primary">$10K+/Month</span>
             </h3>
             
             <div className="space-y-8">
@@ -355,11 +355,11 @@ export function SolutionSection() {
             className="text-center space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
-              Ready to Join the 1% of Creators Who Actually Make Money?
+              Ready to Start Earning <span className="text-primary">$5K-$25K/Month</span>?
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Stop watching from the sidelines. Get the proven system that creates 
-              viral content and builds profitable personal brands.
+              Join 100+ students who transformed their content into <span className="font-semibold text-foreground">predictable income streams</span>. 
+              Your first $1K is just <span className="font-semibold text-foreground">30-90 days away</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/pricing">
@@ -367,7 +367,7 @@ export function SolutionSection() {
                   variant="cta" 
                   size="xl"
                 >
-                  Get Instant Access
+                  Start Earning Today
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -376,7 +376,7 @@ export function SolutionSection() {
                   variant="outline" 
                   size="xl"
                 >
-                  See Course Content
+                  View Success Stories
                 </Button>
               </Link>
             </div>

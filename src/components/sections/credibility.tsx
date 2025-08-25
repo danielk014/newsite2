@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const stats = [
-  { value: "Easy", label: "To Digest Course Content", icon: Eye },
-  { value: "100+", label: "Active Students", icon: Users },
-  { value: "4.8/5", label: "Student Rating", icon: Award },
-  { value: "24/7", label: "Support Access", icon: TrendingUp },
+  { value: "$500K+", label: "Total Student Revenue", icon: TrendingUp },
+  { value: "2B+", label: "Views Generated", icon: Eye },
+  { value: "90 Days", label: "Average Time to Profit", icon: Award },
+  { value: "150K+", label: "Avg Follower Growth", icon: Users },
 ]
 
 const caseStudyPoints = [
@@ -34,13 +34,13 @@ export function CredibilitySection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              We Don&apos;t Just Teach Viral Content...
+              Our Students Generated <span className="text-primary">$500K+</span>
               <br />
-              <span className="text-primary">We Create It</span>
+              <span className="text-primary">In Just 12 Months</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our team has years of experience in content creation and digital marketing. 
-              We share proven strategies that help creators build sustainable audiences.
+              Real results from real students. No fake screenshots, no inflated numbers. 
+              <span className="font-semibold text-foreground">These are verified revenue reports</span> from creators who followed our system.
             </p>
           </motion.div>
 

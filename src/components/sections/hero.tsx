@@ -63,10 +63,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            Learn <span className="text-primary">Professional Content Creation</span>
+            Go From <span className="text-destructive">200 Views</span> to <span className="text-primary">2M+ Views</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              With AI-Powered Tools and Expert Guidance
+              And Start Earning $5K-$25K/Month From Your Content
             </span>
           </motion.h1>
 
@@ -77,11 +77,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            Master the skills and strategies used by <span className="font-semibold text-foreground">successful content creators</span>.
+            Our students have generated <span className="font-semibold text-foreground">2B+ total views</span> and <span className="font-semibold text-foreground">$500K+ in revenue</span> using our proven system.
             <br />
-            Get access to <span className="font-semibold text-foreground">AI-powered tools and frameworks</span> that help you create
-            <br />
-            engaging content and build <span className="font-semibold text-foreground">sustainable online presence</span>.
+            Stop creating content that gets ignored. Start creating content that <span className="font-semibold text-primary">pays your bills</span>.
           </motion.p>
 
           {/* AI Tools Highlight */}
@@ -126,12 +124,12 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
-              <div className="text-sm text-muted-foreground">Active Students</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">2B+</div>
+              <div className="text-sm text-muted-foreground">Student Views Generated</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">Easy</div>
-              <div className="text-sm text-muted-foreground">To Follow System</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">$500K+</div>
+              <div className="text-sm text-muted-foreground">Student Revenue Earned</div>
             </div>
           </motion.div>
 
