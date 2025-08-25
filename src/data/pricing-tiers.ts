@@ -11,6 +11,7 @@ export interface PricingTier {
   guarantee: string
 }
 
+// Updated pricing tiers for Creator Camp Academy
 export const pricingTiers: PricingTier[] = [
   {
     id: "starter",
