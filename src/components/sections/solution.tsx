@@ -211,7 +211,7 @@ export function SolutionSection() {
                 <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 text-center max-w-3xl mx-auto">
                   <p className="text-xs md:text-sm">
                     <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
-                    then transition to personal branding once they're comfortable. You get access to BOTH paths with your enrollment!
+                    then transition to personal branding once they&apos;re comfortable. You get access to BOTH paths with your enrollment!
                   </p>
                 </div>
               </div>
