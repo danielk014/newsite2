@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const stats = [
-  { value: "$500K+", label: "Total Student Revenue", icon: TrendingUp },
-  { value: "2B+", label: "Views Generated", icon: Eye },
-  { value: "90 Days", label: "Average Time to Profit", icon: Award },
-  { value: "150K+", label: "Avg Follower Growth", icon: Users },
+  { value: "100+", label: "Active Students", icon: Users },
+  { value: "4.8/5", label: "Student Rating", icon: Award },
+  { value: "Proven", label: "Strategies Taught", icon: TrendingUp },
+  { value: "24/7", label: "Support Access", icon: Eye },
 ]
 
 const caseStudyPoints = [
@@ -34,13 +34,13 @@ export function CredibilitySection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Our Students Generated <span className="text-primary">$500K+</span>
+              Learn From <span className="text-primary">Proven Creators</span>
               <br />
-              <span className="text-primary">In Just 12 Months</span>
+              <span className="text-primary">Who Actually Deliver</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real results from real students. No fake screenshots, no inflated numbers. 
-              <span className="font-semibold text-foreground">These are verified revenue reports</span> from creators who followed our system.
+              Our team has experience in content creation and digital marketing. 
+              We share <span className="font-semibold text-foreground">practical strategies</span> that help creators build sustainable audiences.
             </p>
           </motion.div>
 
