@@ -216,6 +216,74 @@ export function SolutionSection() {
                 </div>
               </div>
 
+              {/* Core Training Modules */}
+              <div className="text-center">
+                <h4 className="text-xl font-bold mb-6 flex items-center justify-center gap-2">
+                  <span className="text-2xl">🎯</span> CORE TRAINING MODULES
+                </h4>
+                <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                  <div className="bg-card border border-border rounded-lg p-6 text-left">
+                    <div className="flex items-start gap-3 mb-4">
+                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <h5 className="font-semibold mb-1">Personal Brand Lab</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Build your authority and convert followers to customers</p>
+                        <ul className="text-xs text-muted-foreground space-y-1">
+                          <li>• Finding Your Unique Creator Identity & Positioning</li>
+                          <li>• Building Authority in Any Niche (Even Saturated Ones)</li>
+                          <li>• Converting Followers to Customers with Strategic Content</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-card border border-border rounded-lg p-6 text-left">
+                    <div className="flex items-start gap-3 mb-4">
+                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <h5 className="font-semibold mb-1">Viral Clip Mastery</h5>
+                        <p className="text-sm text-muted-foreground mb-3">The exact system that generated 2B+ views</p>
+                        <ul className="text-xs text-muted-foreground space-y-1">
+                          <li>• The &apos;Viral Moment Spotter&apos; - Find Gold in Any Content</li>
+                          <li>• Hook Psychology: Why Some Clips Get 10M+ Views</li>
+                          <li>• Multi-Platform Distribution Strategy</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-card border border-border rounded-lg p-6 text-left">
+                    <div className="flex items-start gap-3 mb-4">
+                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <h5 className="font-semibold mb-1">Editing Tutorials</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Pro-level editing techniques that hook viewers</p>
+                        <ul className="text-xs text-muted-foreground space-y-1">
+                          <li>• Professional editing workflows & shortcuts</li>
+                          <li>• Hooks, transitions & retention strategies</li>
+                          <li>• No expensive software required</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-card border border-border rounded-lg p-6 text-left">
+                    <div className="flex items-start gap-3 mb-4">
+                      <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+                      <div>
+                        <h5 className="font-semibold mb-1">Monetization System</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Learn to monetize your content effectively</p>
+                        <ul className="text-xs text-muted-foreground space-y-1">
+                          <li>• The 5 Revenue Streams Every Creator Needs</li>
+                          <li>• Landing $5K+ Brand Deals (With Email Templates)</li>
+                          <li>• Scaling your creator business sustainably</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Community */}
               <div className="text-center">
                 <h4 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle, Clock, DollarSign, Gift, Lock, User, EyeOff } from "lucide-react"
+import { CheckCircle, Clock, DollarSign, Gift, User, EyeOff } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -228,8 +228,8 @@ export function CurriculumSection() {
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  "Started with 2K followers, now at 150K in 8 months using the Personal Brand path. 
-                  Monthly revenue went from $0 to $12K through brand partnerships."
+                  &quot;Started with 2K followers, now at 150K in 8 months using the Personal Brand path. 
+                  Monthly revenue went from $0 to $12K through brand partnerships.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
                   <span className="text-accent">📈 7,400% growth</span>
@@ -248,8 +248,8 @@ export function CurriculumSection() {
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  "Chose the faceless path and built a 500K TikTok following in 6 months. 
-                  Now earning $8K monthly through affiliate marketing and digital products."
+                  &quot;Chose the faceless path and built a 500K TikTok following in 6 months. 
+                  Now earning $8K monthly through affiliate marketing and digital products.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
                   <span className="text-accent">📈 500K followers</span>
@@ -268,8 +268,8 @@ export function CurriculumSection() {
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  "Used the AI automation tools to scale content creation. Now posting 
-                  3x daily across platforms while working only 2 hours per day on content."
+                  &quot;Used the AI automation tools to scale content creation. Now posting 
+                  3x daily across platforms while working only 2 hours per day on content.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
                   <span className="text-accent">⚡ 3x daily posts</span>
@@ -288,8 +288,8 @@ export function CurriculumSection() {
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  "Applied the monetization strategies and launched my first course. 
-                  Generated $25K in the first month using the exact funnel templates provided."
+                  &quot;Applied the monetization strategies and launched my first course. 
+                  Generated $25K in the first month using the exact funnel templates provided.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
                   <span className="text-accent">🚀 First launch</span>
