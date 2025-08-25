@@ -199,29 +199,115 @@ export function CurriculumSection() {
             </div>
           </motion.div>
 
-          {/* Locked Content Teaser */}
+          {/* Case Studies Section */}
           <motion.div
             initial={{ opacity: 1, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0 }}
-            className="bg-card border border-primary/20 rounded-xl p-8 text-center mb-12"
+            className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-xl p-8 mb-12"
           >
-            <Lock className="w-12 h-12 text-primary mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">
-              Plus Advanced Mastermind Content
-            </h3>
-            <p className="text-muted-foreground mb-6">
-              Get access to our weekly live calls where we break down what&apos;s working RIGHT NOW. 
-              See real campaigns, real numbers, and strategies you won&apos;t find anywhere else.
-            </p>
-            <Link href="/pricing">
-              <Button 
-                variant="cta" 
-                size="lg"
-              >
-                Unlock Everything Now
-              </Button>
-            </Link>
+            <div className="text-center mb-8">
+              <CheckCircle className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">
+                Real Student Case Studies
+              </h3>
+              <p className="text-muted-foreground">
+                See exactly how our students are achieving results with these proven strategies
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <User className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Sarah M.</p>
+                    <p className="text-sm text-muted-foreground">Lifestyle Creator</p>
+                  </div>
+                </div>
+                <p className="text-sm mb-3">
+                  "Started with 2K followers, now at 150K in 8 months using the Personal Brand path. 
+                  Monthly revenue went from $0 to $12K through brand partnerships."
+                </p>
+                <div className="flex gap-4 text-xs font-semibold">
+                  <span className="text-accent">📈 7,400% growth</span>
+                  <span className="text-primary">💰 $12K/month</span>
+                </div>
+              </div>
+
+              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <EyeOff className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Mike R.</p>
+                    <p className="text-sm text-muted-foreground">Faceless Creator</p>
+                  </div>
+                </div>
+                <p className="text-sm mb-3">
+                  "Chose the faceless path and built a 500K TikTok following in 6 months. 
+                  Now earning $8K monthly through affiliate marketing and digital products."
+                </p>
+                <div className="flex gap-4 text-xs font-semibold">
+                  <span className="text-accent">📈 500K followers</span>
+                  <span className="text-primary">💰 $8K/month</span>
+                </div>
+              </div>
+
+              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <User className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Jessica L.</p>
+                    <p className="text-sm text-muted-foreground">Fitness Coach</p>
+                  </div>
+                </div>
+                <p className="text-sm mb-3">
+                  "Used the AI automation tools to scale content creation. Now posting 
+                  3x daily across platforms while working only 2 hours per day on content."
+                </p>
+                <div className="flex gap-4 text-xs font-semibold">
+                  <span className="text-accent">⚡ 3x daily posts</span>
+                  <span className="text-primary">⏱️ 2hr/day</span>
+                </div>
+              </div>
+
+              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                    <DollarSign className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Tom K.</p>
+                    <p className="text-sm text-muted-foreground">Business Coach</p>
+                  </div>
+                </div>
+                <p className="text-sm mb-3">
+                  "Applied the monetization strategies and launched my first course. 
+                  Generated $25K in the first month using the exact funnel templates provided."
+                </p>
+                <div className="flex gap-4 text-xs font-semibold">
+                  <span className="text-accent">🚀 First launch</span>
+                  <span className="text-primary">💰 $25K/month</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="#pricing">
+                <Button 
+                  variant="cta" 
+                  size="lg"
+                >
+                  Get Your Case Study Next
+                </Button>
+              </Link>
+            </div>
           </motion.div>
 
 
