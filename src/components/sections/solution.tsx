@@ -216,7 +216,7 @@ export function SolutionSection() {
                 </div>
               </div>
 
-              {/* Core Training Modules */}
+              {/* Core Training Modules - Updated with detailed content */}
               <div className="text-center">
                 <h4 className="text-xl font-bold mb-6 flex items-center justify-center gap-2">
                   <span className="text-2xl">🎯</span> CORE TRAINING MODULES
