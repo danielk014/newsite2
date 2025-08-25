@@ -1,10 +1,11 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle2, ArrowRight, Scissors, Bot, BadgeCheck } from "lucide-react"
+import { CheckCircle2, ArrowRight, Scissors, Bot, BadgeCheck, User, EyeOff } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
 import Link from "next/link"
+import { useState } from "react"
 
 const systemPillars = [
   {
@@ -41,6 +42,8 @@ const systemPillars = [
 
 
 export function SolutionSection() {
+  const [selectedPath, setSelectedPath] = useState<"personal" | "faceless" | null>(null)
+  
   return (
     <section className="pt-20 md:pt-32 pb-10 md:pb-16 bg-background">
       <div className="container mx-auto px-4 md:px-6">
@@ -142,40 +145,74 @@ export function SolutionSection() {
             </h3>
             
             <div className="space-y-8">
-              {/* Core Training */}
+              {/* Learning Paths */}
               <div className="text-center">
-                <h4 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
-                  <span className="text-2xl">🎬</span> CORE TRAINING
+                <h4 className="text-xl font-bold mb-6 flex items-center justify-center gap-2">
+                  <span className="text-2xl">🎯</span> CHOOSE YOUR LEARNING PATH
                 </h4>
-                <div className="max-w-2xl mx-auto space-y-4">
-                  <div className="flex items-start gap-3 text-left">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold">Personal Brand Lab</p>
-                      <p className="text-sm text-muted-foreground">Build your authority and convert followers to customers</p>
+                
+                {/* Path Selection */}
+                <div className="grid md:grid-cols-2 gap-6 mb-8 max-w-4xl mx-auto">
+                  <motion.button
+                    onClick={() => setSelectedPath(selectedPath === "personal" ? null : "personal")}
+                    className={`p-6 rounded-xl border-2 transition-all ${
+                      selectedPath === "personal" 
+                        ? "border-primary bg-primary/10" 
+                        : "border-border hover:border-primary/50 bg-background"
+                    }`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <User className="w-12 h-12 text-primary mx-auto mb-4" />
+                    <h5 className="text-lg font-bold mb-2">Personal Brand Path</h5>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Build your personal brand and connect with your audience face-to-face
+                    </p>
+                    <div className="space-y-2 text-left">
+                      <p className="text-xs font-medium">Includes:</p>
+                      <ul className="text-xs text-muted-foreground space-y-1">
+                        <li>• Personal Brand Lab</li>
+                        <li>• Personal Brand Long Form</li>
+                        <li>• Personal Brand Short Form</li>
+                        <li>• Monetization Course</li>
+                        <li>• AI Tools (Bonus)</li>
+                      </ul>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3 text-left">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold">Viral Clip Mastery</p>
-                      <p className="text-sm text-muted-foreground">The exact system that generated 2B+ views</p>
+                  </motion.button>
+
+                  <motion.button
+                    onClick={() => setSelectedPath(selectedPath === "faceless" ? null : "faceless")}
+                    className={`p-6 rounded-xl border-2 transition-all ${
+                      selectedPath === "faceless" 
+                        ? "border-primary bg-primary/10" 
+                        : "border-border hover:border-primary/50 bg-background"
+                    }`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <EyeOff className="w-12 h-12 text-primary mx-auto mb-4" />
+                    <h5 className="text-lg font-bold mb-2">Faceless Content Path</h5>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Create content without showing your face - perfect for privacy-conscious creators
+                    </p>
+                    <div className="space-y-2 text-left">
+                      <p className="text-xs font-medium">Includes:</p>
+                      <ul className="text-xs text-muted-foreground space-y-1">
+                        <li>• Faceless AI Short Form</li>
+                        <li>• Faceless Clipping Course</li>
+                        <li>• Monetization Course</li>
+                        <li>• AI Tools (Bonus)</li>
+                      </ul>
                     </div>
-                  </div>
-                  <div className="flex items-start gap-3 text-left">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold">Monetization System</p>
-                      <p className="text-sm text-muted-foreground">Learn to monetize your content effectively</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3 text-left">
-                    <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <div>
-                      <p className="font-semibold">Editing Tutorials</p>
-                      <p className="text-sm text-muted-foreground">Pro-level editing techniques that hook viewers</p>
-                    </div>
-                  </div>
+                  </motion.button>
+                </div>
+                
+                {/* Path Explainer */}
+                <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 text-center max-w-3xl mx-auto">
+                  <p className="text-xs md:text-sm">
+                    <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
+                    then transition to personal branding once they're comfortable. You get access to BOTH paths with your enrollment!
+                  </p>
                 </div>
               </div>
 
