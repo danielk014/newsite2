@@ -126,8 +126,8 @@ export function CredibilitySection() {
                     <div className="space-y-4">
                       <div>
                         <div className="flex items-baseline gap-2 mb-1">
-                          <span className="text-3xl font-bold text-primary">Growth</span>
-                          <span className="text-sm text-muted-foreground">optimized audience</span>
+                          <span className="text-3xl font-bold text-primary">Optimized</span>
+                          <span className="text-sm text-muted-foreground">growth</span>
                         </div>
                         <div className="w-full bg-background rounded-full h-2">
                           <motion.div 
@@ -178,7 +178,7 @@ export function CredibilitySection() {
                     className="mx-auto block"
                   >
                     Get The Exact Blueprint
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                    <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </div>
