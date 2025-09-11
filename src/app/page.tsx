@@ -12,7 +12,7 @@ export default function Home() {
       <HeroSection />
       <CredibilitySection />
       
-      <TestimonialStrip startIndex={0} title="Our Students Are Crushing It!" />
+      <TestimonialStrip startIndex={0} title="Faceless YouTubers Are Banking!" />
       
       <ProblemSection />
       
@@ -26,10 +26,10 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-4xl mx-auto mb-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Everything You Need to <span className="text-primary">Succeed</span>
+              Everything You Need to <span className="text-primary">Automate</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Get access to the complete system that&apos;s helped thousands go viral and build 6-figure businesses
+              Get access to the complete automation system that&apos;s helped thousands build profitable faceless YouTube empires
             </p>
           </div>
 
@@ -49,12 +49,12 @@ export default function Home() {
                     <span className="text-xs text-white font-bold">✓</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">Personal Brand Lab</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Build your authority and convert followers to customers</p>
+                    <h4 className="text-lg font-semibold text-accent mb-2">Faceless Channel Setup</h4>
+                    <p className="text-muted-foreground text-sm mb-3">Launch profitable YouTube channels without showing your face</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Finding Your Unique Creator Identity & Positioning</li>
-                      <li>• Building Authority in Any Niche (Even Saturated Ones)</li>
-                      <li>• Converting Followers to Customers with Strategic Content</li>
+                      <li>• High-Profit Niche Selection & Market Research</li>
+                      <li>• Anonymous Channel Creation & Optimization</li>
+                      <li>• Privacy Protection & Security Protocols</li>
                     </ul>
                   </div>
                 </div>
@@ -66,12 +66,12 @@ export default function Home() {
                     <span className="text-xs text-white font-bold">✓</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">Viral Clip Mastery</h4>
-                    <p className="text-muted-foreground text-sm mb-3">The exact system that generated 2B+ views</p>
+                    <h4 className="text-lg font-semibold text-accent mb-2">AI Content Creation</h4>
+                    <p className="text-muted-foreground text-sm mb-3">Automate video creation using cutting-edge AI</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• The &apos;Viral Moment Spotter&apos; - Find Gold in Any Content</li>
-                      <li>• Hook Psychology: Why Some Clips Get 10M+ Views</li>
-                      <li>• Multi-Platform Distribution Strategy</li>
+                      <li>• AI Script Generation for Trending Topics</li>
+                      <li>• Automated Video Assembly & Editing</li>
+                      <li>• Voice Synthesis & Custom Narration</li>
                     </ul>
                   </div>
                 </div>
@@ -83,12 +83,12 @@ export default function Home() {
                     <span className="text-xs text-white font-bold">✓</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">Editing Tutorials</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Pro-level editing techniques that hook viewers</p>
+                    <h4 className="text-lg font-semibold text-accent mb-2">Automation Workflows</h4>
+                    <p className="text-muted-foreground text-sm mb-3">Complete hands-off channel management</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• Professional editing workflows & shortcuts</li>
-                      <li>• Hooks, transitions & retention strategies</li>
-                      <li>• No expensive software required</li>
+                      <li>• Automated Content Scheduling & Publishing</li>
+                      <li>• Smart Thumbnail Generation & A/B Testing</li>
+                      <li>• Performance Analytics & Optimization</li>
                     </ul>
                   </div>
                 </div>
@@ -100,12 +100,12 @@ export default function Home() {
                     <span className="text-xs text-white font-bold">✓</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">Monetization System</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Learn to monetize your content effectively</p>
+                    <h4 className="text-lg font-semibold text-accent mb-2">Scaling & Outsourcing</h4>
+                    <p className="text-muted-foreground text-sm mb-3">Build a team and scale to multiple channels</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
-                      <li>• The 5 Revenue Streams Every Creator Needs</li>
-                      <li>• Landing $5K+ Brand Deals (With Email Templates)</li>
-                      <li>• Scaling your creator business sustainably</li>
+                      <li>• Virtual Team Building & Management</li>
+                      <li>• Multi-Channel Empire Strategies</li>
+                      <li>• Advanced Revenue Optimization</li>
                     </ul>
                   </div>
                 </div>
@@ -241,16 +241,16 @@ export default function Home() {
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Your Journey to <span className="text-primary">Viral Success</span> Starts Here
+            Your Journey to <span className="text-primary">YouTube Automation</span> Starts Here
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Don&apos;t let another day pass wondering &quot;what if&quot;. Join thousands who took action and changed their lives.
+            Don&apos;t let another day pass being camera shy. Join thousands who built profitable faceless channels.
           </p>
           <a
             href="/pricing"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8"
           >
-            Get Started Today
+            Start Automating Today
           </a>
         </div>
       </section>

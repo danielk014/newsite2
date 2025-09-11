@@ -95,8 +95,8 @@ export function FAQSection() {
               Our 30-Day Money-Back Guarantee
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-              Try our AI tools and faceless system for 30 days. If you complete Module 1 and don&apos;t see value,
-              get 100% of your money back. We&apos;ve helped countless creators build successful businesses.
+              Try our automation system for 30 days. If you complete Module 1 and don&apos;t see clear value,
+              get 100% of your money back. We&apos;ve helped countless entrepreneurs build profitable faceless YouTube empires.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 

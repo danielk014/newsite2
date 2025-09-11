@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Creator Camp Academy",
-  description: "Professional Content Creation Training and AI-Powered Tools",
-  url: "https://www.creatorcamp.academy/",
+  name: "YouTube Automation Academy",
+  description: "Complete Faceless YouTube Automation System and AI-Powered Tools",
+  url: "https://www.youtubeautomation.academy/",
   ogImage: "/og-image.jpg",
   links: {
     checkout: "#checkout",
@@ -18,5 +18,5 @@ export const siteConfig = {
   },
   guaranteeDays: 30,
   studentCount: "100+",
-  averageResult: "Professional Content Creator",
+  averageResult: "Profitable Faceless YouTube Channel",
 }

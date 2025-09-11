@@ -46,7 +46,7 @@ export function HeroSection() {
               className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
             />
             <Eye className="w-4 h-4 relative z-10" />
-            <span className="relative z-10 font-bold">PROVEN CONTENT STRATEGIES</span>
+            <span className="relative z-10 font-bold">FACELESS YOUTUBE AUTOMATION</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -63,10 +63,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            Master <span className="text-primary">Professional Content Creation</span>
+            Build a <span className="text-primary">Profitable YouTube Channel</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              With Proven Strategies and AI-Powered Tools
+              Without Showing Your Face or Voice
             </span>
           </motion.h1>
 
@@ -77,9 +77,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            Learn from <span className="font-semibold text-foreground">successful content creators</span> who have built engaged audiences.
+            Discover the <span className="font-semibold text-foreground">complete system</span> to create profitable faceless YouTube channels.
             <br />
-            Get access to <span className="font-semibold text-primary">proven frameworks</span> and tools that help you create consistent, engaging content.
+            Get access to <span className="font-semibold text-primary">automation tools</span> and strategies that generate passive income while you sleep.
           </motion.p>
 
           {/* AI Tools Highlight */}
@@ -91,24 +91,24 @@ export function HeroSection() {
           >
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">AI Tools Included</h3>
+              <h3 className="text-xl font-bold text-primary">YouTube Automation Suite</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
             <p className="text-center text-muted-foreground mb-3">
-              Stop guessing what content works. Our AI tools analyze millions of data points to predict viral potential
+              Automate your entire YouTube workflow. Our tools handle everything from content creation to optimization
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>AI Script Writer</span>
+                <span>Automated Content Creation</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Revenue Analytics</span>
+                <span>Channel Analytics</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Viral Prediction</span>
+                <span>Niche Research Tools</span>
               </div>
             </div>
             <p className="text-center text-xs text-muted-foreground mt-3">
@@ -124,12 +124,12 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
-              <div className="text-sm text-muted-foreground">Active Students</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">$50K+</div>
+              <div className="text-sm text-muted-foreground">Avg Monthly Revenue</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">4.8/5</div>
-              <div className="text-sm text-muted-foreground">Student Rating</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
+              <div className="text-sm text-muted-foreground">Successful Channels</div>
             </div>
           </motion.div>
 
@@ -165,7 +165,7 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <BadgeCheck className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">PROVEN SYSTEM</span>
+              <span className="text-xs font-medium">AUTOMATED SYSTEM</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Shield className="w-4 h-4 text-accent" />
               <span className="text-xs font-medium">30-DAY MONEY-BACK GUARANTEE</span>
@@ -177,10 +177,10 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <Zap className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-xs font-medium">PRO: AI TOOLS INCLUDED</span>
+              <span className="text-xs font-medium">COMPLETE AUTOMATION</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">PREMIUM TOOLS</span>
+              <span className="text-xs font-medium">DONE-FOR-YOU SYSTEM</span>
             </motion.div>
           </motion.div>
 

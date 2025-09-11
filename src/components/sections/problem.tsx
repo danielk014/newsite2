@@ -8,23 +8,23 @@ import Link from "next/link"
 const painPoints = [
   {
     icon: Eye,
-    title: "Stuck at 200 views while others hit millions",
-    description: "You post consistently but your content barely gets seen. Meanwhile, creators who started after you are going viral daily.",
+    title: "Terrified of showing your face on camera",
+    description: "You want to create content but the thought of being on camera makes you anxious. Privacy concerns and camera shyness are holding you back.",
   },
   {
     icon: DollarSign,
-    title: "Zero revenue despite months of effort",
-    description: "You're creating content for free while others monetize from day one. The algorithm works for them, not you.",
+    title: "Can't figure out how to make money without personal branding",
+    description: "All the advice is about building a personal brand, but you want to stay anonymous. How do faceless creators actually make money?",
   },
   {
     icon: Brain,
-    title: "Burning out from creating content nobody watches",
-    description: "Hours spent filming, editing, posting... for what? 50 views? You're exhausted and ready to quit.",
+    title: "Overwhelmed by the technical side of YouTube automation",
+    description: "AI tools, automation software, outsourcing... it all seems too complex. You need a simple system that actually works.",
   },
   {
     icon: TrendingDown,
-    title: "Lost in outdated strategies that don't work",
-    description: "Following outdated guru advice that's completely irrelevant. The game has changed but nobody told you.",
+    title: "Wasting time on content that never gets views",
+    description: "Without knowing what works, you're throwing content at the wall hoping something sticks. Meanwhile, others are hitting millions of views.",
   },
 ]
 
@@ -45,13 +45,13 @@ export function ProblemSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Ready to Transform Your Content?
+              Tired of Being Camera Shy?
               <br />
-              <span className="text-primary">Join Successful Creators</span>
+              <span className="text-primary">Go Faceless & Profitable</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join creators who transformed their content strategy and built engaged audiences. 
-              Learn the proven methods that <span className="font-semibold text-foreground">actually work</span>.
+              Discover how to build a profitable YouTube channel without ever showing your face or voice. 
+              Learn the automation strategies that <span className="font-semibold text-foreground">generate passive income</span>.
             </p>
           </motion.div>
 
@@ -98,35 +98,35 @@ export function ProblemSection() {
               
               <div className="space-y-4 max-w-3xl mx-auto">
                 <p className="text-lg">
-                  <span className="font-semibold text-destructive">You&apos;re not failing because you lack talent.</span>
+                  <span className="font-semibold text-destructive">You don&apos;t need to show your face to make money on YouTube.</span>
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  You&apos;re failing because you&apos;re using outdated strategies that no longer work.
+                  You&apos;re struggling because you think you need to be a personality to succeed.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  While you&apos;re following outdated YouTube tutorials, successful creators are using 
-                  <span className="font-semibold text-foreground"> proven systems</span> that generate 
+                  While you&apos;re avoiding YouTube because of camera anxiety, faceless creators are using 
+                  <span className="font-semibold text-foreground"> automated systems</span> that generate 
                   <span className="font-semibold text-foreground"> millions of views</span> and 
-                  <span className="font-semibold text-foreground"> real revenue</span>.
+                  <span className="font-semibold text-foreground"> passive income</span>.
                 </p>
               </div>
 
               <div className="pt-6">
                 <p className="text-xl font-semibold text-primary">
-                  High-earning creators? They&apos;re not smarter than you.
+                  Top faceless YouTube channels? They&apos;re not more talented than you.
                 </p>
                 <p className="text-lg text-muted-foreground mt-2">
-                  They just have access to the right playbook and AI tools.
+                  They just have access to the right automation system and tools.
                 </p>
               </div>
               
               {/* AI Solution Teaser */}
               <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
                 <p className="text-center text-lg font-semibold mb-2">
-                  🤖 What if AI could do the heavy lifting for you?
+                  🤖 What if you could automate your entire YouTube channel?
                 </p>
                 <p className="text-center text-muted-foreground">
-                  Our AI suite eliminates guesswork by analyzing what works, writing viral scripts, and predicting success before you even hit record.
+                  Our automation system handles content creation, optimization, and scaling - all without showing your face or using your voice.
                 </p>
               </div>
             </div>
@@ -151,23 +151,23 @@ export function ProblemSection() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Random posting hoping something sticks</span>
+                    <span className="text-sm">Avoiding YouTube due to camera anxiety</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Following generic &quot;post 3x daily&quot; advice</span>
+                    <span className="text-sm">Thinking you need a personal brand to succeed</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Creating content nobody asked for</span>
+                    <span className="text-sm">Manual content creation with no automation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Zero monetization strategy</span>
+                    <span className="text-sm">No system for scaling without showing face</span>
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-destructive">Result: Still broke in 12 months</p>
+                  <p className="text-sm font-medium text-destructive">Result: Still camera shy and broke</p>
                 </div>
               </div>
             </div>
@@ -178,32 +178,32 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-accent/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-8 h-8 text-accent" />
-                  <h4 className="font-bold text-lg">What Top Creators Do</h4>
+                  <h4 className="font-bold text-lg">What Faceless YouTubers Do</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Use viral clipping strategies that work</span>
+                    <span className="text-sm">Automate content creation with proven systems</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Build personal brands that convert</span>
+                    <span className="text-sm">Stay anonymous while building profitable channels</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Leverage AI to 10x output without burnout</span>
+                    <span className="text-sm">Use AI and automation for 10x output</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Create content people actually want</span>
+                    <span className="text-sm">Target profitable niches with data-driven content</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Monetize from day one</span>
+                    <span className="text-sm">Scale to multiple channels for passive income</span>
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-accent">Result: Building thriving creator businesses</p>
+                  <p className="text-sm font-medium text-accent">Result: Profitable faceless YouTube empire</p>
                 </div>
               </div>
             </div>
@@ -221,8 +221,8 @@ export function ProblemSection() {
               Stop Struggling. Start Winning.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Get the proven framework and strategies used by 
-              successful content creators worldwide.
+              Get the complete automation system used by 
+              profitable faceless YouTube channels worldwide.
             </p>
             <Link href="/pricing">
               <Button 
@@ -230,7 +230,7 @@ export function ProblemSection() {
                 size="xl"
                 className="mx-auto"
               >
-                Yes, I Want The Blueprint →
+                Yes, I Want The Automation System →
               </Button>
             </Link>
           </motion.div>

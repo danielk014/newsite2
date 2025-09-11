@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle2, ArrowRight, Scissors, Bot, BadgeCheck, User, EyeOff } from "lucide-react"
+import { CheckCircle2, ArrowRight, Bot, User, EyeOff, DollarSign } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TestimonialImages } from "@/components/ui/testimonial-images"
 import Link from "next/link"
@@ -9,33 +9,33 @@ import { useState } from "react"
 
 const systemPillars = [
   {
-    icon: BadgeCheck,
-    title: "Personal Brand Blueprint",
-    description: "Build a personal brand that converts viewers into customers. Stop chasing vanity metrics.",
+    icon: EyeOff,
+    title: "Faceless Channel Setup",
+    description: "Build profitable YouTube channels without ever showing your face or using your voice. Complete privacy protection.",
     features: [
-      "Position yourself as the authority",
-      "Create content people actually want",
-      "Become a viral entertainer & educator"
-    ]
-  },
-  {
-    icon: Scissors,
-    title: "Viral Clipping Mastery",
-    description: "Turn any long-form content into viral gold. Our proven clipping strategy generated 1 billion views/month.",
-    features: [
-      "Identify viral moments in seconds",
-      "Edit like a pro with our templates",
-      "Distribute across all platforms automatically"
+      "Niche selection for maximum profitability",
+      "Anonymous channel branding and setup",
+      "Voice-over alternatives and AI narration"
     ]
   },
   {
     icon: Bot,
-    title: "AI-Powered Creator Tools",
-    description: "Exclusive access to our AI suite that analyzes millions of data points to maximize your revenue and content performance.",
+    title: "Content Automation System",
+    description: "Automate your entire content creation workflow. Our system generates engaging videos while you sleep.",
     features: [
-      "InsightSync: See exactly how much money you should be making",
-      "Advanced AI Script Writer & Analyzer: Generate AND analyze scripts",
-      "Predict viral potential before wasting time recording"
+      "AI script generation for trending topics",
+      "Automated video creation and editing",
+      "Multi-platform distribution and scheduling"
+    ]
+  },
+  {
+    icon: DollarSign,
+    title: "Monetization & Scaling",
+    description: "Turn your faceless channels into profit machines. Learn to scale to multiple channels for passive income.",
+    features: [
+      "Multiple revenue stream optimization",
+      "Outsourcing and team building strategies",
+      "Advanced scaling to 6-figure income"
     ]
   },
 ]
@@ -57,11 +57,11 @@ export function SolutionSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              The Complete <span className="text-primary">Creator System</span>
+              The Complete <span className="text-primary">YouTube Automation System</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              A comprehensive framework for building engaging content and growing 
-              your online presence sustainably. Learn from <span className="font-semibold text-foreground">proven strategies</span>.
+              A complete automation system for building profitable faceless YouTube channels. 
+              Generate passive income without showing your face or voice using <span className="font-semibold text-foreground">proven automation</span>.
             </p>
           </motion.div>
 
@@ -75,7 +75,7 @@ export function SolutionSection() {
             className="space-y-8 mb-16"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-center mb-12">
-              The 3-Pillar <span className="text-primary">Creator System</span>
+              The 3-Pillar <span className="text-primary">Automation System</span>
             </h3>
             
             {systemPillars.map((pillar, index) => (
@@ -116,14 +116,14 @@ export function SolutionSection() {
                 <div className={`${index % 2 === 1 ? 'md:order-1' : ''} text-center`}>
                   <div className="inline-block">
                     <div className="text-6xl font-bold text-primary mb-2">
-                      {index === 0 && "Quick"}
-                      {index === 1 && "100+"}
-                      {index === 2 && "4.8"}
+                      {index === 0 && "$50K+"}
+                      {index === 1 && "500+"}
+                      {index === 2 && "24/7"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "To Start"}
-                      {index === 1 && "Active Students"}
-                      {index === 2 && "Average Rating"}
+                      {index === 0 && "Monthly Revenue"}
+                      {index === 1 && "Faceless Channels"}
+                      {index === 2 && "Automation"}
                     </p>
                   </div>
                 </div>
@@ -163,19 +163,19 @@ export function SolutionSection() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <User className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h5 className="text-lg font-bold mb-2">Personal Brand Path</h5>
+                    <Bot className="w-12 h-12 text-primary mx-auto mb-4" />
+                    <h5 className="text-lg font-bold mb-2">Full Automation Path</h5>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Build your personal brand and connect with your audience face-to-face
+                      Complete hands-off YouTube channel automation for maximum passive income
                     </p>
                     <div className="space-y-2 text-left">
                       <p className="text-xs font-medium">Includes:</p>
                       <ul className="text-xs text-muted-foreground space-y-1">
-                        <li>• Personal Brand Lab</li>
-                        <li>• Personal Brand Long Form</li>
-                        <li>• Personal Brand Short Form</li>
-                        <li>• Monetization Course</li>
-                        <li>• AI Tools (Bonus)</li>
+                        <li>• AI Content Generation</li>
+                        <li>• Automated Video Creation</li>
+                        <li>• Multi-Channel Scaling</li>
+                        <li>• Advanced Monetization</li>
+                        <li>• Outsourcing Systems</li>
                       </ul>
                     </div>
                   </motion.button>
@@ -190,18 +190,18 @@ export function SolutionSection() {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <EyeOff className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h5 className="text-lg font-bold mb-2">Faceless Content Path</h5>
+                    <User className="w-12 h-12 text-primary mx-auto mb-4" />
+                    <h5 className="text-lg font-bold mb-2">Semi-Automated Path</h5>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Create content without showing your face - perfect for privacy-conscious creators
+                      Keep some personal control while automating the heavy lifting
                     </p>
                     <div className="space-y-2 text-left">
                       <p className="text-xs font-medium">Includes:</p>
                       <ul className="text-xs text-muted-foreground space-y-1">
-                        <li>• Faceless AI Short Form</li>
-                        <li>• Faceless Clipping Course</li>
-                        <li>• Monetization Course</li>
-                        <li>• AI Tools (Bonus)</li>
+                        <li>• Content Planning Tools</li>
+                        <li>• Semi-Automated Creation</li>
+                        <li>• Personal Review Process</li>
+                        <li>• Growth Optimization</li>
                       </ul>
                     </div>
                   </motion.button>
@@ -210,8 +210,8 @@ export function SolutionSection() {
                 {/* Path Explainer */}
                 <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 text-center max-w-3xl mx-auto">
                   <p className="text-xs md:text-sm">
-                    <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
-                    then transition to personal branding once they&apos;re comfortable. You get access to BOTH paths with your enrollment!
+                    <span className="font-semibold">💡 Pro Tip:</span> Most successful students start with full automation to generate income quickly, 
+                    then use semi-automation to scale further. You get access to BOTH approaches with your enrollment!
                   </p>
                 </div>
               </div>
@@ -226,12 +226,12 @@ export function SolutionSection() {
                     <div className="flex items-start gap-3 mb-4">
                       <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h5 className="font-semibold mb-1">Personal Brand Lab</h5>
-                        <p className="text-sm text-muted-foreground mb-3">Build your authority and convert followers to customers</p>
+                        <h5 className="font-semibold mb-1">Faceless Channel Foundation</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Set up profitable channels without revealing your identity</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
-                          <li>• Finding Your Unique Creator Identity & Positioning</li>
-                          <li>• Building Authority in Any Niche (Even Saturated Ones)</li>
-                          <li>• Converting Followers to Customers with Strategic Content</li>
+                          <li>• High-Profit Niche Selection & Research</li>
+                          <li>• Anonymous Channel Setup & Branding</li>
+                          <li>• Privacy Protection & Security Measures</li>
                         </ul>
                       </div>
                     </div>
@@ -241,12 +241,12 @@ export function SolutionSection() {
                     <div className="flex items-start gap-3 mb-4">
                       <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h5 className="font-semibold mb-1">Viral Clip Mastery</h5>
-                        <p className="text-sm text-muted-foreground mb-3">The exact system that generated 2B+ views</p>
+                        <h5 className="font-semibold mb-1">AI Content Creation</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Automate video creation using advanced AI tools</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
-                          <li>• The &apos;Viral Moment Spotter&apos; - Find Gold in Any Content</li>
-                          <li>• Hook Psychology: Why Some Clips Get 10M+ Views</li>
-                          <li>• Multi-Platform Distribution Strategy</li>
+                          <li>• AI Script Generation for Trending Topics</li>
+                          <li>• Automated Video Assembly & Editing</li>
+                          <li>• Voice Synthesis & Narration Options</li>
                         </ul>
                       </div>
                     </div>
@@ -256,12 +256,12 @@ export function SolutionSection() {
                     <div className="flex items-start gap-3 mb-4">
                       <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h5 className="font-semibold mb-1">Editing Tutorials</h5>
-                        <p className="text-sm text-muted-foreground mb-3">Pro-level editing techniques that hook viewers</p>
+                        <h5 className="font-semibold mb-1">Automation Workflows</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Set up systems that run your channel automatically</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
-                          <li>• Professional editing workflows & shortcuts</li>
-                          <li>• Hooks, transitions & retention strategies</li>
-                          <li>• No expensive software required</li>
+                          <li>• Content scheduling & publishing automation</li>
+                          <li>• Thumbnail generation & optimization</li>
+                          <li>• Analytics tracking & performance optimization</li>
                         </ul>
                       </div>
                     </div>
@@ -271,12 +271,12 @@ export function SolutionSection() {
                     <div className="flex items-start gap-3 mb-4">
                       <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h5 className="font-semibold mb-1">Monetization System</h5>
-                        <p className="text-sm text-muted-foreground mb-3">Learn to monetize your content effectively</p>
+                        <h5 className="font-semibold mb-1">Scaling & Outsourcing</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Build a team and scale to multiple profitable channels</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
-                          <li>• The 5 Revenue Streams Every Creator Needs</li>
-                          <li>• Landing $5K+ Brand Deals (With Email Templates)</li>
-                          <li>• Scaling your creator business sustainably</li>
+                          <li>• Team Building & Virtual Assistant Training</li>
+                          <li>• Multi-Channel Management Systems</li>
+                          <li>• Advanced Revenue Optimization Strategies</li>
                         </ul>
                       </div>
                     </div>
@@ -293,22 +293,22 @@ export function SolutionSection() {
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">General Chat & Wins Feed</p>
-                      <p className="text-sm text-muted-foreground">Connect with 100+ successful creators</p>
+                      <p className="font-semibold">Faceless Creators Community</p>
+                      <p className="text-sm text-muted-foreground">Connect with 500+ anonymous YouTube entrepreneurs</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Profile Reviews <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Get expert feedback on your content</p>
+                      <p className="font-semibold">Channel Reviews <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Get expert feedback on your automation setup</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Elite Chat Access <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Network with top performers</p>
+                      <p className="font-semibold">Elite Automation Mastermind <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Network with 6-figure faceless channel owners</p>
                     </div>
                   </div>
                 </div>
@@ -323,22 +323,22 @@ export function SolutionSection() {
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Creator Toolkit <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Done-for-you templates and editing plugins</p>
+                      <p className="font-semibold">Automation Toolkit <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Done-for-you automation scripts and workflows</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">AI Tools Suite <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Automate content creation without burnout ($1,694/mo value)</p>
+                      <p className="font-semibold">AI Automation Suite <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Complete hands-off content generation ($2,497/mo value)</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Tool Shop</p>
-                      <p className="text-sm text-muted-foreground">Exclusive tools with Creator Camp coins</p>
+                      <p className="font-semibold">Automation Marketplace</p>
+                      <p className="text-sm text-muted-foreground">Premium automation tools and scripts</p>
                     </div>
                   </div>
                 </div>
@@ -355,11 +355,11 @@ export function SolutionSection() {
             className="text-center space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
-              Ready to Transform Your <span className="text-primary">Content Creation</span>?
+              Ready to Build Your <span className="text-primary">YouTube Empire</span>?
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join creators who have built <span className="font-semibold text-foreground">engaged audiences</span> using proven strategies. 
-              Start creating content that <span className="font-semibold text-foreground">truly connects</span>.
+              Join entrepreneurs who have built <span className="font-semibold text-foreground">profitable faceless channels</span> using automation. 
+              Start generating <span className="font-semibold text-foreground">passive income</span> without showing your face.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/pricing">
@@ -391,7 +391,7 @@ export function SolutionSection() {
             className="mt-20"
           >
             <h4 className="text-xl font-bold text-center mb-8">
-              See What Our Students Are Achieving
+              See What Our Faceless Students Are Achieving
             </h4>
             <TestimonialImages count={3} columns={3} startIndex={20} />
           </motion.div>
