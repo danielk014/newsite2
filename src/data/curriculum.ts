@@ -3,137 +3,120 @@ import { CourseModule } from "@/types"
 export const courseModules: CourseModule[] = [
   {
     id: "1",
-    title: "Module 1: Personal Brand Lab",
-    description: "Build a personal brand that connects with your audience - learn the strategic framework successful creators use to build sustainable businesses",
+    title: "Module 1: Faceless Channel Foundation",
+    description: "Set up profitable YouTube channels without revealing your identity - complete privacy protection and niche selection",
     lessons: [
-      "Finding Your Unique Creator Identity & Positioning",
-      "Building Authority in Any Niche (Even Saturated Ones)",
-      "The 'Expert Positioning' Framework That Commands Premium Prices",
-      "Converting Followers to Customers with Strategic Content",
-      "Personal Brand Monetization Blueprint"
+      "High-Profit Niche Selection & Market Research",
+      "Anonymous Channel Creation & Optimization",
+      "Privacy Protection & Security Protocols",
+      "Channel Branding Without Personal Identity",
+      "Foundation Setup for Maximum Automation"
     ],
     duration: "4 hours",
     value: 997
   },
   {
     id: "2",
-    title: "Module 2: Personal Brand Long Form",
-    description: "Master long-form content creation to establish authority and deep connections with your audience",
+    title: "Module 2: AI Content Creation System",
+    description: "Automate video creation using cutting-edge AI tools - never run out of content ideas again",
     lessons: [
-      "Long-Form Content Strategy & Planning",
-      "Storytelling Techniques for Extended Content",
-      "YouTube Algorithm Optimization for Long Content",
-      "Podcast & Interview Format Mastery",
-      "Dedicated Editing Tutorials for Long-Form Content"
-    ],
-    duration: "5 hours",
-    value: 1297
-  },
-  {
-    id: "3",
-    title: "Module 3: Personal Brand Short Form",
-    description: "Create viral short-form content that builds your personal brand across all platforms",
-    lessons: [
-      "Short-Form Content Psychology",
-      "Hook Creation for Maximum Retention",
-      "Platform-Specific Strategies (TikTok, Shorts, Reels)",
-      "Rapid Content Production Systems",
-      "Trending Audio & Effect Implementation",
-      "Dedicated Editing Tutorials for Short-Form Content"
-    ],
-    duration: "4 hours",
-    value: 1197
-  },
-  {
-    id: "4",
-    title: "Module 4: Faceless AI Short Form Content",
-    description: "Create engaging content without showing your face using AI and automation tools",
-    lessons: [
-      "Faceless Content Strategy & Niche Selection",
-      "AI Voice Generation & Script Writing",
-      "Visual Storytelling Without Personal Appearance",
-      "Dedicated Editing Tutorials for Faceless Content"
+      "AI Script Generation for Trending Topics",
+      "Automated Video Assembly & Editing",
+      "Voice Synthesis & Custom Narration Options",
+      "AI Thumbnail Creation & Optimization",
+      "Content Calendar Automation"
     ],
     duration: "5 hours",
     value: 1497
   },
   {
-    id: "5",
-    title: "Module 5: Faceless Clipping Course",
-    description: "Master the art of creating viral clips from existing content without showing your face",
+    id: "3",
+    title: "Module 3: Automation Workflows",
+    description: "Set up systems that run your channel automatically - complete hands-off channel management",
     lessons: [
-      "Content Curation & Fair Use Guidelines",
-      "Finding Viral Moments in Any Content",
-      "Advanced Clipping Techniques & Transitions",
-      "Multi-Platform Distribution for Clips",
-      "Building a Profitable Clipping Business",
-      "Dedicated Editing Tutorials for Clipping"
+      "Automated Content Scheduling & Publishing",
+      "Smart Thumbnail Generation & A/B Testing",
+      "Performance Analytics & Auto-Optimization",
+      "Multi-Platform Distribution Automation",
+      "Comment Management & Engagement Automation"
     ],
     duration: "4 hours",
     value: 1397
   },
   {
-    id: "6",
-    title: "Module 6: Monetization Course",
-    description: "Learn to monetize your content effectively. Build multiple income streams and never rely on platform monetization alone",
+    id: "4",
+    title: "Module 4: Monetization & Revenue Optimization",
+    description: "Turn your faceless channels into profit machines - multiple income streams without showing your face",
     lessons: [
-      "The 5 Revenue Streams Every Creator Needs",
-      "Approaching Brand Partnerships (With Email Templates)",
-      "Creating Digital Products That Sell",
-      "Building Recurring Revenue with Memberships",
-      "Affiliate Marketing That Converts",
-      "Course Creation & Info Product Mastery",
-      "Creating Effective Sales Funnels",
-      "Scaling Your Creator Business"
+      "YouTube Partner Program Fast-Track",
+      "Affiliate Marketing for Faceless Channels",
+      "Sponsored Content & Brand Partnerships",
+      "Digital Product Sales Through Automation",
+      "AdSense Optimization for Maximum RPM"
+    ],
+    duration: "4 hours",
+    value: 1697
+  },
+  {
+    id: "5",
+    title: "Module 5: Scaling & Outsourcing System",
+    description: "Build a team and scale to multiple profitable channels - the path to 6-figure automation empires",
+    lessons: [
+      "Virtual Team Building & Management",
+      "Multi-Channel Empire Strategies",
+      "Advanced Revenue Optimization",
+      "Outsourcing Content Creation",
+      "Building Passive Income Systems",
+      "Quality Control & Brand Consistency"
     ],
     duration: "6 hours",
     value: 2497
   },
   {
-    id: "7",
-    title: "BONUS: AI Automation Suite",
-    description: "10x your content output without burnout using cutting-edge AI tools",
+    id: "6",
+    title: "BONUS: Advanced AI Automation Suite",
+    description: "Complete hands-off content generation worth $2,497/mo - the ultimate automation toolkit",
     lessons: [
-      "AI Script Generation That Sounds Human",
-      "Automated Video Editing with AI",
-      "Content Idea Generation System",
-      "AI Thumbnail Creation for Higher CTR",
-      "Building Your AI-Powered Content Machine"
+      "Advanced AI Script Generation & Analysis",
+      "Viral Prediction Algorithm Access",
+      "Multi-Niche Content Templates",
+      "Revenue Analytics & Channel Insights",
+      "Advanced Automation Workflows"
     ],
     duration: "3 hours",
-    value: 1694
+    value: 2497
   }
 ]
 
 export const bonuses = [
   {
-    title: "🛠️ Creator Toolkit",
-    description: "Professional templates, scripts, and content frameworks",
-    value: "$497"
+    title: "🤖 Automation Toolkit",
+    description: "Done-for-you automation scripts, workflows, and templates",
+    value: "$997"
   },
   {
-    title: "🤖 AI Automation Suite",
-    description: "Complete AI toolkit including InsightSync Analytics & Advanced Script Writer/Analyzer",
-    value: "$1,694"
+    title: "🔥 AI Automation Suite",
+    description: "Complete hands-off content generation system ($2,497/mo value)",
+    value: "$2,497"
   },
   {
-    title: "💬 Private Community Access",
-    description: "Connect with fellow creators in our supportive Discord community",
+    title: "💬 Faceless Creators Community",
+    description: "Connect with 500+ anonymous YouTube entrepreneurs",
     value: "$997/year"
   },
   {
-    title: "📊 Profile Reviews",
-    description: "Get personalized feedback on your content from our expert team",
+    title: "📊 Channel Reviews",
+    description: "Expert feedback on your automation setup and optimization",
     value: "$497"
   },
   {
-    title: "📚 Case Studies",
-    description: "In-depth analysis of successful content creators and their strategies",
+    title: "📚 Automation Case Studies",
+    description: "In-depth analysis of successful faceless channels and their strategies",
     value: "$1,997"
   },
   {
-    title: "🪙 Creator Camp Coins",
-    description: "1,000 coins to spend in our Tool Shop for exclusive resources",
-    value: "$197"
+    title: "🛠️ Automation Marketplace Access",
+    description: "Premium automation tools, scripts, and advanced systems",
+    value: "$497"
   }
 ]

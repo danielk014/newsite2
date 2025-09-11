@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CheckCircle, Clock, DollarSign, Gift, User, EyeOff } from "lucide-react"
+import { CheckCircle, Clock, DollarSign, Gift, EyeOff } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -9,25 +9,11 @@ import Link from "next/link"
 
 export function CurriculumSection() {
   const [expandedModule, setExpandedModule] = useState<string | null>("1")
-  const [selectedPath, setSelectedPath] = useState<"personal" | "faceless" | null>(null)
   const totalValue = courseModules.reduce((sum, module) => sum + module.value, 0)
 
-  // Separate modules by path
-  const personalBrandModules = courseModules.filter(module => 
-    ["1", "2", "3"].includes(module.id)
-  )
-  const facelessModules = courseModules.filter(module => 
-    ["4", "5"].includes(module.id)
-  )
-  const sharedModules = courseModules.filter(module => 
-    ["6", "7"].includes(module.id)
-  )
 
-  const displayModules = selectedPath === "personal" 
-    ? [...personalBrandModules, ...sharedModules]
-    : selectedPath === "faceless" 
-    ? [...facelessModules, ...sharedModules]
-    : courseModules
+  // All modules are now automation-focused
+  const displayModules = courseModules
 
   return (
     <section id="curriculum" className="py-20 md:py-32 bg-muted/10 relative">
@@ -38,10 +24,10 @@ export function CurriculumSection() {
           {/* Section Header */}
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Choose Your <span className="text-primary">Learning Path</span>
+              Complete <span className="text-primary">YouTube Automation System</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Two complete paths to content creation success. Pick the one that fits your goals.
+              Everything you need to build profitable faceless YouTube channels from scratch.
             </p>
             <div className="inline-flex items-center gap-2 bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
               <DollarSign className="w-4 h-4" />
@@ -49,68 +35,31 @@ export function CurriculumSection() {
             </div>
           </div>
 
-          {/* Path Selection */}
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <motion.button
-              onClick={() => setSelectedPath(selectedPath === "personal" ? null : "personal")}
-              className={`p-6 rounded-xl border-2 transition-all ${
-                selectedPath === "personal" 
-                  ? "border-primary bg-primary/10" 
-                  : "border-border hover:border-primary/50 bg-card"
-              }`}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <User className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Personal Brand Path</h3>
-              <p className="text-muted-foreground mb-4">
-                Build your personal brand and connect with your audience face-to-face
-              </p>
-              <div className="space-y-2 text-left">
-                <p className="text-sm font-medium">Includes:</p>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Personal Brand Lab</li>
-                  <li>• Personal Brand Long Form</li>
-                  <li>• Personal Brand Short Form</li>
-                  <li>• Monetization Course</li>
-                  <li>• AI Tools (Bonus)</li>
-                </ul>
-              </div>
-            </motion.button>
-
-            <motion.button
-              onClick={() => setSelectedPath(selectedPath === "faceless" ? null : "faceless")}
-              className={`p-6 rounded-xl border-2 transition-all ${
-                selectedPath === "faceless" 
-                  ? "border-primary bg-primary/10" 
-                  : "border-border hover:border-primary/50 bg-card"
-              }`}
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <EyeOff className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Faceless Content Path</h3>
-              <p className="text-muted-foreground mb-4">
-                Create content without showing your face - perfect for privacy-conscious creators
-              </p>
-              <div className="space-y-2 text-left">
-                <p className="text-sm font-medium">Includes:</p>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• Faceless AI Short Form</li>
-                  <li>• Faceless Clipping Course</li>
-                  <li>• Monetization Course</li>
-                  <li>• AI Tools (Bonus)</li>
-                </ul>
-              </div>
-            </motion.button>
-          </div>
-
-          {/* Path Explainer */}
-          <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 mb-12 text-center">
-            <p className="text-sm md:text-base">
-              <span className="font-semibold">💡 Pro Tip:</span> Many creators start with the faceless path to build confidence and skills, 
-              then transition to personal branding once they&apos;re comfortable. You get access to BOTH paths with your enrollment!
+          {/* System Overview */}
+          <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 mb-12 text-center">
+            <EyeOff className="w-16 h-16 text-primary mx-auto mb-4" />
+            <h3 className="text-2xl font-bold mb-4">100% Faceless YouTube Automation</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
+              Build profitable YouTube channels without ever showing your face or using your voice. 
+              Our complete automation system handles everything from content creation to monetization.
             </p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl mb-2">🤖</div>
+                <div className="font-semibold">AI Content Creation</div>
+                <div className="text-muted-foreground">Automated scripts & videos</div>
+              </div>
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl mb-2">📈</div>
+                <div className="font-semibold">Multi-Channel Scaling</div>
+                <div className="text-muted-foreground">Run 10+ channels simultaneously</div>
+              </div>
+              <div className="bg-background/50 rounded-lg p-4">
+                <div className="text-2xl mb-2">💰</div>
+                <div className="font-semibold">Passive Income System</div>
+                <div className="text-muted-foreground">Earn while you sleep</div>
+              </div>
+            </div>
           </div>
 
           {/* Course Modules */}
@@ -220,20 +169,20 @@ export function CurriculumSection() {
               <div className="bg-background/80 backdrop-blur rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <User className="w-5 h-5 text-primary" />
+                    <EyeOff className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="font-semibold">Sarah M.</p>
-                    <p className="text-sm text-muted-foreground">Lifestyle Creator</p>
+                    <p className="text-sm text-muted-foreground">Faceless Automation</p>
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  &quot;Started with 2K followers, now at 150K in 8 months using the Personal Brand path. 
-                  Monthly revenue went from $0 to $12K through brand partnerships.&quot;
+                  &quot;Started with zero YouTube experience, now running 3 faceless channels earning $15K monthly. 
+                  The automation system made it possible to scale without showing my face.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">📈 7,400% growth</span>
-                  <span className="text-primary">💰 $12K/month</span>
+                  <span className="text-accent">📈 3 channels</span>
+                  <span className="text-primary">💰 $15K/month</span>
                 </div>
               </div>
 
@@ -260,20 +209,20 @@ export function CurriculumSection() {
               <div className="bg-background/80 backdrop-blur rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <User className="w-5 h-5 text-primary" />
+                    <EyeOff className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <p className="font-semibold">Jessica L.</p>
-                    <p className="text-sm text-muted-foreground">Fitness Coach</p>
+                    <p className="text-sm text-muted-foreground">Automation Expert</p>
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  &quot;Used the AI automation tools to scale content creation. Now posting 
-                  3x daily across platforms while working only 2 hours per day on content.&quot;
+                  &quot;Using the automation system, I launched 5 faceless channels in different niches. 
+                  Now earning $22K monthly with just 30 minutes daily management.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">⚡ 3x daily posts</span>
-                  <span className="text-primary">⏱️ 2hr/day</span>
+                  <span className="text-accent">⚡ 5 channels</span>
+                  <span className="text-primary">💰 $22K/month</span>
                 </div>
               </div>
 
@@ -284,16 +233,16 @@ export function CurriculumSection() {
                   </div>
                   <div>
                     <p className="font-semibold">Tom K.</p>
-                    <p className="text-sm text-muted-foreground">Business Coach</p>
+                    <p className="text-sm text-muted-foreground">Automation Entrepreneur</p>
                   </div>
                 </div>
                 <p className="text-sm mb-3">
-                  &quot;Applied the monetization strategies and launched my first course. 
-                  Generated $25K in the first month using the exact funnel templates provided.&quot;
+                  &quot;Scaled from 1 to 12 faceless channels using the outsourcing system. 
+                  Built a team of VAs and now earn $45K monthly completely passively.&quot;
                 </p>
                 <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">🚀 First launch</span>
-                  <span className="text-primary">💰 $25K/month</span>
+                  <span className="text-accent">🚀 12 channels</span>
+                  <span className="text-primary">💰 $45K/month</span>
                 </div>
               </div>
             </div>
