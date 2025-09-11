@@ -26,6 +26,11 @@ const painPoints = [
     title: "Wasting time on content that never gets views",
     description: "Without knowing what works, you're throwing content at the wall hoping something sticks. Meanwhile, others are hitting millions of views.",
   },
+  {
+    icon: XCircle,
+    title: "Stuck in 0 view jail with no escape plan",
+    description: "Your videos get 0-50 views no matter what you try. You're invisible on the platform while others effortlessly get thousands of views on day one.",
+  },
 ]
 
 // Removed stats section to maintain focus on problem identification
