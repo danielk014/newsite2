@@ -164,18 +164,17 @@ export function SolutionSection() {
                     whileTap={{ scale: 0.98 }}
                   >
                     <Bot className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h5 className="text-lg font-bold mb-2">Full Automation Path</h5>
+                    <h5 className="text-lg font-bold mb-2">YouTube Automation Mastery</h5>
                     <p className="text-sm text-muted-foreground mb-4">
-                      Complete hands-off YouTube channel automation for maximum passive income
+                      Build scalable faceless content systems for maximum passive income
                     </p>
                     <div className="space-y-2 text-left">
-                      <p className="text-xs font-medium">Includes:</p>
+                      <p className="text-xs font-medium">Perfect for:</p>
                       <ul className="text-xs text-muted-foreground space-y-1">
-                        <li>• AI Content Generation</li>
-                        <li>• Automated Video Creation</li>
-                        <li>• Multi-Channel Scaling</li>
-                        <li>• Advanced Monetization</li>
-                        <li>• Outsourcing Systems</li>
+                        <li>• Scale without showing your face</li>
+                        <li>• Perfect for introverts or privacy-focused creators</li>
+                        <li>• Build multiple income streams simultaneously</li>
+                        <li>• Location and time freedom</li>
                       </ul>
                     </div>
                   </motion.button>
@@ -330,8 +329,8 @@ export function SolutionSection() {
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">AI Automation Suite <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Complete hands-off content generation ($2,497/mo value)</p>
+                      <p className="font-semibold">Exclusive AI Content Generator <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">BONUS</span></p>
+                      <p className="text-sm text-muted-foreground">Our proprietary AI tools that accelerate your success ($297/mo value)</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
@@ -358,8 +357,8 @@ export function SolutionSection() {
               Ready to Build Your <span className="text-primary">YouTube Empire</span>?
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join entrepreneurs who have built <span className="font-semibold text-foreground">profitable faceless channels</span> using automation. 
-              Start generating <span className="font-semibold text-foreground">passive income</span> without showing your face.
+              Join entrepreneurs who have built <span className="font-semibold text-foreground">profitable faceless channels</span> using our proven system. 
+              Master the strategies that generate <span className="font-semibold text-foreground">consistent revenue</span> without showing your face.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/pricing">

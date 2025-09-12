@@ -194,25 +194,25 @@ export default function Home() {
                     <span className="text-xs text-white font-bold">🤖</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-primary mb-2">AI Tools Suite</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Automate content creation without burnout ($1,694/mo value)</p>
+                    <h4 className="text-lg font-semibold text-primary mb-2">Exclusive Bonus Tools</h4>
+                    <p className="text-muted-foreground text-sm mb-3">Advanced automation tools to accelerate your success ($297/mo value)</p>
                     <ul className="text-sm text-muted-foreground space-y-2">
                       <li className="flex items-start gap-2">
                         <span className="text-primary font-bold">•</span>
                         <div>
-                          <strong className="text-foreground">InsightSync Analytics:</strong> Shows approximately how much money your channel could be making
+                          <strong className="text-foreground">Revenue Analytics:</strong> Track your channel&apos;s earning potential and growth
                         </div>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-primary font-bold">•</span>
                         <div>
-                          <strong className="text-foreground">AI Script Writer & Analyzer:</strong> Generate viral scripts + analyze for maximum impact
+                          <strong className="text-foreground">Content Generator:</strong> Speed up content creation with our proprietary tools
                         </div>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-primary font-bold">•</span>
                         <div>
-                          <strong className="text-foreground">Viral Prediction:</strong> Analyze viral potential before you record
+                          <strong className="text-foreground">Success Predictor:</strong> Optimize content for maximum performance
                         </div>
                       </li>
                     </ul>

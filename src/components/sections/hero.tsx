@@ -82,7 +82,7 @@ export function HeroSection() {
             Get access to <span className="font-semibold text-primary">automation tools</span> and strategies that generate passive income while you sleep.
           </motion.p>
 
-          {/* AI Tools Highlight */}
+          {/* Complete System Highlight */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -91,28 +91,28 @@ export function HeroSection() {
           >
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">YouTube Automation Suite</h3>
+              <h3 className="text-xl font-bold text-primary">Complete Faceless YouTube System</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
             <p className="text-center text-muted-foreground mb-3">
-              Automate your entire YouTube workflow. Our tools handle everything from content creation to optimization
+              Everything you need to build a profitable YouTube empire - from channel setup to 6-figure scaling
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Automated Content Creation</span>
+                <span>Proven Channel Strategies</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Channel Analytics</span>
+                <span>Scaling Methodologies</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Niche Research Tools</span>
+                <span>Exclusive Automation Tools</span>
               </div>
             </div>
             <p className="text-center text-xs text-muted-foreground mt-3">
-              Worth $1,694/mo - FREE with Pro Tier
+              Includes AI Content Generator (valued at $297/mo)
             </p>
           </motion.div>
 
@@ -177,10 +177,10 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <Zap className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-xs font-medium">COMPLETE AUTOMATION</span>
+              <span className="text-xs font-medium">COMPLETE SYSTEM</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">DONE-FOR-YOU SYSTEM</span>
+              <span className="text-xs font-medium">PROVEN METHODOLOGY</span>
             </motion.div>
           </motion.div>
 
