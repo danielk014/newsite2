@@ -23,7 +23,7 @@ export function PricingSection() {
               Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our pricing plans
+              Join our faceless YouTube network and learn our systems from the inside
             </p>
           </div>
 
@@ -207,9 +207,9 @@ export function PricingSection() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left p-4">Feature</th>
-                    <th className="text-center p-4">Starter</th>
-                    <th className="text-center p-4 bg-primary/5">Pro</th>
-                    <th className="text-center p-4">Elite Coaching</th>
+                    <th className="text-center p-4">Network Member</th>
+                    <th className="text-center p-4 bg-primary/5">Elite Network</th>
+                    <th className="text-center p-4">VIP Inner Circle</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -243,18 +243,18 @@ export function PricingSection() {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">Educational Value</h4>
+              <h4 className="font-semibold mb-2">Network Access</h4>
               <p className="text-sm text-muted-foreground">
-                Learn from proven strategies and frameworks.
+                Learn systems from active YouTube automation operators.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-8 h-8 text-accent" />
               </div>
-              <h4 className="font-semibold mb-2">Instant Access</h4>
+              <h4 className="font-semibold mb-2">Instant Network Access</h4>
               <p className="text-sm text-muted-foreground">
-                Start learning immediately. AI tools activated in seconds.
+                Join immediately. Automation systems activated in seconds.
               </p>
             </div>
           </div>
