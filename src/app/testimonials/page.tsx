@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
               We Run <span className="text-primary">15+ Faceless YouTube Channels</span> Making $70K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Learn the exact systems we use to build Roblox, Finance, and Entertainment empires
+              Learn systems to build faceless content empires
             </p>
           </div>
           
