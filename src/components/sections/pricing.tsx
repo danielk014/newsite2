@@ -27,6 +27,32 @@ export function PricingSection() {
             </p>
           </div>
 
+          {/* Why We Dominate Section */}
+          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                Why Our Channels <span className="text-primary">Dominate the Algorithm</span>
+              </h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                We don&apos;t guess - we follow proven data from billions of views.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">2B+</div>
+                  <div className="text-sm text-muted-foreground">Views Analyzed</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
+                  <div className="text-sm text-muted-foreground">Active Channels</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1">$70K+</div>
+                  <div className="text-sm text-muted-foreground">Monthly Revenue</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Billing Toggle */}
           <div className="flex items-center justify-center gap-4 mb-12"
           >

@@ -63,6 +63,34 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Why We Dominate Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-accent/5 to-primary/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Why Our Channels <span className="text-primary">Dominate the Algorithm</span>
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              We don&apos;t guess - we follow proven data from billions of views.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">2B+</div>
+                <div className="text-sm text-muted-foreground">Views Analyzed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">15+</div>
+                <div className="text-sm text-muted-foreground">Active Channels</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-primary mb-2">$70K+</div>
+                <div className="text-sm text-muted-foreground">Monthly Revenue</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <CredibilitySection />
       
       <TestimonialStrip startIndex={0} title="Faceless YouTubers Are Banking!" />
