@@ -29,7 +29,7 @@ const painPoints = [
   {
     icon: XCircle,
     title: "Stuck in 0 view jail with no escape plan",
-    description: "Your videos get 0-50 views no matter what you try. You're invisible on the platform while others effortlessly get thousands of views on day one.",
+    description: "Your videos get 0-50 views no matter what you try. You're invisible on the platform while others effortlessly rack up thousands of views on their first upload.",
   },
 ]
 
