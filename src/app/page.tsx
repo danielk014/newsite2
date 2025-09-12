@@ -10,6 +10,59 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      
+      {/* Results Section */}
+      <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              We Run <span className="text-primary">15+ Faceless YouTube Channels</span> Making $26K-$409K Per Month
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Learn the exact systems we use to build Roblox, Finance, and Entertainment empires
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/youtube-partner.png" 
+                alt="YouTube Partnership Achievement"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/earnings-6k.png" 
+                alt="$6.2K Weekly Earnings"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/channel-981k.png" 
+                alt="981K Subscribers Channel"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow lg:col-span-2">
+              <img 
+                src="/testimonials/views-1m.png" 
+                alt="1.1M Views Analytics"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/views-92m.png" 
+                alt="92M Views Analytics"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <CredibilitySection />
       
       <TestimonialStrip startIndex={0} title="Faceless YouTubers Are Banking!" />

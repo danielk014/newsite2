@@ -3,9 +3,7 @@
 import { motion } from "framer-motion"
 import { CheckCircle, Clock, DollarSign, Gift, EyeOff } from "lucide-react"
 import { courseModules, bonuses } from "@/data/curriculum"
-import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import Link from "next/link"
 
 export function CurriculumSection() {
   const [expandedModule, setExpandedModule] = useState<string | null>("1")
@@ -52,7 +50,7 @@ export function CurriculumSection() {
               <div className="bg-background/50 rounded-lg p-4">
                 <div className="text-2xl mb-2">📈</div>
                 <div className="font-semibold">Multi-Channel Scaling</div>
-                <div className="text-muted-foreground">Run 10+ channels simultaneously</div>
+                <div className="text-muted-foreground">Run 10+ channels in multiple languages</div>
               </div>
               <div className="bg-background/50 rounded-lg p-4">
                 <div className="text-2xl mb-2">💰</div>
@@ -148,116 +146,6 @@ export function CurriculumSection() {
             </div>
           </motion.div>
 
-          {/* Case Studies Section */}
-          <motion.div
-            initial={{ opacity: 1, y: 0 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0 }}
-            className="bg-gradient-to-br from-accent/10 to-primary/10 rounded-xl p-8 mb-12"
-          >
-            <div className="text-center mb-8">
-              <CheckCircle className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">
-                Real Student Case Studies
-              </h3>
-              <p className="text-muted-foreground">
-                See exactly how our students are achieving results with these proven strategies
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <EyeOff className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Sarah M.</p>
-                    <p className="text-sm text-muted-foreground">Faceless Automation</p>
-                  </div>
-                </div>
-                <p className="text-sm mb-3">
-                  &quot;Started with zero YouTube experience, now running 3 faceless channels earning $15K monthly. 
-                  The automation system made it possible to scale without showing my face.&quot;
-                </p>
-                <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">📈 3 channels</span>
-                  <span className="text-primary">💰 $15K/month</span>
-                </div>
-              </div>
-
-              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <EyeOff className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Mike R.</p>
-                    <p className="text-sm text-muted-foreground">Faceless Creator</p>
-                  </div>
-                </div>
-                <p className="text-sm mb-3">
-                  &quot;Chose the faceless path and built a 500K TikTok following in 6 months. 
-                  Now earning $8K monthly through affiliate marketing and digital products.&quot;
-                </p>
-                <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">📈 500K followers</span>
-                  <span className="text-primary">💰 $8K/month</span>
-                </div>
-              </div>
-
-              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <EyeOff className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Jessica L.</p>
-                    <p className="text-sm text-muted-foreground">Automation Expert</p>
-                  </div>
-                </div>
-                <p className="text-sm mb-3">
-                  &quot;Using the automation system, I launched 5 faceless channels in different niches. 
-                  Now earning $22K monthly with just 30 minutes daily management.&quot;
-                </p>
-                <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">⚡ 5 channels</span>
-                  <span className="text-primary">💰 $22K/month</span>
-                </div>
-              </div>
-
-              <div className="bg-background/80 backdrop-blur rounded-lg p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
-                    <DollarSign className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Tom K.</p>
-                    <p className="text-sm text-muted-foreground">Automation Entrepreneur</p>
-                  </div>
-                </div>
-                <p className="text-sm mb-3">
-                  &quot;Scaled from 1 to 12 faceless channels using the outsourcing system. 
-                  Built a team of VAs and now earn $45K monthly completely passively.&quot;
-                </p>
-                <div className="flex gap-4 text-xs font-semibold">
-                  <span className="text-accent">🚀 12 channels</span>
-                  <span className="text-primary">💰 $45K/month</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-8">
-              <Link href="#pricing">
-                <Button 
-                  variant="cta" 
-                  size="lg"
-                >
-                  Get Your Case Study Next
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
 
 
         </div>

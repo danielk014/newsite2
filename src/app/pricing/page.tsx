@@ -24,10 +24,10 @@ export default function PricingPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Invest in Your <span className="text-primary">Content Education</span>
+              Build Your <span className="text-primary">YouTube Automation Empire</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Join over 100+ creators who are mastering the art of content creation
+              Join 500+ entrepreneurs building profitable faceless YouTube channels
             </p>
           </div>
         </div>

@@ -15,11 +15,83 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Student <span className="text-primary">Testimonials</span>
+              Real <span className="text-primary">YouTube Results</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Hear from our students about their learning experience and growth
+              See the actual earnings and analytics from our faceless YouTube automation system
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Real Results Section */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              We Run <span className="text-primary">15+ Faceless YouTube Channels</span> Making $26K-$409K Per Month
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Learn the exact systems we use to build Roblox, Finance, and Entertainment empires
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/youtube-partner.png" 
+                alt="YouTube Partnership Achievement"
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="text-center">
+                <h3 className="font-semibold text-lg mb-2">YouTube Partnership Achieved</h3>
+                <p className="text-muted-foreground text-sm">Monetization unlocked across all channels</p>
+              </div>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/earnings-6k.png" 
+                alt="$6.2K Weekly Earnings"
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="text-center">
+                <h3 className="font-semibold text-lg mb-2">$6.2K Weekly Earnings</h3>
+                <p className="text-muted-foreground text-sm">Single channel passive income</p>
+              </div>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/channel-981k.png" 
+                alt="981K Subscribers Channel"
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="text-center">
+                <h3 className="font-semibold text-lg mb-2">981K Subscribers</h3>
+                <p className="text-muted-foreground text-sm">$65K estimated monthly revenue</p>
+              </div>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow lg:col-span-2">
+              <img 
+                src="/testimonials/views-1m.png" 
+                alt="1.1M Views Analytics"
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="text-center">
+                <h3 className="font-semibold text-lg mb-2">1.1M Views in 28 Days</h3>
+                <p className="text-muted-foreground text-sm">999% growth from automated content system</p>
+              </div>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <img 
+                src="/testimonials/views-92m.png" 
+                alt="92M Views Analytics"
+                className="w-full h-auto rounded-lg mb-4"
+              />
+              <div className="text-center">
+                <h3 className="font-semibold text-lg mb-2">92M+ Total Views</h3>
+                <p className="text-muted-foreground text-sm">Consistent viral content performance</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
