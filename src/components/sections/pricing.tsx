@@ -46,7 +46,7 @@ export function PricingSection() {
                   <div className="text-sm text-muted-foreground">Plug-and-Play</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">$50K+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">$100K+</div>
                   <div className="text-sm text-muted-foreground">Framework Potential</div>
                 </div>
               </div>

@@ -39,11 +39,11 @@ export const faqs: FAQ[] = [
   {
     id: "8",
     question: "Can I scale to multiple channels?",
-    answer: "Absolutely! Scaling to multiple channels is where the real money is made. Our system is designed for multi-channel management. Advanced students run 10+ automated channels across different niches, generating $50K+ monthly in passive income."
+    answer: "Absolutely! Scaling to multiple channels is where the real money is made. Our system is designed for multi-channel management. Advanced students run 10+ automated channels across different niches, generating $100K+ monthly in passive income."
   },
   {
     id: "9",
     question: "Can beginners understand this?",
-    answer: "We break down complex metrics into simple optimization steps. Our system is designed for complete beginners - you don't need any technical background. Every strategy is explained step-by-step with real examples from our $70K+ monthly operations."
+    answer: "We break down complex metrics into simple optimization steps. Our system is designed for complete beginners - you don't need any technical background. Every strategy is explained step-by-step with real examples from our $100K+ monthly operations."
   }
 ]

@@ -124,7 +124,7 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">$50K+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">$100K+</div>
               <div className="text-sm text-muted-foreground">Monthly YouTube Automation Revenue</div>
             </div>
             <div className="text-center">

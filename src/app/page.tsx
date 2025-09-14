@@ -16,7 +16,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">30+ Faceless YouTube Channels</span> Making $70K+ Per Month
+              We Run <span className="text-primary">30+ Faceless YouTube Channels</span> Making $100K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn systems to build faceless content empires across multiple languages
@@ -83,7 +83,7 @@ export default function Home() {
                 <div className="text-sm text-muted-foreground">Channels (Multi-Language)</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">$70K+</div>
+                <div className="text-4xl font-bold text-primary mb-2">$100K+</div>
                 <div className="text-sm text-muted-foreground">Monthly Revenue</div>
               </div>
             </div>
