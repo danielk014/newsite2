@@ -77,7 +77,7 @@ export function PricingSection() {
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
             {pricingTiers.map((tier) => {
               const monthlyPrice = tier.price
               const yearlyPrice = tier.price * 12 * 0.65 // 35% discount
@@ -214,20 +214,6 @@ export function PricingSection() {
                         </button>
                       )}
                     </div>
-                  ) : tier.id === "starter" ? (
-                    <a 
-                      href={billingCycle === "yearly" ? "https://buy.stripe.com/aFaeVfe9Af3meRP9Zk8ww02" : "https://buy.stripe.com/cNi9AV8PgcVe10Z0oK8ww01"} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        variant={tier.popular ? "cta" : "outline"}
-                        size="lg"
-                        className="w-full"
-                      >
-                        {tier.cta}
-                      </Button>
-                    </a>
                   ) : tier.id === "elite" ? (
                     <a 
                       href="https://forms.gle/GdQpiHqi28FH1CeY7" 
@@ -273,7 +259,6 @@ export function PricingSection() {
                 <thead>
                   <tr className="border-b border-border">
                     <th className="text-left p-4">Feature</th>
-                    <th className="text-center p-4">Network Member</th>
                     <th className="text-center p-4 bg-primary/5">Elite Network</th>
                     <th className="text-center p-4">VIP Inner Circle</th>
                   </tr>
@@ -282,7 +267,6 @@ export function PricingSection() {
                   {comparisonFeatures.map((row, index) => (
                     <tr key={index} className="border-b border-border">
                       <td className="p-4 font-medium">{row.feature}</td>
-                      <td className="text-center p-4">{row.starter}</td>
                       <td className="text-center p-4 bg-primary/5">{row.pro}</td>
                       <td className="text-center p-4">{row.elite}</td>
                     </tr>
@@ -294,7 +278,7 @@ export function PricingSection() {
 
           {/* Trust Elements */}
           <div
-            className="grid md:grid-cols-3 gap-8 mb-16"
+            className="grid md:grid-cols-2 gap-8 mb-16 max-w-3xl mx-auto"
           >
             <div className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -312,15 +296,6 @@ export function PricingSection() {
               <h4 className="font-semibold mb-2">Channel-in-a-Box Framework</h4>
               <p className="text-sm text-muted-foreground">
                 Complete 6-step system with AI tools for every step included.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Zap className="w-8 h-8 text-accent" />
-              </div>
-              <h4 className="font-semibold mb-2">Instant Framework Access</h4>
-              <p className="text-sm text-muted-foreground">
-                Get immediate access to the complete workflow and tool setups.
               </p>
             </div>
           </div>
