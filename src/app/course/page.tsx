@@ -4,7 +4,7 @@ import { SaasToolsSection } from "@/components/sections/saas-tools"
 
 export const metadata: Metadata = {
   title: "Course Content",
-  description: "Everything you'll learn in AI-Powered YouTube Automation Builder",
+  description: "Everything you'll learn in Complete YouTube Automation Kit",
 }
 
 export default function CoursePage() {
@@ -18,7 +18,7 @@ export default function CoursePage() {
               Everything You Need to <span className="text-primary">Build YouTube Automation Channels</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Complete AI-powered system including AI Video Creation Training to create videos in minutes
+              Complete automation kit with AI tools, templates, and training for profitable YouTube channels
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function CoursePage() {
             Ready to Master AI Video Creation?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get instant access to AI Video Creation Training and our complete Channel-in-a-Box system
+            Get instant access to the complete YouTube Automation Kit with everything you need
           </p>
           <a
             href="/pricing"

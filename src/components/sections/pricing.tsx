@@ -23,7 +23,7 @@ export function PricingSection() {
               Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get the complete Channel-in-a-Box framework: AI tools for research → script → voice → edit → thumbnail → upload
+              Complete YouTube Automation Kit with everything you need to build profitable channels
             </p>
           </div>
 

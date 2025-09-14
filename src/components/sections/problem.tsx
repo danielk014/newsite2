@@ -50,8 +50,8 @@ export function ProblemSection() {
               <span className="text-primary">Use AI Instead</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Get our Channel-in-a-Box framework: AI tools for research → script → voice → edit → thumbnail → upload. 
-              <span className="font-semibold text-foreground">Follow the steps, plug in the tools, get publishing.</span>
+              Get the complete YouTube Automation Kit: everything you need in one system. 
+              <span className="font-semibold text-foreground">Tools, templates, training - all included.</span>
             </p>
           </motion.div>
 
@@ -96,7 +96,7 @@ export function ProblemSection() {
               Ready to Build Your AI-Powered YouTube Automation Channel?
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Get the complete Channel-in-a-Box framework with AI tools for every step—research to upload—without expensive teams.
+              Get the complete YouTube Automation Kit with everything you need to build profitable channels.
             </p>
             <Link href="/pricing">
               <Button 
@@ -164,7 +164,7 @@ export function ProblemSection() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">AI workflow: research → script → voice → edit → thumbnail → upload</span>
+                    <span className="text-sm">AI tools for research → script → voice → edit → thumbnail → upload</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
@@ -198,8 +198,8 @@ export function ProblemSection() {
               Stop Struggling. Start Winning.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Get the complete Channel-in-a-Box framework with AI tools for every step—
-              from research to upload—no teams required.
+              Get the complete YouTube Automation Kit with everything you need—
+              tools, templates, and training—no teams required.
             </p>
             <Link href="/pricing">
               <Button 

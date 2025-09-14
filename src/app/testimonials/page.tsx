@@ -4,7 +4,7 @@ import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
 export const metadata: Metadata = {
   title: "Testimonials",
-  description: "See real results from AI-Powered YouTube Automation Builder students",
+  description: "See real results from Complete YouTube Automation Kit students",
 }
 
 export default function TestimonialsPage() {
@@ -18,7 +18,7 @@ export default function TestimonialsPage() {
               Real <span className="text-primary">AI-Powered YouTube Automation Results</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              See actual earnings from channels built using AI tools—no teams, no freelancers
+              See actual earnings from channels built using our complete automation kit
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ export default function TestimonialsPage() {
               We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making €100K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Learn the AI tool stack that eliminates expensive teams and freelancers
+              Get the complete YouTube Automation Kit with everything you need for profitable channels
             </p>
           </div>
           
@@ -110,7 +110,7 @@ export default function TestimonialsPage() {
             Ready to Build Your AI-Powered YouTube Automation Channel?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join creators eliminating expensive teams with our proven AI tool stack
+            Join creators building profitable channels with our complete automation kit
           </p>
           <a
             href="/pricing"

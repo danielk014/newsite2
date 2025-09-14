@@ -57,11 +57,11 @@ export function SolutionSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              The Complete <span className="text-primary">Channel-in-a-Box System</span>
+              The Complete <span className="text-primary">YouTube Automation Kit</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Leverage AI tools for every step: research, script, voice, edit, thumbnail, upload. 
-              <span className="font-semibold text-foreground">Follow the steps, plug in the tools, get publishing.</span>
+              All-in-one system with AI tools, templates, and step-by-step training for profitable automation channels. 
+              <span className="font-semibold text-foreground">Everything you need in one complete kit.</span>
             </p>
           </motion.div>
 

@@ -19,7 +19,7 @@ export default function Home() {
               We Run <span className="text-primary">30+ Faceless YouTube Channels</span> Making €100K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Learn our AI Video Creation Training and Channel-in-a-Box system to build profitable automation channels
+              Get the complete YouTube Automation Kit with everything you need to build profitable channels
             </p>
           </div>
           
