@@ -225,10 +225,10 @@ export function SolutionSection() {
                     <div className="flex items-start gap-3 mb-4">
                       <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
                       <div>
-                        <h5 className="font-semibold mb-1">YTA Channel Foundation</h5>
-                        <p className="text-sm text-muted-foreground mb-3">Set up profitable YTA channels with the right foundation</p>
+                        <h5 className="font-semibold mb-1">YouTube Automation Foundation</h5>
+                        <p className="text-sm text-muted-foreground mb-3">Set up profitable YouTube Automation channels with the right foundation</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
-                          <li>• High-Profit Niche Selection for YTA</li>
+                          <li>• High-Profit Niche Selection for YouTube Automation</li>
                           <li>• Channel Setup & AI-Friendly Branding</li>
                           <li>• Legal & Compliance for Automated Content</li>
                         </ul>
@@ -292,8 +292,8 @@ export function SolutionSection() {
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">AI-Powered YTA Community</p>
-                      <p className="text-sm text-muted-foreground">Connect with 500+ YTA creators using AI tools</p>
+                      <p className="font-semibold">AI-Powered YouTube Automation Community</p>
+                      <p className="text-sm text-muted-foreground">Connect with 500+ YouTube Automation creators using AI tools</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 text-left">
@@ -306,8 +306,8 @@ export function SolutionSection() {
                   <div className="flex items-start gap-3 text-left">
                     <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold">Elite AI YTA Mastermind <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
-                      <p className="text-sm text-muted-foreground">Network with 6-figure AI-powered YTA channel owners</p>
+                      <p className="font-semibold">Elite AI YouTube Automation Mastermind <span className="text-xs bg-orange-500/20 text-orange-400 px-2 py-1 rounded text-[10px] font-medium">PRO ONLY</span></p>
+                      <p className="text-sm text-muted-foreground">Network with 6-figure AI-powered YouTube Automation channel owners</p>
                     </div>
                   </div>
                 </div>
@@ -354,10 +354,10 @@ export function SolutionSection() {
             className="text-center space-y-6"
           >
             <h3 className="text-2xl md:text-3xl font-bold">
-              Ready to Build Your <span className="text-primary">AI-Powered YTA Channel</span>?
+              Ready to Build Your <span className="text-primary">AI-Powered YouTube Automation Channel</span>?
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join entrepreneurs who have built <span className="font-semibold text-foreground">profitable YTA channels using AI</span> instead of expensive teams. 
+              Join entrepreneurs who have built <span className="font-semibold text-foreground">profitable YouTube Automation channels using AI</span> instead of expensive teams. 
               Master the AI tools that generate <span className="font-semibold text-foreground">consistent revenue</span> without team management.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -390,7 +390,7 @@ export function SolutionSection() {
             className="mt-20"
           >
             <h4 className="text-xl font-bold text-center mb-8">
-              See What Our AI-Powered YTA Students Are Achieving
+              See What Our AI-Powered YouTube Automation Students Are Achieving
             </h4>
             <TestimonialImages count={3} columns={3} startIndex={20} />
           </motion.div>

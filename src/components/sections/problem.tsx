@@ -23,8 +23,8 @@ const painPoints = [
   },
   {
     icon: XCircle,
-    title: "No clear system for profitable YTA channels",
-    description: "You know YTA works, but where do you start? What niches are profitable? How do you scale without hiring a team? You need a proven step-by-step system.",
+    title: "No clear system for profitable YouTube Automation channels",
+    description: "You know YouTube Automation works, but where do you start? What niches are profitable? How do you scale without hiring a team? You need a proven step-by-step system.",
   },
 ]
 
@@ -93,7 +93,7 @@ export function ProblemSection() {
             className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-8 md:p-12 mb-16 text-center"
           >
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
-              Ready to Build Your AI-Powered YTA Channel?
+              Ready to Build Your AI-Powered YouTube Automation Channel?
             </h3>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Get the complete Channel-in-a-Box framework with AI tools for every step—research to upload—without expensive teams.
@@ -123,7 +123,7 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-destructive/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <XCircle className="w-8 h-8 text-destructive" />
-                  <h4 className="font-bold text-lg">Traditional YTA Approach</h4>
+                  <h4 className="font-bold text-lg">Traditional YouTube Automation Approach</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
@@ -155,7 +155,7 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-accent/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-8 h-8 text-accent" />
-                  <h4 className="font-bold text-lg">AI-Powered YTA Approach</h4>
+                  <h4 className="font-bold text-lg">AI-Powered YouTube Automation Approach</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">

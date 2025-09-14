@@ -4,7 +4,7 @@ import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
 export const metadata: Metadata = {
   title: "Testimonials",
-  description: "See real results from AI-Powered YTA Channel Builder students",
+  description: "See real results from AI-Powered YouTube Automation Builder students",
 }
 
 export default function TestimonialsPage() {
@@ -15,7 +15,7 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Real <span className="text-primary">AI-Powered YTA Results</span>
+              Real <span className="text-primary">AI-Powered YouTube Automation Results</span>
             </h1>
             <p className="text-xl text-muted-foreground">
               See actual earnings from channels built using AI tools—no teams, no freelancers
@@ -29,7 +29,7 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">20+ AI-Powered YTA Channels</span> Making $50K+ Per Month
+              We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making $50K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn the AI tool stack that eliminates expensive teams and freelancers
@@ -100,14 +100,14 @@ export default function TestimonialsPage() {
       <SocialProofSection />
 
       {/* Additional Testimonial Strips */}
-      <TestimonialStrip startIndex={0} title="AI YTA Success Stories" />
+      <TestimonialStrip startIndex={0} title="AI YouTube Automation Success Stories" />
       <TestimonialStrip startIndex={4} title="From Teams to AI Transformations" />
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Build Your AI-Powered YTA Channel?
+            Ready to Build Your AI-Powered YouTube Automation Channel?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Join creators eliminating expensive teams with our proven AI tool stack
@@ -116,7 +116,7 @@ export default function TestimonialsPage() {
             href="/pricing"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8"
           >
-            Start Your AI YTA System Today
+            Start Your AI YouTube Automation System Today
           </a>
         </div>
       </section>

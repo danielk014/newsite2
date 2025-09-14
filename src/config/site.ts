@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "AI-Powered YTA Channel Builder",
+  name: "AI-Powered YouTube Automation Builder",
   description: "Complete AI Tool Stack for YouTube Automation - No Teams Required",
   url: "https://www.aiytacourse.com/",
   ogImage: "/og-image.jpg",
@@ -18,5 +18,5 @@ export const siteConfig = {
   },
   guaranteeDays: 30,
   studentCount: "500+",
-  averageResult: "Profitable AI-Powered YTA Channel",
+  averageResult: "Profitable AI-Powered YouTube Automation Channel",
 }

@@ -46,7 +46,7 @@ export function HeroSection() {
               className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
             />
             <Bot className="w-4 h-4 relative z-10" />
-            <span className="relative z-10 font-bold">AI-POWERED YTA CHANNEL BUILDER</span>
+            <span className="relative z-10 font-bold">AI-POWERED YOUTUBE AUTOMATION BUILDER</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -63,7 +63,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            Build a <span className="text-primary">Profitable YTA Channel</span>
+            Build a <span className="text-primary">Profitable YouTube Automation Channel</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
               Using AI Tools - No Team Required
@@ -91,7 +91,7 @@ export function HeroSection() {
           >
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">AI-Powered YTA Channel Builder</h3>
+              <h3 className="text-xl font-bold text-primary">AI-Powered YouTube Automation Builder</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
             <p className="text-center text-muted-foreground mb-3">
@@ -125,7 +125,7 @@ export function HeroSection() {
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">$50K+</div>
-              <div className="text-sm text-muted-foreground">Monthly YTA Revenue</div>
+              <div className="text-sm text-muted-foreground">Monthly YouTube Automation Revenue</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>

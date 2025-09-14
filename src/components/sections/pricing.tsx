@@ -306,7 +306,7 @@ export function PricingSection() {
               *Guarantee requires completion of Module 1 within 30 days. Full terms at checkout.
             </p>
             <p className="text-xs text-muted-foreground mt-4 max-w-3xl mx-auto">
-              **Educational disclaimer: This course teaches AI tool integration for YTA channels. Success depends on individual effort, tool implementation, and market factors. Results are not guaranteed and will vary based on your execution and dedication.
+              **Educational disclaimer: This course teaches AI tool integration for YouTube Automation channels. Success depends on individual effort, tool implementation, and market factors. Results are not guaranteed and will vary based on your execution and dedication.
             </p>
           </div>
         </div>
