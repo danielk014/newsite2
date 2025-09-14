@@ -45,7 +45,7 @@ export const pricingTiers: PricingTier[] = [
       "Advanced Automation Workflows",
       "Multi-Channel Scaling Strategies",
       "Revenue Optimization System",
-      "🎁 BONUS: Full AI Automation Suite ($1,694 value)",
+      "🎁 BONUS: AI Training & Templates ($497 value)",
       "🎁 BONUS: Done-for-You Templates ($497 value)",
       "🎁 BONUS: Elite Network Access ($997/year value)",
       "🎁 BONUS: Channel Reviews ($497 value)",
@@ -86,7 +86,7 @@ export const comparisonFeatures = [
   {
     feature: "Content Automation",
     starter: "Basic Tools",
-    pro: "✅ Full AI Suite",
+    pro: "✅ AI Training & Templates",
     elite: "✅ + Advanced Workflows",
   },
   {
@@ -102,9 +102,9 @@ export const comparisonFeatures = [
     elite: "15+ Channel Empire",
   },
   {
-    feature: "AI Automation Suite ($1,694 value)",
+    feature: "AI Training & Templates",
     starter: "❌",
-    pro: "✅ Full Access",
+    pro: "✅ Included",
     elite: "✅ + Beta Tools",
   },
   {

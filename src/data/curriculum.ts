@@ -75,17 +75,17 @@ export const courseModules: CourseModule[] = [
   },
   {
     id: "6",
-    title: "BONUS: Advanced AI Automation Suite",
-    description: "Complete hands-off content generation worth $2,497/mo - the ultimate automation toolkit",
+    title: "BONUS: AI Templates & Resources",
+    description: "Ready-to-use templates and resources for faster channel setup and content creation",
     lessons: [
-      "Advanced AI Script Generation & Analysis",
-      "Viral Prediction Algorithm Access",
-      "Multi-Niche Content Templates",
-      "Revenue Analytics & Channel Insights",
-      "Advanced Automation Workflows"
+      "Proven Script Templates for Popular Niches",
+      "Channel Setup Checklists and Guidelines",
+      "Content Planning and Research Templates",
+      "Monetization Strategy Worksheets",
+      "Growth and Optimization Checklists"
     ],
-    duration: "3 hours",
-    value: 2497
+    duration: "2 hours",
+    value: 497
   }
 ]
 
@@ -96,9 +96,9 @@ export const bonuses = [
     value: "$997"
   },
   {
-    title: "🔥 AI Automation Suite",
-    description: "Complete hands-off content generation system ($2,497/mo value)",
-    value: "$2,497"
+    title: "🔥 AI Templates & Resources",
+    description: "Ready-to-use templates and resources for faster setup",
+    value: "$497"
   },
   {
     title: "💬 Faceless Creators Community",

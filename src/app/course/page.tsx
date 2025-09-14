@@ -1,6 +1,5 @@
 import { Metadata } from "next"
 import { CurriculumSection } from "@/components/sections/curriculum"
-import { SaasToolsSection } from "@/components/sections/saas-tools"
 
 export const metadata: Metadata = {
   title: "Course Content",
@@ -28,8 +27,6 @@ export default function CoursePage() {
       <CurriculumSection />
 
 
-      {/* SaaS Tools Section */}
-      <SaasToolsSection />
 
       {/* What You'll Achieve Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">

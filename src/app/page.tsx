@@ -3,7 +3,6 @@ import { CredibilitySection } from "@/components/sections/credibility";
 import { ProblemSection } from "@/components/sections/problem";
 import { SolutionSection } from "@/components/sections/solution";
 import { TestimonialStrip } from "@/components/ui/testimonial-strip";
-import { SaasToolsSection } from "@/components/sections/saas-tools";
 // import { UrgencySection } from "@/components/sections/urgency";
 
 export default function Home() {
@@ -98,7 +97,6 @@ export default function Home() {
       <ProblemSection />
       
       {/* Move AI Tools higher for better visibility */}
-      <SaasToolsSection />
       
       <SolutionSection />
       
