@@ -1,5 +1,5 @@
 "use client"
-import { Check, Star, Shield, Zap } from "lucide-react"
+import { Check, Star, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { pricingTiers, comparisonFeatures } from "@/data/pricing-tiers"
 import { cn } from "@/lib/utils"
