@@ -168,7 +168,6 @@ export function PricingSection() {
                     <div className="space-y-3">
                       {billingCycle === "monthly" ? (
                         <button 
-                          target="_blank"
                           style={{
                             fontFamily: 'sans-serif',
                             margin: '0 auto',
@@ -186,13 +185,12 @@ export function PricingSection() {
                             cursor: 'pointer'
                           }}
                           className="lp6362577318051840 lpbtn"
-                          monthly="true"
+                          data-monthly="true"
                         >
                           Pay Monthly €49.00
                         </button>
                       ) : (
                         <button 
-                          target="_blank"
                           style={{
                             fontFamily: 'sans-serif',
                             margin: '0 auto',
@@ -210,7 +208,7 @@ export function PricingSection() {
                             cursor: 'pointer'
                           }}
                           className="lp6362577318051840 lpbtn"
-                          yearly="true"
+                          data-yearly="true"
                         >
                           Pay Yearly €384.00
                         </button>
