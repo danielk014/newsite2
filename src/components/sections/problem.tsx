@@ -1,35 +1,30 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { XCircle, TrendingDown, DollarSign, Zap, Eye, Brain, Flame } from "lucide-react"
+import { XCircle, DollarSign, Zap, Users, Bot } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const painPoints = [
   {
-    icon: Eye,
-    title: "Terrified of showing your face on camera",
-    description: "You want to create content but the thought of being on camera makes you anxious. Privacy concerns and camera shyness are holding you back.",
+    icon: Users,
+    title: "Tired of managing freelancers and employees",
+    description: "Coordinating editors, voice actors, and scriptwriters is a nightmare. Communication delays, quality issues, and constant revisions drain your time and energy.",
   },
   {
     icon: DollarSign,
-    title: "Can't figure out how to make money without personal branding",
-    description: "All the advice is about building a personal brand, but you want to stay anonymous. How do faceless creators actually make money?",
+    title: "Bleeding money on expensive team costs",
+    description: "Quality editors cost $500-2000+ per video. Voice actors charge $100-500. Scriptwriters want $50-200. Your profit margins are getting crushed by team expenses.",
   },
   {
-    icon: Brain,
-    title: "Overwhelmed by the technical side of YouTube automation",
-    description: "AI tools, automation software, outsourcing... it all seems too complex. You need a simple system that actually works.",
-  },
-  {
-    icon: TrendingDown,
-    title: "Wasting time on content that never gets views",
-    description: "Without knowing what works, you're throwing content at the wall hoping something sticks. Meanwhile, others are hitting millions of views.",
+    icon: Bot,
+    title: "No clear workflow from research to upload",
+    description: "You need a complete system: AI for research → script → voice → edit → thumbnail → upload. But figuring out which tools work together and how to connect them is overwhelming.",
   },
   {
     icon: XCircle,
-    title: "Stuck in 0 view jail with no escape plan",
-    description: "Your videos get 0-50 views no matter what you try. You're invisible on the platform while others effortlessly rack up thousands of views on their first upload.",
+    title: "No clear system for profitable YTA channels",
+    description: "You know YTA works, but where do you start? What niches are profitable? How do you scale without hiring a team? You need a proven step-by-step system.",
   },
 ]
 
@@ -50,13 +45,13 @@ export function ProblemSection() {
             className="text-center space-y-4 mb-16"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-              Tired of Being Camera Shy?
+              Tired of Managing Freelancers?
               <br />
-              <span className="text-primary">Go Faceless & Profitable</span>
+              <span className="text-primary">Use AI Instead</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover how to build a profitable YouTube channel without ever showing your face or voice. 
-              Learn the automation strategies that <span className="font-semibold text-foreground">generate passive income</span>.
+              Get our Channel-in-a-Box framework: AI tools for research → script → voice → edit → thumbnail → upload. 
+              <span className="font-semibold text-foreground">Follow the steps, plug in the tools, get publishing.</span>
             </p>
           </motion.div>
 
@@ -89,52 +84,29 @@ export function ProblemSection() {
             ))}
           </motion.div>
 
-          {/* The Real Problem */}
+          {/* Start Here Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.4 }}
             viewport={{ once: true, amount: 0.5 }}
-            className="bg-gradient-to-r from-destructive/10 via-destructive/5 to-destructive/10 border border-destructive/20 rounded-2xl p-8 md:p-12 mb-16"
+            className="bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-8 md:p-12 mb-16 text-center"
           >
-            <div className="text-center space-y-6">
-              <Flame className="w-16 h-16 text-destructive mx-auto" />
-              <h3 className="text-2xl md:text-3xl font-bold">The Brutal Truth That May Surprise You</h3>
-              
-              <div className="space-y-4 max-w-3xl mx-auto">
-                <p className="text-lg">
-                  <span className="font-semibold text-destructive">You don&apos;t need to show your face to make money on YouTube.</span>
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  You&apos;re struggling because you think you need to be a personality to succeed.
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  While you&apos;re avoiding YouTube because of camera anxiety, faceless creators are using 
-                  <span className="font-semibold text-foreground"> automated systems</span> that generate 
-                  <span className="font-semibold text-foreground"> millions of views</span> and 
-                  <span className="font-semibold text-foreground"> passive income</span>.
-                </p>
-              </div>
-
-              <div className="pt-6">
-                <p className="text-xl font-semibold text-primary">
-                  Top faceless YouTube channels? They&apos;re not more talented than you.
-                </p>
-                <p className="text-lg text-muted-foreground mt-2">
-                  They just have access to the right automation system and tools.
-                </p>
-              </div>
-              
-              {/* AI Solution Teaser */}
-              <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20">
-                <p className="text-center text-lg font-semibold mb-2">
-                  🤖 What if you could automate your entire YouTube channel?
-                </p>
-                <p className="text-center text-muted-foreground">
-                  Our automation system handles content creation, optimization, and scaling - all without showing your face or using your voice.
-                </p>
-              </div>
-            </div>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">
+              Ready to Build Your AI-Powered YTA Channel?
+            </h3>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              Get the complete Channel-in-a-Box framework with AI tools for every step—research to upload—without expensive teams.
+            </p>
+            <Link href="/pricing">
+              <Button 
+                variant="cta" 
+                size="xl"
+                className="mx-auto"
+              >
+                Start Here →
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Comparison Visual */}
@@ -151,28 +123,28 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-destructive/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <XCircle className="w-8 h-8 text-destructive" />
-                  <h4 className="font-bold text-lg">What You&apos;re Doing Now</h4>
+                  <h4 className="font-bold text-lg">Traditional YTA Approach</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Avoiding YouTube due to camera anxiety</span>
+                    <span className="text-sm">Hiring expensive editors ($500-2000+ per video)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Thinking you need a personal brand to succeed</span>
+                    <span className="text-sm">Managing voice actors and scriptwriters</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">Manual content creation with no automation</span>
+                    <span className="text-sm">Dealing with communication delays and revisions</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-destructive flex-shrink-0">→</span>
-                    <span className="text-sm">No system for scaling without showing face</span>
+                    <span className="text-sm">No systematic workflow from research to upload</span>
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-destructive">Result: Still camera shy and broke</p>
+                  <p className="text-sm font-medium text-destructive">Result: High costs, low profit margins</p>
                 </div>
               </div>
             </div>
@@ -183,32 +155,32 @@ export function ProblemSection() {
               <div className="relative bg-card border-2 border-accent/30 rounded-xl p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Zap className="w-8 h-8 text-accent" />
-                  <h4 className="font-bold text-lg">What Faceless YouTubers Do</h4>
+                  <h4 className="font-bold text-lg">AI-Powered YTA Approach</h4>
                 </div>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Automate content creation with proven systems</span>
+                    <span className="text-sm">Complete 6-step Channel-in-a-Box framework</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Stay anonymous while building profitable channels</span>
+                    <span className="text-sm">AI workflow: research → script → voice → edit → thumbnail → upload</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Use AI and automation for 10x output</span>
+                    <span className="text-sm">Plug-and-play system—follow steps, plug tools, get publishing</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Target profitable niches with data-driven content</span>
+                    <span className="text-sm">Eliminate all team costs with complete AI automation</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-accent flex-shrink-0">✓</span>
-                    <span className="text-sm">Scale to multiple channels for passive income</span>
+                    <span className="text-sm">Scale to multiple channels without hiring anyone</span>
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-accent">Result: Profitable faceless YouTube empire</p>
+                  <p className="text-sm font-medium text-accent">Result: High profit margins, no team needed</p>
                 </div>
               </div>
             </div>
@@ -226,8 +198,8 @@ export function ProblemSection() {
               Stop Struggling. Start Winning.
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-              Get the complete automation system used by 
-              profitable faceless YouTube channels worldwide.
+              Get the complete Channel-in-a-Box framework with AI tools for every step—
+              from research to upload—no teams required.
             </p>
             <Link href="/pricing">
               <Button 
@@ -235,7 +207,7 @@ export function ProblemSection() {
                 size="xl"
                 className="mx-auto"
               >
-                Yes, I Want The Automation System →
+                Yes, I Want The AI System →
               </Button>
             </Link>
           </motion.div>

@@ -23,7 +23,7 @@ export function PricingSection() {
               Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Join our faceless YouTube network and learn our systems from the inside
+              Get the complete Channel-in-a-Box framework: AI tools for research → script → voice → edit → thumbnail → upload
             </p>
           </div>
 
@@ -31,23 +31,23 @@ export function PricingSection() {
           <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Why Our Channels <span className="text-primary">Dominate the Algorithm</span>
+                Why Channel-in-a-Box <span className="text-primary">Beats Everything Else</span>
               </h3>
               <p className="text-lg text-muted-foreground mb-6">
-                We don&apos;t guess - we follow proven data from billions of views.
+                Complete 6-step framework: Follow the steps, plug in the AI tools, get publishing. No guesswork.
               </p>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">2B+</div>
-                  <div className="text-sm text-muted-foreground">Views Analyzed</div>
+                  <div className="text-3xl font-bold text-primary mb-1">6</div>
+                  <div className="text-sm text-muted-foreground">AI-Powered Steps</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">15+</div>
-                  <div className="text-sm text-muted-foreground">Active Channels</div>
+                  <div className="text-3xl font-bold text-primary mb-1">100%</div>
+                  <div className="text-sm text-muted-foreground">Plug-and-Play</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">$70K+</div>
-                  <div className="text-sm text-muted-foreground">Monthly Revenue</div>
+                  <div className="text-3xl font-bold text-primary mb-1">$50K+</div>
+                  <div className="text-sm text-muted-foreground">Framework Potential</div>
                 </div>
               </div>
             </div>
@@ -269,18 +269,18 @@ export function PricingSection() {
               <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2">Network Access</h4>
+              <h4 className="font-semibold mb-2">Channel-in-a-Box Framework</h4>
               <p className="text-sm text-muted-foreground">
-                Learn systems from active YouTube automation operators.
+                Complete 6-step system with AI tools for every step included.
               </p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-8 h-8 text-accent" />
               </div>
-              <h4 className="font-semibold mb-2">Instant Network Access</h4>
+              <h4 className="font-semibold mb-2">Instant Framework Access</h4>
               <p className="text-sm text-muted-foreground">
-                Join immediately. Automation systems activated in seconds.
+                Get immediate access to the complete workflow and tool setups.
               </p>
             </div>
           </div>
@@ -297,7 +297,7 @@ export function PricingSection() {
               >
                 FAQ section
               </button>
-              {" "}or email support@creatorcamp.academy
+              {" "}or email support@aiytacourse.com
             </p>
             <p className="text-sm text-muted-foreground">
               🔒 Secure checkout powered by Stripe. All major cards accepted.
@@ -306,7 +306,7 @@ export function PricingSection() {
               *Guarantee requires completion of Module 1 within 30 days. Full terms at checkout.
             </p>
             <p className="text-xs text-muted-foreground mt-4 max-w-3xl mx-auto">
-              **Educational disclaimer: This course provides training and strategies for content creation. Success depends on individual effort, consistency, and market factors. Results are not guaranteed and will vary based on your implementation and dedication.
+              **Educational disclaimer: This course teaches AI tool integration for YTA channels. Success depends on individual effort, tool implementation, and market factors. Results are not guaranteed and will vary based on your execution and dedication.
             </p>
           </div>
         </div>

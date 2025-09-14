@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Shield, Zap, Star, Eye, BadgeCheck, Sparkles, Check } from "lucide-react"
+import { ArrowRight, Users, Shield, Zap, Star, Bot, BadgeCheck, Sparkles, Check } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -45,8 +45,8 @@ export function HeroSection() {
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent"
             />
-            <Eye className="w-4 h-4 relative z-10" />
-            <span className="relative z-10 font-bold">FACELESS YOUTUBE AUTOMATION</span>
+            <Bot className="w-4 h-4 relative z-10" />
+            <span className="relative z-10 font-bold">AI-POWERED YTA CHANNEL BUILDER</span>
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
@@ -63,10 +63,10 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            Build a <span className="text-primary">Profitable YouTube Channel</span>
+            Build a <span className="text-primary">Profitable YTA Channel</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              Without Showing Your Face or Voice
+              Using AI Tools - No Team Required
             </span>
           </motion.h1>
 
@@ -77,9 +77,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            Discover the <span className="font-semibold text-foreground">complete system</span> to create profitable faceless YouTube channels.
+            Learn our <span className="font-semibold text-primary">Channel-in-a-Box framework</span>—leverage AI tools for every step: research, script, voice, edit, thumbnail, upload.
             <br />
-            Get access to <span className="font-semibold text-primary">automation tools</span> and strategies that generate passive income while you sleep.
+            <span className="font-semibold text-foreground">Follow the steps, plug in the tools, get publishing.</span> No teams required.
           </motion.p>
 
           {/* Complete System Highlight */}
@@ -91,28 +91,28 @@ export function HeroSection() {
           >
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">Complete Faceless YouTube System</h3>
+              <h3 className="text-xl font-bold text-primary">AI-Powered YTA Channel Builder</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
             <p className="text-center text-muted-foreground mb-3">
-              Everything you need to build a profitable YouTube empire - from channel setup to 6-figure scaling
+              Complete Channel-in-a-Box framework: AI tools for research → script → voice → edit → thumbnail → upload
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Proven Channel Strategies</span>
+                <span>Complete AI Workflow</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Scaling Methodologies</span>
+                <span>Channel-in-a-Box System</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-accent" />
-                <span>Exclusive Automation Tools</span>
+                <span>Plug-and-Play Framework</span>
               </div>
             </div>
             <p className="text-center text-xs text-muted-foreground mt-3">
-              Includes AI Content Generator (valued at $297/mo)
+              Includes AI Tool Stack & Templates (valued at $497)
             </p>
           </motion.div>
 
@@ -125,11 +125,11 @@ export function HeroSection() {
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">$50K+</div>
-              <div className="text-sm text-muted-foreground">Avg Monthly Revenue</div>
+              <div className="text-sm text-muted-foreground">Monthly YTA Revenue</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Successful Channels</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>
+              <div className="text-sm text-muted-foreground">AI-Powered</div>
             </div>
           </motion.div>
 
@@ -165,7 +165,7 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <BadgeCheck className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">AUTOMATED SYSTEM</span>
+              <span className="text-xs font-medium">AI-POWERED SYSTEM</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Shield className="w-4 h-4 text-accent" />
               <span className="text-xs font-medium">30-DAY MONEY-BACK GUARANTEE</span>
@@ -177,10 +177,10 @@ export function HeroSection() {
               className="flex items-center gap-3 bg-card/50 backdrop-blur border border-border rounded-full px-4 py-2"
             >
               <Zap className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-xs font-medium">COMPLETE SYSTEM</span>
+              <span className="text-xs font-medium">NO TEAM NEEDED</span>
               <div className="w-1 h-1 bg-muted-foreground rounded-full" />
               <Users className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium">PROVEN METHODOLOGY</span>
+              <span className="text-xs font-medium">AI TOOLS INCLUDED</span>
             </motion.div>
           </motion.div>
 

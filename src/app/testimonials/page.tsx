@@ -4,7 +4,7 @@ import { TestimonialStrip } from "@/components/ui/testimonial-strip"
 
 export const metadata: Metadata = {
   title: "Testimonials",
-  description: "See what our students are saying about Creator Camp Academy",
+  description: "See real results from AI-Powered YTA Channel Builder students",
 }
 
 export default function TestimonialsPage() {
@@ -15,10 +15,10 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Real <span className="text-primary">YouTube Results</span>
+              Real <span className="text-primary">AI-Powered YTA Results</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              See the actual earnings and analytics from our faceless YouTube automation system
+              See actual earnings from channels built using AI tools—no teams, no freelancers
             </p>
           </div>
         </div>
@@ -29,10 +29,10 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">15+ Faceless YouTube Channels</span> Making $70K+ Per Month
+              We Run <span className="text-primary">20+ AI-Powered YTA Channels</span> Making $50K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Learn systems to build faceless content empires
+              Learn the AI tool stack that eliminates expensive teams and freelancers
             </p>
           </div>
           
@@ -44,8 +44,8 @@ export default function TestimonialsPage() {
                 className="w-full h-auto rounded-lg mb-4"
               />
               <div className="text-center">
-                <h3 className="font-semibold text-lg mb-2">YouTube Partnership Achieved</h3>
-                <p className="text-muted-foreground text-sm">Monetization unlocked across all channels</p>
+                <h3 className="font-semibold text-lg mb-2">AI-Built Channel Monetized</h3>
+                <p className="text-muted-foreground text-sm">Built entirely with AI tools—no human team</p>
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -55,8 +55,8 @@ export default function TestimonialsPage() {
                 className="w-full h-auto rounded-lg mb-4"
               />
               <div className="text-center">
-                <h3 className="font-semibold text-lg mb-2">$6.2K Weekly Earnings</h3>
-                <p className="text-muted-foreground text-sm">Single channel passive income</p>
+                <h3 className="font-semibold text-lg mb-2">$6.2K Weekly AI Revenue</h3>
+                <p className="text-muted-foreground text-sm">Zero team costs—100% AI-generated content</p>
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
               />
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">981K Subscribers</h3>
-                <p className="text-muted-foreground text-sm">$65K estimated monthly revenue</p>
+                <p className="text-muted-foreground text-sm">$50K monthly revenue with AI workflow</p>
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow lg:col-span-2">
@@ -78,7 +78,7 @@ export default function TestimonialsPage() {
               />
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">1.1M Views in 28 Days</h3>
-                <p className="text-muted-foreground text-sm">999% growth from automated content system</p>
+                <p className="text-muted-foreground text-sm">999% growth using AI content system</p>
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
@@ -89,7 +89,7 @@ export default function TestimonialsPage() {
               />
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">92M+ Total Views</h3>
-                <p className="text-muted-foreground text-sm">Consistent viral content performance</p>
+                <p className="text-muted-foreground text-sm">AI-generated content going viral consistently</p>
               </div>
             </div>
           </div>
@@ -100,23 +100,23 @@ export default function TestimonialsPage() {
       <SocialProofSection />
 
       {/* Additional Testimonial Strips */}
-      <TestimonialStrip startIndex={0} title="Student Success Stories" />
-      <TestimonialStrip startIndex={4} title="Creator Transformations" />
+      <TestimonialStrip startIndex={0} title="AI YTA Success Stories" />
+      <TestimonialStrip startIndex={4} title="From Teams to AI Transformations" />
 
       {/* CTA Section */}
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Start Your Creator Journey?
+            Ready to Build Your AI-Powered YTA Channel?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join our community of creators and learn the skills you need to succeed
+            Join creators eliminating expensive teams with our proven AI tool stack
           </p>
           <a
             href="/pricing"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring bg-primary text-primary-foreground shadow hover:bg-primary/90 h-12 px-8"
           >
-            Start Your Journey Today
+            Start Your AI YTA System Today
           </a>
         </div>
       </section>

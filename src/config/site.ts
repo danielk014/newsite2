@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "YouTube Automation Academy",
-  description: "Complete Faceless YouTube Automation System and AI-Powered Tools",
-  url: "https://www.youtubeautomation.academy/",
+  name: "AI-Powered YTA Channel Builder",
+  description: "Complete AI Tool Stack for YouTube Automation - No Teams Required",
+  url: "https://www.aiytacourse.com/",
   ogImage: "/og-image.jpg",
   links: {
     checkout: "#checkout",
@@ -17,6 +17,6 @@ export const siteConfig = {
     },
   },
   guaranteeDays: 30,
-  studentCount: "100+",
-  averageResult: "Profitable Faceless YouTube Channel",
+  studentCount: "500+",
+  averageResult: "Profitable AI-Powered YTA Channel",
 }
