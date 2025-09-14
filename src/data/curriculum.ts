@@ -21,6 +21,7 @@ export const courseModules: CourseModule[] = [
     description: "Automate video creation using cutting-edge AI tools - never run out of content ideas again",
     lessons: [
       "AI Script Generation for Trending Topics",
+      "AI Video Creation Training: Learn how to use AI to create videos in minutes",
       "Automated Video Assembly & Editing",
       "Voice Synthesis & Custom Narration Options",
       "AI Thumbnail Creation & Optimization",

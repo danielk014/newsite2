@@ -244,8 +244,9 @@ export function SolutionSection() {
                         <p className="text-sm text-muted-foreground mb-3">Master each step of the Channel-in-a-Box system</p>
                         <ul className="text-xs text-muted-foreground space-y-1">
                           <li>• Step 1-2: AI Research & Script Generation</li>
-                          <li>• Step 3-4: Voice AI & Video Editing</li>
-                          <li>• Step 5-6: Thumbnail AI & Auto-Upload</li>
+                          <li>• Step 3: AI Video Creation Training - Create videos in minutes</li>
+                          <li>• Step 4-5: Voice AI & Video Editing</li>
+                          <li>• Step 6: Thumbnail AI & Auto-Upload</li>
                         </ul>
                       </div>
                     </div>

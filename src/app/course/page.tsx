@@ -4,7 +4,7 @@ import { SaasToolsSection } from "@/components/sections/saas-tools"
 
 export const metadata: Metadata = {
   title: "Course Content",
-  description: "Everything you'll learn in Creator Camp Academy",
+  description: "Everything you'll learn in AI-Powered YouTube Automation Builder",
 }
 
 export default function CoursePage() {
@@ -15,10 +15,10 @@ export default function CoursePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Everything You Need to <span className="text-primary">Create Great Content</span>
+              Everything You Need to <span className="text-primary">Build YouTube Automation Channels</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              A comprehensive course for building your content creation skills
+              Complete AI-powered system including AI Video Creation Training to create videos in minutes
             </p>
           </div>
         </div>
@@ -36,24 +36,24 @@ export default function CoursePage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-              From Beginner to <span className="text-primary">Skilled Creator</span>
+              From Beginner to <span className="text-primary">YouTube Automation Expert</span>
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Improve Your Content Quality</h3>
-                <p className="text-muted-foreground">Learn the fundamentals that make content engaging and well-crafted</p>
+                <h3 className="font-semibold text-primary mb-2">Master AI Video Creation</h3>
+                <p className="text-muted-foreground">Learn how to use AI to create professional videos in minutes, not hours</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Learn Monetization Strategies</h3>
-                <p className="text-muted-foreground">Understand different ways creators can monetize their content sustainably</p>
+                <h3 className="font-semibold text-primary mb-2">Build Multiple Revenue Streams</h3>
+                <p className="text-muted-foreground">Scale YouTube Automation channels to $100K+ monthly without teams</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Build Your Personal Brand</h3>
-                <p className="text-muted-foreground">Learn to establish yourself as a trusted voice in your niche</p>
+                <h3 className="font-semibold text-primary mb-2">Complete AI Workflow</h3>
+                <p className="text-muted-foreground">Follow our Channel-in-a-Box framework from research to upload</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
-                <h3 className="font-semibold text-primary mb-2">Create Sustainable Systems</h3>
-                <p className="text-muted-foreground">Build consistent workflows and processes for long-term success</p>
+                <h3 className="font-semibold text-primary mb-2">Eliminate Team Costs</h3>
+                <p className="text-muted-foreground">Replace expensive freelancers with AI tools and proven systems</p>
               </div>
             </div>
           </div>
@@ -64,10 +64,10 @@ export default function CoursePage() {
       <section className="py-20 md:py-32 bg-gradient-to-t from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Master Content Creation?
+            Ready to Master AI Video Creation?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Get instant access to all course materials and start your journey today
+            Get instant access to AI Video Creation Training and our complete Channel-in-a-Box system
           </p>
           <a
             href="/pricing"
