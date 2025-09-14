@@ -187,7 +187,7 @@ export function PricingSection() {
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
                         >
-                          Pay Monthly €49.00
+                          Join Now!
                         </button>
                       ) : (
                         <button 
@@ -210,7 +210,7 @@ export function PricingSection() {
                           className="lp6362577318051840 lpbtn"
                           data-yearly="true"
                         >
-                          Pay Yearly €384.00
+                          Join Now!
                         </button>
                       )}
                     </div>
