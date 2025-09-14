@@ -190,28 +190,29 @@ export function PricingSection() {
                           Join Now!
                         </button>
                       ) : (
-                        <button 
-                          style={{
-                            fontFamily: 'sans-serif',
-                            margin: '0 auto',
-                            outline: 'none',
-                            display: 'block',
-                            height: '45px',
-                            width: '226px',
-                            borderRadius: '6px',
-                            background: '#FF6B35',
-                            color: 'white',
-                            boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
-                            fontSize: '18px',
-                            fontWeight: '700',
-                            border: 'none',
-                            cursor: 'pointer'
-                          }}
-                          className="lp6362577318051840 lpbtn"
-                          data-yearly="true"
-                        >
-                          Join Now!
-                        </button>
+                        <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
+                          <button 
+                            style={{
+                              fontFamily: 'sans-serif',
+                              margin: '0 auto',
+                              outline: 'none',
+                              display: 'block',
+                              height: '45px',
+                              width: '226px',
+                              borderRadius: '6px',
+                              background: '#469CCE',
+                              color: 'white',
+                              boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
+                              fontSize: '18px',
+                              fontWeight: '700',
+                              border: 'none',
+                              cursor: 'pointer'
+                            }}
+                            className="lp6602918050791424"
+                          >
+                            Pay €384.00
+                          </button>
+                        </div>
                       )}
                     </div>
                   ) : tier.id === "elite" ? (
