@@ -29,7 +29,7 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making $100K+ Per Month
+              We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making €100K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Learn the AI tool stack that eliminates expensive teams and freelancers
@@ -67,7 +67,7 @@ export default function TestimonialsPage() {
               />
               <div className="text-center">
                 <h3 className="font-semibold text-lg mb-2">981K Subscribers</h3>
-                <p className="text-muted-foreground text-sm">$100K monthly revenue with AI workflow</p>
+                <p className="text-muted-foreground text-sm">€100K monthly revenue with AI workflow</p>
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow lg:col-span-2">

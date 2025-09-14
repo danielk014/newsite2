@@ -46,7 +46,7 @@ export function PricingSection() {
                   <div className="text-sm text-muted-foreground">Plug-and-Play</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">$100K+</div>
+                  <div className="text-3xl font-bold text-primary mb-1">€100K+</div>
                   <div className="text-sm text-muted-foreground">Framework Potential</div>
                 </div>
               </div>
@@ -116,7 +116,9 @@ export function PricingSection() {
                     ) : tier.price > 0 ? (
                       <>
                         <div className="flex items-baseline justify-center gap-2 mb-2">
-                          <span className="text-4xl font-bold">${Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}</span>
+                          <span className="text-4xl font-bold">
+                            {tier.id === "pro" ? "€" : "$"}{Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}
+                          </span>
                           <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
@@ -124,7 +126,9 @@ export function PricingSection() {
                             "Billed annually"
                           ) : billingCycle === "yearly" ? (
                             <>
-                              <span className="line-through text-muted-foreground/60">${Math.round(monthlyPrice)}/month</span>
+                              <span className="line-through text-muted-foreground/60">
+                                {tier.id === "pro" ? "€" : "$"}{Math.round(monthlyPrice)}/month
+                              </span>
                               {" "}
                               <span className="text-accent font-semibold">Billed annually</span>
                             </>
@@ -161,19 +165,57 @@ export function PricingSection() {
                   </div>
 
                   {tier.id === "pro" ? (
-                    <a 
-                      href={billingCycle === "yearly" ? "https://buy.stripe.com/fZu7sN2qS08s4db4F08ww04" : "https://buy.stripe.com/5kQcN7fdE5sM8tr6N88ww03"} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      <Button
-                        variant={tier.popular ? "cta" : "outline"}
-                        size="lg"
-                        className="w-full"
-                      >
-                        {tier.cta}
-                      </Button>
-                    </a>
+                    <div className="space-y-3">
+                      {billingCycle === "monthly" ? (
+                        <button 
+                          target="_blank"
+                          style={{
+                            fontFamily: 'sans-serif',
+                            margin: '0 auto',
+                            outline: 'none',
+                            display: 'block',
+                            height: '45px',
+                            width: '226px',
+                            borderRadius: '6px',
+                            background: '#FF6B35',
+                            color: 'white',
+                            boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
+                            fontSize: '18px',
+                            fontWeight: '700',
+                            border: 'none',
+                            cursor: 'pointer'
+                          }}
+                          className="lp6362577318051840 lpbtn"
+                          monthly="true"
+                        >
+                          Pay Monthly €49.00
+                        </button>
+                      ) : (
+                        <button 
+                          target="_blank"
+                          style={{
+                            fontFamily: 'sans-serif',
+                            margin: '0 auto',
+                            outline: 'none',
+                            display: 'block',
+                            height: '45px',
+                            width: '226px',
+                            borderRadius: '6px',
+                            background: '#FF6B35',
+                            color: 'white',
+                            boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
+                            fontSize: '18px',
+                            fontWeight: '700',
+                            border: 'none',
+                            cursor: 'pointer'
+                          }}
+                          className="lp6362577318051840 lpbtn"
+                          yearly="true"
+                        >
+                          Pay Yearly €384.00
+                        </button>
+                      )}
+                    </div>
                   ) : tier.id === "starter" ? (
                     <a 
                       href={billingCycle === "yearly" ? "https://buy.stripe.com/aFaeVfe9Af3meRP9Zk8ww02" : "https://buy.stripe.com/cNi9AV8PgcVe10Z0oK8ww01"} 
@@ -300,7 +342,7 @@ export function PricingSection() {
               {" "}or email support@aiytacourse.com
             </p>
             <p className="text-sm text-muted-foreground">
-              🔒 Secure checkout powered by Stripe. All major cards accepted.
+              🔒 Secure checkout powered by LaunchPass. All major cards accepted.
             </p>
             <p className="text-xs text-muted-foreground mt-2">
               *Guarantee requires completion of Module 1 within 30 days. Full terms at checkout.

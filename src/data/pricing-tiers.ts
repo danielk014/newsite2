@@ -93,7 +93,7 @@ export const comparisonFeatures = [
     feature: "Revenue System",
     starter: "❌",
     pro: "✅ Multiple Income Streams",
-    elite: "✅ + $100K+/mo Blueprint",
+    elite: "✅ + €100K+/mo Blueprint",
   },
   {
     feature: "Channel Management",

@@ -73,6 +73,7 @@ export default function RootLayout({
         <main className="pt-16">
           {children}
         </main>
+        <script async src="https://www.launchpass.com/course/creatorcamp/embed.js"></script>
       </body>
     </html>
   );

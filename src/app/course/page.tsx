@@ -45,7 +45,7 @@ export default function CoursePage() {
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <h3 className="font-semibold text-primary mb-2">Build Multiple Revenue Streams</h3>
-                <p className="text-muted-foreground">Scale YouTube Automation channels to $100K+ monthly without teams</p>
+                <p className="text-muted-foreground">Scale YouTube Automation channels to €100K+ monthly without teams</p>
               </div>
               <div className="bg-card border border-border rounded-lg p-6">
                 <h3 className="font-semibold text-primary mb-2">Complete AI Workflow</h3>
