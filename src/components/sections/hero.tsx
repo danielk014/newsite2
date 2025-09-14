@@ -127,7 +127,7 @@ export function HeroSection() {
           >
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">€100K+</div>
-              <div className="text-sm text-muted-foreground">Monthly YouTube Automation Revenue</div>
+              <div className="text-sm text-muted-foreground">A month being generated from faceless AI automated channels</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>
