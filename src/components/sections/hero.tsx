@@ -77,9 +77,11 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            Learn our <span className="font-semibold text-primary">Channel-in-a-Box framework</span>—leverage AI tools for every step: research, script, voice, edit, thumbnail, upload.
+            Leverage AI tools for every step:
             <br />
-            <span className="font-semibold text-foreground">Follow the steps, plug in the tools, get publishing.</span> No teams required.
+            <span className="font-semibold text-primary">AI tools for research → script → voice → edit → thumbnail → upload</span>
+            <br />
+            <span className="font-semibold text-foreground">No teams required.</span>
           </motion.p>
 
           {/* Complete System Highlight */}
