@@ -32,7 +32,32 @@ export function PricingSection() {
       btn.style.cursor = 'pointer'
     })
 
-    // Add fresh LaunchPass script
+    // Handle yearly embed separately
+    if (billingCycle === 'yearly') {
+      // Clean up existing yearly scripts
+      const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+      existingYearlyScripts.forEach(script => script.remove())
+      
+      // Clear the embed container
+      const embedContainer = document.getElementById('launchpass-yearly-embed')
+      if (embedContainer) {
+        embedContainer.innerHTML = ''
+      }
+      
+      // Add a small delay to ensure DOM is ready, then load the yearly embed
+      setTimeout(() => {
+        const yearlyScript = document.createElement('script')
+        yearlyScript.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+        yearlyScript.async = true
+        
+        // Add script to head for proper loading
+        document.head.appendChild(yearlyScript)
+        
+        // The embed should automatically find and populate the container
+      }, 100)
+    }
+
+    // Add fresh LaunchPass script for monthly
     const script = document.createElement('script')
     script.src = 'https://js.launchpass.com/lp.js'
     script.async = true
@@ -273,50 +298,12 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                         </button>
                       ) : (
                         <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
-                          <button 
-                            style={{
-                              fontFamily: 'sans-serif',
-                              margin: '0 auto',
-                              outline: 'none',
-                              display: 'block',
-                              height: '45px',
-                              width: '226px',
-                              borderRadius: '6px',
-                              background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
-                              color: 'white',
-                              boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
-                              fontSize: '18px',
-                              fontWeight: '700',
-                              border: 'none',
-                              cursor: 'pointer',
-                              transition: 'all 0.3s ease'
-                            }}
-                            className="lp6602918050791424 lpbtn"
-                            data-yearly="true"
-                            onClick={() => {
-                              // Ensure button is clickable and trigger LaunchPass
-                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-                              if (btn) {
-                                btn.disabled = false
-                                btn.style.pointerEvents = 'auto'
-                                btn.style.opacity = '1'
-                                // Manually trigger LaunchPass if available
-                                if (window.LaunchPass) {
-                                  window.LaunchPass.init()
-                                }
-                              }
-                            }}
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.transform = 'translateY(-2px)';
-                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.transform = 'translateY(0)';
-                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
-                            }}
+                          <div 
+                            id="launchpass-yearly-embed" 
+                            style={{ display: 'inline-block', minHeight: '45px', width: '226px' }}
                           >
-                            Join Now! €384.00
-                          </button>
+                            {/* LaunchPass yearly embed will be loaded here */}
+                          </div>
                         </div>
                       )}
                     </div>
