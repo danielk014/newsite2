@@ -19,22 +19,52 @@ export function PricingSection() {
 
   // Initialize LaunchPass when component mounts and when billing cycle changes
   useEffect(() => {
-    // Re-initialize LaunchPass buttons when billing cycle changes
+    // Clean up any existing LaunchPass scripts
+    const existingScripts = document.querySelectorAll('script[src="https://js.launchpass.com/lp.js"]')
+    existingScripts.forEach(script => script.remove())
+
+    // Re-enable all buttons first
+    const allButtons = document.querySelectorAll('.lpbtn') as NodeListOf<HTMLButtonElement>
+    allButtons.forEach(btn => {
+      btn.disabled = false
+      btn.style.pointerEvents = 'auto'
+      btn.style.opacity = '1'
+      btn.style.cursor = 'pointer'
+    })
+
+    // Add fresh LaunchPass script
     const script = document.createElement('script')
     script.src = 'https://js.launchpass.com/lp.js'
     script.async = true
     script.onload = () => {
-      // Force re-initialization of LaunchPass
-      if (window.LaunchPass) {
-        window.LaunchPass.init()
-      }
+      // Delay to ensure DOM is ready
+      setTimeout(() => {
+        if (window.LaunchPass) {
+          window.LaunchPass.init()
+        }
+        // Double-check button states after LaunchPass init
+        const buttons = document.querySelectorAll('.lpbtn') as NodeListOf<HTMLButtonElement>
+        buttons.forEach(btn => {
+          btn.disabled = false
+          btn.style.pointerEvents = 'auto'
+          btn.style.opacity = '1'
+        })
+      }, 200)
     }
     document.head.appendChild(script)
 
+    // Fallback: Re-enable buttons after a delay
+    const fallbackTimer = setTimeout(() => {
+      const buttons = document.querySelectorAll('.lpbtn') as NodeListOf<HTMLButtonElement>
+      buttons.forEach(btn => {
+        btn.disabled = false
+        btn.style.pointerEvents = 'auto'
+        btn.style.opacity = '1'
+      })
+    }, 1000)
+
     return () => {
-      // Clean up script on component unmount
-      const scripts = document.querySelectorAll('script[src="https://js.launchpass.com/lp.js"]')
-      scripts.forEach(script => script.remove())
+      clearTimeout(fallbackTimer)
     }
   }, [billingCycle])
 
@@ -218,11 +248,16 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
                           onClick={() => {
-                            // Ensure button is clickable
+                            // Ensure button is clickable and trigger LaunchPass
                             const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
                             if (btn) {
                               btn.disabled = false
                               btn.style.pointerEvents = 'auto'
+                              btn.style.opacity = '1'
+                              // Manually trigger LaunchPass if available
+                              if (window.LaunchPass) {
+                                window.LaunchPass.init()
+                              }
                             }
                           }}
                           onMouseEnter={(e) => {
@@ -247,9 +282,9 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               height: '45px',
                               width: '226px',
                               borderRadius: '6px',
-                              background: 'linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)',
+                              background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
                               color: 'white',
-                              boxShadow: '0 4px 15px rgba(74, 144, 226, 0.3)',
+                              boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
                               fontSize: '18px',
                               fontWeight: '700',
                               border: 'none',
@@ -259,23 +294,28 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             className="lp6602918050791424 lpbtn"
                             data-yearly="true"
                             onClick={() => {
-                              // Ensure button is clickable
+                              // Ensure button is clickable and trigger LaunchPass
                               const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
                               if (btn) {
                                 btn.disabled = false
                                 btn.style.pointerEvents = 'auto'
+                                btn.style.opacity = '1'
+                                // Manually trigger LaunchPass if available
+                                if (window.LaunchPass) {
+                                  window.LaunchPass.init()
+                                }
                               }
                             }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)';
-                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(74, 144, 226, 0.4)';
+                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
                             }}
                             onMouseLeave={(e) => {
                               e.currentTarget.style.transform = 'translateY(0)';
-                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(74, 144, 226, 0.3)';
+                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
                             }}
                           >
-                            Pay €384.00
+                            Join Now! €384.00
                           </button>
                         </div>
                       )}
