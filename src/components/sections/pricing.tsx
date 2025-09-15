@@ -1,12 +1,42 @@
 "use client"
 import { Check, Star, Shield } from "lucide-react"
+
+// Extend Window interface for LaunchPass
+declare global {
+  interface Window {
+    LaunchPass?: {
+      init: () => void
+    }
+  }
+}
 import { Button } from "@/components/ui/button"
 import { pricingTiers, comparisonFeatures } from "@/data/pricing-tiers"
 import { cn } from "@/lib/utils"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
+
+  // Initialize LaunchPass when component mounts and when billing cycle changes
+  useEffect(() => {
+    // Re-initialize LaunchPass buttons when billing cycle changes
+    const script = document.createElement('script')
+    script.src = 'https://js.launchpass.com/lp.js'
+    script.async = true
+    script.onload = () => {
+      // Force re-initialization of LaunchPass
+      if (window.LaunchPass) {
+        window.LaunchPass.init()
+      }
+    }
+    document.head.appendChild(script)
+
+    return () => {
+      // Clean up script on component unmount
+      const scripts = document.querySelectorAll('script[src="https://js.launchpass.com/lp.js"]')
+      scripts.forEach(script => script.remove())
+    }
+  }, [billingCycle])
 
   return (
     <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
@@ -23,7 +53,7 @@ export function PricingSection() {
               Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Complete YouTube Automation Kit with everything you need to build profitable channels
+Complete All-in-One Package - Everything you need to build profitable automated channels
             </p>
           </div>
 
@@ -176,16 +206,33 @@ export function PricingSection() {
                             height: '45px',
                             width: '226px',
                             borderRadius: '6px',
-                            background: '#FF6B35',
+                            background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
                             color: 'white',
-                            boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
+                            boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
                             fontSize: '18px',
                             fontWeight: '700',
                             border: 'none',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            transition: 'all 0.3s ease'
                           }}
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
+                          onClick={() => {
+                            // Ensure button is clickable
+                            const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
+                            if (btn) {
+                              btn.disabled = false
+                              btn.style.pointerEvents = 'auto'
+                            }
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = 'translateY(0)';
+                            e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
+                          }}
                         >
                           Join Now!
                         </button>
@@ -200,15 +247,33 @@ export function PricingSection() {
                               height: '45px',
                               width: '226px',
                               borderRadius: '6px',
-                              background: '#469CCE',
+                              background: 'linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)',
                               color: 'white',
-                              boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
+                              boxShadow: '0 4px 15px rgba(74, 144, 226, 0.3)',
                               fontSize: '18px',
                               fontWeight: '700',
                               border: 'none',
-                              cursor: 'pointer'
+                              cursor: 'pointer',
+                              transition: 'all 0.3s ease'
                             }}
-                            className="lp6602918050791424"
+                            className="lp6602918050791424 lpbtn"
+                            data-yearly="true"
+                            onClick={() => {
+                              // Ensure button is clickable
+                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+                              if (btn) {
+                                btn.disabled = false
+                                btn.style.pointerEvents = 'auto'
+                              }
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.transform = 'translateY(-2px)';
+                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(74, 144, 226, 0.4)';
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.transform = 'translateY(0)';
+                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(74, 144, 226, 0.3)';
+                            }}
                           >
                             Pay €384.00
                           </button>

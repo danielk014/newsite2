@@ -16,13 +16,13 @@ export const pricingTiers: PricingTier[] = [
   {
     id: "pro",
     name: "Elite Network",
-    tagline: "Best value for serious operators",
+    tagline: "Complete All-in-One Package",
     price: 49,
     originalPrice: 49,
     billingPeriod: "month",
     popular: true,
     features: [
-      "Everything In Starter",
+      "✅ EVERYTHING YOU NEED TO START",
       "Complete Faceless Channel System",
       "AI Content Creation Mastery",
       "Advanced Automation Workflows",
