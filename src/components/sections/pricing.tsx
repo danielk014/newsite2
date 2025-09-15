@@ -32,30 +32,9 @@ export function PricingSection() {
       btn.style.cursor = 'pointer'
     })
 
-    // Handle yearly embed separately
-    if (billingCycle === 'yearly') {
-      // Clean up existing yearly scripts
-      const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
-      existingYearlyScripts.forEach(script => script.remove())
-      
-      // Clear the embed container
-      const embedContainer = document.getElementById('launchpass-yearly-embed')
-      if (embedContainer) {
-        embedContainer.innerHTML = ''
-      }
-      
-      // Add a small delay to ensure DOM is ready, then load the yearly embed
-      setTimeout(() => {
-        const yearlyScript = document.createElement('script')
-        yearlyScript.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
-        yearlyScript.async = true
-        
-        // Add script to head for proper loading
-        document.head.appendChild(yearlyScript)
-        
-        // The embed should automatically find and populate the container
-      }, 100)
-    }
+    // Clean up any existing yearly embed scripts
+    const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+    existingYearlyScripts.forEach(script => script.remove())
 
     // Add fresh LaunchPass script for monthly
     const script = document.createElement('script')
@@ -298,12 +277,47 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                         </button>
                       ) : (
                         <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
-                          <div 
-                            id="launchpass-yearly-embed" 
-                            style={{ display: 'inline-block', minHeight: '45px', width: '226px' }}
+                          <button 
+                            style={{
+                              fontFamily: 'sans-serif',
+                              margin: '0 auto',
+                              outline: 'none',
+                              display: 'block',
+                              height: '45px',
+                              width: '226px',
+                              borderRadius: '6px',
+                              background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
+                              color: 'white',
+                              boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                              fontSize: '18px',
+                              fontWeight: '700',
+                              border: 'none',
+                              cursor: 'pointer',
+                              transition: 'all 0.3s ease'
+                            }}
+                            onClick={() => {
+                              // Load and execute the LaunchPass creatorcamp2 embed
+                              const script = document.createElement('script')
+                              script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+                              script.async = true
+                              document.head.appendChild(script)
+                              
+                              // Also try to open LaunchPass directly if embed doesn't work
+                              setTimeout(() => {
+                                window.open('https://www.launchpass.com/course/creatorcamp2', '_blank')
+                              }, 1000)
+                            }}
+                            onMouseEnter={(e) => {
+                              e.currentTarget.style.transform = 'translateY(-2px)'
+                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
+                            }}
+                            onMouseLeave={(e) => {
+                              e.currentTarget.style.transform = 'translateY(0)'
+                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)'
+                            }}
                           >
-                            {/* LaunchPass yearly embed will be loaded here */}
-                          </div>
+                            Join Now! €384.00
+                          </button>
                         </div>
                       )}
                     </div>
