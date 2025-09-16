@@ -276,8 +276,9 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           Join Now!
                         </button>
                       ) : (
-                        <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
+                        <div style={{ width: '300px', textAlign: 'center' }}>
                           <button 
+                            target="_blank"
                             style={{
                               fontFamily: 'sans-serif',
                               margin: '0 auto',
@@ -295,18 +296,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               cursor: 'pointer',
                               transition: 'all 0.3s ease'
                             }}
-                            onClick={() => {
-                              // Load and execute the LaunchPass creatorcamp2 embed
-                              const script = document.createElement('script')
-                              script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
-                              script.async = true
-                              document.head.appendChild(script)
-                              
-                              // Also try to open LaunchPass directly if embed doesn't work
-                              setTimeout(() => {
-                                window.open('https://www.launchpass.com/course/creatorcamp2', '_blank')
-                              }, 1000)
-                            }}
+                            className="lp6602918050791424"
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)'
                               e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
@@ -316,7 +306,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)'
                             }}
                           >
-                            Join Now! €384.00
+                            Join Now!
                           </button>
                         </div>
                       )}
