@@ -278,7 +278,6 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                       ) : (
                         <div style={{ width: '300px', textAlign: 'center' }}>
                           <button 
-                            target="_blank"
                             style={{
                               fontFamily: 'sans-serif',
                               margin: '0 auto',
