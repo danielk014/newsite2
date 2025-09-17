@@ -32,9 +32,34 @@ export function PricingSection() {
       btn.style.cursor = 'pointer'
     })
 
-    // Clean up any existing yearly embed scripts
-    const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
-    existingYearlyScripts.forEach(script => script.remove())
+    // Handle yearly LaunchPass embed script
+    if (billingCycle === 'yearly') {
+      // Remove existing yearly embed scripts
+      const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+      existingYearlyScripts.forEach(script => script.remove())
+      
+      // Add the required creatorcamp2 embed script
+      setTimeout(() => {
+        const yearlyScript = document.createElement('script')
+        yearlyScript.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+        yearlyScript.async = true
+        document.head.appendChild(yearlyScript)
+        
+        // Ensure the button is properly enabled after script loads
+        yearlyScript.onload = () => {
+          const yearlyBtn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+          if (yearlyBtn) {
+            yearlyBtn.disabled = false
+            yearlyBtn.style.pointerEvents = 'auto'
+            yearlyBtn.style.opacity = '1'
+          }
+        }
+      }, 100)
+    } else {
+      // Clean up yearly scripts when not on yearly billing
+      const existingYearlyScripts = document.querySelectorAll('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+      existingYearlyScripts.forEach(script => script.remove())
+    }
 
     // Add fresh LaunchPass script for monthly
     const script = document.createElement('script')
@@ -296,6 +321,16 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               transition: 'all 0.3s ease'
                             }}
                             className="lp6602918050791424"
+                            onClick={() => {
+                              // Ensure LaunchPass script is loaded for yearly button
+                              const existingScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+                              if (!existingScript) {
+                                const script = document.createElement('script')
+                                script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+                                script.async = true
+                                document.head.appendChild(script)
+                              }
+                            }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)'
                               e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
