@@ -13,6 +13,7 @@ const navItems = [
   { href: "/testimonials", label: "Testimonials" },
   { href: "/course", label: "Course Content" },
   { href: "/pricing", label: "Pricing" },
+  { href: "/refund-policy", label: "Refund Policy" },
 ]
 
 export function Navigation() {
