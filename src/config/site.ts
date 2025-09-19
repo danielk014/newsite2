@@ -13,7 +13,7 @@ export const siteConfig = {
     originalPrice: 997,
     installments: {
       count: 3,
-      amount: 49,
+      amount: 5,
     },
   },
   guaranteeDays: 30,
