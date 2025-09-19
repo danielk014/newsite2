@@ -15,10 +15,10 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">30+ Faceless YouTube Channels</span> Making €100K+ Per Month
+              Learn from <span className="text-primary">Successful YouTube Automation</span> Content Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get the complete YouTube Automation Kit with everything you need to build profitable channels
+              Get the complete YouTube Automation Kit with everything you need to learn professional content creation
             </p>
           </div>
           
@@ -82,8 +82,8 @@ export default function Home() {
                 <div className="text-sm text-muted-foreground">Channels (Multi-Language)</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-primary mb-2">€100K+</div>
-                <div className="text-sm text-muted-foreground">Monthly Revenue</div>
+                <div className="text-4xl font-bold text-primary mb-2">Professional</div>
+                <div className="text-sm text-muted-foreground">Training Methods</div>
               </div>
             </div>
           </div>
@@ -338,7 +338,7 @@ export default function Home() {
       <section className="py-8 bg-muted/30 border-t border-border">
         <div className="container mx-auto px-4 md:px-6">
           <p className="text-xs text-muted-foreground text-center max-w-4xl mx-auto">
-            This site is not part of Meta (Facebook) website or Meta, Inc (Facebook, Inc). Additionally, this site is NOT endorsed by Meta (Facebook) in any way.
+            This site is not part of Meta Platforms, Inc. Additionally, this site is NOT endorsed by Meta in any way. Meta is a trademark of Meta Platforms, Inc.
           </p>
         </div>
       </section>
