@@ -103,7 +103,7 @@ export default function Home() {
       
       <CredibilitySection />
       
-      <TestimonialStrip startIndex={0} title="Faceless YouTubers Are Banking!" />
+      <TestimonialStrip startIndex={0} title="Faceless YouTubers Are Growing their channels" />
       
       <ProblemSection />
       
@@ -119,7 +119,7 @@ export default function Home() {
               Everything You Need to <span className="text-primary">Automate</span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Get access to the complete automation system that&apos;s helped thousands build profitable faceless YouTube empires
+              Get access to the complete automation system that&apos;s helped thousands build successful faceless YouTube empires
             </p>
           </div>
 
@@ -140,7 +140,7 @@ export default function Home() {
                   </div>
                   <div className="flex-1">
                     <h4 className="text-lg font-semibold text-accent mb-2">Faceless Channel Setup</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Launch profitable YouTube channels without showing your face</p>
+                    <p className="text-muted-foreground text-sm mb-3">Launch successful YouTube channels without showing your face</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
                       <li>• High-Profit Niche Selection & Market Research</li>
                       <li>• Anonymous Channel Creation & Optimization</li>
@@ -334,7 +334,7 @@ export default function Home() {
             Your Journey to <span className="text-primary">YouTube Automation</span> Starts Here
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Don&apos;t let another day pass being camera shy. Join thousands who built profitable faceless channels.
+            Don&apos;t let another day pass being camera shy. Join thousands who built successful faceless channels.
           </p>
           <a
             href="/pricing"
@@ -342,6 +342,23 @@ export default function Home() {
           >
             Start Automating Today
           </a>
+        </div>
+      </section>
+      
+      {/* Earnings and Educational Disclaimers */}
+      <section className="py-8 bg-muted/50 border-t border-border">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto space-y-4 text-xs text-muted-foreground text-center">
+            <p>
+              <strong>EARNINGS DISCLAIMER:</strong> The income examples shown are not typical results. Most people who purchase online courses make little to no money. These results require significant time, effort, and skill. Individual results will vary greatly.
+            </p>
+            <p>
+              <strong>EDUCATIONAL DISCLAIMER:</strong> This is an educational course about YouTube content creation. Results depend entirely on your effort, market conditions, and implementation. No earnings are guaranteed.
+            </p>
+            <p className="text-xs">
+              *Individual results not typical. Most students do not achieve these results. Success requires significant effort and proper implementation.
+            </p>
+          </div>
         </div>
       </section>
       

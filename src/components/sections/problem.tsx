@@ -14,7 +14,7 @@ const painPoints = [
   {
     icon: DollarSign,
     title: "Bleeding money on expensive team costs",
-    description: "Quality editors cost $500-2000+ per video. Voice actors charge $100-500. Scriptwriters want $50-200. Your profit margins are getting crushed by team expenses.",
+    description: "Quality editors cost $500-2000+ per video. Voice actors charge $100-500. Scriptwriters want $50-200. Your efficiency is getting crushed by team expenses.",
   },
   {
     icon: Bot,
@@ -144,7 +144,7 @@ export function ProblemSection() {
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-destructive">Result: High costs, low profit margins</p>
+                  <p className="text-sm font-medium text-destructive">Result: High costs, low efficiency</p>
                 </div>
               </div>
             </div>
@@ -180,7 +180,7 @@ export function ProblemSection() {
                   </li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-sm font-medium text-accent">Result: High profit margins, no team needed</p>
+                  <p className="text-sm font-medium text-accent">Result: Efficient workflows, no team needed</p>
                 </div>
               </div>
             </div>

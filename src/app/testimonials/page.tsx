@@ -33,7 +33,7 @@ export default function TestimonialsPage() {
               We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making €100K+ Per Month
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get the complete YouTube Automation Kit with everything you need for profitable channels
+              Get the complete YouTube Automation Kit with everything you need for successful channels
             </p>
           </div>
           

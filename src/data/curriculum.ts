@@ -4,7 +4,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "1",
     title: "Module 1: Faceless Channel Foundation",
-    description: "Set up profitable YouTube channels without revealing your identity - complete privacy protection and niche selection",
+    description: "Set up successful YouTube channels without revealing your identity - complete privacy protection and niche selection",
     lessons: [
       "High-Profit Niche Selection & Market Research",
       "Anonymous Channel Creation & Optimization",
@@ -47,7 +47,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "4",
     title: "Module 4: Monetization & Revenue Optimization",
-    description: "Turn your faceless channels into profit machines - multiple income streams without showing your face",
+    description: "Turn your faceless channels into revenue generators - multiple income streams without showing your face",
     lessons: [
       "YouTube Partner Program Fast-Track",
       "Affiliate Marketing for Faceless Channels",
@@ -61,7 +61,7 @@ export const courseModules: CourseModule[] = [
   {
     id: "5",
     title: "Module 5: Scaling & Outsourcing System",
-    description: "Build a team and scale to multiple profitable channels - the path to 6-figure automation empires",
+    description: "Build a team and scale to multiple successful channels - the path to 6-figure automation empires",
     lessons: [
       "Virtual Team Building & Management",
       "Multi-Channel Empire Strategies",
