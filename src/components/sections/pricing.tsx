@@ -297,6 +297,12 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
                           onClick={() => {
+                            // Remove any existing yearly scripts to avoid conflicts
+                            const yearlyScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+                            if (yearlyScript) {
+                              yearlyScript.remove()
+                            }
+                            
                             // Ensure monthly LaunchPass script is loaded
                             const existingMonthlyScript = document.querySelector('script[src="https://js.launchpass.com/lp.js"]')
                             if (!existingMonthlyScript) {
@@ -309,7 +315,13 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                                   window.LaunchPass.init()
                                 }
                               }
+                            } else {
+                              // Reinitialize if script already exists
+                              if (window.LaunchPass) {
+                                window.LaunchPass.init()
+                              }
                             }
+                            
                             // Ensure button is clickable
                             const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
                             if (btn) {
@@ -349,6 +361,12 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             }}
                             className="lp6602918050791424"
                             onClick={() => {
+                              // Remove any existing monthly scripts to avoid conflicts
+                              const monthlyScript = document.querySelector('script[src="https://js.launchpass.com/lp.js"]')
+                              if (monthlyScript) {
+                                monthlyScript.remove()
+                              }
+                              
                               // Ensure LaunchPass script is loaded for yearly button
                               const existingScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
                               if (!existingScript) {
