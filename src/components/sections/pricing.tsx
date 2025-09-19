@@ -237,7 +237,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             <>
                               <span>Billed monthly</span>
                               <br />
-                              <span className="text-destructive font-semibold text-xs animate-pulse">
+                              <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">
                                 ⚠️ Price returns to €50/month soon!
                               </span>
                             </>
