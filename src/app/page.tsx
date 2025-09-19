@@ -3,6 +3,7 @@ import { CredibilitySection } from "@/components/sections/credibility";
 import { ProblemSection } from "@/components/sections/problem";
 import { SolutionSection } from "@/components/sections/solution";
 import { TestimonialStrip } from "@/components/ui/testimonial-strip";
+import Image from "next/image";
 // import { UrgencySection } from "@/components/sections/urgency";
 
 export default function Home() {
@@ -24,37 +25,47 @@ export default function Home() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/youtube-partner.png" 
                 alt="YouTube Partnership Achievement"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg"
               />
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/earnings-6k.png" 
                 alt="$6.2K Weekly Earnings"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg"
               />
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/channel-981k.png" 
                 alt="981K Subscribers Channel"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg"
               />
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow lg:col-span-2">
-              <img 
+              <Image 
                 src="/testimonials/views-1m.png" 
                 alt="1.1M Views Analytics"
+                width={600}
+                height={300}
                 className="w-full h-auto rounded-lg"
               />
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/views-92m.png" 
                 alt="92M Views Analytics"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg"
               />
             </div>

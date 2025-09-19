@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { SocialProofSection } from "@/components/sections/social-proof"
 import { TestimonialStrip } from "@/components/ui/testimonial-strip"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "Testimonials",
@@ -38,9 +39,11 @@ export default function TestimonialsPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/youtube-partner.png" 
                 alt="YouTube Partnership Achievement"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg mb-4"
               />
               <div className="text-center">
@@ -49,9 +52,11 @@ export default function TestimonialsPage() {
               </div>
             </div>
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <img 
+              <Image 
                 src="/testimonials/earnings-6k.png" 
                 alt="$6.2K Weekly Earnings"
+                width={400}
+                height={300}
                 className="w-full h-auto rounded-lg mb-4"
               />
               <div className="text-center">

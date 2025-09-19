@@ -55,7 +55,7 @@ export default function RefundPolicyPage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                  <span>Digital products cannot be "returned" - access will be revoked upon refund</span>
+                  <span>Digital products cannot be &quot;returned&quot; - access will be revoked upon refund</span>
                 </li>
               </ul>
             </div>
@@ -135,7 +135,7 @@ export default function RefundPolicyPage() {
                     3
                   </div>
                   <div>
-                    <p>Click "Create Ticket" and select "Refund Request"</p>
+                    <p>Click &quot;Create Ticket&quot; and select &quot;Refund Request&quot;</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
