@@ -333,6 +333,15 @@ export default function Home() {
           </a>
         </div>
       </section>
+      
+      {/* Meta Disclaimer */}
+      <section className="py-8 bg-muted/30 border-t border-border">
+        <div className="container mx-auto px-4 md:px-6">
+          <p className="text-xs text-muted-foreground text-center max-w-4xl mx-auto">
+            This site is not part of Meta (Facebook) website or Meta, Inc (Facebook, Inc). Additionally, this site is NOT endorsed by Meta (Facebook) in any way.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
