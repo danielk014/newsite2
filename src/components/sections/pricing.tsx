@@ -61,26 +61,28 @@ export function PricingSection() {
       existingYearlyScripts.forEach(script => script.remove())
     }
 
-    // Add fresh LaunchPass script for monthly
-    const script = document.createElement('script')
-    script.src = 'https://js.launchpass.com/lp.js'
-    script.async = true
-    script.onload = () => {
-      // Delay to ensure DOM is ready
-      setTimeout(() => {
-        if (window.LaunchPass) {
-          window.LaunchPass.init()
-        }
-        // Double-check button states after LaunchPass init
-        const buttons = document.querySelectorAll('.lpbtn') as NodeListOf<HTMLButtonElement>
-        buttons.forEach(btn => {
-          btn.disabled = false
-          btn.style.pointerEvents = 'auto'
-          btn.style.opacity = '1'
-        })
-      }, 200)
+    // Add fresh LaunchPass script for monthly (only if not yearly)
+    if (billingCycle === 'monthly') {
+      const script = document.createElement('script')
+      script.src = 'https://js.launchpass.com/lp.js'
+      script.async = true
+      script.onload = () => {
+        // Delay to ensure DOM is ready
+        setTimeout(() => {
+          if (window.LaunchPass) {
+            window.LaunchPass.init()
+          }
+          // Double-check button states after LaunchPass init
+          const buttons = document.querySelectorAll('.lpbtn') as NodeListOf<HTMLButtonElement>
+          buttons.forEach(btn => {
+            btn.disabled = false
+            btn.style.pointerEvents = 'auto'
+            btn.style.opacity = '1'
+          })
+        }, 200)
+      }
+      document.head.appendChild(script)
     }
-    document.head.appendChild(script)
 
     // Fallback: Re-enable buttons after a delay
     const fallbackTimer = setTimeout(() => {
@@ -277,16 +279,25 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
                           onClick={() => {
-                            // Ensure button is clickable and trigger LaunchPass
+                            // Ensure monthly LaunchPass script is loaded
+                            const existingMonthlyScript = document.querySelector('script[src="https://js.launchpass.com/lp.js"]')
+                            if (!existingMonthlyScript) {
+                              const script = document.createElement('script')
+                              script.src = 'https://js.launchpass.com/lp.js'
+                              script.async = true
+                              document.head.appendChild(script)
+                              script.onload = () => {
+                                if (window.LaunchPass) {
+                                  window.LaunchPass.init()
+                                }
+                              }
+                            }
+                            // Ensure button is clickable
                             const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
                             if (btn) {
                               btn.disabled = false
                               btn.style.pointerEvents = 'auto'
                               btn.style.opacity = '1'
-                              // Manually trigger LaunchPass if available
-                              if (window.LaunchPass) {
-                                window.LaunchPass.init()
-                              }
                             }
                           }}
                           onMouseEnter={(e) => {
@@ -301,7 +312,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           Join Now!
                         </button>
                       ) : (
-                        <div style={{ width: '300px', textAlign: 'center' }}>
+                        <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
                           <button 
                             style={{
                               fontFamily: 'sans-serif',
