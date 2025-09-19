@@ -312,13 +312,11 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           Join Now!
                         </button>
                       ) : (
-                        <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
                           <button 
                             style={{
                               fontFamily: 'sans-serif',
-                              margin: '0 auto',
                               outline: 'none',
-                              display: 'block',
                               height: '45px',
                               width: '226px',
                               borderRadius: '6px',
