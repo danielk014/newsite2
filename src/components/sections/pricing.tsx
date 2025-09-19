@@ -233,6 +233,14 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               {" "}
                               <span className="text-accent font-semibold">Billed annually</span>
                             </>
+                          ) : tier.id === "pro" ? (
+                            <>
+                              <span>Billed monthly</span>
+                              <br />
+                              <span className="text-destructive font-semibold text-xs animate-pulse">
+                                ⚠️ Price returns to €50/month soon!
+                              </span>
+                            </>
                           ) : (
                             "Billed monthly"
                           )}
