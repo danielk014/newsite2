@@ -93,6 +93,14 @@ export default function RefundPolicyPage() {
                     4
                   </div>
                   <div>
+                    <p className="font-semibold">Allow 5-7 business days for review and processing</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center font-bold text-sm">
+                    5
+                  </div>
+                  <div>
                     <p className="font-semibold">Refunds issued to original payment method within 10 business days</p>
                   </div>
                 </div>
