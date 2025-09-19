@@ -206,6 +206,16 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                       </>
                     ) : tier.price > 0 ? (
                       <>
+                        {tier.id === "pro" && tier.originalPrice > tier.price && (
+                          <div className="flex items-center justify-center gap-2 mb-1">
+                            <span className="text-lg line-through text-muted-foreground/60">
+                              €{tier.originalPrice}
+                            </span>
+                            <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold">
+                              90% OFF
+                            </span>
+                          </div>
+                        )}
                         <div className="flex items-baseline justify-center gap-2 mb-2">
                           <span className="text-4xl font-bold">
                             {tier.id === "pro" ? "€" : "$"}{Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}
