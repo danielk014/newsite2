@@ -30,7 +30,7 @@ export default function TestimonialsPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              We Run <span className="text-primary">20+ AI-Powered YouTube Automation Channels</span> Making €100K+ Per Month
+              Learn from <span className="text-primary">Successful AI-Powered YouTube Automation</span> Content Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Get the complete YouTube Automation Kit with everything you need for successful channels
@@ -115,7 +115,7 @@ export default function TestimonialsPage() {
             Ready to Build Your AI-Powered YouTube Automation Channel?
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join creators building profitable channels with our complete automation kit
+            Join creators building successful channels with our complete automation kit
           </p>
           <a
             href="/pricing"
@@ -123,6 +123,23 @@ export default function TestimonialsPage() {
           >
             Start Your AI YouTube Automation System Today
           </a>
+        </div>
+      </section>
+      
+      {/* Earnings and Educational Disclaimers */}
+      <section className="py-8 bg-muted/50 border-t border-border">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto space-y-4 text-xs text-muted-foreground text-center">
+            <p>
+              <strong>EARNINGS DISCLAIMER:</strong> The income examples shown are not typical results. Most people who purchase online courses make little to no money. These results require significant time, effort, and skill. Individual results will vary greatly.
+            </p>
+            <p>
+              <strong>EDUCATIONAL DISCLAIMER:</strong> This is an educational course about YouTube content creation. Results depend entirely on your effort, market conditions, and implementation. No earnings are guaranteed.
+            </p>
+            <p className="text-xs">
+              *Individual results not typical. Most students do not achieve these results. Success requires significant effort and proper implementation.
+            </p>
+          </div>
         </div>
       </section>
     </div>
