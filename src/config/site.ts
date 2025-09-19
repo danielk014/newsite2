@@ -9,8 +9,8 @@ export const siteConfig = {
     curriculum: "#curriculum",
   },
   pricing: {
-    regular: 125,
-    originalPrice: 997,
+    regular: 5,
+    originalPrice: 50,
     installments: {
       count: 3,
       amount: 5,

@@ -18,7 +18,7 @@ export const pricingTiers: PricingTier[] = [
     name: "Elite Network",
     tagline: "Complete All-in-One Package",
     price: 5,
-    originalPrice: 5,
+    originalPrice: 50,
     billingPeriod: "month",
     popular: true,
     features: [

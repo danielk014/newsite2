@@ -93,8 +93,8 @@ export function UrgencySection() {
               className="bg-card border border-border rounded-xl p-6 text-center"
             >
               <TrendingUp className="w-10 h-10 text-accent mx-auto mb-3" />
-              <p className="text-2xl font-bold mb-1">$872/month Increase</p>
-              <p className="text-sm text-muted-foreground">After timer ends</p>
+              <p className="text-2xl font-bold mb-1">$45/month Increase</p>
+              <p className="text-sm text-muted-foreground">Price goes to $50/month</p>
             </motion.div>
 
             <motion.div
@@ -129,7 +129,7 @@ export function UrgencySection() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-destructive mt-1">•</span>
-                <span>Price increases to $997/month after this timer (that&apos;s $872 MORE per month)</span>
+                <span>Price increases to $50/month after this timer (that&apos;s $45 MORE per month)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-destructive mt-1">•</span>
