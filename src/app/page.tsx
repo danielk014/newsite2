@@ -16,10 +16,10 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Learn from <span className="text-primary">Successful YouTube Automation</span> Content Creators
+              Join a <span className="text-primary">Thriving Community</span> of Successful Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Get the complete YouTube Automation Kit with everything you need to learn professional content creation
+              Connect with 500+ entrepreneurs who've built profitable faceless YouTube channels and learn from their real results
             </p>
           </div>
           
@@ -203,51 +203,99 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Community Access */}
+          {/* Community Access - Enhanced */}
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">💬</span>
+                <span className="text-primary font-bold">🌟</span>
               </div>
-              <h3 className="text-2xl font-bold text-primary">COMMUNITY ACCESS</h3>
+              <h3 className="text-2xl font-bold text-primary">EXCLUSIVE COMMUNITY ACCESS</h3>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card border border-border rounded-xl p-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                    <span className="text-xs text-white font-bold">✓</span>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">General Chat & Wins Feed</h4>
-                    <p className="text-muted-foreground text-sm">Connect with 100+ successful creators</p>
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-8 mb-6">
+              <div className="text-center mb-8">
+                <h4 className="text-2xl font-bold text-primary mb-4">Join 500+ Successful Creators</h4>
+                <p className="text-lg text-muted-foreground">Get instant access to our private Discord community where members share wins, strategies, and support each other's growth</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">💬</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-accent mb-2">Daily Win Shares</h4>
+                      <p className="text-muted-foreground text-sm">See real earnings screenshots and channel milestones from active members</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="bg-card border border-border rounded-xl p-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
-                    <span className="text-xs text-white font-bold">✓</span>
-                  </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-accent mb-2">Profile Reviews</h4>
-                    <p className="text-muted-foreground text-sm">Get expert feedback on your content</p>
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">🔥</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-accent mb-2">Live Strategy Sessions</h4>
+                      <p className="text-muted-foreground text-sm">Weekly group calls with successful members sharing their latest tactics</p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="bg-card border border-border rounded-xl p-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
-                    <span className="text-xs text-white font-bold">⭐</span>
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">⚡</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-accent mb-2">Instant Help & Support</h4>
+                      <p className="text-muted-foreground text-sm">Get quick answers from experienced creators who've been where you are</p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <h4 className="text-lg font-semibold text-primary mb-2">Elite Chat Access</h4>
-                    <p className="text-muted-foreground text-sm">Earned access for proven success members</p>
+                </div>
+
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">📊</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-accent mb-2">Channel Reviews</h4>
+                      <p className="text-muted-foreground text-sm">Submit your content for expert feedback and optimization suggestions</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">👑</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-primary mb-2">Elite Mastermind</h4>
+                      <p className="text-muted-foreground text-sm">Exclusive access for 6-figure creators sharing advanced scaling strategies</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-accent rounded-full flex items-center justify-center mt-1">
+                      <span className="text-xs text-white font-bold">🎯</span>
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-accent mb-2">Accountability Partners</h4>
+                      <p className="text-muted-foreground text-sm">Connect with like-minded creators for mutual support and goal tracking</p>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="text-center">
+              <p className="text-lg font-semibold text-primary mb-2">🎉 Community Value: $197/month elsewhere</p>
+              <p className="text-muted-foreground">Included FREE with your Creator Camp access</p>
             </div>
           </div>
 
