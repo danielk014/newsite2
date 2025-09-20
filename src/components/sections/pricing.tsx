@@ -34,6 +34,17 @@ export function PricingSection() {
         const script = document.createElement('script')
         script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
         script.async = true
+        script.onload = () => {
+          // Ensure yearly button is properly initialized
+          setTimeout(() => {
+            const yearlyBtn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+            if (yearlyBtn) {
+              yearlyBtn.disabled = false
+              yearlyBtn.style.pointerEvents = 'auto'
+              yearlyBtn.style.opacity = '1'
+            }
+          }, 100)
+        }
         document.head.appendChild(script)
       }
     }
@@ -320,7 +331,26 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             }}
                             className="lp6602918050791424"
                             onClick={() => {
-                              // Ensure yearly button is clickable and trigger LaunchPass
+                              // Ensure yearly script is loaded and trigger the embed
+                              const existingScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+                              if (!existingScript) {
+                                const script = document.createElement('script')
+                                script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+                                script.async = true
+                                document.head.appendChild(script)
+                                
+                                // Wait for script to load then click the button again
+                                script.onload = () => {
+                                  setTimeout(() => {
+                                    const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+                                    if (btn) {
+                                      btn.click()
+                                    }
+                                  }, 100)
+                                }
+                              }
+                              
+                              // Ensure button is enabled
                               const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
                               if (btn) {
                                 btn.disabled = false
