@@ -16,7 +16,6 @@ import { useState, useEffect } from "react"
 
 export function PricingSection() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
-  const [showYearlyModal, setShowYearlyModal] = useState(false)
 
   // Initialize LaunchPass when component mounts
   useEffect(() => {
@@ -91,18 +90,6 @@ export function PricingSection() {
     return () => clearTimeout(timer)
   }, [billingCycle])
 
-  // Load yearly script when modal opens
-  useEffect(() => {
-    if (showYearlyModal) {
-      // Ensure yearly script is loaded
-      if (!document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')) {
-        const script = document.createElement('script')
-        script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
-        script.async = true
-        document.head.appendChild(script)
-      }
-    }
-  }, [showYearlyModal])
 
   return (
     <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
@@ -345,7 +332,32 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             }}
                             className="lp6602918050791424"
                             onClick={() => {
-                              setShowYearlyModal(true)
+                              // Ensure yearly script is loaded and trigger the embed
+                              const existingScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
+                              if (!existingScript) {
+                                const script = document.createElement('script')
+                                script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
+                                script.async = true
+                                document.head.appendChild(script)
+                                
+                                // Wait for script to load then click the button again
+                                script.onload = () => {
+                                  setTimeout(() => {
+                                    const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+                                    if (btn) {
+                                      btn.click()
+                                    }
+                                  }, 100)
+                                }
+                              }
+                              
+                              // Ensure button is enabled
+                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+                              if (btn) {
+                                btn.disabled = false
+                                btn.style.pointerEvents = 'auto'
+                                btn.style.opacity = '1'
+                              }
                             }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)'
@@ -473,51 +485,6 @@ Complete All-in-One Package - Everything you need to build profitable automated 
           </div>
         </div>
       </div>
-
-      {/* Yearly Subscription Modal */}
-      {showYearlyModal && (
-        <div 
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
-          onClick={() => setShowYearlyModal(false)}
-        >
-          <div 
-            className="bg-white rounded-lg p-6 max-w-md w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Modal Header */}
-            <div className="flex justify-between items-center mb-4">
-              <h3 className="text-xl font-bold text-gray-900">Complete Your Purchase</h3>
-              <button
-                onClick={() => setShowYearlyModal(false)}
-                className="text-gray-400 hover:text-gray-600 text-2xl"
-              >
-                ×
-              </button>
-            </div>
-
-            {/* Embed Content */}
-            <div className="text-center">
-              {/* LaunchPass Button */}
-              <div 
-                dangerouslySetInnerHTML={{
-                  __html: `
-                    <div style="width: 300px; text-align: center; margin: 0 auto;">
-                      <button target="_blank" style="font-family: sans-serif; margin: 0 auto; outline: none; display: block; height: 45px; width: 226px; border-radius: 6px; background: #6602ea; color: white; box-shadow: 1px 1px 3px 0 rgba(0,0,0,.03); font-size: 18px; font-weight: 700; border: none; cursor: pointer;" class="lp6602918050791424">Pay €36.00</button>
-                    </div>
-                  `
-                }}
-              />
-            </div>
-
-            {/* Security Notice */}
-            <div className="mt-4 text-center">
-              <p className="text-xs text-gray-500">
-                🔒 Secure checkout powered by LaunchPass
-              </p>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   )
 }
