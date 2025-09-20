@@ -276,6 +276,19 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           }}
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
+                          onClick={() => {
+                            // Ensure monthly button is clickable and trigger LaunchPass
+                            const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
+                            if (btn) {
+                              btn.disabled = false
+                              btn.style.pointerEvents = 'auto'
+                              btn.style.opacity = '1'
+                            }
+                            // Initialize LaunchPass if needed
+                            if (window.LaunchPass) {
+                              window.LaunchPass.init()
+                            }
+                          }}
                           onMouseEnter={(e) => {
                             e.currentTarget.style.transform = 'translateY(-2px)';
                             e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
@@ -306,6 +319,15 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               transition: 'all 0.3s ease'
                             }}
                             className="lp6602918050791424"
+                            onClick={() => {
+                              // Ensure yearly button is clickable and trigger LaunchPass
+                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
+                              if (btn) {
+                                btn.disabled = false
+                                btn.style.pointerEvents = 'auto'
+                                btn.style.opacity = '1'
+                              }
+                            }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)'
                               e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
