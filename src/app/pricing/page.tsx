@@ -75,7 +75,7 @@ export default function PricingPage() {
                   <span className="text-primary font-bold">💬</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm text-muted-foreground mb-3">"The community support here is incredible. I got my first viral video thanks to feedback from other members!"</p>
+                  <p className="text-sm text-muted-foreground mb-3">&quot;The community support here is incredible. I got my first viral video thanks to feedback from other members!&quot;</p>
                   <div className="text-xs font-semibold text-primary">- Sarah K. (127K subscribers)</div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function PricingPage() {
                   <span className="text-primary font-bold">🎯</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm text-muted-foreground mb-3">"Having accountability partners in the community helped me stay consistent. Now I'm at $8K/month!"</p>
+                  <p className="text-sm text-muted-foreground mb-3">&quot;Having accountability partners in the community helped me stay consistent. Now I&apos;m at $8K/month!&quot;</p>
                   <div className="text-xs font-semibold text-primary">- Mike R. (6-figure creator)</div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function PricingPage() {
                   <span className="text-primary font-bold">🚀</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm text-muted-foreground mb-3">"The live strategy sessions are pure gold. I learned tactics that took my channel from 0 to 50K in 3 months."</p>
+                  <p className="text-sm text-muted-foreground mb-3">&quot;The live strategy sessions are pure gold. I learned tactics that took my channel from 0 to 50K in 3 months.&quot;</p>
                   <div className="text-xs font-semibold text-primary">- Alex T. (Automation Expert)</div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ export default function PricingPage() {
             Join Our Community Today
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Don't build your YouTube empire alone. Get the training, tools, and community support you need to succeed.
+            Don&apos;t build your YouTube empire alone. Get the training, tools, and community support you need to succeed.
           </p>
           <a
             href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01"

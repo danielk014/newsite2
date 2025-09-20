@@ -19,7 +19,7 @@ export default function Home() {
               Join a <span className="text-primary">Thriving Community</span> of Successful Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Connect with 500+ entrepreneurs who've built profitable faceless YouTube channels and learn from their real results
+              Connect with 500+ entrepreneurs who&apos;ve built profitable faceless YouTube channels and learn from their real results
             </p>
           </div>
           
@@ -215,7 +215,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-8 mb-6">
               <div className="text-center mb-8">
                 <h4 className="text-2xl font-bold text-primary mb-4">Join 500+ Successful Creators</h4>
-                <p className="text-lg text-muted-foreground">Get instant access to our private Discord community where members share wins, strategies, and support each other's growth</p>
+                <p className="text-lg text-muted-foreground">Get instant access to our private Discord community where members share wins, strategies, and support each other&apos;s growth</p>
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -250,7 +250,7 @@ export default function Home() {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-lg font-semibold text-accent mb-2">Instant Help & Support</h4>
-                      <p className="text-muted-foreground text-sm">Get quick answers from experienced creators who've been where you are</p>
+                      <p className="text-muted-foreground text-sm">Get quick answers from experienced creators who&apos;ve been where you are</p>
                     </div>
                   </div>
                 </div>
