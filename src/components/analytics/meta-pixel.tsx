@@ -43,10 +43,16 @@ export function MetaPixel({ pixelId }: MetaPixelProps) {
   )
 }
 
+declare global {
+  interface Window {
+    fbq?: (...args: unknown[]) => void;
+  }
+}
+
 // Helper function to track custom events
-export const trackEvent = (eventName: string, parameters?: Record<string, any>) => {
-  if (typeof window !== 'undefined' && (window as any).fbq) {
-    (window as any).fbq('track', eventName, parameters)
+export const trackEvent = (eventName: string, parameters?: Record<string, unknown>) => {
+  if (typeof window !== 'undefined' && window.fbq) {
+    window.fbq('track', eventName, parameters)
   }
 }
 
