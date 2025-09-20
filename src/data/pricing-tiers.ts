@@ -24,6 +24,7 @@ export const pricingTiers: PricingTier[] = [
     features: [
       "✅ EVERYTHING YOU NEED TO START",
       "Complete Faceless Channel System",
+      "Faceless Niche List and Case Studies",
       "AI Content Creation Mastery",
       "Professional Video Editing Tutorials",
       "Advanced Automation Workflows",
