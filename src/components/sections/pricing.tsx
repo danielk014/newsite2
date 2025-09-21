@@ -271,36 +271,14 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           Join Now!
                         </button>
                       ) : (
-                        <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                          <button 
-                            style={{
-                              fontFamily: 'sans-serif',
-                              outline: 'none',
-                              height: '45px',
-                              width: '226px',
-                              borderRadius: '6px',
-                              background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
-                              color: 'white',
-                              boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
-                              fontSize: '18px',
-                              fontWeight: '700',
-                              border: 'none',
-                              cursor: 'pointer',
-                              transition: 'all 0.3s ease'
-                            }}
-                            className="lp6602918050791424"
-                            onMouseEnter={(e) => {
-                              e.currentTarget.style.transform = 'translateY(-2px)'
-                              e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
-                            }}
-                            onMouseLeave={(e) => {
-                              e.currentTarget.style.transform = 'translateY(0)'
-                              e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)'
-                            }}
-                          >
-                            Join Now!
-                          </button>
-                        </div>
+                        <div 
+                          style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}
+                          dangerouslySetInnerHTML={{
+                            __html: `
+                              <button target="_blank" style="font-family: sans-serif; margin: 0 auto; outline: none; display: block; height: 45px; width: 226px; border-radius: 6px; background: #4690CE; color: white; box-shadow: 1px 1px 3px 0 rgba(0,0,0,.03); font-size: 18px; font-weight: 700; border: none; cursor: pointer;" class="lp6602918050791424">Pay €36.00</button>
+                            `
+                          }}
+                        />
                       )}
                     </div>
                   ) : tier.id === "elite" ? (
