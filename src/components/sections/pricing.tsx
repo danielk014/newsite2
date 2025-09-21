@@ -131,14 +131,11 @@ Complete All-in-One Package - Everything you need to build profitable automated 
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-1 gap-8 mb-16 max-w-2xl mx-auto">
-            {pricingTiers.filter(tier => tier.id === "pro").map((tier) => {
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto">
+            {pricingTiers.map((tier) => {
               const monthlyPrice = tier.price
               const yearlyPrice = tier.price * 12 * 0.65 // 35% discount
               const displayPrice = billingCycle === "yearly" ? yearlyPrice / 12 : monthlyPrice
-              
-              // Use elite tier features if yearly is selected
-              const currentTier = billingCycle === "yearly" ? pricingTiers.find(t => t.id === "elite") || tier : tier
               
               return (
                 <div
@@ -157,9 +154,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                   )}
 
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold mb-2">
-                      {billingCycle === "yearly" ? "VIP Inner Circle" : tier.name}
-                    </h3>
+                    <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
                   </div>
 
                   <div className="text-center mb-8">
@@ -186,20 +181,22 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                         )}
                         <div className="flex items-baseline justify-center gap-2 mb-2">
                           <span className="text-4xl font-bold">
-                            €{billingCycle === "yearly" ? "36" : Math.round(displayPrice)}
+                            {tier.id === "pro" ? "€" : "$"}{Math.round(tier.billingPeriod === "year" ? tier.price : displayPrice)}
                           </span>
-                          <span className="text-muted-foreground">/{billingCycle === "yearly" ? "year" : "month"}</span>
+                          <span className="text-muted-foreground">/{tier.billingPeriod === "year" ? "year" : "month"}</span>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          {billingCycle === "yearly" ? (
+                          {tier.billingPeriod === "year" ? (
+                            "Billed annually"
+                          ) : billingCycle === "yearly" ? (
                             <>
                               <span className="line-through text-muted-foreground/60">
-                                €{Math.round(monthlyPrice)}/month
+                                {tier.id === "pro" ? "€" : "$"}{Math.round(monthlyPrice)}/month
                               </span>
                               {" "}
-                              <span className="text-accent font-semibold">Billed annually (Save 35%)</span>
+                              <span className="text-accent font-semibold">Billed annually</span>
                             </>
-                          ) : (
+                          ) : tier.id === "pro" ? (
                             <>
                               <span>Billed monthly</span>
                               <br />
@@ -207,6 +204,8 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                                 ⚠️ Price returns to €50/month soon!
                               </span>
                             </>
+                          ) : (
+                            "Billed monthly"
                           )}
                         </p>
                       </>
@@ -223,7 +222,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                   </div>
 
                   <div className="space-y-4 mb-8">
-                    {currentTier.features.map((feature, featureIndex) => (
+                    {tier.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start gap-3 text-left">
                         <Check className={cn(
                           "w-5 h-5 flex-shrink-0 mt-0.5",
