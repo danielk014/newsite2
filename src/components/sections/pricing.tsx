@@ -19,41 +19,7 @@ export function PricingSection() {
 
   // Initialize LaunchPass when component mounts
   useEffect(() => {
-    // Ensure both scripts are available but only initialize when needed
-    const ensureMonthlyScript = () => {
-      if (!document.querySelector('script[src="https://js.launchpass.com/lp.js"]')) {
-        const script = document.createElement('script')
-        script.src = 'https://js.launchpass.com/lp.js'
-        script.async = true
-        document.head.appendChild(script)
-      }
-    }
-
-    const ensureYearlyScript = () => {
-      if (!document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')) {
-        const script = document.createElement('script')
-        script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
-        script.async = true
-        script.onload = () => {
-          // Ensure yearly button is properly initialized
-          setTimeout(() => {
-            const yearlyBtn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-            if (yearlyBtn) {
-              yearlyBtn.disabled = false
-              yearlyBtn.style.pointerEvents = 'auto'
-              yearlyBtn.style.opacity = '1'
-            }
-          }, 100)
-        }
-        document.head.appendChild(script)
-      }
-    }
-
-    // Load both scripts on component mount
-    ensureMonthlyScript()
-    ensureYearlyScript()
-
-    // Ensure all buttons are enabled
+    // Scripts are already loaded in layout.tsx, just ensure buttons are enabled
     const enableButtons = () => {
       const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840, .lp6602918050791424') as NodeListOf<HTMLButtonElement>
       allButtons.forEach(btn => {
@@ -64,11 +30,16 @@ export function PricingSection() {
       })
     }
 
-    // Enable buttons after a short delay
-    const timer = setTimeout(enableButtons, 500)
+    // Enable buttons after a delay to allow scripts to initialize
+    const timer = setTimeout(enableButtons, 2000)
+    
+    // Also run immediately and periodically to ensure buttons stay enabled
+    enableButtons()
+    const interval = setInterval(enableButtons, 3000)
 
     return () => {
       clearTimeout(timer)
+      clearInterval(interval)
     }
   }, [])
 
@@ -288,19 +259,6 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           }}
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
-                          onClick={() => {
-                            // Ensure monthly button is clickable and trigger LaunchPass
-                            const btn = document.querySelector('.lp6362577318051840') as HTMLButtonElement
-                            if (btn) {
-                              btn.disabled = false
-                              btn.style.pointerEvents = 'auto'
-                              btn.style.opacity = '1'
-                            }
-                            // Initialize LaunchPass if needed
-                            if (window.LaunchPass) {
-                              window.LaunchPass.init()
-                            }
-                          }}
                           onMouseEnter={(e) => {
                             e.currentTarget.style.transform = 'translateY(-2px)';
                             e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
@@ -331,34 +289,6 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                               transition: 'all 0.3s ease'
                             }}
                             className="lp6602918050791424"
-                            onClick={() => {
-                              // Ensure yearly script is loaded and trigger the embed
-                              const existingScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
-                              if (!existingScript) {
-                                const script = document.createElement('script')
-                                script.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js'
-                                script.async = true
-                                document.head.appendChild(script)
-                                
-                                // Wait for script to load then click the button again
-                                script.onload = () => {
-                                  setTimeout(() => {
-                                    const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-                                    if (btn) {
-                                      btn.click()
-                                    }
-                                  }, 100)
-                                }
-                              }
-                              
-                              // Ensure button is enabled
-                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-                              if (btn) {
-                                btn.disabled = false
-                                btn.style.pointerEvents = 'auto'
-                                btn.style.opacity = '1'
-                              }
-                            }}
                             onMouseEnter={(e) => {
                               e.currentTarget.style.transform = 'translateY(-2px)'
                               e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)'
