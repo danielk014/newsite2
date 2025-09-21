@@ -1,5 +1,6 @@
 "use client"
 import { Check, Star, Shield } from "lucide-react"
+import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 // Extend Window interface for LaunchPass
 declare global {
@@ -296,6 +297,10 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           }}
                           className="lp6362577318051840 lpbtn"
                           data-monthly="true"
+                          onClick={() => {
+                            // Track purchase event
+                            trackCreatorCampPurchase()
+                          }}
                           onMouseEnter={(e) => {
                             e.currentTarget.style.transform = 'translateY(-2px)';
                             e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
@@ -328,6 +333,9 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             }}
                             className="lp6602918050791424"
                             onClick={() => {
+                              // Track purchase event
+                              trackCreatorCampPurchase()
+                              
                               // Ensure the button is enabled and trigger LaunchPass
                               const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
                               if (btn) {

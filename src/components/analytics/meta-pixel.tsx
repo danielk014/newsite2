@@ -57,8 +57,13 @@ export const trackEvent = (eventName: string, parameters?: Record<string, unknow
 }
 
 // Common event tracking functions
-export const trackPurchase = (value: number, currency: string = 'USD') => {
+export const trackPurchase = (value: number, currency: string = 'EUR') => {
   trackEvent('Purchase', { value, currency })
+}
+
+// Specific purchase tracking for Creator Camp Academy
+export const trackCreatorCampPurchase = () => {
+  trackPurchase(5, 'EUR')
 }
 
 export const trackAddToCart = (contentName: string, value?: number) => {
