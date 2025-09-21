@@ -131,7 +131,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
           </div>
 
           {/* Pricing Cards */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto items-stretch">
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto items-start">
             {pricingTiers.map((tier) => {
               const monthlyPrice = tier.price
               const yearlyPrice = tier.price * 12 * 0.65 // 35% discount
@@ -141,7 +141,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                 <div
                   key={tier.id}
                   className={cn(
-                    "relative bg-card border rounded-2xl p-8 flex flex-col h-full",
+                    "relative bg-card border rounded-2xl p-8",
                     tier.popular ? "border-primary shadow-2xl shadow-primary/20" : "border-border"
                   )}
                 >
@@ -221,7 +221,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                     )}
                   </div>
 
-                  <div className="space-y-4 mb-8 flex-grow">
+                  <div className="space-y-4 mb-8">
                     {tier.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-start gap-3 text-left">
                         <Check className={cn(
@@ -236,9 +236,8 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                     ))}
                   </div>
 
-                  <div className="mt-auto">
-                    {tier.id === "pro" ? (
-                      <div className="space-y-3">
+                  {tier.id === "pro" ? (
+                    <div className="space-y-3">
                       {billingCycle === "monthly" ? (
                         <button 
                           style={{
@@ -328,10 +327,9 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                     </Button>
                   )}
 
-                    <p className="text-xs text-center text-muted-foreground mt-4">
-                      {tier.guarantee}
-                    </p>
-                  </div>
+                  <p className="text-xs text-center text-muted-foreground mt-4">
+                    {tier.guarantee}
+                  </p>
                 </div>
               )
             })}
