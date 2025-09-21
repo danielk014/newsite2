@@ -34,6 +34,7 @@ export const pricingTiers: PricingTier[] = [
       "🎁 BONUS: Done-for-You Templates ($497 value)",
       "🎁 BONUS: Elite Network Access ($997/year value)",
       "🎁 BONUS: Channel Reviews ($497 value)",
+      "🎁 BONUS: Elite Private Community Access ($1,991 value)",
     ],
     cta: "Join Elite Network",
     guarantee: "30-Day Money-Back Guarantee",
