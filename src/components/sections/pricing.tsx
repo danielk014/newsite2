@@ -67,7 +67,7 @@ export function PricingSection() {
                 win.showYearly?.();
               }}
             >
-              Yearly - Save 35%
+              Yearly - Save $564
             </button>
           </div>
 
@@ -95,8 +95,13 @@ export function PricingSection() {
             `
           }} />
 
-          {/* Monthly Pricing Card */}
-          <div id="monthly-card" className="flex justify-center mb-16 max-w-md mx-auto">
+          {/* Pricing Cards Container */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto items-start">
+            
+            {/* Monthly/Yearly Card */}
+            <div>
+              {/* Monthly Pricing Card */}
+              <div id="monthly-card" className="flex justify-center max-w-md mx-auto">
             <div className="relative bg-card border rounded-2xl p-8 w-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
@@ -198,8 +203,8 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Yearly Pricing Card */}
-          <div id="yearly-card" className="flex justify-center mb-16 max-w-md mx-auto" style={{display: 'none'}}>
+              {/* Yearly Pricing Card */}
+              <div id="yearly-card" className="flex justify-center max-w-md mx-auto" style={{display: 'none'}}>
             <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
@@ -218,7 +223,7 @@ export function PricingSection() {
                   {" "}
                   <span className="text-accent font-semibold">Billed annually (€36)</span>
                 </p>
-                <p className="text-sm text-accent font-semibold mt-2">Save 35%</p>
+                <p className="text-sm text-accent font-semibold mt-2">Save $564</p>
               </div>
 
               <div className="space-y-4 mb-8">
@@ -300,10 +305,11 @@ export function PricingSection() {
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
-          </div>
+              </div>
+            </div>
 
-          {/* VIP Inner Circle - Separate Premium Tier */}
-          <div className="flex justify-center mb-16 max-w-md mx-auto">
+            {/* VIP Inner Circle - Side by Side */}
+            <div className="flex justify-center max-w-md mx-auto">
             <div className="relative bg-card border border-accent shadow-2xl shadow-accent/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
@@ -429,6 +435,7 @@ export function PricingSection() {
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
+            </div>
           </div>
 
           {/* Comparison Table */}
@@ -442,7 +449,7 @@ export function PricingSection() {
                   <tr className="border-b border-border">
                     <th className="text-left p-4">Feature</th>
                     <th className="text-center p-4 bg-primary/5">Monthly</th>
-                    <th className="text-center p-4">Yearly (Save 35%)</th>
+                    <th className="text-center p-4">Yearly (Save $564)</th>
                   </tr>
                 </thead>
                 <tbody>
