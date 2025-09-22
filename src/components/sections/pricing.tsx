@@ -78,9 +78,9 @@ export function PricingSection() {
             __html: `
               function showMonthly() {
                 // Update card content
-                document.getElementById('price-amount').textContent = '€5';
+                document.getElementById('price-amount').textContent = '$5';
                 document.getElementById('price-period').textContent = '/month';
-                document.getElementById('billing-info').innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to €50/month soon!</span>';
+                document.getElementById('billing-info').innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
                 document.getElementById('popular-badge').style.display = 'none';
                 document.getElementById('yearly-savings').style.display = 'none';
                 
@@ -95,9 +95,9 @@ export function PricingSection() {
               
               function showYearly() {
                 // Update card content
-                document.getElementById('price-amount').textContent = '€3';
-                document.getElementById('price-period').textContent = '/month';
-                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">€5/month</span> <span class="text-accent font-semibold">Billed annually (€36)</span>';
+                document.getElementById('price-amount').textContent = '$36';
+                document.getElementById('price-period').textContent = '/year';
+                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">$50/month</span> <span class="text-accent font-semibold">Discounted to $36/year</span>';
                 document.getElementById('popular-badge').style.display = 'block';
                 document.getElementById('yearly-savings').style.display = 'block';
                 
@@ -138,18 +138,18 @@ export function PricingSection() {
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
                     <div className="mb-2">
-                      <span className="text-lg line-through text-muted-foreground/60">€50</span>
+                      <span className="text-lg line-through text-muted-foreground/60">$50</span>
                       <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold ml-2">90% OFF</span>
                     </div>
                     <div className="flex items-baseline justify-center gap-2 mb-2">
-                      <span id="price-amount" className="text-4xl font-bold">€5</span>
+                      <span id="price-amount" className="text-4xl font-bold">$5</span>
                       <span id="price-period" className="text-muted-foreground">/month</span>
                     </div>
                     <p id="billing-info" className="text-sm text-muted-foreground">
                       Billed monthly
                       <br />
                       <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">
-                        ⚠️ Price returns to €50/month soon!
+                        ⚠️ Price returns to $50/month soon!
                       </span>
                     </p>
                     <p id="yearly-savings" className="text-sm text-accent font-semibold mt-2" style={{display: 'none'}}>Save $564</p>
@@ -413,8 +413,8 @@ export function PricingSection() {
                 <tbody>
                   <tr className="border-b border-border">
                     <td className="p-4 font-medium">Price</td>
-                    <td className="text-center p-4 bg-primary/5">€5/month</td>
-                    <td className="text-center p-4">€3/month (€36/year)</td>
+                    <td className="text-center p-4 bg-primary/5">$5/month</td>
+                    <td className="text-center p-4">$36/year (was $50/month)</td>
                   </tr>
                   <tr className="border-b border-border">
                     <td className="p-4 font-medium">All Course Content</td>
