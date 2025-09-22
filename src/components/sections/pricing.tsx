@@ -83,7 +83,10 @@ export function PricingSection() {
                 document.getElementById('billing-info').innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to €50/month soon!</span>';
                 document.getElementById('popular-badge').style.display = 'none';
                 document.getElementById('yearly-savings').style.display = 'none';
-                document.getElementById('payment-button').className = 'lp6362577318051840';
+                
+                // Show monthly button, hide yearly button
+                document.getElementById('monthly-payment-button').style.display = 'block';
+                document.getElementById('yearly-payment-button').style.display = 'none';
                 
                 // Update toggle buttons
                 document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
@@ -97,7 +100,10 @@ export function PricingSection() {
                 document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">€5/month</span> <span class="text-accent font-semibold">Billed annually (€36)</span>';
                 document.getElementById('popular-badge').style.display = 'block';
                 document.getElementById('yearly-savings').style.display = 'block';
-                document.getElementById('payment-button').className = 'lp6602918050791424';
+                
+                // Show yearly button, hide monthly button
+                document.getElementById('yearly-payment-button').style.display = 'block';
+                document.getElementById('monthly-payment-button').style.display = 'none';
                 
                 // Update toggle buttons
                 document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
@@ -200,8 +206,9 @@ export function PricingSection() {
                 </div>
               </div>
 
+              {/* Monthly Payment Button */}
               <button 
-                id="payment-button"
+                id="monthly-payment-button"
                 style={{
                   fontFamily: 'sans-serif',
                   margin: '0 auto',
@@ -220,6 +227,32 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6362577318051840"
+                onClick={() => trackCreatorCampPurchase()}
+              >
+                Join Now!
+              </button>
+
+              {/* Yearly Payment Button */}
+              <button 
+                id="yearly-payment-button"
+                style={{
+                  fontFamily: 'sans-serif',
+                  margin: '0 auto',
+                  outline: 'none',
+                  display: 'none',
+                  height: '45px',
+                  width: '226px',
+                  borderRadius: '6px',
+                  background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
+                  color: 'white',
+                  boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                  fontSize: '18px',
+                  fontWeight: '700',
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                className="lp6602918050791424"
                 onClick={() => trackCreatorCampPurchase()}
               >
                 Join Now!
