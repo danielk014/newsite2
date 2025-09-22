@@ -1,11 +1,8 @@
 "use client"
 import { Check, Star, Shield } from "lucide-react"
 import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
-import { useState } from "react"
-import { cn } from "@/lib/utils"
 
 export function PricingSection() {
-  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
 
   return (
     <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
@@ -50,34 +47,11 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Billing Toggle */}
-          <div className="flex items-center justify-center gap-4 mb-12">
-            <span className={cn("text-sm", billingCycle === "monthly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
-              Monthly
-            </span>
-            <button
-              onClick={() => setBillingCycle(billingCycle === "monthly" ? "yearly" : "monthly")}
-              className="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200"
-              style={{ backgroundColor: billingCycle === "yearly" ? "#16C79A" : "hsl(var(--muted))" }}
-            >
-              <span
-                className={cn(
-                  "inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200",
-                  billingCycle === "yearly" ? "translate-x-6" : "translate-x-1"
-                )}
-              />
-            </button>
-            <span className={cn("text-sm", billingCycle === "yearly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
-              Yearly <span className="text-accent">Save 35%</span>
-            </span>
-          </div>
-
-          {/* Pricing Cards - Single Card Based on Toggle */}
-          <div className="flex justify-center mb-16 max-w-md mx-auto">
+          {/* Pricing Cards - Both Options Side by Side (No JavaScript) */}
+          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto items-start">
             
-            {billingCycle === "monthly" ? (
-            /* Monthly Option */
-            <div className="relative bg-card border rounded-2xl p-8 w-full">
+            {/* Monthly Option */}
+            <div className="relative bg-card border rounded-2xl p-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
                 <div className="mb-2">
@@ -176,9 +150,9 @@ export function PricingSection() {
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
-            ) : (
-            /* Yearly Option */
-            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
+            
+            {/* Yearly Option */}
+            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                   🔥 Popular
@@ -278,7 +252,6 @@ export function PricingSection() {
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
-            )}
           </div>
 
           {/* VIP Inner Circle - Separate Premium Tier */}
