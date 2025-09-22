@@ -281,6 +281,135 @@ export function PricingSection() {
             )}
           </div>
 
+          {/* VIP Inner Circle - Separate Premium Tier */}
+          <div className="flex justify-center mb-16 max-w-md mx-auto">
+            <div className="relative bg-card border border-accent shadow-2xl shadow-accent/20 rounded-2xl p-8 w-full">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                  👑 VIP Coaching
+                </div>
+              </div>
+
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold mb-2">VIP Inner Circle</h3>
+                <div className="mb-2">
+                  <span className="text-2xl font-bold text-accent">Application Only</span>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Premium 1-on-1 coaching program
+                </p>
+              </div>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">✅ EVERYTHING YOU NEED TO START</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Complete Faceless Channel System</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Faceless Niche List and Case Studies</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">AI Content Creation Mastery</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Professional Video Editing Tutorials</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Advanced Automation Workflows</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Multi-Channel Scaling Strategies</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Revenue Optimization System</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: AI Training & Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Done-for-You Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Elite Network Access ($997/year value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Channel Reviews ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: 1-on-1 Coaching Calls</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: Founder-Led Marketing & Personal Brand Strategy</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: After Effects Masterclass (motion design & animations)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: Exclusive High End Vault (premium templates & assets)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: VIP Elite Community Access</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
+                  <span className="text-sm flex-1 font-semibold">🎁 YEARLY BONUS: Priority Support & Reviews</span>
+                </div>
+              </div>
+
+              <a 
+                href="https://forms.gle/GdQpiHqi28FH1CeY7" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <button 
+                  style={{
+                    fontFamily: 'sans-serif',
+                    margin: '0 auto',
+                    outline: 'none',
+                    display: 'block',
+                    height: '45px',
+                    width: '226px',
+                    borderRadius: '6px',
+                    background: 'linear-gradient(135deg, #16C79A 0%, #0F9D7E 100%)',
+                    color: 'white',
+                    boxShadow: '0 4px 15px rgba(22, 199, 154, 0.3)',
+                    fontSize: '18px',
+                    fontWeight: '700',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onClick={() => trackCreatorCampPurchase()}
+                >
+                  Apply for VIP Access
+                </button>
+              </a>
+
+              <p className="text-xs text-center text-muted-foreground mt-4">
+                30-day money-back guarantee if you don&apos;t see value after completing the modules.
+              </p>
+            </div>
+          </div>
+
           {/* Comparison Table */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-center mb-8">
