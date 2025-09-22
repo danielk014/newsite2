@@ -126,7 +126,7 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
               <div className="text-sm text-muted-foreground">Students Learning YouTube Automation</div>
             </div>
             <div className="text-center">

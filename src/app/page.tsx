@@ -19,7 +19,7 @@ export default function Home() {
               Join a <span className="text-primary">Thriving Community</span> of Successful Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Connect with 500+ entrepreneurs who&apos;ve built profitable faceless YouTube channels and learn from their real results
+              Connect with 100+ entrepreneurs who&apos;ve built profitable faceless YouTube channels and learn from their real results
             </p>
           </div>
           
@@ -36,7 +36,7 @@ export default function Home() {
             <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
               <Image 
                 src="/testimonials/earnings-6k.png" 
-                alt="$6.2K Weekly Earnings"
+                alt="Weekly Progress Screenshot"
                 width={400}
                 height={300}
                 className="w-full h-auto rounded-lg"
@@ -226,7 +226,7 @@ export default function Home() {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-lg font-semibold text-accent mb-2">Daily Win Shares</h4>
-                      <p className="text-muted-foreground text-sm">See real earnings screenshots and channel milestones from active members</p>
+                      <p className="text-muted-foreground text-sm">See real progress screenshots and channel milestones from active members</p>
                     </div>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function Home() {
                     </div>
                     <div className="flex-1">
                       <h4 className="text-lg font-semibold text-primary mb-2">Elite Mastermind</h4>
-                      <p className="text-muted-foreground text-sm">Exclusive access for 6-figure creators sharing advanced scaling strategies</p>
+                      <p className="text-muted-foreground text-sm">Exclusive access for experienced creators sharing advanced scaling strategies</p>
                     </div>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
 
             <div className="text-center">
-              <p className="text-lg font-semibold text-primary mb-2">🎉 Community Value: $197/month elsewhere</p>
+              <p className="text-lg font-semibold text-primary mb-2">🎉 Complete Community Access Included</p>
               <p className="text-muted-foreground">Included FREE with your Creator Camp access</p>
             </div>
           </div>

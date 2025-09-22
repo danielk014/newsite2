@@ -27,18 +27,18 @@ export default function PricingPage() {
               Join the <span className="text-primary">Creator Camp Community</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              500+ entrepreneurs supporting each other to build profitable faceless YouTube channels
+              100+ entrepreneurs supporting each other to build profitable faceless YouTube channels
             </p>
             
             {/* Community Stats */}
             <div className="grid md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <div className="text-3xl font-bold text-primary mb-2">100+</div>
                 <div className="text-sm text-muted-foreground">Active Members</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">$2.1M+</div>
-                <div className="text-sm text-muted-foreground">Collective Earnings</div>
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                <div className="text-sm text-muted-foreground">Course Access</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">24/7</div>
@@ -87,8 +87,8 @@ export default function PricingPage() {
                   <span className="text-primary font-bold">🎯</span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-sm text-muted-foreground mb-3">&quot;Having accountability partners in the community helped me stay consistent. Now I&apos;m at $8K/month!&quot;</p>
-                  <div className="text-xs font-semibold text-primary">- Mike R. (6-figure creator)</div>
+                  <p className="text-sm text-muted-foreground mb-3">&quot;Having accountability partners in the community helped me stay consistent with my content creation goals.&quot;</p>
+                  <div className="text-xs font-semibold text-primary">- Mike R. (Content Creator)</div>
                 </div>
               </div>
             </div>
@@ -116,6 +116,9 @@ export default function PricingPage() {
           </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Don&apos;t build your YouTube empire alone. Get the training, tools, and community support you need to succeed.
+          </p>
+          <p className="text-xs text-muted-foreground mb-6 max-w-3xl mx-auto">
+            **Educational disclaimer: This course teaches AI tool integration for YouTube Automation channels. Success depends on individual effort, tool implementation, and market factors. Results are not guaranteed and will vary based on your execution and dedication.
           </p>
           <a
             href="https://buy.stripe.com/7sY5kE89Rem6cjCg5nfjG01"

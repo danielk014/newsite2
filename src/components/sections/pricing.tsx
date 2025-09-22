@@ -53,6 +53,9 @@ export function PricingSection() {
         btn.style.pointerEvents = 'auto'
         btn.style.opacity = '1'
         btn.style.cursor = 'pointer'
+        
+        // Debug: Log which button we're enabling
+        console.log('Enabling button with class:', btn.className, 'in billing cycle:', billingCycle)
       })
     }
 
@@ -297,13 +300,9 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           }}
                           className="lp6602918050791424 lpbtn"
                           data-yearly="true"
-                          onClick={(e) => {
-                            e.preventDefault()
+                          onClick={() => {
                             // Track purchase event
                             trackCreatorCampPurchase()
-                            
-                            // Force open the correct yearly embed
-                            window.open('https://creatorcamp2.launchpass.com/', '_blank')
                           }}
                           onMouseEnter={(e) => {
                             e.currentTarget.style.transform = 'translateY(-2px)';
