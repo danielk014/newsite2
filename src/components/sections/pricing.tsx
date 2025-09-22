@@ -99,9 +99,9 @@ export function PricingSection() {
           <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto items-start">
             
             {/* Monthly/Yearly Card */}
-            <div>
+            <div className="flex justify-center">
               {/* Monthly Pricing Card */}
-              <div id="monthly-card" className="flex justify-center max-w-md mx-auto">
+              <div id="monthly-card" className="max-w-md w-full">
             <div className="relative bg-card border rounded-2xl p-8 w-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
@@ -204,7 +204,7 @@ export function PricingSection() {
           </div>
 
               {/* Yearly Pricing Card */}
-              <div id="yearly-card" className="flex justify-center max-w-md mx-auto" style={{display: 'none'}}>
+              <div id="yearly-card" className="max-w-md w-full" style={{display: 'none'}}>
             <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
@@ -309,7 +309,7 @@ export function PricingSection() {
             </div>
 
             {/* VIP Inner Circle - Side by Side */}
-            <div className="flex justify-center max-w-md mx-auto">
+            <div className="flex justify-center">
             <div className="relative bg-card border border-accent shadow-2xl shadow-accent/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
