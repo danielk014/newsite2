@@ -47,11 +47,57 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Pricing Cards - Both Options Side by Side (No JavaScript) */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto items-start">
-            
-            {/* Monthly Option */}
-            <div className="relative bg-card border rounded-2xl p-8">
+          {/* Toggle Buttons */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <button 
+              id="monthly-toggle"
+              className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn"
+              onClick={() => {
+                const win = window as { showMonthly?: () => void };
+                win.showMonthly?.();
+              }}
+            >
+              Monthly
+            </button>
+            <button 
+              id="yearly-toggle"
+              className="px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn"
+              onClick={() => {
+                const win = window as { showYearly?: () => void };
+                win.showYearly?.();
+              }}
+            >
+              Yearly - Save 35%
+            </button>
+          </div>
+
+          {/* Inline JavaScript for Toggle (After LaunchPass loads) */}
+          <script dangerouslySetInnerHTML={{
+            __html: `
+              function showMonthly() {
+                document.getElementById('monthly-card').style.display = 'block';
+                document.getElementById('yearly-card').style.display = 'none';
+                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn';
+                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn';
+              }
+              
+              function showYearly() {
+                document.getElementById('monthly-card').style.display = 'none';
+                document.getElementById('yearly-card').style.display = 'block';
+                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn';
+                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn';
+              }
+              
+              // Initialize - show monthly by default
+              setTimeout(() => {
+                showMonthly();
+              }, 100);
+            `
+          }} />
+
+          {/* Monthly Pricing Card */}
+          <div id="monthly-card" className="flex justify-center mb-16 max-w-md mx-auto">
+            <div className="relative bg-card border rounded-2xl p-8 w-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
                 <div className="mb-2">
@@ -150,9 +196,11 @@ export function PricingSection() {
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
-            
-            {/* Yearly Option */}
-            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8">
+          </div>
+
+          {/* Yearly Pricing Card */}
+          <div id="yearly-card" className="flex justify-center mb-16 max-w-md mx-auto" style={{display: 'none'}}>
+            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                   🔥 Popular
