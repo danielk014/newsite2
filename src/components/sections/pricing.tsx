@@ -1,8 +1,12 @@
 "use client"
 import { Check, Star, Shield } from "lucide-react"
 import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
+import { useState } from "react"
+import { cn } from "@/lib/utils"
 
 export function PricingSection() {
+  const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">("monthly")
+
   return (
     <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
       <div className="absolute inset-0 bg-grid-white/[0.02]" />
@@ -46,11 +50,34 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Pricing Cards - Two Options Side by Side */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto items-start">
+          {/* Billing Toggle */}
+          <div className="flex items-center justify-center gap-4 mb-12">
+            <span className={cn("text-sm", billingCycle === "monthly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
+              Monthly
+            </span>
+            <button
+              onClick={() => setBillingCycle(billingCycle === "monthly" ? "yearly" : "monthly")}
+              className="relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-200"
+              style={{ backgroundColor: billingCycle === "yearly" ? "#16C79A" : "hsl(var(--muted))" }}
+            >
+              <span
+                className={cn(
+                  "inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200",
+                  billingCycle === "yearly" ? "translate-x-6" : "translate-x-1"
+                )}
+              />
+            </button>
+            <span className={cn("text-sm", billingCycle === "yearly" ? "text-foreground font-semibold" : "text-muted-foreground")}>
+              Yearly <span className="text-accent">Save 35%</span>
+            </span>
+          </div>
+
+          {/* Pricing Cards - Single Card Based on Toggle */}
+          <div className="flex justify-center mb-16 max-w-md mx-auto">
             
-            {/* Monthly Option */}
-            <div className="relative bg-card border rounded-2xl p-8">
+            {billingCycle === "monthly" ? (
+            /* Monthly Option */
+            <div className="relative bg-card border rounded-2xl p-8 w-full">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
                 <div className="mb-2">
@@ -73,7 +100,7 @@ export function PricingSection() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 text-left">
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                  <span className="text-sm flex-1 font-semibold">Everything you need to start</span>
+                  <span className="text-sm flex-1 font-semibold">✅ EVERYTHING YOU NEED TO START</span>
                 </div>
                 <div className="flex items-start gap-3 text-left">
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
@@ -98,6 +125,26 @@ export function PricingSection() {
                 <div className="flex items-start gap-3 text-left">
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
                   <span className="text-sm flex-1">Multi-Channel Scaling Strategies</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Revenue Optimization System</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: AI Training & Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Done-for-You Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Elite Network Access ($997/year value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Channel Reviews ($497 value)</span>
                 </div>
               </div>
 
@@ -126,12 +173,12 @@ export function PricingSection() {
               </button>
 
               <p className="text-xs text-center text-muted-foreground mt-4">
-                30-day money-back guarantee if you complete the first module and don&apos;t see value.
+                30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
-
-            {/* Yearly Option */}
-            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8">
+            ) : (
+            /* Yearly Option */
+            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
                   🔥 Popular
@@ -155,7 +202,7 @@ export function PricingSection() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 text-left">
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                  <span className="text-sm flex-1 font-semibold">Everything you need to start</span>
+                  <span className="text-sm flex-1 font-semibold">✅ EVERYTHING YOU NEED TO START</span>
                 </div>
                 <div className="flex items-start gap-3 text-left">
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
@@ -181,37 +228,57 @@ export function PricingSection() {
                   <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
                   <span className="text-sm flex-1">Multi-Channel Scaling Strategies</span>
                 </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">Revenue Optimization System</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: AI Training & Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Done-for-You Templates ($497 value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Elite Network Access ($997/year value)</span>
+                </div>
+                <div className="flex items-start gap-3 text-left">
+                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
+                  <span className="text-sm flex-1">🎁 BONUS: Channel Reviews ($497 value)</span>
+                </div>
               </div>
 
-              <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
-                <button 
-                  style={{
-                    fontFamily: 'sans-serif',
-                    margin: '0 auto',
-                    outline: 'none',
-                    display: 'block',
-                    height: '45px',
-                    width: '226px',
-                    borderRadius: '6px',
-                    background: '#469CCE',
-                    color: 'white',
-                    boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)',
-                    fontSize: '18px',
-                    fontWeight: '700',
-                    border: 'none',
-                    cursor: 'pointer'
-                  }}
-                  className="lp6602918050791424"
-                  onClick={() => trackCreatorCampPurchase()}
-                >
-                  Pay €36.00
-                </button>
-              </div>
+              <button 
+                style={{
+                  fontFamily: 'sans-serif',
+                  margin: '0 auto',
+                  outline: 'none',
+                  display: 'block',
+                  height: '45px',
+                  width: '226px',
+                  borderRadius: '6px',
+                  background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
+                  color: 'white',
+                  boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                  fontSize: '18px',
+                  fontWeight: '700',
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                className="lp6602918050791424"
+                onClick={() => trackCreatorCampPurchase()}
+              >
+                Join Now!
+              </button>
 
               <p className="text-xs text-center text-muted-foreground mt-4">
-                30-day money-back guarantee if you complete the first module and don&apos;t see value.
+                30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
+            )}
           </div>
 
           {/* Comparison Table */}
@@ -262,7 +329,7 @@ export function PricingSection() {
               </div>
               <h4 className="font-semibold mb-2">Money-Back Guarantee</h4>
               <p className="text-sm text-muted-foreground">
-                30-day money-back guarantee if you complete the first module and don&apos;t see value.
+                30-day money-back guarantee if you don&apos;t see value after completing the modules.
               </p>
             </div>
             <div className="text-center">
