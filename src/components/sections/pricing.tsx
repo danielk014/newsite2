@@ -97,7 +97,7 @@ export function PricingSection() {
                 // Update card content
                 document.getElementById('price-amount').textContent = '$36';
                 document.getElementById('price-period').textContent = '/year';
-                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">$50/month</span> <span class="text-accent font-semibold">Discounted to $36/year</span>';
+                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">$50/month</span> <span class="text-accent font-semibold">Discounted to $36/year</span><br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
                 document.getElementById('popular-badge').style.display = 'block';
                 document.getElementById('yearly-savings').style.display = 'block';
                 
