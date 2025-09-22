@@ -22,7 +22,7 @@ export function PricingSection() {
   useEffect(() => {
     // Scripts are already loaded in layout.tsx, just ensure buttons are enabled
     const enableButtons = () => {
-      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840, .lp6602918050791424') as NodeListOf<HTMLButtonElement>
+      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840') as NodeListOf<HTMLButtonElement>
       allButtons.forEach(btn => {
         btn.disabled = false
         btn.style.pointerEvents = 'auto'
@@ -47,7 +47,7 @@ export function PricingSection() {
   // Re-enable buttons when billing cycle changes
   useEffect(() => {
     const enableButtons = () => {
-      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840, .lp6602918050791424') as NodeListOf<HTMLButtonElement>
+      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840') as NodeListOf<HTMLButtonElement>
       allButtons.forEach(btn => {
         btn.disabled = false
         btn.style.pointerEvents = 'auto'
@@ -62,42 +62,6 @@ export function PricingSection() {
     return () => clearTimeout(timer)
   }, [billingCycle])
 
-  // Specifically handle yearly button initialization when switching to yearly
-  useEffect(() => {
-    if (billingCycle === "yearly") {
-      // Add a longer delay to ensure the yearly button is in the DOM
-      const initYearlyButton = () => {
-        // Ensure the yearly script is available
-        const yearlyScript = document.querySelector('script[src="https://www.launchpass.com/course/creatorcamp2/embed.js"]')
-        if (yearlyScript) {
-          // Force reinitialize the yearly button
-          const yearlyBtn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-          if (yearlyBtn) {
-            yearlyBtn.disabled = false
-            yearlyBtn.style.pointerEvents = 'auto'
-            yearlyBtn.style.opacity = '1'
-            yearlyBtn.style.cursor = 'pointer'
-            
-            // Trigger any LaunchPass initialization if available
-            if (window.LaunchPass && typeof window.LaunchPass.init === 'function') {
-              window.LaunchPass.init()
-            }
-          }
-        }
-      }
-
-      // Multiple attempts to ensure button works
-      const timer1 = setTimeout(initYearlyButton, 100)
-      const timer2 = setTimeout(initYearlyButton, 500)
-      const timer3 = setTimeout(initYearlyButton, 1000)
-
-      return () => {
-        clearTimeout(timer1)
-        clearTimeout(timer2)
-        clearTimeout(timer3)
-      }
-    }
-  }, [billingCycle])
 
 
   return (
@@ -313,52 +277,41 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                           Join Now!
                         </button>
                       ) : (
-                        <div style={{ width: '300px', textAlign: 'center', margin: '0 auto' }}>
-                          <button 
-                            style={{
-                              fontFamily: 'sans-serif', 
-                              margin: '0 auto', 
-                              outline: 'none', 
-                              display: 'block', 
-                              height: '45px', 
-                              width: '226px', 
-                              borderRadius: '6px', 
-                              background: '#4690CE', 
-                              color: 'white', 
-                              boxShadow: '1px 1px 3px 0 rgba(0,0,0,.03)', 
-                              fontSize: '18px', 
-                              fontWeight: '700', 
-                              border: 'none', 
-                              cursor: 'pointer'
-                            }}
-                            className="lp6602918050791424"
-                            onClick={() => {
-                              // Track purchase event
-                              trackCreatorCampPurchase()
-                              
-                              // Ensure the button is enabled and trigger LaunchPass
-                              const btn = document.querySelector('.lp6602918050791424') as HTMLButtonElement
-                              if (btn) {
-                                btn.disabled = false
-                                btn.style.pointerEvents = 'auto'
-                                
-                                // Try to trigger LaunchPass functionality
-                                if (window.LaunchPass && typeof window.LaunchPass.init === 'function') {
-                                  window.LaunchPass.init()
-                                }
-                              }
-                              
-                              // Fallback: if LaunchPass doesn't work, try direct navigation
-                              setTimeout(() => {
-                                if (!document.querySelector('.launchpass-checkout-modal')) {
-                                  window.open('https://creatorcamp2.launchpass.com/', '_blank')
-                                }
-                              }, 500)
-                            }}
-                          >
-                            Pay €36.00
-                          </button>
-                        </div>
+                        <button 
+                          style={{
+                            fontFamily: 'sans-serif',
+                            margin: '0 auto',
+                            outline: 'none',
+                            display: 'block',
+                            height: '45px',
+                            width: '226px',
+                            borderRadius: '6px',
+                            background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
+                            color: 'white',
+                            boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
+                            fontSize: '18px',
+                            fontWeight: '700',
+                            border: 'none',
+                            cursor: 'pointer',
+                            transition: 'all 0.3s ease'
+                          }}
+                          className="lp6362577318051840 lpbtn"
+                          data-yearly="true"
+                          onClick={() => {
+                            // Track purchase event
+                            trackCreatorCampPurchase()
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                            e.currentTarget.style.boxShadow = '0 6px 20px rgba(255, 107, 53, 0.4)';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = 'translateY(0)';
+                            e.currentTarget.style.boxShadow = '0 4px 15px rgba(255, 107, 53, 0.3)';
+                          }}
+                        >
+                          Join Now!
+                        </button>
                       )}
                     </div>
                   ) : tier.id === "elite" ? (
