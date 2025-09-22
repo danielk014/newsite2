@@ -22,7 +22,7 @@ export function PricingSection() {
   useEffect(() => {
     // Scripts are already loaded in layout.tsx, just ensure buttons are enabled
     const enableButtons = () => {
-      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840') as NodeListOf<HTMLButtonElement>
+      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840, .lp6602918050791424') as NodeListOf<HTMLButtonElement>
       allButtons.forEach(btn => {
         btn.disabled = false
         btn.style.pointerEvents = 'auto'
@@ -47,7 +47,7 @@ export function PricingSection() {
   // Re-enable buttons when billing cycle changes
   useEffect(() => {
     const enableButtons = () => {
-      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840') as NodeListOf<HTMLButtonElement>
+      const allButtons = document.querySelectorAll('.lpbtn, .lp6362577318051840, .lp6602918050791424') as NodeListOf<HTMLButtonElement>
       allButtons.forEach(btn => {
         btn.disabled = false
         btn.style.pointerEvents = 'auto'
@@ -295,7 +295,7 @@ Complete All-in-One Package - Everything you need to build profitable automated 
                             cursor: 'pointer',
                             transition: 'all 0.3s ease'
                           }}
-                          className="lp6362577318051840 lpbtn"
+                          className="lp6602918050791424 lpbtn"
                           data-yearly="true"
                           onClick={() => {
                             // Track purchase event
