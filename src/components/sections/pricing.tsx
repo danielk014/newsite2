@@ -49,44 +49,64 @@ export function PricingSection() {
 
           {/* Toggle Buttons */}
           <div className="flex items-center justify-center gap-4 mb-12">
-            <button 
-              id="monthly-toggle"
-              className="px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn"
-              onClick={() => {
-                const win = window as { showMonthly?: () => void };
-                win.showMonthly?.();
-              }}
-            >
-              Monthly
-            </button>
-            <button 
-              id="yearly-toggle"
-              className="px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn"
-              onClick={() => {
-                const win = window as { showYearly?: () => void };
-                win.showYearly?.();
-              }}
-            >
-              Yearly - Save $564
-            </button>
+            <div className="bg-muted p-1 rounded-lg flex">
+              <button 
+                id="monthly-toggle"
+                className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn"
+                onClick={() => {
+                  const win = window as { showMonthly?: () => void };
+                  win.showMonthly?.();
+                }}
+              >
+                Monthly
+              </button>
+              <button 
+                id="yearly-toggle"
+                className="px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn"
+                onClick={() => {
+                  const win = window as { showYearly?: () => void };
+                  win.showYearly?.();
+                }}
+              >
+                Yearly - Save $564
+              </button>
+            </div>
           </div>
 
           {/* Inline JavaScript for Toggle (After LaunchPass loads) */}
           <script dangerouslySetInnerHTML={{
             __html: `
               function showMonthly() {
-                document.getElementById('monthly-card').style.display = 'block';
-                document.getElementById('yearly-card').style.display = 'none';
-                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn';
-                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn';
+                // Update card content
+                document.getElementById('price-amount').textContent = '€5';
+                document.getElementById('price-period').textContent = '/month';
+                document.getElementById('billing-info').innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to €50/month soon!</span>';
+                document.getElementById('popular-badge').style.display = 'none';
+                document.getElementById('yearly-savings').style.display = 'none';
+                document.getElementById('payment-button').className = 'lp6362577318051840';
+                
+                // Update toggle buttons
+                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
               }
               
               function showYearly() {
-                document.getElementById('monthly-card').style.display = 'none';
-                document.getElementById('yearly-card').style.display = 'block';
-                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold toggle-btn';
-                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-muted text-muted-foreground rounded-lg font-semibold toggle-btn';
+                // Update card content
+                document.getElementById('price-amount').textContent = '€3';
+                document.getElementById('price-period').textContent = '/month';
+                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">€5/month</span> <span class="text-accent font-semibold">Billed annually (€36)</span>';
+                document.getElementById('popular-badge').style.display = 'block';
+                document.getElementById('yearly-savings').style.display = 'block';
+                document.getElementById('payment-button').className = 'lp6602918050791424';
+                
+                // Update toggle buttons
+                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
               }
+              
+              // Make functions available globally
+              window.showMonthly = showMonthly;
+              window.showYearly = showYearly;
               
               // Initialize - show monthly by default
               setTimeout(() => {
@@ -98,29 +118,36 @@ export function PricingSection() {
           {/* Pricing Cards Container */}
           <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto items-start">
             
-            {/* Monthly/Yearly Card */}
+            {/* Dynamic Pricing Card */}
             <div className="flex justify-center">
-              {/* Monthly Pricing Card */}
-              <div id="monthly-card" className="max-w-md w-full">
-            <div className="relative bg-card border rounded-2xl p-8 w-full">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
-                <div className="mb-2">
-                  <span className="text-lg line-through text-muted-foreground/60">€50</span>
-                  <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold ml-2">90% OFF</span>
-                </div>
-                <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-4xl font-bold">€5</span>
-                  <span className="text-muted-foreground">/month</span>
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  Billed monthly
-                  <br />
-                  <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">
-                    ⚠️ Price returns to €50/month soon!
-                  </span>
-                </p>
-              </div>
+              <div className="max-w-md w-full">
+                <div className="relative bg-card border rounded-2xl p-8 w-full">
+                  {/* Popular Badge - Hidden by default, shown for yearly */}
+                  <div id="popular-badge" className="absolute -top-4 left-1/2 -translate-x-1/2" style={{display: 'none'}}>
+                    <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
+                      🔥 Popular
+                    </div>
+                  </div>
+
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
+                    <div className="mb-2">
+                      <span className="text-lg line-through text-muted-foreground/60">€50</span>
+                      <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold ml-2">90% OFF</span>
+                    </div>
+                    <div className="flex items-baseline justify-center gap-2 mb-2">
+                      <span id="price-amount" className="text-4xl font-bold">€5</span>
+                      <span id="price-period" className="text-muted-foreground">/month</span>
+                    </div>
+                    <p id="billing-info" className="text-sm text-muted-foreground">
+                      Billed monthly
+                      <br />
+                      <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">
+                        ⚠️ Price returns to €50/month soon!
+                      </span>
+                    </p>
+                    <p id="yearly-savings" className="text-sm text-accent font-semibold mt-2" style={{display: 'none'}}>Save $564</p>
+                  </div>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3 text-left">
@@ -174,6 +201,7 @@ export function PricingSection() {
               </div>
 
               <button 
+                id="payment-button"
                 style={{
                   fontFamily: 'sans-serif',
                   margin: '0 auto',
@@ -203,109 +231,6 @@ export function PricingSection() {
             </div>
           </div>
 
-              {/* Yearly Pricing Card */}
-              <div id="yearly-card" className="max-w-md w-full" style={{display: 'none'}}>
-            <div className="relative bg-card border border-primary shadow-2xl shadow-primary/20 rounded-2xl p-8 w-full">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold flex items-center gap-1">
-                  🔥 Popular
-                </div>
-              </div>
-
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
-                <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-4xl font-bold">€3</span>
-                  <span className="text-muted-foreground">/month</span>
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  <span className="line-through text-muted-foreground/60">€5/month</span>
-                  {" "}
-                  <span className="text-accent font-semibold">Billed annually (€36)</span>
-                </p>
-                <p className="text-sm text-accent font-semibold mt-2">Save $564</p>
-              </div>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-primary" />
-                  <span className="text-sm flex-1 font-semibold">✅ EVERYTHING YOU NEED TO START</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Complete Faceless Channel System</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Faceless Niche List and Case Studies</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">AI Content Creation Mastery</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Professional Video Editing Tutorials</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Advanced Automation Workflows</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Multi-Channel Scaling Strategies</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">Revenue Optimization System</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">🎁 BONUS: AI Training & Templates ($497 value)</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">🎁 BONUS: Done-for-You Templates ($497 value)</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">🎁 BONUS: Elite Network Access ($997/year value)</span>
-                </div>
-                <div className="flex items-start gap-3 text-left">
-                  <Check className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent" />
-                  <span className="text-sm flex-1">🎁 BONUS: Channel Reviews ($497 value)</span>
-                </div>
-              </div>
-
-              <button 
-                style={{
-                  fontFamily: 'sans-serif',
-                  margin: '0 auto',
-                  outline: 'none',
-                  display: 'block',
-                  height: '45px',
-                  width: '226px',
-                  borderRadius: '6px',
-                  background: 'linear-gradient(135deg, #FF6B35 0%, #FF4500 100%)',
-                  color: 'white',
-                  boxShadow: '0 4px 15px rgba(255, 107, 53, 0.3)',
-                  fontSize: '18px',
-                  fontWeight: '700',
-                  border: 'none',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease'
-                }}
-                className="lp6602918050791424"
-                onClick={() => trackCreatorCampPurchase()}
-              >
-                Join Now!
-              </button>
-
-              <p className="text-xs text-center text-muted-foreground mt-4">
-                30-day money-back guarantee if you don&apos;t see value after completing the modules.
-              </p>
-            </div>
-              </div>
             </div>
 
             {/* VIP Inner Circle - Side by Side */}
