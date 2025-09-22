@@ -21,31 +21,6 @@ export function PricingSection() {
             </p>
           </div>
 
-          {/* Why We Dominate Section */}
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 mb-12 max-w-4xl mx-auto">
-            <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                Why Channel-in-a-Box <span className="text-primary">Beats Everything Else</span>
-              </h3>
-              <p className="text-lg text-muted-foreground mb-6">
-                Complete 6-step framework: Follow the steps, plug in the AI tools, get publishing. No guesswork.
-              </p>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">6</div>
-                  <div className="text-sm text-muted-foreground">AI-Powered Steps</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">100%</div>
-                  <div className="text-sm text-muted-foreground">Plug-and-Play</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-1">€100K+</div>
-                  <div className="text-sm text-muted-foreground">Framework Potential</div>
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Toggle Buttons */}
           <div className="flex items-center justify-center gap-4 mb-12">
