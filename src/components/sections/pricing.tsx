@@ -111,7 +111,7 @@ export function PricingSection() {
                   </div>
 
                   <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold mb-2">Elite Network</h3>
+                    <h3 className="text-2xl font-bold mb-2">Creator Camp</h3>
                     <div className="mb-2">
                       <span className="text-lg line-through text-muted-foreground/60">$50</span>
                       <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold ml-2">90% OFF</span>
