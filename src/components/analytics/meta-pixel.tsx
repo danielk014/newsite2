@@ -23,7 +23,11 @@ export function MetaPixel({ pixelId }: MetaPixelProps) {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '${pixelId}');
+            fbq('init', '${pixelId}', {
+              // More restrictive attribution settings
+              attribution_model: 'last_click',
+              attribution_window_days: 1
+            });
             fbq('track', 'PageView');
           `
         }}
@@ -57,13 +61,37 @@ export const trackEvent = (eventName: string, parameters?: Record<string, unknow
 }
 
 // Common event tracking functions
-export const trackPurchase = (value: number, currency: string = 'EUR') => {
+export const trackPurchase = (value: number, currency: string = 'USD') => {
   trackEvent('Purchase', { value, currency })
 }
 
-// Specific purchase tracking for Creator Camp Academy
-export const trackCreatorCampPurchase = () => {
-  trackPurchase(5, 'EUR')
+// Lead tracking for button clicks (not actual purchases)
+export const trackCreatorCampLead = () => {
+  trackLead()
+}
+
+// Actual purchase tracking (only call when payment is confirmed by LaunchPass)
+export const trackCreatorCampPurchase = (value: number = 36, currency: string = 'USD') => {
+  // Add additional validation to ensure this is a real purchase
+  if (typeof window !== 'undefined' && window.fbq) {
+    console.log('🎯 Tracking validated purchase:', { value, currency })
+    trackPurchase(value, currency)
+  }
+}
+
+// Function to be called by LaunchPass webhook or success callback
+export const trackValidatedPurchase = (transactionId: string, value: number, currency: string = 'USD') => {
+  if (typeof window !== 'undefined' && window.fbq) {
+    console.log('✅ Tracking webhook-validated purchase:', { transactionId, value, currency })
+    window.fbq('track', 'Purchase', { 
+      value, 
+      currency,
+      content_type: 'product',
+      content_ids: ['creator-camp'],
+      content_name: 'Creator Camp Course',
+      transaction_id: transactionId
+    })
+  }
 }
 
 export const trackAddToCart = (contentName: string, value?: number) => {

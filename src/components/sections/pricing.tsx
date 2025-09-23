@@ -1,6 +1,6 @@
 "use client"
 import { Check, Star, Shield } from "lucide-react"
-import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
+import { trackCreatorCampLead } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
 
@@ -202,7 +202,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6362577318051840"
-                onClick={() => trackCreatorCampPurchase()}
+                onClick={() => trackCreatorCampLead()}
               >
                 Join Now!
               </button>
@@ -228,7 +228,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6602918050791424"
-                onClick={() => trackCreatorCampPurchase()}
+                onClick={() => trackCreatorCampLead()}
               >
                 Join Now!
               </button>
@@ -358,7 +358,7 @@ export function PricingSection() {
                     cursor: 'pointer',
                     transition: 'all 0.3s ease'
                   }}
-                  onClick={() => trackCreatorCampPurchase()}
+                  onClick={() => trackCreatorCampLead()}
                 >
                   Apply for VIP Access
                 </button>
