@@ -24,9 +24,8 @@ export function MetaPixel({ pixelId }: MetaPixelProps) {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '${pixelId}', {
-              // More restrictive attribution settings
-              attribution_model: 'last_click',
-              attribution_window_days: 1
+              // Balanced attribution settings - prevents over-attribution but still tracks
+              attribution_model: 'last_click'
             });
             fbq('track', 'PageView');
           `
@@ -70,12 +69,15 @@ export const trackCreatorCampLead = () => {
   trackLead()
 }
 
-// Actual purchase tracking (only call when payment is confirmed by LaunchPass)
-export const trackCreatorCampPurchase = (value: number = 36, currency: string = 'USD') => {
-  // Add additional validation to ensure this is a real purchase
+// Purchase tracking for button clicks (improved but still tracks)
+export const trackCreatorCampPurchase = (value: number = 5, currency: string = 'USD') => {
   if (typeof window !== 'undefined' && window.fbq) {
-    console.log('🎯 Tracking validated purchase:', { value, currency })
-    trackPurchase(value, currency)
+    // Use InitiateCheckout instead of Purchase for button clicks - more accurate
+    window.fbq('track', 'InitiateCheckout', { 
+      value, 
+      currency,
+      content_name: 'Creator Camp Course'
+    })
   }
 }
 
