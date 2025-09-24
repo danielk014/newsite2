@@ -8,18 +8,21 @@ export function PricingSection() {
   React.useEffect(() => {
     const initializeLaunchPassButtons = () => {
       // Method 1: Try LaunchPass reinit
-      if (typeof window !== 'undefined' && (window as any).LaunchPass) {
-        try {
-          (window as any).LaunchPass.init();
-        } catch (error) {
-          console.log('LaunchPass init method 1 failed:', error);
+      if (typeof window !== 'undefined') {
+        const windowWithLaunchPass = window as typeof window & { LaunchPass?: { init: () => void } };
+        if (windowWithLaunchPass.LaunchPass) {
+          try {
+            windowWithLaunchPass.LaunchPass.init();
+          } catch (error) {
+            console.log('LaunchPass init method 1 failed:', error);
+          }
         }
       }
 
       // Method 2: Trigger script reprocessing by dispatching events
       setTimeout(() => {
         const buttons = document.querySelectorAll('.lp6362577318051840, .lp6602918050791424');
-        buttons.forEach(button => {
+        buttons.forEach(() => {
           // Trigger various events that might cause LaunchPass to reinitialize
           const events = ['load', 'DOMContentLoaded', 'readystatechange'];
           events.forEach(eventName => {

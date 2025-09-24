@@ -21,12 +21,15 @@ export default function PricingPage() {
   React.useEffect(() => {
     const reinitializeLaunchPass = () => {
       // Check if LaunchPass is loaded
-      if (typeof window !== 'undefined' && (window as any).LaunchPass) {
-        try {
-          // Force LaunchPass to scan for new buttons
-          (window as any).LaunchPass.init();
-        } catch (error) {
-          console.log('LaunchPass reinit attempt:', error);
+      if (typeof window !== 'undefined') {
+        const windowWithLaunchPass = window as typeof window & { LaunchPass?: { init: () => void } };
+        if (windowWithLaunchPass.LaunchPass) {
+          try {
+            // Force LaunchPass to scan for new buttons
+            windowWithLaunchPass.LaunchPass.init();
+          } catch (error) {
+            console.log('LaunchPass reinit attempt:', error);
+          }
         }
       }
       
