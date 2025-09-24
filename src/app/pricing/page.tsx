@@ -17,6 +17,33 @@ export default function PricingPage() {
     return () => clearTimeout(timer);
   }, []);
 
+  // Force LaunchPass to reinitialize when page loads via client-side routing
+  React.useEffect(() => {
+    const reinitializeLaunchPass = () => {
+      // Check if LaunchPass is loaded
+      if (typeof window !== 'undefined' && (window as any).LaunchPass) {
+        try {
+          // Force LaunchPass to scan for new buttons
+          (window as any).LaunchPass.init();
+        } catch (error) {
+          console.log('LaunchPass reinit attempt:', error);
+        }
+      }
+      
+      // Alternative: Trigger LaunchPass to rescan the page
+      const event = new Event('DOMContentLoaded', {
+        bubbles: true,
+        cancelable: true
+      });
+      document.dispatchEvent(event);
+    };
+
+    // Small delay to ensure DOM is ready
+    const initTimer = setTimeout(reinitializeLaunchPass, 200);
+    
+    return () => clearTimeout(initTimer);
+  }, []);
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}

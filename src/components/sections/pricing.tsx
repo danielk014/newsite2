@@ -1,8 +1,56 @@
 "use client"
+import React from "react"
 import { Check, Star, Shield } from "lucide-react"
 import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
+  // Force LaunchPass to reinitialize when this component mounts
+  React.useEffect(() => {
+    const initializeLaunchPassButtons = () => {
+      // Method 1: Try LaunchPass reinit
+      if (typeof window !== 'undefined' && (window as any).LaunchPass) {
+        try {
+          (window as any).LaunchPass.init();
+        } catch (error) {
+          console.log('LaunchPass init method 1 failed:', error);
+        }
+      }
+
+      // Method 2: Trigger script reprocessing by dispatching events
+      setTimeout(() => {
+        const buttons = document.querySelectorAll('.lp6362577318051840, .lp6602918050791424');
+        buttons.forEach(button => {
+          // Trigger various events that might cause LaunchPass to reinitialize
+          const events = ['load', 'DOMContentLoaded', 'readystatechange'];
+          events.forEach(eventName => {
+            const event = new Event(eventName, { bubbles: true });
+            document.dispatchEvent(event);
+          });
+        });
+      }, 100);
+
+      // Method 3: Force reload LaunchPass scripts if buttons still don't work
+      setTimeout(() => {
+        const testButton = document.querySelector('.lp6362577318051840');
+        if (testButton && !testButton.hasAttribute('data-launchpass-initialized')) {
+          // If button exists but isn't initialized, reload scripts
+          const scripts = ['creatorcamp', 'creatorcamp2'];
+          scripts.forEach(scriptName => {
+            const existingScript = document.querySelector(`script[src*="${scriptName}"]`);
+            if (existingScript) {
+              const newScript = document.createElement('script');
+              newScript.src = `https://www.launchpass.com/course/${scriptName}/embed.js`;
+              newScript.async = true;
+              document.head.appendChild(newScript);
+            }
+          });
+        }
+      }, 500);
+    };
+
+    const timer = setTimeout(initializeLaunchPassButtons, 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section id="pricing" className="pt-4 pb-20 md:pt-6 md:pb-32 bg-gradient-to-b from-background via-primary/5 to-background relative">
