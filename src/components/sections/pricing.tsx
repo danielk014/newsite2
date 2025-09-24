@@ -4,55 +4,29 @@ import { Check, Star, Shield } from "lucide-react"
 import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
-  // Force LaunchPass to reinitialize when this component mounts
+  // Load LaunchPass scripts directly when this component mounts - no delays or friction
   React.useEffect(() => {
-    const initializeLaunchPassButtons = () => {
-      // Method 1: Try LaunchPass reinit
-      if (typeof window !== 'undefined') {
-        const windowWithLaunchPass = window as typeof window & { LaunchPass?: { init: () => void } };
-        if (windowWithLaunchPass.LaunchPass) {
-          try {
-            windowWithLaunchPass.LaunchPass.init();
-          } catch (error) {
-            console.log('LaunchPass init method 1 failed:', error);
-          }
-        }
+    const loadLaunchPassScripts = () => {
+      // Check if scripts are already loaded
+      const existingScript1 = document.querySelector('script[src*="creatorcamp/embed.js"]');
+      const existingScript2 = document.querySelector('script[src*="creatorcamp2/embed.js"]');
+      
+      if (!existingScript1) {
+        const script1 = document.createElement('script');
+        script1.src = 'https://www.launchpass.com/course/creatorcamp/embed.js';
+        script1.async = true;
+        document.head.appendChild(script1);
       }
-
-      // Method 2: Trigger script reprocessing by dispatching events
-      setTimeout(() => {
-        const buttons = document.querySelectorAll('.lp6362577318051840, .lp6602918050791424');
-        buttons.forEach(() => {
-          // Trigger various events that might cause LaunchPass to reinitialize
-          const events = ['load', 'DOMContentLoaded', 'readystatechange'];
-          events.forEach(eventName => {
-            const event = new Event(eventName, { bubbles: true });
-            document.dispatchEvent(event);
-          });
-        });
-      }, 100);
-
-      // Method 3: Force reload LaunchPass scripts if buttons still don't work
-      setTimeout(() => {
-        const testButton = document.querySelector('.lp6362577318051840');
-        if (testButton && !testButton.hasAttribute('data-launchpass-initialized')) {
-          // If button exists but isn't initialized, reload scripts
-          const scripts = ['creatorcamp', 'creatorcamp2'];
-          scripts.forEach(scriptName => {
-            const existingScript = document.querySelector(`script[src*="${scriptName}"]`);
-            if (existingScript) {
-              const newScript = document.createElement('script');
-              newScript.src = `https://www.launchpass.com/course/${scriptName}/embed.js`;
-              newScript.async = true;
-              document.head.appendChild(newScript);
-            }
-          });
-        }
-      }, 500);
+      
+      if (!existingScript2) {
+        const script2 = document.createElement('script');
+        script2.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js';
+        script2.async = true;
+        document.head.appendChild(script2);
+      }
     };
 
-    const timer = setTimeout(initializeLaunchPassButtons, 100);
-    return () => clearTimeout(timer);
+    loadLaunchPassScripts();
   }, []);
 
   return (

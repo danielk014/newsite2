@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Script from "next/script"
 import { PricingSection } from "@/components/sections/pricing"
 import { FAQSection } from "@/components/sections/faq"
 
@@ -17,39 +18,21 @@ export default function PricingPage() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Force LaunchPass to reinitialize when page loads via client-side routing
-  React.useEffect(() => {
-    const reinitializeLaunchPass = () => {
-      // Check if LaunchPass is loaded
-      if (typeof window !== 'undefined') {
-        const windowWithLaunchPass = window as typeof window & { LaunchPass?: { init: () => void } };
-        if (windowWithLaunchPass.LaunchPass) {
-          try {
-            // Force LaunchPass to scan for new buttons
-            windowWithLaunchPass.LaunchPass.init();
-          } catch (error) {
-            console.log('LaunchPass reinit attempt:', error);
-          }
-        }
-      }
-      
-      // Alternative: Trigger LaunchPass to rescan the page
-      const event = new Event('DOMContentLoaded', {
-        bubbles: true,
-        cancelable: true
-      });
-      document.dispatchEvent(event);
-    };
-
-    // Small delay to ensure DOM is ready
-    const initTimer = setTimeout(reinitializeLaunchPass, 200);
-    
-    return () => clearTimeout(initTimer);
-  }, []);
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
+    <>
+      {/* LaunchPass Scripts - Load immediately when this page renders */}
+      <Script 
+        src="https://www.launchpass.com/course/creatorcamp/embed.js"
+        strategy="afterInteractive"
+      />
+      <Script 
+        src="https://www.launchpass.com/course/creatorcamp2/embed.js"
+        strategy="afterInteractive"
+      />
+      
+      <div className="min-h-screen">
+        {/* Hero Section */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto">
@@ -170,6 +153,7 @@ export default function PricingPage() {
           </a>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   )
 }
