@@ -67,8 +67,8 @@ export const trackCreatorCampLead = () => {
 }
 
 // Specific purchase tracking for Creator Camp Academy
-export const trackCreatorCampPurchase = () => {
-  trackPurchase(5, 'USD')
+export const trackCreatorCampPurchase = (value: number = 5) => {
+  trackPurchase(value, 'USD')
 }
 
 // Function to be called by LaunchPass webhook or success callback

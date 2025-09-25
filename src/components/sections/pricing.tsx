@@ -227,7 +227,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6362577318051840"
-                onClick={() => trackCreatorCampPurchase()}
+                onClick={() => trackCreatorCampPurchase(5)}
               >
                 Join Now!
               </button>
@@ -253,7 +253,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6602918050791424"
-                onClick={() => trackCreatorCampPurchase()}
+                onClick={() => trackCreatorCampPurchase(36)}
               >
                 Join Now!
               </button>
@@ -383,7 +383,7 @@ export function PricingSection() {
                     cursor: 'pointer',
                     transition: 'all 0.3s ease'
                   }}
-                  onClick={() => trackCreatorCampPurchase()}
+                  onClick={() => trackCreatorCampPurchase(1994)}
                 >
                   Apply for VIP Access
                 </button>
