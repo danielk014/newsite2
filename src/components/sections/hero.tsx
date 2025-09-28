@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Shield, Zap, Star, Bot, BadgeCheck, Sparkles, Check } from "lucide-react"
+import { ArrowRight, Users, Shield, Zap, Star, Bot, BadgeCheck, Sparkles } from "lucide-react"
 
 export function HeroSection() {
   return (
