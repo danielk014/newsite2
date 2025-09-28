@@ -93,53 +93,6 @@ export function HeroSection() {
           </motion.div>
 
 
-          {/* Pricing & System Highlight */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-6 max-w-2xl w-full backdrop-blur"
-          >
-            {/* Pricing Header */}
-            <div className="text-center mb-4">
-              <div className="flex items-center justify-center gap-2 mb-2">
-                <span className="text-lg line-through text-muted-foreground/60">$50</span>
-                <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold">90% OFF</span>
-              </div>
-              <div className="flex items-baseline justify-center gap-2">
-                <span className="text-4xl font-bold text-primary">$5</span>
-                <span className="text-muted-foreground">/month</span>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse">
-                  ⚠️ Price returns to $50/month soon!
-                </span>
-              </p>
-            </div>
-
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-              <h3 className="text-xl font-bold text-primary">Complete YouTube Automation Kit</h3>
-              <Sparkles className="w-6 h-6 text-primary animate-pulse" />
-            </div>
-          </motion.div>
-
-          {/* Stats Row */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="grid grid-cols-2 gap-8 max-w-lg w-full"
-          >
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">$500K+</div>
-              <div className="text-sm text-muted-foreground">Business Potential</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">Zero</div>
-              <div className="text-sm text-muted-foreground">Team Costs</div>
-            </div>
-          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
