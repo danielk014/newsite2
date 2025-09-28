@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { analyticsConfig } from "@/config/analytics";
 import { Navigation } from "@/components/layout/navigation";
 import { MetaPixel } from "@/components/analytics/meta-pixel";
+import { XPixel } from "@/components/analytics/x-pixel";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -71,6 +72,9 @@ export default function RootLayout({
       <head>
         {analyticsConfig.metaPixel.enabled && (
           <MetaPixel pixelId={analyticsConfig.metaPixel.pixelId} />
+        )}
+        {analyticsConfig.xPixel.enabled && (
+          <XPixel pixelId={analyticsConfig.xPixel.pixelId} />
         )}
       </head>
       <body
