@@ -9,9 +9,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <HeroSection />
-      
-      {/* Story Channels Success Slideshow - Top of Page */}
+      {/* Story Channels Success Slideshow - Very Top of Page */}
       <section className="py-8 md:py-12 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-8">
@@ -129,6 +127,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <HeroSection />
       
       {/* AI YouTube Shorts Mastery Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-accent/5">
