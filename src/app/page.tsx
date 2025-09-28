@@ -27,7 +27,7 @@ export default function Home() {
         {/* Mobile and Desktop Slideshow - Full Width */}
         <div className="relative overflow-hidden w-full">
             {/* Mobile Version - Single column scroll */}
-            <div className="block md:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mobile-slideshow-container">
+            <div className="block md:hidden w-full overflow-hidden mobile-slideshow-container">
               <div className="flex animate-scroll-left space-x-4">
                 {/* Main sequence - 6 unique images */}
                 <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
