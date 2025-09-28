@@ -26,6 +26,35 @@ export default function Home() {
           {/* Sliding Carousel - Images 50% Bigger */}
           <div className="relative">
             <div className="flex animate-scroll-left space-x-6">
+              {/* Leading images to fill left side on load */}
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/feyze.png" 
+                  alt="Feyze Story Channel Success"
+                  width={336}
+                  height={252}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </div>
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/brighter.png" 
+                  alt="Brighter Story Channel Success"
+                  width={336}
+                  height={252}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </div>
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/monium.png" 
+                  alt="Monium Story Channel Success"
+                  width={336}
+                  height={252}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </div>
+              
               {/* First set of images - 50% bigger images, same containers */}
               <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 

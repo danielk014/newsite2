@@ -61,10 +61,10 @@
 /* Slideshow Animation */
 @keyframes scroll-left {
   0% {
-    transform: translateX(0);
+    transform: translateX(-25%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-75%);
   }
 }
 
