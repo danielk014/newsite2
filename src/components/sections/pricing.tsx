@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { Check, Star, Shield } from "lucide-react"
-import { trackLead } from "@/components/analytics/meta-pixel"
+import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
   // Load LaunchPass scripts directly when this component mounts - no delays or friction
@@ -227,7 +227,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6362577318051840"
-                onClick={() => trackLead()}
+                onClick={() => trackCreatorCampPurchase(5)}
               >
                 Join Now!
               </button>
@@ -253,7 +253,7 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6602918050791424"
-                onClick={() => trackLead()}
+                onClick={() => trackCreatorCampPurchase(36)}
               >
                 Join Now!
               </button>
