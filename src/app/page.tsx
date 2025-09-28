@@ -30,152 +30,152 @@ export default function Home() {
             <div className="block md:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mobile-slideshow-container">
               <div className="flex animate-scroll-left space-x-4">
                 {/* Leading images to fill left side on mobile */}
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/monium.png" 
                     alt="Monium Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/brighter.png" 
                     alt="Brighter Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
                 
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/cardogjones.png" 
                     alt="CardogJones Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/cophumor.png" 
                     alt="CopHumor Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/dylan-anderson.png" 
                     alt="Dylan Anderson Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/joe.png" 
                     alt="Joe Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/feyze.png" 
                     alt="Feyze Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/brighter.png" 
                     alt="Brighter Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/monium.png" 
                     alt="Monium Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
                 {/* Duplicates for seamless loop */}
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/cardogjones.png" 
                     alt="CardogJones Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/cophumor.png" 
                     alt="CopHumor Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
                 
                 {/* Additional duplicates for mobile to prevent right-side gaps */}
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/dylan-anderson.png" 
                     alt="Dylan Anderson Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/joe.png" 
                     alt="Joe Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/feyze.png" 
                     alt="Feyze Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/brighter.png" 
                     alt="Brighter Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
-                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg overflow-hidden">
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-1">
                   <Image 
                     src="/story-channels/monium.png" 
                     alt="Monium Story Channel Success"
                     width={320}
                     height={180}
-                    className="object-cover w-full h-full"
+                    className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
               </div>
