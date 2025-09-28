@@ -131,6 +131,53 @@ export default function Home() {
                     className="rounded-lg object-cover w-full h-auto"
                   />
                 </div>
+                
+                {/* Additional duplicates for mobile to prevent right-side gaps */}
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/dylan-anderson.png" 
+                    alt="Dylan Anderson Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/joe.png" 
+                    alt="Joe Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/feyze.png" 
+                    alt="Feyze Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/brighter.png" 
+                    alt="Brighter Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/monium.png" 
+                    alt="Monium Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
               </div>
             </div>
 
