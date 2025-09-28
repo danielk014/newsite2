@@ -152,31 +152,25 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-center gap-3">
+              <div className="flex items-center justify-center gap-3 mb-6">
                 <span className="text-2xl">✨</span>
                 <h3 className="text-2xl font-bold text-primary">Complete YouTube Automation Kit</h3>
                 <span className="text-2xl">✨</span>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* CTA Button Panel Section */}
-      <section className="py-6 bg-gradient-to-r from-primary/5 to-background">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="flex justify-center">
-            <div className="text-center max-w-lg w-full">
-              <p className="text-xl font-semibold text-foreground mb-4">
-                Get the complete tool kit
-              </p>
-              <button 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors w-full max-w-md flex items-center justify-center gap-2"
-                onClick={() => window.location.href = '/pricing'}
-              >
-                Get Instant Access - $5/month
-                <span className="text-xl">→</span>
-              </button>
+              
+              {/* CTA inside the pricing panel */}
+              <div className="text-center">
+                <p className="text-xl font-semibold text-foreground mb-4">
+                  Get the complete tool kit
+                </p>
+                <button 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors w-full max-w-md flex items-center justify-center gap-2 mx-auto"
+                  onClick={() => window.location.href = '/pricing'}
+                >
+                  Get Instant Access - $5/month
+                  <span className="text-xl">→</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
