@@ -68,8 +68,25 @@
   }
 }
 
+/* Mobile-specific slideshow animation for infinite loop */
+@keyframes scroll-left-mobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-scroll-left {
   animation: scroll-left 10s linear infinite;
+}
+
+/* Mobile-specific animation class */
+@media (max-width: 768px) {
+  .animate-scroll-left {
+    animation: scroll-left-mobile 10s linear infinite;
+  }
 }
 
 /* Prevent mobile overscroll and borders */
