@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Story Channels Success Slideshow - Very Top of Page - 50% Bigger */}
-      <section className="py-12 md:py-18 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
+      <section className="py-8 md:py-12 lg:py-18 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
@@ -25,9 +25,9 @@ export default function Home() {
           
           {/* Sliding Carousel - Images 50% Bigger */}
           <div className="relative overflow-hidden">
-            <div className="flex animate-scroll-left space-x-3 md:space-x-6">
+            <div className="flex animate-scroll-left space-x-4 md:space-x-6">
               {/* Leading images to fill left side on load - extra for mobile */}
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
@@ -36,7 +36,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
@@ -45,7 +45,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
@@ -54,7 +54,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
@@ -63,7 +63,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
               
               {/* First set of images - 50% bigger images, same containers */}
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
@@ -83,7 +83,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
@@ -92,7 +92,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
@@ -101,7 +101,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
@@ -110,7 +110,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
@@ -119,7 +119,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
@@ -128,7 +128,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               
               {/* First duplicate set for seamless loop */}
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
@@ -148,7 +148,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
@@ -157,7 +157,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
@@ -166,7 +166,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
@@ -175,7 +175,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
@@ -184,7 +184,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
@@ -193,7 +193,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
@@ -204,7 +204,7 @@ export default function Home() {
               </div>
               
               {/* Second duplicate set for extra smooth transition */}
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
@@ -213,7 +213,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
@@ -222,7 +222,7 @@ export default function Home() {
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 w-64 md:w-auto bg-card border border-border rounded-lg p-1 md:p-2 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-80 sm:w-96 md:w-auto bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
