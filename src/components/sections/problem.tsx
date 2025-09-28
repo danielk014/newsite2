@@ -104,7 +104,7 @@ export function ProblemSection() {
                 size="xl"
                 className="mx-auto"
               >
-                Start Here →
+                Start Here - $5/month →
               </Button>
             </Link>
           </motion.div>
@@ -207,7 +207,7 @@ export function ProblemSection() {
                 size="xl"
                 className="mx-auto"
               >
-                Yes, I Want The AI System →
+                Yes, I Want The AI System - $5/month →
               </Button>
             </Link>
           </motion.div>

@@ -55,7 +55,7 @@ export function Navigation() {
                 }
               }}
             >
-              Get Started
+              Get Started - $5/month
             </Button>
           </div>
 
@@ -106,7 +106,7 @@ export function Navigation() {
                   }
                 }}
               >
-                Get Started
+                Get Started - $5/month
               </Button>
             </div>
           </motion.div>

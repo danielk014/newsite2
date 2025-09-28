@@ -63,12 +63,30 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight"
           >
-            The Complete <span className="text-primary">YouTube Automation Kit</span>
+            Build a <span className="text-primary">$500K+ YouTube Business</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground mt-2 block">
-              All-in-One System - No Team Required
+              Solo with AI - No Team Required
             </span>
           </motion.h1>
+
+          {/* Proof Point */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/30 rounded-xl p-4 max-w-md mx-auto"
+          >
+            <div className="flex items-center justify-center gap-3">
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                <span className="text-white font-bold text-lg">✓</span>
+              </div>
+              <div className="text-left">
+                <div className="text-2xl font-bold text-accent">981K Channel</div>
+                <div className="text-sm text-muted-foreground">Built with this exact system</div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Subheadline */}
           <motion.p
@@ -77,20 +95,37 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-3xl"
           >
-            Leverage AI tools for every step:
+            AI-assisted content creation with <span className="font-semibold text-foreground">zero team costs</span>
             <br />
-            <span className="font-semibold text-primary">AI tools for research → script → voice → edit → thumbnail → upload</span>
+            <span className="font-semibold text-primary">AI tools handle: research → script → voice → edit → thumbnail → upload</span>
             <br />
-            <span className="font-semibold text-foreground">No teams required.</span>
+            <span className="font-semibold text-foreground">Just you + AI = Profitable YouTube business</span>
           </motion.p>
 
-          {/* Complete System Highlight */}
+          {/* Pricing & System Highlight */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-6 max-w-2xl w-full backdrop-blur"
           >
+            {/* Pricing Header */}
+            <div className="text-center mb-4">
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className="text-lg line-through text-muted-foreground/60">$50</span>
+                <span className="bg-destructive text-destructive-foreground text-xs px-2 py-1 rounded-full font-semibold">90% OFF</span>
+              </div>
+              <div className="flex items-baseline justify-center gap-2">
+                <span className="text-4xl font-bold text-primary">$5</span>
+                <span className="text-muted-foreground">/month</span>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                <span className="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse">
+                  ⚠️ Price returns to $50/month soon!
+                </span>
+              </p>
+            </div>
+
             <div className="flex items-center justify-center gap-3 mb-2">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
               <h3 className="text-xl font-bold text-primary">Complete YouTube Automation Kit</h3>
@@ -126,12 +161,12 @@ export function HeroSection() {
             className="grid grid-cols-2 gap-8 max-w-lg w-full"
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">100+</div>
-              <div className="text-sm text-muted-foreground">Students Learning YouTube Automation</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">$500K+</div>
+              <div className="text-sm text-muted-foreground">Business Potential</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary">100%</div>
-              <div className="text-sm text-muted-foreground">AI-Powered</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary">Zero</div>
+              <div className="text-sm text-muted-foreground">Team Costs</div>
             </div>
           </motion.div>
 
@@ -148,7 +183,7 @@ export function HeroSection() {
               className="w-full sm:w-auto group"
               onClick={() => window.location.href = '/pricing'}
             >
-              Get Instant Access
+              Get Instant Access - $5/month
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>

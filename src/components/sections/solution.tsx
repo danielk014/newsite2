@@ -367,7 +367,7 @@ export function SolutionSection() {
                   variant="cta" 
                   size="xl"
                 >
-                  Get Started Today
+                  Get Started Today - $5/month
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
