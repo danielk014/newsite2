@@ -22,9 +22,10 @@ export default function Home() {
               with 60-second narration style videos that can be replicated with AI
             </p>
           </div>
-          
-          {/* Mobile and Desktop Slideshow */}
-          <div className="relative overflow-hidden">
+        </div>
+        
+        {/* Mobile and Desktop Slideshow - Full Width */}
+        <div className="relative overflow-hidden w-full">
             {/* Mobile Version - Single column scroll */}
             <div className="block md:hidden">
               <div className="flex animate-scroll-left space-x-4">
@@ -277,7 +278,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
       </section>
       
       {/* Pricing Panel Section */}
