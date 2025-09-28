@@ -261,7 +261,7 @@ export default function Home() {
 
               <div className="flex items-center justify-center gap-3 mb-6">
                 <span className="text-2xl">✨</span>
-                <h3 className="text-2xl font-bold text-primary">Complete YouTube Automation Kit</h3>
+                <h3 className="text-2xl font-bold text-primary">Complete YouTube Shorts AI Toolkit</h3>
                 <span className="text-2xl">✨</span>
               </div>
               
