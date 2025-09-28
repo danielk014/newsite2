@@ -18,6 +18,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
               These Channels Are Making <span className="text-primary">$20K+/Month</span>
             </h2>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              with 60-second videos that can be easily made with AI
+            </p>
           </div>
           
           {/* Sliding Carousel - Images 50% Bigger */}
