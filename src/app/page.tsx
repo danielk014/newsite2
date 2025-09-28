@@ -376,7 +376,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-lg">2</span>
               </div>
-              <h3 className="text-lg font-bold text-accent mb-3">AI writes emotional script</h3>
+              <h3 className="text-lg font-bold text-accent mb-3">AI writes script</h3>
               <p className="text-sm text-muted-foreground">Creates compelling, hook-driven scripts designed to keep viewers watching until the end</p>
             </div>
             
