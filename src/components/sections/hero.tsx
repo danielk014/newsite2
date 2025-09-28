@@ -130,31 +130,11 @@ export function HeroSection() {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-3 mb-2">
+            <div className="flex items-center justify-center gap-3 mb-6">
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
               <h3 className="text-xl font-bold text-primary">Complete YouTube Automation Kit</h3>
               <Sparkles className="w-6 h-6 text-primary animate-pulse" />
             </div>
-            <p className="text-center text-muted-foreground mb-3">
-              Everything you need: AI tools, templates, and step-by-step system for profitable automation channels
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
-                <span>Complete AI Workflow</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
-                <span>Channel-in-a-Box System</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-accent" />
-                <span>Plug-and-Play Framework</span>
-              </div>
-            </div>
-            <p className="text-center text-xs text-muted-foreground mt-3">
-              Includes AI Tool Stack & Templates (valued at $497)
-            </p>
           </motion.div>
 
           {/* Stats Row */}
@@ -179,8 +159,11 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+            className="flex flex-col gap-4 w-full sm:w-auto text-center"
           >
+            <p className="text-lg font-semibold text-foreground">
+              Get the complete tool kit
+            </p>
             <Button 
               variant="cta" 
               size="xl" 
