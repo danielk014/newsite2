@@ -71,10 +71,10 @@
 /* Mobile-specific slideshow animation for infinite loop */
 @keyframes scroll-left-mobile {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0px);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-2112px);
   }
 }
 
