@@ -113,7 +113,7 @@ export default function Home() {
               Join a <span className="text-primary">Thriving Community</span> of Successful Creators
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Connect with 100+ entrepreneurs who&apos;ve built profitable faceless YouTube channels and learn from their real results
+              Connect with 500+ successful creators who&apos;ve built profitable faceless YouTube channels and learn from their real results
             </p>
           </div>
           

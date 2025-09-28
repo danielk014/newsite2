@@ -40,7 +40,7 @@ export default function PricingPage() {
               Join the <span className="text-primary">Creator Camp Community</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              100+ entrepreneurs supporting each other to build profitable faceless YouTube channels
+              500+ successful creators supporting each other to build profitable faceless YouTube channels
             </p>
             
             {/* Why Channel-in-a-Box Section */}

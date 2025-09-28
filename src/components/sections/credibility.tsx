@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { TrendingUp, Users, Eye, Award } from "lucide-react"
 
 const stats = [
-  { value: "100+", label: "Active Students", icon: Users },
+  { value: "500+", label: "Active Students", icon: Users },
   { value: "4.8/5", label: "Student Rating", icon: Award },
   { value: "Proven", label: "Strategies Taught", icon: TrendingUp },
   { value: "24/7", label: "Support Access", icon: Eye },
