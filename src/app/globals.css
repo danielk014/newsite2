@@ -71,3 +71,33 @@
 .animate-scroll-left {
   animation: scroll-left 45s linear infinite;
 }
+
+/* Prevent mobile overscroll and borders */
+@media (max-width: 768px) {
+  body {
+    overscroll-behavior-x: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .mobile-slideshow-container {
+    overscroll-behavior-x: none;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    touch-action: pan-y pinch-zoom;
+  }
+  
+  .mobile-slideshow-container * {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Prevent iOS Safari bounce/overscroll */
+  html, body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+  }
+}

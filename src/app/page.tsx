@@ -27,7 +27,7 @@ export default function Home() {
         {/* Mobile and Desktop Slideshow - Full Width */}
         <div className="relative overflow-hidden w-full">
             {/* Mobile Version - Single column scroll */}
-            <div className="block md:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+            <div className="block md:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mobile-slideshow-container">
               <div className="flex animate-scroll-left space-x-4">
                 {/* Leading images to fill left side on mobile */}
                 <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
