@@ -193,6 +193,12 @@ export default function Home() {
             <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-8 max-w-2xl w-full backdrop-blur text-center">
               {/* AI Description Text */}
               <div className="mb-8">
+                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                  Learn How to Build a Profitable YouTube Shorts Channel Using AI
+                </h3>
+                <p className="text-lg text-primary font-semibold mb-4">
+                  (Make $20K+/Month with 60-Second Videos)
+                </p>
                 <p className="text-lg text-muted-foreground mb-3">
                   AI-assisted content creation with <span className="font-semibold text-foreground">zero team costs</span>
                 </p>
