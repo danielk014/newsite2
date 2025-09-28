@@ -24,105 +24,105 @@ export default function Home() {
           <div className="relative">
             <div className="flex animate-scroll-left space-x-6">
               {/* First set of images - 50% bigger images, same containers */}
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
-              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
                   width={480}
                   height={360}
-                  className="rounded-lg object-contain"
+                  className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
             </div>
