@@ -70,20 +70,24 @@ export function HeroSection() {
             </span>
           </motion.h1>
 
-          {/* Proof Point */}
+          {/* Proof Point - YouTube Studio Screenshot */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/30 rounded-xl p-4 max-w-md mx-auto"
+            className="max-w-md mx-auto"
           >
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">✓</span>
-              </div>
-              <div className="text-left">
-                <div className="text-2xl font-bold text-accent">981K Channel</div>
-                <div className="text-sm text-muted-foreground">Built with this exact system</div>
+            <div className="text-center mb-2">
+              <span className="text-sm font-medium text-accent">Real Results - Built with this exact system</span>
+            </div>
+            <div className="relative rounded-lg overflow-hidden border border-accent/30 shadow-2xl">
+              <img 
+                src="/testimonials/channel-981k.png" 
+                alt="981,534 subscriber YouTube channel analytics showing 589.5M views, 5.4M watch hours, +849.3K subscribers, and US$65K estimated revenue"
+                className="w-full h-auto"
+              />
+              <div className="absolute top-2 right-2 bg-accent text-white text-xs px-2 py-1 rounded-full font-bold">
+                ✓ VERIFIED
               </div>
             </div>
           </motion.div>
