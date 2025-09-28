@@ -5,6 +5,7 @@ import { siteConfig } from "@/config/site";
 import { analyticsConfig } from "@/config/analytics";
 import { Navigation } from "@/components/layout/navigation";
 import { MetaPixel } from "@/components/analytics/meta-pixel";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -80,6 +81,7 @@ export default function RootLayout({
         <main className="pt-16">
           {children}
         </main>
+        {analyticsConfig.vercelAnalytics.enabled && <Analytics />}
       </body>
     </html>
   );
