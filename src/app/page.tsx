@@ -9,120 +9,172 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      {/* Story Channels Success Slideshow - Very Top of Page */}
-      <section className="py-8 md:py-12 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
+      {/* Story Channels Success Slideshow - Very Top of Page - 50% Bigger */}
+      <section className="py-12 md:py-18 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
               These Channels Are Making <span className="text-primary">$20K+/Month</span>
             </h2>
           </div>
           
-          {/* Sliding Carousel */}
+          {/* Sliding Carousel - 50% Bigger */}
           <div className="relative">
-            <div className="flex animate-scroll-left space-x-6">
-              {/* First set of images */}
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+            <div className="flex animate-scroll-left space-x-9">
+              {/* First set of images - 50% bigger */}
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
               
               {/* Duplicate set for seamless loop */}
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <div className="flex-shrink-0 w-96 bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
-                  width={320}
-                  height={240}
+                  width={480}
+                  height={360}
                   className="w-full h-auto rounded-lg"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Pricing Panel Section */}
+      <section className="py-8 bg-gradient-to-r from-background to-primary/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex justify-center">
+            <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-8 max-w-2xl w-full backdrop-blur text-center">
+              {/* Pricing Header */}
+              <div className="mb-6">
+                <div className="flex items-center justify-center gap-2 mb-3">
+                  <span className="text-2xl line-through text-muted-foreground/60">$50</span>
+                  <span className="bg-destructive text-destructive-foreground text-sm px-3 py-1 rounded-full font-semibold">90% OFF</span>
+                </div>
+                <div className="flex items-baseline justify-center gap-2 mb-3">
+                  <span className="text-6xl font-bold text-primary">$5</span>
+                  <span className="text-xl text-muted-foreground">/month</span>
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">
+                  <span className="bg-destructive/20 text-destructive border border-destructive/30 px-3 py-2 rounded-md font-bold text-sm animate-pulse">
+                    ⚠️ Price returns to $50/month soon!
+                  </span>
+                </p>
+              </div>
+
+              <div className="flex items-center justify-center gap-3">
+                <span className="text-2xl">✨</span>
+                <h3 className="text-2xl font-bold text-primary">Complete YouTube Automation Kit</h3>
+                <span className="text-2xl">✨</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA Button Panel Section */}
+      <section className="py-6 bg-gradient-to-r from-primary/5 to-background">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex justify-center">
+            <div className="text-center max-w-lg w-full">
+              <p className="text-xl font-semibold text-foreground mb-4">
+                Get the complete tool kit
+              </p>
+              <button 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors w-full max-w-md flex items-center justify-center gap-2"
+                onClick={() => window.location.href = '/pricing'}
+              >
+                Get Instant Access - $5/month
+                <span className="text-xl">→</span>
+              </button>
             </div>
           </div>
         </div>
