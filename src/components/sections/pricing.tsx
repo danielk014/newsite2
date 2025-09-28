@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import { Check, Star, Shield } from "lucide-react"
-import { trackCreatorCampPurchase, trackCreatorCampLead } from "@/components/analytics/meta-pixel"
+import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
   // Load LaunchPass scripts directly when this component mounts - no delays or friction
@@ -383,7 +383,7 @@ export function PricingSection() {
                     cursor: 'pointer',
                     transition: 'all 0.3s ease'
                   }}
-                  onClick={() => trackCreatorCampLead()}
+                  onClick={() => {}}
                 >
                   Apply for VIP Access
                 </button>
