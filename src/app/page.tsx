@@ -11,6 +11,125 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       
+      {/* Story Channels Success Slideshow - Top of Page */}
+      <section className="py-8 md:py-12 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">
+              These Channels Are Making <span className="text-primary">$20K+/Month</span>
+            </h2>
+          </div>
+          
+          {/* Sliding Carousel */}
+          <div className="relative">
+            <div className="flex animate-scroll-left space-x-6">
+              {/* First set of images */}
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/dylan-anderson.png" 
+                  alt="Dylan Anderson Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/cardogjones.png" 
+                  alt="CardogJones Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/cophumor.png" 
+                  alt="CopHumor Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/joe.png" 
+                  alt="Joe Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/feyze.png" 
+                  alt="Feyze Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/brighter.png" 
+                  alt="Brighter Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/monium.png" 
+                  alt="Monium Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              
+              {/* Duplicate set for seamless loop */}
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/dylan-anderson.png" 
+                  alt="Dylan Anderson Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/cardogjones.png" 
+                  alt="CardogJones Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/cophumor.png" 
+                  alt="CopHumor Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+                <Image 
+                  src="/story-channels/joe.png" 
+                  alt="Joe Story Channel Success"
+                  width={320}
+                  height={240}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* AI YouTube Shorts Mastery Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-accent/5">
         <div className="container mx-auto px-4 md:px-6">
@@ -65,83 +184,6 @@ export default function Home() {
             <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full">
               <span className="text-2xl">🤖</span>
               <span className="font-bold text-primary">The AI Story Channel Blueprint That&apos;s Creating $500K+/Year Channels</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Story Channels Success Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-accent/5 to-primary/5">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              These <span className="text-primary">Story Channels</span> Are Crushing It:
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/dylan-anderson.png" 
-                alt="Dylan Anderson Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cardogjones.png" 
-                alt="CardogJones Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cophumor.png" 
-                alt="CopHumor Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/joe.png" 
-                alt="Joe Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/feyze.png" 
-                alt="Feyze Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/brighter.png" 
-                alt="Brighter Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/monium.png" 
-                alt="Monium Story Channel Success"
-                width={400}
-                height={300}
-                className="w-full h-auto rounded-lg"
-              />
             </div>
           </div>
         </div>
