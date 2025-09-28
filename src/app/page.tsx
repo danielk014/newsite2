@@ -11,95 +11,137 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       
-      {/* AI Revolution Section */}
+      {/* AI YouTube Shorts Mastery Section */}
       <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-accent/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-4xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Build a <span className="text-primary">500K+ Subscriber Channel</span> with AI
+              How to Build a <span className="text-primary">$20K+/Month</span> Shorts Channel Using AI Tools
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
-              What used to cost thousands in editors, thumbnail designers, and scriptwriters can now be done with AI for pennies on the dollar
+            <p className="text-xl text-muted-foreground mb-4">
+              Make $20K+/Month with 60-Second Videos
+            </p>
+            <p className="text-lg text-accent font-semibold mb-8">
+              &quot;AI writes, narrates & edits everything&quot;
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {/* Old Way */}
-            <div className="bg-card border border-border rounded-xl p-6">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-muted-foreground mb-2">The Old Way</h3>
-                <p className="text-sm text-muted-foreground">Expensive & Time-Consuming</p>
+          {/* 4-Step AI Process */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-lg">1</span>
               </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
-                  <span className="text-sm">Video Editor</span>
-                  <span className="font-bold text-destructive">$2,000-5,000/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
-                  <span className="text-sm">Thumbnail Designer</span>
-                  <span className="font-bold text-destructive">$800-1,500/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
-                  <span className="text-sm">Script Writer</span>
-                  <span className="font-bold text-destructive">$1,200-2,500/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
-                  <span className="text-sm">Voice Over Artist</span>
-                  <span className="font-bold text-destructive">$500-1,200/mo</span>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="flex items-center justify-between text-lg font-bold">
-                    <span>Total Monthly Cost:</span>
-                    <span className="text-destructive">$4,500-10,200/mo</span>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-lg font-bold text-primary mb-3">AI finds trending stories</h3>
+              <p className="text-sm text-muted-foreground">AI scans viral content and identifies trending story topics with high engagement potential</p>
             </div>
             
-            {/* New Way */}
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-6">
-              <div className="text-center mb-6">
-                <h3 className="text-2xl font-bold text-primary mb-2">The AI Way</h3>
-                <p className="text-sm text-primary">Smart & Affordable</p>
+            <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-lg">2</span>
               </div>
-              
-              <div className="space-y-4">
-                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
-                  <span className="text-sm">AI Video Editor</span>
-                  <span className="font-bold text-accent">$10/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
-                  <span className="text-sm">AI Thumbnail Generator</span>
-                  <span className="font-bold text-accent">$10/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
-                  <span className="text-sm">AI Script Writer</span>
-                  <span className="font-bold text-accent">$10/mo</span>
-                </div>
-                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
-                  <span className="text-sm">AI Voice Generation</span>
-                  <span className="font-bold text-accent">$10/mo</span>
-                </div>
-                <div className="border-t pt-4 mt-4">
-                  <div className="flex items-center justify-between text-lg font-bold">
-                    <span>Total Monthly Cost:</span>
-                    <span className="text-accent">$40/mo</span>
-                  </div>
-                </div>
+              <h3 className="text-lg font-bold text-accent mb-3">AI writes emotional script</h3>
+              <p className="text-sm text-muted-foreground">Creates compelling, hook-driven scripts designed to keep viewers watching until the end</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-lg">3</span>
               </div>
-              
-              <div className="mt-6 p-4 bg-primary/20 rounded-lg text-center">
-                <p className="text-sm font-bold text-primary mb-1">💰 You Save: $4,460-10,160/mo</p>
-                <p className="text-xs text-muted-foreground">That&apos;s $53,520-121,920 per year!</p>
+              <h3 className="text-lg font-bold text-primary mb-3">AI creates voice narration</h3>
+              <p className="text-sm text-muted-foreground">Generates natural-sounding voiceovers with perfect pacing and emotional delivery</p>
+            </div>
+            
+            <div className="bg-gradient-to-br from-accent/10 to-primary/10 border-2 border-accent/30 rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-lg">4</span>
               </div>
+              <h3 className="text-lg font-bold text-accent mb-3">AI edits with stock footage</h3>
+              <p className="text-sm text-muted-foreground">Automatically matches visuals to script and creates polished, engaging short-form videos</p>
             </div>
           </div>
           
           <div className="text-center mt-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full">
               <span className="text-2xl">🤖</span>
-              <span className="font-bold text-primary">We&apos;ll teach you how to use AI to build a $500K+ channel</span>
+              <span className="font-bold text-primary">The AI Story Channel Blueprint That&apos;s Creating $500K+/Year Channels</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Story Channels Success Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-r from-accent/5 to-primary/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              These <span className="text-primary">Story Channels</span> Are Crushing It:
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/cardogjones.png" 
+                alt="CardogJones Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/joe.png" 
+                alt="Joe Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/feyze.png" 
+                alt="Feyze Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/brighter.png" 
+                alt="Brighter Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="bg-card border border-border rounded-lg p-4 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/monium.png" 
+                alt="Monium Story Channel Success"
+                width={400}
+                height={300}
+                className="w-full h-auto rounded-lg"
+              />
             </div>
           </div>
         </div>
