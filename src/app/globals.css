@@ -85,7 +85,7 @@
 /* Mobile-specific animation class */
 @media (max-width: 768px) {
   .animate-scroll-left {
-    animation: scroll-left-mobile 15s linear infinite;
+    animation: scroll-left-mobile 160s linear infinite;
   }
 }
 
