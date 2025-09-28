@@ -92,19 +92,6 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Subheadline */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-3xl"
-          >
-            AI-assisted content creation with <span className="font-semibold text-foreground">zero team costs</span>
-            <br />
-            <span className="font-semibold text-primary">AI tools handle: research → script → voice → edit → thumbnail → upload</span>
-            <br />
-            <span className="font-semibold text-foreground">Just you + AI = Profitable YouTube business</span>
-          </motion.p>
 
           {/* Pricing & System Highlight */}
           <motion.div
