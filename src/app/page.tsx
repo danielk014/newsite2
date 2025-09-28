@@ -91,7 +91,7 @@ export default function Home() {
               
               <div className="mt-6 p-4 bg-primary/20 rounded-lg text-center">
                 <p className="text-sm font-bold text-primary mb-1">💰 You Save: $4,355-10,055/mo</p>
-                <p className="text-xs text-muted-foreground">That's $52,260-120,660 per year!</p>
+                <p className="text-xs text-muted-foreground">That&apos;s $52,260-120,660 per year!</p>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full">
               <span className="text-2xl">🤖</span>
-              <span className="font-bold text-primary">We'll teach you how to use AI to build a $500K+ channel</span>
+              <span className="font-bold text-primary">We&apos;ll teach you how to use AI to build a $500K+ channel</span>
             </div>
           </div>
         </div>
