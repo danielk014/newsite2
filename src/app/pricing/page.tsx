@@ -55,7 +55,7 @@ export default function PricingPage() {
                 <div className="grid md:grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-1">6</div>
-                    <div className="text-sm text-muted-foreground">AI-Powered Steps</div>
+                    <div className="text-sm text-muted-foreground">Step Framework</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-primary mb-1">100%</div>

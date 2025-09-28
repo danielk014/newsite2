@@ -121,7 +121,7 @@ export function SolutionSection() {
                       {index === 2 && "∞"}
                     </div>
                     <p className="text-muted-foreground">
-                      {index === 0 && "AI-Powered Steps"}
+                      {index === 0 && "Step Framework"}
                       {index === 1 && "Plug-and-Play"}
                       {index === 2 && "Scalable"}
                     </p>
