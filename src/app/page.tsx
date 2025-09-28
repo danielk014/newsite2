@@ -11,6 +11,100 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       
+      {/* AI Revolution Section */}
+      <section className="py-16 md:py-20 bg-gradient-to-b from-primary/5 to-accent/5">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Build a <span className="text-primary">500K+ Subscriber Channel</span> with AI
+            </h2>
+            <p className="text-xl text-muted-foreground mb-8">
+              What used to cost thousands in editors, thumbnail designers, and scriptwriters can now be done with AI for pennies on the dollar
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Old Way */}
+            <div className="bg-card border border-border rounded-xl p-6">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-muted-foreground mb-2">The Old Way</h3>
+                <p className="text-sm text-muted-foreground">Expensive & Time-Consuming</p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
+                  <span className="text-sm">Video Editor</span>
+                  <span className="font-bold text-destructive">$2,000-5,000/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
+                  <span className="text-sm">Thumbnail Designer</span>
+                  <span className="font-bold text-destructive">$800-1,500/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
+                  <span className="text-sm">Script Writer</span>
+                  <span className="font-bold text-destructive">$1,200-2,500/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-destructive/10 rounded-lg border border-destructive/20">
+                  <span className="text-sm">Voice Over Artist</span>
+                  <span className="font-bold text-destructive">$500-1,200/mo</span>
+                </div>
+                <div className="border-t pt-4 mt-4">
+                  <div className="flex items-center justify-between text-lg font-bold">
+                    <span>Total Monthly Cost:</span>
+                    <span className="text-destructive">$4,500-10,200/mo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* New Way */}
+            <div className="bg-gradient-to-br from-primary/10 to-accent/10 border-2 border-primary/30 rounded-xl p-6">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-primary mb-2">The AI Way</h3>
+                <p className="text-sm text-primary">Smart & Affordable</p>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
+                  <span className="text-sm">AI Video Editor</span>
+                  <span className="font-bold text-accent">$0-50/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
+                  <span className="text-sm">AI Thumbnail Generator</span>
+                  <span className="font-bold text-accent">$0-30/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
+                  <span className="text-sm">AI Script Writer</span>
+                  <span className="font-bold text-accent">$0-40/mo</span>
+                </div>
+                <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
+                  <span className="text-sm">AI Voice Generation</span>
+                  <span className="font-bold text-accent">$0-25/mo</span>
+                </div>
+                <div className="border-t pt-4 mt-4">
+                  <div className="flex items-center justify-between text-lg font-bold">
+                    <span>Total Monthly Cost:</span>
+                    <span className="text-accent">$0-145/mo</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-6 p-4 bg-primary/20 rounded-lg text-center">
+                <p className="text-sm font-bold text-primary mb-1">💰 You Save: $4,355-10,055/mo</p>
+                <p className="text-xs text-muted-foreground">That's $52,260-120,660 per year!</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full">
+              <span className="text-2xl">🤖</span>
+              <span className="font-bold text-primary">We'll teach you how to use AI to build a $500K+ channel</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Results Section */}
       <section className="py-16 md:py-24 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
         <div className="container mx-auto px-4 md:px-6">
