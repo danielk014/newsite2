@@ -4,29 +4,88 @@ import { Check, Star, Shield } from "lucide-react"
 import { trackCreatorCampPurchase } from "@/components/analytics/meta-pixel"
 
 export function PricingSection() {
-  // Load LaunchPass scripts directly when this component mounts - no delays or friction
+  // Initialize pricing toggle functions properly with React useEffect
   React.useEffect(() => {
-    const loadLaunchPassScripts = () => {
-      // Check if scripts are already loaded
-      const existingScript1 = document.querySelector('script[src*="creatorcamp/embed.js"]');
-      const existingScript2 = document.querySelector('script[src*="creatorcamp2/embed.js"]');
-      
-      if (!existingScript1) {
-        const script1 = document.createElement('script');
-        script1.src = 'https://www.launchpass.com/course/creatorcamp/embed.js';
-        script1.async = true;
-        document.head.appendChild(script1);
-      }
-      
-      if (!existingScript2) {
-        const script2 = document.createElement('script');
-        script2.src = 'https://www.launchpass.com/course/creatorcamp2/embed.js';
-        script2.async = true;
-        document.head.appendChild(script2);
-      }
+    // Initialize pricing toggle functions
+    const initializePricingToggle = () => {
+      // Define toggle functions
+      const showMonthly = () => {
+        const priceAmount = document.getElementById('price-amount');
+        const pricePeriod = document.getElementById('price-period');
+        const billingInfo = document.getElementById('billing-info');
+        const popularBadge = document.getElementById('popular-badge');
+        const yearlySavings = document.getElementById('yearly-savings');
+        const monthlyButton = document.getElementById('monthly-payment-button');
+        const yearlyButton = document.getElementById('yearly-payment-button');
+        const monthlyToggle = document.getElementById('monthly-toggle');
+        const yearlyToggle = document.getElementById('yearly-toggle');
+
+        if (priceAmount && pricePeriod && billingInfo && monthlyButton && yearlyButton) {
+          // Update content
+          priceAmount.textContent = '$5';
+          pricePeriod.textContent = '/month';
+          billingInfo.innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
+          
+          // Hide/show elements
+          if (popularBadge) popularBadge.style.display = 'none';
+          if (yearlySavings) yearlySavings.style.display = 'none';
+          
+          // Show monthly button, hide yearly button
+          monthlyButton.style.display = 'block';
+          yearlyButton.style.display = 'none';
+          
+          // Update toggle buttons
+          if (monthlyToggle) monthlyToggle.className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+          if (yearlyToggle) yearlyToggle.className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+        }
+      };
+
+      const showYearly = () => {
+        const priceAmount = document.getElementById('price-amount');
+        const pricePeriod = document.getElementById('price-period');
+        const billingInfo = document.getElementById('billing-info');
+        const popularBadge = document.getElementById('popular-badge');
+        const yearlySavings = document.getElementById('yearly-savings');
+        const monthlyButton = document.getElementById('monthly-payment-button');
+        const yearlyButton = document.getElementById('yearly-payment-button');
+        const monthlyToggle = document.getElementById('monthly-toggle');
+        const yearlyToggle = document.getElementById('yearly-toggle');
+
+        if (priceAmount && pricePeriod && billingInfo && monthlyButton && yearlyButton) {
+          // Update content
+          priceAmount.textContent = '$36';
+          pricePeriod.textContent = '/year';
+          billingInfo.innerHTML = '<span class="line-through text-muted-foreground/60">$50/month</span> <span class="text-accent font-semibold">Discounted to $36/year</span><br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
+          
+          // Show/hide elements
+          if (popularBadge) popularBadge.style.display = 'block';
+          if (yearlySavings) yearlySavings.style.display = 'block';
+          
+          // Show yearly button, hide monthly button
+          monthlyButton.style.display = 'none';
+          yearlyButton.style.display = 'block';
+          
+          // Update toggle buttons
+          if (yearlyToggle) yearlyToggle.className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+          if (monthlyToggle) monthlyToggle.className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
+        }
+      };
+
+      // Make functions available globally
+      const win = window as Window & {
+        showMonthly?: () => void;
+        showYearly?: () => void;
+      };
+      win.showMonthly = showMonthly;
+      win.showYearly = showYearly;
+
+      // Initialize with monthly by default - delay to allow LaunchPass to load
+      setTimeout(() => {
+        showMonthly();
+      }, 500);
     };
 
-    loadLaunchPassScripts();
+    initializePricingToggle();
   }, []);
 
   return (
@@ -55,7 +114,9 @@ export function PricingSection() {
                 className="px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn"
                 onClick={() => {
                   const win = window as { showMonthly?: () => void };
-                  win.showMonthly?.();
+                  if (win.showMonthly) {
+                    win.showMonthly();
+                  }
                 }}
               >
                 Monthly
@@ -65,7 +126,9 @@ export function PricingSection() {
                 className="px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn"
                 onClick={() => {
                   const win = window as { showYearly?: () => void };
-                  win.showYearly?.();
+                  if (win.showYearly) {
+                    win.showYearly();
+                  }
                 }}
               >
                 Yearly - Save $564
@@ -73,53 +136,6 @@ export function PricingSection() {
             </div>
           </div>
 
-          {/* Inline JavaScript for Toggle (After LaunchPass loads) */}
-          <script dangerouslySetInnerHTML={{
-            __html: `
-              function showMonthly() {
-                // Update card content
-                document.getElementById('price-amount').textContent = '$5';
-                document.getElementById('price-period').textContent = '/month';
-                document.getElementById('billing-info').innerHTML = 'Billed monthly<br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
-                document.getElementById('popular-badge').style.display = 'none';
-                document.getElementById('yearly-savings').style.display = 'none';
-                
-                // Show monthly button, hide yearly button
-                document.getElementById('monthly-payment-button').style.display = 'block';
-                document.getElementById('yearly-payment-button').style.display = 'none';
-                
-                // Update toggle buttons
-                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
-                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
-              }
-              
-              function showYearly() {
-                // Update card content
-                document.getElementById('price-amount').textContent = '$36';
-                document.getElementById('price-period').textContent = '/year';
-                document.getElementById('billing-info').innerHTML = '<span class="line-through text-muted-foreground/60">$50/month</span> <span class="text-accent font-semibold">Discounted to $36/year</span><br /><span class="bg-destructive/20 text-destructive border border-destructive/30 px-2 py-1 rounded-md font-bold text-xs animate-pulse inline-block mt-1">⚠️ Price returns to $50/month soon!</span>';
-                document.getElementById('popular-badge').style.display = 'block';
-                document.getElementById('yearly-savings').style.display = 'block';
-                
-                // Show yearly button, hide monthly button
-                document.getElementById('yearly-payment-button').style.display = 'block';
-                document.getElementById('monthly-payment-button').style.display = 'none';
-                
-                // Update toggle buttons
-                document.getElementById('yearly-toggle').className = 'px-6 py-3 bg-primary text-primary-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
-                document.getElementById('monthly-toggle').className = 'px-6 py-3 bg-transparent text-muted-foreground rounded-md font-semibold transition-all duration-200 toggle-btn';
-              }
-              
-              // Make functions available globally
-              window.showMonthly = showMonthly;
-              window.showYearly = showYearly;
-              
-              // Initialize - show monthly by default
-              setTimeout(() => {
-                showMonthly();
-              }, 100);
-            `
-          }} />
 
           {/* Pricing Cards Container */}
           <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-5xl mx-auto items-start">
