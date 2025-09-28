@@ -28,8 +28,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -37,8 +37,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -46,8 +46,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -55,8 +55,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -64,8 +64,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -73,8 +73,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -82,8 +82,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -93,8 +93,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -102,8 +102,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -111,8 +111,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -120,8 +120,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/joe.png" 
                   alt="Joe Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -129,8 +129,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/feyze.png" 
                   alt="Feyze Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -138,8 +138,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/brighter.png" 
                   alt="Brighter Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -147,8 +147,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/monium.png" 
                   alt="Monium Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -158,8 +158,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/dylan-anderson.png" 
                   alt="Dylan Anderson Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -167,8 +167,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cardogjones.png" 
                   alt="CardogJones Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
@@ -176,8 +176,8 @@ export default function Home() {
                 <Image 
                   src="/story-channels/cophumor.png" 
                   alt="CopHumor Story Channel Success"
-                  width={480}
-                  height={360}
+                  width={336}
+                  height={252}
                   className="rounded-lg object-cover w-full h-auto"
                 />
               </div>
