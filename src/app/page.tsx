@@ -29,6 +29,26 @@ export default function Home() {
             {/* Mobile Version - Single column scroll */}
             <div className="block md:hidden">
               <div className="flex animate-scroll-left space-x-4">
+                {/* Leading images to fill left side on mobile */}
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/monium.png" 
+                    alt="Monium Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
+                  <Image 
+                    src="/story-channels/brighter.png" 
+                    alt="Brighter Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                
                 <div className="flex-shrink-0 w-80 bg-card border border-border rounded-lg p-2">
                   <Image 
                     src="/story-channels/cardogjones.png" 
