@@ -19,7 +19,7 @@ export default function Home() {
               These Channels Are Making <span className="text-primary">$20K+/Month</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground">
-              with 60-second videos that can be easily made with AI
+              with 60-second narration style videos that can be replicated with AI
             </p>
           </div>
           
