@@ -227,7 +227,10 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6362577318051840"
-                onClick={() => trackCreatorCampPurchase(5)}
+                onClick={() => {
+                  console.log('🔵 Monthly button clicked')
+                  trackCreatorCampPurchase(5)
+                }}
               >
                 Join Now!
               </button>
@@ -253,7 +256,10 @@ export function PricingSection() {
                   transition: 'all 0.3s ease'
                 }}
                 className="lp6602918050791424"
-                onClick={() => trackCreatorCampPurchase(36)}
+                onClick={() => {
+                  console.log('🔵 Yearly button clicked')  
+                  trackCreatorCampPurchase(36)
+                }}
               >
                 Join Now!
               </button>

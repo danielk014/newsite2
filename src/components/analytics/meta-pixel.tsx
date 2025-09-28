@@ -66,8 +66,24 @@ export const trackCreatorCampLead = () => {
   trackLead()
 }
 
-// Specific purchase tracking for Creator Camp Academy
+// Track recent events to prevent duplicates
+const recentEvents = new Set<string>()
+
+// Specific purchase tracking for Creator Camp Academy with deduplication
 export const trackCreatorCampPurchase = (value: number = 5) => {
+  const eventKey = `purchase_${value}_${Date.now()}`
+  const recentEventKey = `purchase_${value}`
+  
+  // Prevent duplicate events within 10 seconds
+  if (recentEvents.has(recentEventKey)) {
+    console.log('🚫 Duplicate purchase event prevented:', { value })
+    return
+  }
+  
+  recentEvents.add(recentEventKey)
+  setTimeout(() => recentEvents.delete(recentEventKey), 10000)
+  
+  console.log('✅ Tracking purchase event:', { value, eventKey })
   trackPurchase(value, 'USD')
 }
 
