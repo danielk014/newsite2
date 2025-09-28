@@ -67,31 +67,31 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
                   <span className="text-sm">AI Video Editor</span>
-                  <span className="font-bold text-accent">$0-50/mo</span>
+                  <span className="font-bold text-accent">$10/mo</span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
                   <span className="text-sm">AI Thumbnail Generator</span>
-                  <span className="font-bold text-accent">$0-30/mo</span>
+                  <span className="font-bold text-accent">$10/mo</span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
                   <span className="text-sm">AI Script Writer</span>
-                  <span className="font-bold text-accent">$0-40/mo</span>
+                  <span className="font-bold text-accent">$10/mo</span>
                 </div>
                 <div className="flex items-center justify-between p-3 bg-accent/10 rounded-lg border border-accent/20">
                   <span className="text-sm">AI Voice Generation</span>
-                  <span className="font-bold text-accent">$0-25/mo</span>
+                  <span className="font-bold text-accent">$10/mo</span>
                 </div>
                 <div className="border-t pt-4 mt-4">
                   <div className="flex items-center justify-between text-lg font-bold">
                     <span>Total Monthly Cost:</span>
-                    <span className="text-accent">$0-145/mo</span>
+                    <span className="text-accent">$40/mo</span>
                   </div>
                 </div>
               </div>
               
               <div className="mt-6 p-4 bg-primary/20 rounded-lg text-center">
-                <p className="text-sm font-bold text-primary mb-1">💰 You Save: $4,355-10,055/mo</p>
-                <p className="text-xs text-muted-foreground">That&apos;s $52,260-120,660 per year!</p>
+                <p className="text-sm font-bold text-primary mb-1">💰 You Save: $4,460-10,160/mo</p>
+                <p className="text-xs text-muted-foreground">That&apos;s $53,520-121,920 per year!</p>
               </div>
             </div>
           </div>
