@@ -191,6 +191,19 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-center">
             <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-8 max-w-2xl w-full backdrop-blur text-center">
+              {/* AI Description Text */}
+              <div className="mb-8">
+                <p className="text-lg text-muted-foreground mb-3">
+                  AI-assisted content creation with <span className="font-semibold text-foreground">zero team costs</span>
+                </p>
+                <p className="text-lg text-primary font-semibold mb-3">
+                  AI tools handle: research → script → voice → edit → thumbnail → upload
+                </p>
+                <p className="text-lg font-semibold text-foreground">
+                  Just you + AI = Profitable YouTube business
+                </p>
+              </div>
+              
               {/* Pricing Header */}
               <div className="mb-6">
                 <div className="flex items-center justify-center gap-2 mb-3">
