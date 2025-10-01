@@ -382,44 +382,33 @@ export function PricingSection() {
                 </div>
               </div>
 
-              <button 
-                style={{
-                  fontFamily: 'sans-serif',
-                  margin: '0 auto',
-                  outline: 'none',
-                  display: 'block',
-                  height: '45px',
-                  width: '226px',
-                  borderRadius: '6px',
-                  background: 'linear-gradient(135deg, #16C79A 0%, #0F9D7E 100%)',
-                  color: 'white',
-                  boxShadow: '0 4px 15px rgba(22, 199, 154, 0.3)',
-                  fontSize: '18px',
-                  fontWeight: '700',
-                  border: 'none',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease'
-                }}
-                onClick={() => {
-                  // Open Typeform popup directly
-                  const win = window as Window & {
-                    tf?: {
-                      createPopup: (id: string, options: { mode: string }) => { open: () => void };
-                    };
-                  };
-                  
-                  if (typeof window !== 'undefined' && win.tf) {
-                    win.tf.createPopup('01K6FEMES7WQ43CN7HY0Z98ZSJ', {
-                      mode: 'popup'
-                    }).open();
-                  } else {
-                    // Fallback to direct URL if script not loaded
-                    window.open('https://form.typeform.com/to/01K6FEMES7WQ43CN7HY0Z98ZSJ', '_blank');
-                  }
-                }}
+              <a 
+                href="https://form.typeform.com/to/ZEU71HQC" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                Apply for VIP Access
-              </button>
+                <button 
+                  style={{
+                    fontFamily: 'sans-serif',
+                    margin: '0 auto',
+                    outline: 'none',
+                    display: 'block',
+                    height: '45px',
+                    width: '226px',
+                    borderRadius: '6px',
+                    background: 'linear-gradient(135deg, #16C79A 0%, #0F9D7E 100%)',
+                    color: 'white',
+                    boxShadow: '0 4px 15px rgba(22, 199, 154, 0.3)',
+                    fontSize: '18px',
+                    fontWeight: '700',
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease'
+                  }}
+                >
+                  Apply for VIP Access
+                </button>
+              </a>
 
               <p className="text-xs text-center text-muted-foreground mt-4">
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
