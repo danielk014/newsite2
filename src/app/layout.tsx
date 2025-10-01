@@ -73,6 +73,7 @@ export default function RootLayout({
         {analyticsConfig.metaPixel.enabled && (
           <MetaPixel pixelId={analyticsConfig.metaPixel.pixelId} />
         )}
+        <script src="//embed.typeform.com/next/embed.js" async></script>
       </head>
       <body
         className={`${inter.variable} font-sans antialiased`}
