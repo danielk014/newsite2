@@ -382,9 +382,30 @@ export function PricingSection() {
                 </div>
               </div>
 
-              <div className="w-full flex justify-center">
-                <div data-tf-live="01K6FEMES7WQ43CN7HY0Z98ZSJ"></div>
-              </div>
+              <button 
+                style={{
+                  fontFamily: 'sans-serif',
+                  margin: '0 auto',
+                  outline: 'none',
+                  display: 'block',
+                  height: '45px',
+                  width: '226px',
+                  borderRadius: '6px',
+                  background: 'linear-gradient(135deg, #16C79A 0%, #0F9D7E 100%)',
+                  color: 'white',
+                  boxShadow: '0 4px 15px rgba(22, 199, 154, 0.3)',
+                  fontSize: '18px',
+                  fontWeight: '700',
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease'
+                }}
+                data-tf-popup="01K6FEMES7WQ43CN7HY0Z98ZSJ"
+                data-tf-iframe-props="title=VIP Application"
+                data-tf-medium="snippet"
+              >
+                Apply for VIP Access
+              </button>
 
               <p className="text-xs text-center text-muted-foreground mt-4">
                 30-day money-back guarantee if you don&apos;t see value after completing the modules.
