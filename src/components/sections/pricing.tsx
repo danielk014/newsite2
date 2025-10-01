@@ -400,9 +400,17 @@ export function PricingSection() {
                   cursor: 'pointer',
                   transition: 'all 0.3s ease'
                 }}
-                data-tf-popup="01K6FEMES7WQ43CN7HY0Z98ZSJ"
-                data-tf-iframe-props="title=VIP Application"
-                data-tf-medium="snippet"
+                onClick={() => {
+                  // Open Typeform popup directly
+                  if (typeof window !== 'undefined' && (window as any).tf) {
+                    (window as any).tf.createPopup('01K6FEMES7WQ43CN7HY0Z98ZSJ', {
+                      mode: 'popup'
+                    }).open();
+                  } else {
+                    // Fallback to direct URL if script not loaded
+                    window.open('https://form.typeform.com/to/01K6FEMES7WQ43CN7HY0Z98ZSJ', '_blank');
+                  }
+                }}
               >
                 Apply for VIP Access
               </button>
