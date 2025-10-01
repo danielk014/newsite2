@@ -402,8 +402,14 @@ export function PricingSection() {
                 }}
                 onClick={() => {
                   // Open Typeform popup directly
-                  if (typeof window !== 'undefined' && (window as any).tf) {
-                    (window as any).tf.createPopup('01K6FEMES7WQ43CN7HY0Z98ZSJ', {
+                  const win = window as Window & {
+                    tf?: {
+                      createPopup: (id: string, options: { mode: string }) => { open: () => void };
+                    };
+                  };
+                  
+                  if (typeof window !== 'undefined' && win.tf) {
+                    win.tf.createPopup('01K6FEMES7WQ43CN7HY0Z98ZSJ', {
                       mode: 'popup'
                     }).open();
                   } else {
