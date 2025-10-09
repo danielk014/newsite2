@@ -72,9 +72,6 @@ export default function Home() {
                 <p className="text-lg text-primary font-semibold mb-4">
                   (Make $20K+/Month with 60-Second Videos)
                 </p>
-                <p className="text-lg text-muted-foreground mb-3">
-                  AI-assisted content creation with <span className="font-semibold text-foreground">zero team costs</span>
-                </p>
                 <p className="text-lg text-primary font-semibold mb-3">
                   AI tools handle: research → script → voice → edit → thumbnail → upload
                 </p>
@@ -100,11 +97,6 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <span className="text-2xl">✨</span>
-                <h3 className="text-2xl font-bold text-primary">Complete YouTube Shorts AI Toolkit</h3>
-                <span className="text-2xl">✨</span>
-              </div>
               
               {/* CTA inside the pricing panel */}
               <div className="text-center">
