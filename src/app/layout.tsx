@@ -58,7 +58,9 @@ export const metadata: Metadata = {
     creator: "@creatorcamp",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/skool-logo.svg",
+    shortcut: "/skool-logo.svg",
+    apple: "/skool-logo.svg",
   },
 };
 
@@ -70,6 +72,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="theme-color" content="#FF6B35" />
         {analyticsConfig.metaPixel.enabled && (
           <MetaPixel pixelId={analyticsConfig.metaPixel.pixelId} />
         )}

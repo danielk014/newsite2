@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="skoolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF4500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="45" fill="url(#skoolGradient)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Letter S stylized for Skool -->
+  <path d="M35 25 Q45 20, 55 25 Q65 30, 65 40 Q65 50, 55 55 Q45 60, 35 55 Q25 50, 25 40 Q25 30, 35 25 Z" 
+        fill="#fff" opacity="0.9"/>
+  
+  <!-- Inner S curve -->
+  <path d="M40 30 Q50 28, 58 35 Q60 45, 50 50 Q40 55, 35 45 Q38 35, 45 32" 
+        fill="none" stroke="url(#skoolGradient)" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Dot accent -->
+  <circle cx="60" cy="35" r="3" fill="#fff"/>
+</svg>

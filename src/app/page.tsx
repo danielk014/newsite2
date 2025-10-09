@@ -10,7 +10,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden"
+         style={{ touchAction: 'pan-y pinch-zoom' }}>
       {/* Story Channels Success Slideshow - Very Top of Page - 50% Bigger */}
       <section className="py-8 md:py-12 lg:py-18 bg-gradient-to-r from-primary/10 to-accent/10 overflow-hidden">
         <div className="container mx-auto px-4 md:px-6">

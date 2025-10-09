@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { Menu, X } from "lucide-react"
-import { useState } from "react"
+import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 
 const navItems = [
@@ -19,6 +19,20 @@ const navItems = [
 export function Navigation() {
   const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  // Close mobile menu when clicking outside or on scroll
+  React.useEffect(() => {
+    const handleClose = () => setIsMobileMenuOpen(false)
+    
+    if (isMobileMenuOpen) {
+      document.addEventListener('scroll', handleClose)
+      document.addEventListener('touchstart', handleClose)
+      return () => {
+        document.removeEventListener('scroll', handleClose)
+        document.removeEventListener('touchstart', handleClose)
+      }
+    }
+  }, [isMobileMenuOpen])
 
   return (
     <nav className="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-lg border-b border-border">
