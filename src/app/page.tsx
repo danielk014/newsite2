@@ -63,19 +63,19 @@ export default function Home() {
       <section className="py-8 bg-gradient-to-r from-background to-primary/5">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-center">
-            <div className="bg-gradient-to-r from-primary/20 to-accent/20 border-2 border-primary/30 rounded-2xl p-8 max-w-2xl w-full backdrop-blur text-center">
+            <div className="bg-gradient-to-br from-slate-900/95 to-slate-800/95 border-2 border-primary/40 rounded-2xl p-8 max-w-2xl w-full backdrop-blur text-center shadow-2xl">
               {/* AI Description Text */}
               <div className="mb-8">
-                <h3 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                   Learn How to Build a Profitable YouTube Shorts Channel Using AI
                 </h3>
-                <p className="text-lg text-primary font-semibold mb-4">
+                <p className="text-lg text-orange-400 font-semibold mb-4">
                   (Make $20K+/Month with 60-Second Videos)
                 </p>
-                <p className="text-lg text-primary font-semibold mb-3">
+                <p className="text-lg text-orange-300 font-semibold mb-3">
                   AI tools handle: research → script → voice → edit → thumbnail → upload
                 </p>
-                <p className="text-lg font-semibold text-foreground">
+                <p className="text-lg font-semibold text-white">
                   Just you + AI = Profitable YouTube business
                 </p>
               </div>
@@ -83,15 +83,15 @@ export default function Home() {
               {/* Pricing Header */}
               <div className="mb-6">
                 <div className="flex items-center justify-center gap-2 mb-3">
-                  <span className="text-2xl line-through text-muted-foreground/60">$50</span>
-                  <span className="bg-destructive text-destructive-foreground text-sm px-3 py-1 rounded-full font-semibold">90% OFF</span>
+                  <span className="text-2xl line-through text-gray-400">$50</span>
+                  <span className="bg-red-600 text-white text-sm px-3 py-1 rounded-full font-semibold">90% OFF</span>
                 </div>
                 <div className="flex items-baseline justify-center gap-2 mb-3">
-                  <span className="text-6xl font-bold text-primary">$5</span>
-                  <span className="text-xl text-muted-foreground">/month</span>
+                  <span className="text-6xl font-bold text-orange-400">$5</span>
+                  <span className="text-xl text-gray-300">/month</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4">
-                  <span className="bg-destructive/20 text-destructive border border-destructive/30 px-3 py-2 rounded-md font-bold text-sm animate-pulse">
+                <p className="text-sm text-gray-300 mb-4">
+                  <span className="bg-yellow-600/20 text-yellow-300 border border-yellow-500/30 px-3 py-2 rounded-md font-bold text-sm animate-pulse">
                     ⚠️ Price returns to $50/month soon!
                   </span>
                 </p>
@@ -100,7 +100,7 @@ export default function Home() {
               
               {/* CTA inside the pricing panel */}
               <div className="text-center">
-                <p className="text-xl font-semibold text-foreground mb-4">
+                <p className="text-xl font-semibold text-white mb-4">
                   Get the complete tool kit
                 </p>
                 <button 
