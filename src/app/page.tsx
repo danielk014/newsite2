@@ -193,14 +193,14 @@ export default function Home() {
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
                   Learn How to Build a Profitable YouTube Shorts Channel Using AI
                 </h3>
-                <p className="text-lg text-white font-semibold mb-4">
-                  (Make $20K+/Month with 60-Second Videos)
+                <p className="text-lg text-primary font-semibold mb-4">
+                  (Make <span className="text-primary">$20K+/Month</span> with 60-Second Videos)
                 </p>
                 <p className="text-lg text-white font-semibold mb-3">
-                  AI tools handle: research → script → voice → edit → thumbnail → upload
+                  <span className="text-primary">AI tools handle:</span> research → script → voice → edit → thumbnail → upload
                 </p>
                 <p className="text-lg font-semibold text-white">
-                  Just you + AI = Profitable YouTube business
+                  Just you + AI = <span className="text-primary">Profitable YouTube business</span>
                 </p>
               </div>
               
