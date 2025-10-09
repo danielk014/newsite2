@@ -29,8 +29,8 @@ export default function Home() {
         <div className="relative overflow-hidden w-full">
             {/* Mobile Version - Single column scroll */}
             <div className="block md:hidden w-full overflow-hidden mobile-slideshow-container">
-              <div className="flex animate-scroll-left space-x-4">
-                {/* Main sequence - 6 unique images */}
+              <div className="flex animate-scroll-left space-x-4" style={{ width: 'max-content' }}>
+                {/* First set of images */}
                 <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
                   <Image 
                     src="/story-channels/cardogjones.png" 
@@ -95,7 +95,7 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Exact duplicate sequence for infinite loop */}
+                {/* Second set - duplicate for seamless loop */}
                 <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
                   <Image 
                     src="/story-channels/cardogjones.png" 
