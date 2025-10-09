@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/skool-logo.svg", type: "image/svg+xml" }
+      { url: "/favicon.png", type: "image/png" }
     ],
-    shortcut: "/skool-logo.svg",
+    shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
 };
@@ -82,11 +82,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#FF6B35" />
         
         {/* Favicon links for better compatibility */}
-        <link rel="icon" type="image/svg+xml" href="/skool-logo.svg" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="shortcut icon" href="/skool-logo.svg" />
+        <link rel="shortcut icon" href="/favicon.png" />
         
         {analyticsConfig.metaPixel.enabled && (
           <MetaPixel pixelId={analyticsConfig.metaPixel.pixelId} />
