@@ -105,7 +105,7 @@ html, body {
   animation: scroll-left 20s linear infinite;
 }
 
-/* Left-to-Right Slideshow Animation */
+/* Desktop Slideshow Animation */
 @keyframes scroll-left-to-right {
   0% {
     transform: translateX(-100%);
@@ -117,5 +117,42 @@ html, body {
 
 .animate-scroll-left-to-right {
   animation: scroll-left-to-right 25s linear infinite;
+}
+
+/* Mobile Slideshow Animations */
+@media (max-width: 768px) {
+  @keyframes mobile-scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .mobile-slideshow-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+  
+  .mobile-slideshow-track {
+    display: flex;
+    animation: mobile-scroll 20s linear infinite;
+    will-change: transform;
+  }
+  
+  .mobile-slide-item {
+    flex-shrink: 0;
+    width: 280px;
+    margin-right: 16px;
+  }
+  
+  /* Allow horizontal touch for slideshow */
+  .mobile-slideshow-container {
+    touch-action: pan-x pinch-zoom;
+  }
 }
 
