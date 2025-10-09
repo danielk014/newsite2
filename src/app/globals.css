@@ -101,53 +101,7 @@ html, body {
   }
 }
 
-/* Mobile-specific slideshow animation for infinite loop */
-@keyframes scroll-left-mobile {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-25%);
-  }
-}
-
 .animate-scroll-left {
   animation: scroll-left 20s linear infinite;
 }
 
-/* Mobile-specific animation class */
-@media (max-width: 768px) {
-  .animate-scroll-left {
-    animation: scroll-left-mobile 20s linear infinite;
-  }
-}
-
-/* Enhanced mobile slideshow and gesture prevention */
-@media (max-width: 768px) {
-  .mobile-slideshow-container {
-    overflow-x: hidden;
-    overflow-y: visible;
-    width: 100%;
-    position: relative;
-    /* Ensure smooth animation without interference */
-    will-change: transform;
-    backface-visibility: hidden;
-  }
-  
-  .mobile-slideshow-container .flex {
-    /* Ensure the animation container is wide enough */
-    width: max-content;
-  }
-  
-  .mobile-slideshow-container * {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-  }
-  
-  /* Prevent iOS Safari bounce/overscroll */
-  html, body {
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
-  }
-}
