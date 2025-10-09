@@ -105,8 +105,8 @@ html, body {
   animation: scroll-left 20s linear infinite;
 }
 
-/* New Mobile Infinite Scroll Animation */
-@keyframes mobile-scroll {
+/* Mobile Infinite Scroll Animation - Rebuilt */
+@keyframes mobile-infinite {
   0% {
     transform: translateX(0%);
   }
@@ -115,7 +115,8 @@ html, body {
   }
 }
 
-.animate-mobile-scroll {
-  animation: mobile-scroll 25s linear infinite;
+.animate-mobile-infinite {
+  animation: mobile-infinite 30s linear infinite;
+  width: max-content;
 }
 
