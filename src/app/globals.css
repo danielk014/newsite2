@@ -91,4 +91,17 @@ html, body {
   }
 }
 
+/* Desktop Slideshow Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
 

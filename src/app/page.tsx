@@ -25,33 +25,157 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Success Stories Images */}
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+        {/* Mobile and Desktop Slideshow - Full Width */}
+        <div className="relative overflow-hidden w-full">
+          {/* Mobile Version - 3 Static Images */}
+          <div className="md:hidden">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="grid grid-cols-1 gap-6 max-w-lg mx-auto">
+                <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+                  <Image 
+                    src="/story-channels/cophumor.png" 
+                    alt="CopHumor Channel Success"
+                    width={400}
+                    height={300}
+                    className="rounded-lg object-contain w-full h-auto"
+                  />
+                </div>
+                <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+                  <Image 
+                    src="/story-channels/dylan-anderson.png" 
+                    alt="Dylan Anderson Channel Success"
+                    width={400}
+                    height={300}
+                    className="rounded-lg object-contain w-full h-auto"
+                  />
+                </div>
+                <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+                  <Image 
+                    src="/story-channels/monium.png" 
+                    alt="Monium Channel Success"
+                    width={400}
+                    height={300}
+                    className="rounded-lg object-contain w-full h-auto"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Version - Infinite Slideshow */}
+          <div className="hidden md:flex animate-scroll-left space-x-6">
+            {/* Leading images to fill left side on load */}
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
               <Image 
                 src="/story-channels/cophumor.png" 
                 alt="CopHumor Channel Success"
-                width={400}
-                height={300}
+                width={336}
+                height={252}
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
               <Image 
                 src="/story-channels/dylan-anderson.png" 
                 alt="Dylan Anderson Channel Success"
-                width={400}
-                height={300}
+                width={336}
+                height={252}
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="bg-card border border-border rounded-lg p-3 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
               <Image 
                 src="/story-channels/monium.png" 
                 alt="Monium Channel Success"
-                width={400}
-                height={300}
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            
+            {/* Main image set */}
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/monium.png" 
+                alt="Monium Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            
+            {/* First duplicate set for seamless loop */}
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/monium.png" 
+                alt="Monium Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            
+            {/* Second duplicate set for extra coverage */}
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Channel Success"
+                width={336}
+                height={252}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+              <Image 
+                src="/story-channels/monium.png" 
+                alt="Monium Channel Success"
+                width={336}
+                height={252}
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
