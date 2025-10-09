@@ -28,12 +28,12 @@ export default function Home() {
         {/* Mobile and Desktop Slideshow - Full Width */}
         <div className="relative overflow-hidden w-full">
           {/* Mobile Version */}
-          <div className="md:hidden flex animate-scroll-right space-x-4">
-            {/* Leading images to fill left side on load */}
+          <div className="md:hidden flex animate-scroll-left-to-right space-x-4">
+            {/* All channel analytics images */}
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/cardogjones.png" 
-                alt="CardogJones Channel Analytics"
+                alt="CardogJones Channel Analytics - 1.36M Subscribers, $31K-$93K Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
@@ -42,7 +42,7 @@ export default function Home() {
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/monium.png" 
-                alt="Monium Channel Analytics"
+                alt="Monium Channel Analytics - 1.72M Subscribers, $367K-$1M Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
@@ -51,27 +51,16 @@ export default function Home() {
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/joe.png" 
-                alt="Joe Vite Channel Analytics"
+                alt="Joe Vite Channel Analytics - 712K Subscribers, $12K-$36K Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            
-            {/* Main image set */}
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/feyze.png" 
-                alt="Feyze Channel Analytics"
-                width={400}
-                height={200}
-                className="rounded-lg object-contain w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
-              <Image 
-                src="/story-channels/cardogjones.png" 
-                alt="CardogJones Channel Analytics"
+                alt="Feyze Channel Analytics - 349K Subscribers, $74K-$221K Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
@@ -95,10 +84,21 @@ export default function Home() {
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
+            
+            {/* Duplicate set for seamless infinite loop */}
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/cardogjones.png" 
+                alt="CardogJones Channel Analytics - 1.36M Subscribers, $31K-$93K Monthly"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/monium.png" 
-                alt="Monium Channel Analytics"
+                alt="Monium Channel Analytics - 1.72M Subscribers, $367K-$1M Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
@@ -107,27 +107,16 @@ export default function Home() {
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/joe.png" 
-                alt="Joe Vite Channel Analytics"
+                alt="Joe Vite Channel Analytics - 712K Subscribers, $12K-$36K Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            
-            {/* First duplicate set for seamless loop */}
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/feyze.png" 
-                alt="Feyze Channel Analytics"
-                width={400}
-                height={200}
-                className="rounded-lg object-contain w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
-              <Image 
-                src="/story-channels/cardogjones.png" 
-                alt="CardogJones Channel Analytics"
+                alt="Feyze Channel Analytics - 349K Subscribers, $74K-$221K Monthly"
                 width={400}
                 height={200}
                 className="rounded-lg object-contain w-full h-auto"

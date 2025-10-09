@@ -105,17 +105,17 @@ html, body {
   animation: scroll-left 20s linear infinite;
 }
 
-/* Right-to-Left Slideshow Animation */
-@keyframes scroll-right {
+/* Left-to-Right Slideshow Animation */
+@keyframes scroll-left-to-right {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
 }
 
-.animate-scroll-right {
-  animation: scroll-right 20s linear infinite;
+.animate-scroll-left-to-right {
+  animation: scroll-left-to-right 25s linear infinite;
 }
 
