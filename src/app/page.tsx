@@ -193,7 +193,7 @@ export default function Home() {
 
           {/* Desktop Version */}
           <div className="hidden md:flex animate-scroll-left space-x-6">
-              {/* Leading images to fill left side on load */}
+            {/* Leading images to fill left side on load */}
               <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
                 <Image 
                   src="/story-channels/feyze.png" 
