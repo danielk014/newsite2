@@ -91,7 +91,7 @@ html, body {
   }
 }
 
-/* Slideshow Animation */
+/* Desktop Slideshow Animation */
 @keyframes scroll-left {
   0% {
     transform: translateX(-25%);
@@ -101,60 +101,21 @@ html, body {
   }
 }
 
-/* Mobile-specific slideshow animation for infinite loop */
-@keyframes scroll-left-mobile {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-2112px);
-  }
-}
-
 .animate-scroll-left {
   animation: scroll-left 20s linear infinite;
 }
 
-/* Mobile-specific animation class */
-@media (max-width: 768px) {
-  .animate-scroll-left {
-    animation: scroll-left-mobile 80s linear infinite;
+/* New Mobile Infinite Scroll Animation */
+@keyframes mobile-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
-/* Prevent mobile overscroll and borders */
-@media (max-width: 768px) {
-  body {
-    overscroll-behavior-x: none;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  .mobile-slideshow-container {
-    overscroll-behavior-x: none;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-    touch-action: pan-y pinch-zoom;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  
-  .mobile-slideshow-container * {
-    border: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-  }
-  
-  /* Prevent iOS Safari bounce/overscroll */
-  html, body {
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
-  }
+.animate-mobile-scroll {
+  animation: mobile-scroll 25s linear infinite;
 }
 
