@@ -27,10 +27,39 @@ export default function Home() {
         
         {/* Mobile and Desktop Slideshow - Full Width */}
         <div className="relative overflow-hidden w-full">
-            {/* Mobile Version - Single column scroll */}
+            {/* Mobile Version - Infinite scroll like desktop */}
             <div className="block md:hidden w-full overflow-hidden mobile-slideshow-container">
               <div className="flex animate-scroll-left space-x-4" style={{ width: 'max-content' }}>
-                {/* First set of images */}
+                {/* Leading images to fill left side on load - like desktop */}
+                <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
+                  <Image 
+                    src="/story-channels/feyze.png" 
+                    alt="Feyze Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
+                  <Image 
+                    src="/story-channels/brighter.png" 
+                    alt="Brighter Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
+                  <Image 
+                    src="/story-channels/monium.png" 
+                    alt="Monium Story Channel Success"
+                    width={320}
+                    height={180}
+                    className="rounded-lg object-cover w-full h-auto"
+                  />
+                </div>
+                
+                {/* Main image set */}
                 <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
                   <Image 
                     src="/story-channels/cardogjones.png" 
@@ -95,7 +124,7 @@ export default function Home() {
                   />
                 </div>
                 
-                {/* Second set - duplicate for seamless loop */}
+                {/* Duplicate set for seamless loop */}
                 <div className="flex-shrink-0 w-72 rounded-lg overflow-hidden">
                   <Image 
                     src="/story-channels/cardogjones.png" 
