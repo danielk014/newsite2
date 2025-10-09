@@ -228,11 +228,11 @@ export default function Home() {
                   Get the complete tool kit
                 </p>
                 <button 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-lg px-8 py-4 rounded-lg transition-colors w-full max-w-md flex items-center justify-center gap-2 mx-auto"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-base md:text-lg px-4 md:px-6 py-2 md:py-3 rounded-lg transition-colors w-full max-w-xs md:max-w-sm flex items-center justify-center mx-auto"
                   onClick={() => window.location.href = '/pricing'}
                 >
                   Get Instant Access - $5/month
-                  <span className="text-xl">→</span>
+                  <span className="text-xl hidden md:inline ml-2">→</span>
                 </button>
               </div>
             </div>
