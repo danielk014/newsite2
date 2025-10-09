@@ -30,163 +30,125 @@ export default function Home() {
           {/* Mobile Version */}
           <div className="md:hidden flex animate-scroll-left space-x-4">
             {/* Leading images to fill left side on load */}
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
-                src="/story-channels/feyze.png" 
-                alt="Feyze Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                src="/story-channels/cardogjones.png" 
+                alt="CardogJones Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/brighter.png" 
-                alt="Brighter Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/monium.png" 
-                alt="Monium Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                alt="Monium Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/joe.png" 
+                alt="Joe Vite Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
             
             {/* Main image set */}
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/dylan-anderson.png" 
-                alt="Dylan Anderson Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cardogjones.png" 
-                alt="CardogJones Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cophumor.png" 
-                alt="CopHumor Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/joe.png" 
-                alt="Joe Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/feyze.png" 
-                alt="Feyze Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                alt="Feyze Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
-                src="/story-channels/brighter.png" 
-                alt="Brighter Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                src="/story-channels/cardogjones.png" 
+                alt="CardogJones Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/monium.png" 
-                alt="Monium Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                alt="Monium Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/joe.png" 
+                alt="Joe Vite Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
             
             {/* First duplicate set for seamless loop */}
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/dylan-anderson.png" 
-                alt="Dylan Anderson Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cardogjones.png" 
-                alt="CardogJones Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/cophumor.png" 
-                alt="CopHumor Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
-              <Image 
-                src="/story-channels/joe.png" 
-                alt="Joe Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
-              />
-            </div>
-            
-            {/* Second duplicate set for extra coverage */}
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
                 src="/story-channels/feyze.png" 
-                alt="Feyze Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                alt="Feyze Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
-                src="/story-channels/brighter.png" 
-                alt="Brighter Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                src="/story-channels/cardogjones.png" 
+                alt="CardogJones Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
-            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow">
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
-                src="/story-channels/monium.png" 
-                alt="Monium Story Channel Success"
-                width={280}
-                height={210}
-                className="rounded-lg object-cover w-full h-auto"
+                src="/story-channels/dylan-anderson.png" 
+                alt="Dylan Anderson Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
+              />
+            </div>
+            <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
+              <Image 
+                src="/story-channels/cophumor.png" 
+                alt="CopHumor Channel Analytics"
+                width={400}
+                height={200}
+                className="rounded-lg object-contain w-full h-auto"
               />
             </div>
           </div>
