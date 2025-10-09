@@ -28,7 +28,7 @@ export default function Home() {
         {/* Mobile and Desktop Slideshow - Full Width */}
         <div className="relative overflow-hidden w-full">
           {/* Mobile Version */}
-          <div className="md:hidden flex animate-scroll-left space-x-4">
+          <div className="md:hidden flex animate-scroll-right space-x-4">
             {/* Leading images to fill left side on load */}
             <div className="flex-shrink-0 bg-card border border-border rounded-lg p-2 hover:shadow-lg transition-shadow w-80">
               <Image 
